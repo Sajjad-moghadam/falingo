@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e816bc4f30ab4ea4b17f0d18a4f2cde, type: 3}
+  m_Name: QTR51
+  m_EditorClassIdentifier: 
+  QuestionNum: 0
+  Title: Match.
+  Que: Ferry.
+  Mode: 2
+  type: 11
+  structure: 1
+  correctAnswer: 3
+  options: []
+  picoptions: []
+  pics:
+  - {fileID: 21300012, guid: 964457dd956d64da5bacc4dbf40f2da4, type: 3}
+  - {fileID: 21300010, guid: dbdb65bbb42c64c2286a13f211290886, type: 3}
+  - {fileID: 21300002, guid: dbdb65bbb42c64c2286a13f211290886, type: 3}
+  - {fileID: 21300028, guid: 964457dd956d64da5bacc4dbf40f2da4, type: 3}
+  UserGaveRightAnswer: 0

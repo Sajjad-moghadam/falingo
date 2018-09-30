@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 68012b030e7334813834b58f9d9fe520
+timeCreated: 1533549683
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: ComicNeueSansID
+  fontNames:
+  - ComicNeueSansID
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

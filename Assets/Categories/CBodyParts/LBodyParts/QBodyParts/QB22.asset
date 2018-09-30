@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e816bc4f30ab4ea4b17f0d18a4f2cde, type: 3}
+  m_Name: QB22
+  m_EditorClassIdentifier: 
+  QuestionNum: 0
+  Title: Match.
+  Que: Toes.
+  Mode: 1
+  type: 5
+  structure: 1
+  correctAnswer: 4
+  options: []
+  picoptions: []
+  pics:
+  - {fileID: 21300060, guid: 8e22c2ac74dcb4ce8bb78d7e530deccf, type: 3}
+  - {fileID: 21300062, guid: 8e22c2ac74dcb4ce8bb78d7e530deccf, type: 3}
+  - {fileID: 21300010, guid: bb50805e8c8dd40c7a74db4224e6e9ae, type: 3}
+  - {fileID: 21300042, guid: 8e22c2ac74dcb4ce8bb78d7e530deccf, type: 3}
+  UserGaveRightAnswer: 0

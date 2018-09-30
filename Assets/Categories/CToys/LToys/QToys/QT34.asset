@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e816bc4f30ab4ea4b17f0d18a4f2cde, type: 3}
+  m_Name: QT34
+  m_EditorClassIdentifier: 
+  QuestionNum: 0
+  Title: Match.
+  Que: Microphone.
+  Mode: 1
+  type: 7
+  structure: 1
+  correctAnswer: 1
+  options: []
+  picoptions: []
+  pics:
+  - {fileID: 21300024, guid: ad1826497cee34efd8a751a2774634ca, type: 3}
+  - {fileID: 21300010, guid: 1feb98fd9384e4975bb09eb297ac743e, type: 3}
+  - {fileID: 21300036, guid: ad1826497cee34efd8a751a2774634ca, type: 3}
+  - {fileID: 21300022, guid: ad1826497cee34efd8a751a2774634ca, type: 3}
+  UserGaveRightAnswer: 0

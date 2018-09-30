@@ -1,0 +1,21 @@
+﻿<Properties StartupConfiguration="{5DB09769-179B-8D4B-26C8-948CA607C19B}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/ScriptsMine/Question.cs">
+    <Files>
+      <File FileName="Assets/ScriptsMine/Question.cs" Line="12" Column="5" />
+      <File FileName="Assets/ScriptsMine/Toolbox.cs" Line="8" Column="6" />
+      <File FileName="Assets/ScriptsMine/Category.cs" Line="9" Column="5" />
+      <File FileName="Assets/ScriptsMine/Lesson.cs" Line="11" Column="25" />
+      <File FileName="Assets/ScriptsMine/Save_Load.cs" Line="39" Column="36" />
+      <File FileName="Assets/ScriptsMine/Signup_Panel.cs" Line="35" Column="43" />
+      <File FileName="Assets/ScriptsMine/GameMng.cs" Line="90" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Mainapp PreferredExecutionTarget="Unity.Editor" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.MyFalingo PreferredExecutionTarget="Unity.Editor" />
+</Properties>

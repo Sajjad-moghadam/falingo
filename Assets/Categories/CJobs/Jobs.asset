@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e32e9740164fe495db5b26912a4c0c36, type: 3}
+  m_Name: Jobs
+  m_EditorClassIdentifier: 
+  questionType: 10
+  buttonSprite: {fileID: 21300046, guid: 02e84baf20b94de4dbffa8a2490b4e21, type: 3}
+  lessons:
+  - {fileID: 11400000, guid: 32ecec37cdc1d458982142063a54c9c4, type: 2}
+  - {fileID: 11400000, guid: 918beff556ac442c1ac1ad5432ba5026, type: 2}
+  - {fileID: 11400000, guid: 6473309d9208d4c6087e5d9f018625b7, type: 2}

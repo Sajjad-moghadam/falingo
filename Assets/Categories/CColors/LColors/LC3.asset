@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24a52f2b729c64871bfd6295d380fd22, type: 3}
+  m_Name: LC3
+  m_EditorClassIdentifier: 
+  questions:
+  - {fileID: 11400000, guid: 12b9b90915886485b9833e4e5930eddb, type: 2}
+  - {fileID: 11400000, guid: 775d81649e3524b438cf5b7eb1456225, type: 2}
+  - {fileID: 11400000, guid: b676808a143c845e09d30e492a9bbbf9, type: 2}
+  - {fileID: 11400000, guid: 039e8282324464994950d1b242e57409, type: 2}
+  - {fileID: 11400000, guid: 21867ec9d41894f04a0b4a45a2b1e87b, type: 2}
+  - {fileID: 11400000, guid: e150c22aec1f64192ae5780e1028ef15, type: 2}
+  - {fileID: 11400000, guid: 8604c685b0c86408ea1e4be5011f9b07, type: 2}
+  - {fileID: 11400000, guid: 12cb926526e874d32b5e023df7fa4019, type: 2}
+  - {fileID: 11400000, guid: 4359d7ecc14b844b7996d61d25bec645, type: 2}
+  - {fileID: 11400000, guid: c775cd205b2754df0b813ef23ba89fd3, type: 2}
+  - {fileID: 11400000, guid: cf094aa4a5af342a68d9b33463ec9873, type: 2}
+  - {fileID: 11400000, guid: 320a1212eb2844591bcd5553c0d86c7d, type: 2}
+  - {fileID: 11400000, guid: f8dcdb3cb9532452b80df0468ce0a249, type: 2}
+  - {fileID: 11400000, guid: d0b185103470b4898a2f7f9e30ec801b, type: 2}
+  - {fileID: 11400000, guid: 22e9dd4f069d74aeb9083cef233cf7fc, type: 2}
+  - {fileID: 11400000, guid: 6f1bbf64e555e473f83853aa9c8d4608, type: 2}
+  - {fileID: 11400000, guid: fb701e02ae79e4f859bb3b05a7813b2d, type: 2}
+  - {fileID: 11400000, guid: 85a18585ee07a46369b68299bc6e0717, type: 2}
+  - {fileID: 11400000, guid: 9807ab23e4c76446a9e783e2a45a2bc3, type: 2}
+  - {fileID: 11400000, guid: c3c494bc0907e44c7af62c04e5ebce38, type: 2}
+  Lmode: 2
+  Ltype: 2
+  title: Level3

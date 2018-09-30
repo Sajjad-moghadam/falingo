@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e816bc4f30ab4ea4b17f0d18a4f2cde, type: 3}
+  m_Name: QS12
+  m_EditorClassIdentifier: 
+  QuestionNum: 0
+  Title: Match.
+  Que: Volleyball.
+  Mode: 0
+  type: 8
+  structure: 1
+  correctAnswer: 3
+  options: []
+  picoptions: []
+  pics:
+  - {fileID: 21300004, guid: a69f3330ed5fc4a45918136d13a11756, type: 3}
+  - {fileID: 21300020, guid: 2e028348e758e402bb576a9305f5e413, type: 3}
+  - {fileID: 21300022, guid: 2e028348e758e402bb576a9305f5e413, type: 3}
+  - {fileID: 21300046, guid: df90dcc7d5a4448daabc44629e95ed2f, type: 3}
+  UserGaveRightAnswer: 0

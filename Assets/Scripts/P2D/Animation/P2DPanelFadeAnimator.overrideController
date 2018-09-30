@@ -1,0 +1,14 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: P2DPanelFadeAnimator
+  m_Controller: {fileID: 9100000, guid: e4a5131ae0127cc46ab3907a9f0f51d8, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: a44c2d782b95f9244985053b59d2ac58, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: ee44f269135820349afc281f433fcb7b, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: e5487c885027a694fa05dbf13e2fb4e8, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: d2de4b8fd59f2764caddace8efc7e9b9, type: 2}

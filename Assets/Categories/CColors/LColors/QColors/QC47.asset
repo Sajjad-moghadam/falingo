@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e816bc4f30ab4ea4b17f0d18a4f2cde, type: 3}
+  m_Name: QC47
+  m_EditorClassIdentifier: 
+  QuestionNum: 0
+  Title: Match.
+  Que: Hot pink.
+  Mode: 2
+  type: 2
+  structure: 1
+  correctAnswer: 1
+  options: []
+  picoptions: []
+  pics:
+  - {fileID: 21300028, guid: 0619ab7de4dad42a5896f454e75995a1, type: 3}
+  - {fileID: 21300034, guid: 0619ab7de4dad42a5896f454e75995a1, type: 3}
+  - {fileID: 21300024, guid: 0619ab7de4dad42a5896f454e75995a1, type: 3}
+  - {fileID: 21300014, guid: 0619ab7de4dad42a5896f454e75995a1, type: 3}
+  UserGaveRightAnswer: 0
