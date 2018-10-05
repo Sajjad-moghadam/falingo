@@ -41,7 +41,7 @@ public class LessonPanelScript : MonoBehaviour {
             nextLesson.interactable = false;
 
         lessonNumber.text = 3 + " / " + GameMng.selectedLessonIndex.ToString();
-        lessonScore.text = GameMng.GetLessonBestScore(GameMng.selectedCategory, GameMng.selectedLessonIndex) + "/" + 33;
+        lessonScore.text = GameMng.GetLessonBestScore(GameMng.selectedCategory, GameMng.selectedLessonIndex) + "/" + 30;
     }
 
     public void StartLesson()

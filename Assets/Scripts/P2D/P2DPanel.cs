@@ -40,6 +40,7 @@ public class P2DPanel : MonoBehaviour
     Coroutine hidePanelRoutine;
 
     public bool shouldActive = false;
+    public bool OnCenter = false;
 
     void Awake()
     {
@@ -90,6 +91,9 @@ public class P2DPanel : MonoBehaviour
 
         isShow = true;
         showTime = 0.5f;
+
+        if (OnCenter)
+            transform.localPosition = Vector3.zero;
 
         if (panelAnimator != null)
         {

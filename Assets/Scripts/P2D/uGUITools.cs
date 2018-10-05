@@ -1,5 +1,8 @@
-﻿using UnityEditor;
+﻿#if UNITY_EDITOR
+
 using UnityEngine;
+using UnityEditor;
+
 
 public class uGUITools : MonoBehaviour
 {
@@ -31,3 +34,6 @@ public class uGUITools : MonoBehaviour
         t.offsetMin = t.offsetMax = new Vector2(0, 0);
     }
 }
+
+
+#endif

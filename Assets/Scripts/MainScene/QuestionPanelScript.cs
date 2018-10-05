@@ -205,7 +205,7 @@ public class QuestionPanelScript : MonoBehaviour
         string bestScoreString = GameMng.GetLessonBestScore(GameMng.selectedCategory, GameMng.selectedLessonIndex) + "/" + maxScore.ToString();
 
 
-        if (result > ResultType.NotBad)
+        if (result >= ResultType.NotBad)
         {
             CheckOpenNextLesson();
             CheckOpenNextCategory();
@@ -472,5 +472,10 @@ public class QuestionPanelScript : MonoBehaviour
     public void Hide()
     {
         myPanel.Hide();
+    }
+
+    public void SpeakRequest()
+    {
+        Setting.Speak(QuestionList[CurrentQuestionIndex].Que);
     }
 }

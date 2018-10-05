@@ -15,9 +15,9 @@ MonoBehaviour:
   _backtoryAuthClientKey: 5a9a9702e4b05bb64131ee3e
   _backtoryCloudcodeId: 5a9a9702e4b092a32bb1c74a
   _backtoryGameId: 5a9a9702e4b04e579f30785b
-  _backtoryConnectivityId: 
+  _backtoryConnectivityId: 5bb7542ae4b016e5031630d3
   _backtoryObjectStorageId: 5a9a9702e4b092a32bb1c74d
   _backtoryFileStorageId: 
-  _sdkDebugMode: 0
+  _sdkDebugMode: 1
   _logLevel: 3
   _serverDestination: 0

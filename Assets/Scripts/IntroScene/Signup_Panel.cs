@@ -27,12 +27,10 @@ public class Signup_Panel : MonoBehaviour
     // Login Panel
     public InputField usernameInputlog;
 
-    // Popup Window
-    public MessageBoxEx myMessageBox;
-    public MessageBoxEx myMessageBoxlogin;
-
     public void Start()
     {
+        Setting.initSetting();
+
 #if UNITY_EDITOR
         //PlayerPrefs.DeleteAll(); //danger*****
 #endif
@@ -41,7 +39,7 @@ public class Signup_Panel : MonoBehaviour
         {
             //string savedusername = PlayerPrefs.GetString(usernameKey);
             //string savedpass = PlayerPrefs.GetString(passKey);
-            LoginProcess(true);
+            LoginProcess(false);
         }
     }
 
@@ -51,6 +49,7 @@ public class Signup_Panel : MonoBehaviour
         BacktoryUser newUser = new BacktoryUser
         {
             FirstName = usernameInputreg.text,
+            Email = "test@test.com",
             Username = SystemInfo.deviceUniqueIdentifier,
             Password = SystemInfo.deviceUniqueIdentifier
 
@@ -59,9 +58,12 @@ public class Signup_Panel : MonoBehaviour
         //if(Regex.IsMatch(usernameInputreg.text, "^[a-zA-Z0-9]*$") && (usernameInputreg.text != "") && (emailInputreg.text != "") && (passwordInputreg.text != "") && (IsValidEmail(emailInputreg.text))){
         if( (usernameInputreg.text != "") ){
 
+            Setting.waitingPanel.Show("در حال ثبت نام");
             // Registring user to backtory (in background)
             newUser.RegisterInBackground(response =>
             {
+                Setting.waitingPanel.Hide();
+
                 // Checking result of operation
                 if (response.Successful)
                 {
@@ -77,14 +79,15 @@ public class Signup_Panel : MonoBehaviour
                 }
                 else if (response.Code == (int)BacktoryHttpStatusCode.Conflict)
                 {
-                    myMessageBox.SetMessage("نام کاربری وارد شده موجود می باشد.");
+                    //Setting.MessegeBox.SetMessege("نام کاربری وارد شده موجود می باشد.");
+                    LoginProcess(false);
                     // Showbaduser();
                     // Username is invalid
                     Debug.Log("Bad username; a user with this username already exists.");
                 }
                 else
                 {
-                    myMessageBox.SetMessage("مشکلی در شبکه بوجود آمده، لطفا دوباره تلاش کنید.");
+                    Setting.MessegeBox.SetMessege("مشکلی در شبکه بوجود آمده، لطفا دوباره تلاش کنید.");
                     // Shownetdownregister();
                     // General failure
                     Debug.Log("Registration failed; for network or some other reasons.");
@@ -98,8 +101,8 @@ public class Signup_Panel : MonoBehaviour
         //    // Debug.Log("Oops");
         //}
         else if((usernameInputreg.text == "")){
-            
-            myMessageBox.SetMessage("لطفا نام کاربری خود را وارد کنید.");
+
+            Setting.MessegeBox.SetMessege("لطفا نام کاربری خود را وارد کنید.");
             // Showemptyusername();
             // Debug.Log("Oops");
         }
@@ -133,7 +136,7 @@ public class Signup_Panel : MonoBehaviour
 
         }else if ((usernameInputlog.text == ""))
         {
-            myMessageBoxlogin.SetMessage("لطفا نام کاربری خود را وارد کنید.");
+            Setting.MessegeBox.SetMessege("لطفا نام کاربری خود را وارد کنید.");
             //Showemptyusername();
             //Debug.Log("Oops");
         }
@@ -142,15 +145,16 @@ public class Signup_Panel : MonoBehaviour
 
     public void LoginProcess(bool newUser)
     {
-        
+        Setting.waitingPanel.Show("در حال ورود");
+
         BacktoryUser.LoginInBackground(SystemInfo.deviceUniqueIdentifier, SystemInfo.deviceUniqueIdentifier, loginResponse =>
         {
-
+            Setting.waitingPanel.Hide();
             // Login operation done (fail or success), handling it:
             if (loginResponse.Successful)
             {
                 Debug.Log("Login Successful.");
-                SceneManager.LoadScene("MainMenu");
+                SceneManager.LoadScene(Setting.mainScene);
 
                 // We have UserId and if it is the first time that he logs in, we should send age and gender to Backtory.
                 if (PlayerPrefs.GetInt(alreadyRegistered) != 1)
@@ -163,6 +167,7 @@ public class Signup_Panel : MonoBehaviour
                     // we can read his age/gen data locally. 
                     else
                     {
+                        PlayerPrefs.SetInt(alreadyRegistered, 1);
                        //TODO: LoadAgeGen()
                     }
                 }
@@ -170,14 +175,14 @@ public class Signup_Panel : MonoBehaviour
             }
             else if (loginResponse.Code == (int)BacktoryHttpStatusCode.Unauthorized)
             {
-                myMessageBoxlogin.SetMessage("نام کاربری یا کلمه عبور وارد شده صحیح نمی باشد.");
+                Setting.MessegeBox.SetMessege("ابتدا باید ثبت نام کنید.");
                 // Showwrongmailusername();
                 // Username 'mohx' with password '123456' is wrong
                 Debug.Log("Either username or password is wrong.");
             }
             else
             {
-                myMessageBoxlogin.SetMessage("مشکلی در شبکه بوجود آمده، لطفا دوباره تلاش کنید.");
+                Setting.MessegeBox.SetMessege("مشکلی در شبکه بوجود آمده، لطفا دوباره تلاش کنید.");
                 // Shownetdownlog();
                 // Operation generally failed, maybe internet connection issue
                 Debug.Log("Login failed for other reasons like network issues.");
@@ -189,25 +194,33 @@ public class Signup_Panel : MonoBehaviour
     public void saveAgegen()
     {
 
-        BacktoryObject genderage = new BacktoryObject("GenderAge");
-        genderage["gender"] = sexDropDown.value;
-        genderage["age"] = ageDropDown.value;
-        genderage["userID"] = BacktoryUser.CurrentUser.UserId;
-
-
-        genderage.SaveInBackground(response =>
+        try
         {
-            if (response.Successful)
-            {
-                PlayerPrefs.SetInt(alreadyRegistered, 1);
-                // successful save. good place for Debug.Log function.
+            BacktoryObject genderage = new BacktoryObject("GenderAge");
+            genderage["gender"] = sexDropDown.value;
+            genderage["age"] = ageDropDown.value;
+            genderage["userID"] = BacktoryUser.CurrentUser.UserId;
 
-            }
-            else
+
+            genderage.SaveInBackground(response =>
             {
-                // see response.Message to know the cause of error
-            }
-        });
+                if (response.Successful)
+                {
+                    PlayerPrefs.SetInt(alreadyRegistered, 1);
+                    // successful save. good place for Debug.Log function.
+
+                }
+                else
+                {
+                    // see response.Message to know the cause of error
+                }
+            });
+        }
+        catch(Exception e)
+        {
+            Debug.LogError(e.Message);
+        }
+       
     }
     // functions for popup windows
 
@@ -237,7 +250,7 @@ public class Signup_Panel : MonoBehaviour
         BacktoryUser.ForgotPasswordInBackground(username, response => {
             if (response.Successful)
             {
-                myMessageBoxlogin.SetMessage("کلمه عبور جدید به ایمیلت ارسال شد.");
+                Setting.MessegeBox.SetMessege("کلمه عبور جدید به ایمیلت ارسال شد.");
                 // Showforgotpass();
                 // Debug.Log("Go to your mail inbox and verify your request.");
             }

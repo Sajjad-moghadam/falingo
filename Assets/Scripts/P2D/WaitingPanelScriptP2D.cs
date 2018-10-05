@@ -19,14 +19,11 @@ public class WaitingPanelScriptP2D : MonoBehaviour
     [SerializeField]
     Image image,imageRayBlocker;
 
-    [SerializeField]
-    Sprite wifiSprite, sootSprite, wifiSpriteIrancell, sootSpriteIrancell;
-
     P2DPanel myPanel;
 
     WaitForSeconds wait4Hide = new WaitForSeconds(30);
 
-    static string defaultMessage = "در حال ارتباط با سرور".faConvert();
+    static string defaultMessage = "در حال ارتباط با سرور";
 
     void Awake()
     {

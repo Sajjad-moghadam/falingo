@@ -4,10 +4,11 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
 using System;
+using Backtory.Core.Public;
 
 public enum QuestionMode { Easy, Intermed, Diffy }
 public enum QuestionType { Animals, Actions, Colors, Food, Fruits, BodyParts, Weather, Toys, Sports, Clothes, Jobs, Transport, SchoolThings, Objects }
-public enum QuestionStruct { Choice, Pic }
+public enum QuestionStruct { Choice, Pic, WordGame }
 
 public delegate void OnScoreChange(QuestionType type);
 
@@ -28,9 +29,6 @@ public class GameMng : SingletonMahsa<GameMng>
 
     [SerializeField]
     List<ExamButtonScript> exams;
-
-    [SerializeField]
-    private List<Button> categorysButton;
 
     [SerializeField]
     P2DAmountShower xpShower;
@@ -57,19 +55,41 @@ public class GameMng : SingletonMahsa<GameMng>
 
         SetMainPanel(0);
 
-        SetXpShower();
+
+        onScoreChangeEvent += GameMng_onScoreChangeEvent;
+
+        UpdateXpShower();
 
     }
 
-    private void SetXpShower()
+    private void GameMng_onScoreChangeEvent(QuestionType type)
+    {
+        UpdateXpShower();
+    }
+
+    private void UpdateXpShower()
     {
         int currentScore = 0;
         int maxScore = (lastCategoryIndex + 1) * 300;
 
+        for (int i = 0; i <= lastCategoryIndex; i++)
+        {
+            currentScore += GetCategoryScore((QuestionType)i);
+        }
+
         foreach (var item in exams)
         {
             maxScore += (item.examQuestions * 3);
+            currentScore += GetExamBestScore(item.name);
         }
+
+        xpShower.SetMaxAmount(maxScore);
+        xpShower.SetAmount(currentScore);
+
+
+
+        SendScore(currentScore);
+
     }
 
     public void SetMainPanel(int panelIndex)
@@ -140,8 +160,8 @@ public class GameMng : SingletonMahsa<GameMng>
     public static void SetLessonBestScore(QuestionType Category, int lessonNumber, int value)
     {
         P2DSecurety.SecureLocalSave(lessonOfLevelKey + Category.ToString() + lessonNumber.ToString(), value);
-        
-        if(onScoreChangeEvent != null)
+
+        if (onScoreChangeEvent != null)
         {
             onScoreChangeEvent(Category);
         }
@@ -192,5 +212,45 @@ public class GameMng : SingletonMahsa<GameMng>
                 return "one";
         }
     }
+
+    public void SendScore(int score)
+    {
+        try
+        {
+            // Step 1: Creating parameters for GameOver event
+            List<BacktoryGameEvent.FieldValue> fieldValues = new List<BacktoryGameEvent.FieldValue>()
+             {
+                 new BacktoryGameEvent.FieldValue("Score", score),
+            };
+
+            // Step 2: Creating GameOver event and filling its data
+            BacktoryGameEvent backtoryGameEvent = new BacktoryGameEvent()
+            {
+                Name = "ScoreChange",
+                FieldsAndValues = fieldValues
+            };
+
+            // Step 3: Sending event to server
+            backtoryGameEvent.SendInBackground(backtoryResponse =>
+            {
+                // Checking callback from server
+                if (backtoryResponse.Successful)
+                {
+                    Debug.Log("saved event successfully");
+                }
+                else
+                {
+                    Debug.Log(backtoryResponse.Message);
+                    // do something based on BactoryResponse.Code
+                }
+            });
+        }
+        catch (Exception e)
+        {
+            Debug.LogError(e.Message);
+        }
+
+    }
+
 
 }

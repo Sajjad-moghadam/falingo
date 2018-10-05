@@ -19,10 +19,28 @@ MonoBehaviour:
   structure: 1
   correctAnswer: 1
   options: []
-  picoptions: []
   pics:
   - {fileID: 21300000, guid: e3f85b09478824c078e3e7783173dc82, type: 3}
   - {fileID: 21300002, guid: e3f85b09478824c078e3e7783173dc82, type: 3}
   - {fileID: 21300028, guid: e3f85b09478824c078e3e7783173dc82, type: 3}
   - {fileID: 21300010, guid: e3f85b09478824c078e3e7783173dc82, type: 3}
-  UserGaveRightAnswer: 0
+  word1: 
+  word2: 
+  word3: 
+  word4: 
+  P_1_1: 100
+  P_1_2: 0
+  P_1_3: 0
+  P_1_4: 0
+  P_2_1: 0
+  P_2_2: 0
+  P_2_3: 0
+  P_2_4: 0
+  P_3_1: 0
+  P_3_2: 0
+  P_3_3: 0
+  P_3_4: 0
+  P_4_1: 0
+  P_4_2: 0
+  P_4_3: 0
+  P_4_4: 0

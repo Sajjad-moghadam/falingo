@@ -22,14 +22,11 @@ public enum LeaderboardType
     playedGame = 4
 }
 
-[RequireComponent(typeof(P2DPanel))]
 public class NewHighScorePanelScript : MonoBehaviour
 {
 
     [SerializeField]
     GameObject scoreRowLabel, scoreContentPanel;
-
-    P2DPanel myPanel;
 
     private TimeLimit timeLimit = TimeLimit.Total;
     private LeaderboardType leaderboardType = LeaderboardType.Score;
@@ -39,7 +36,6 @@ public class NewHighScorePanelScript : MonoBehaviour
 
     void Awake()
     {
-        myPanel = GetComponent<P2DPanel>();
     }
 
     public void ChangeTimeLimit(int index)
@@ -85,20 +81,17 @@ public class NewHighScorePanelScript : MonoBehaviour
 
     public void ShowHighScore()
     {
-        if (!myPanel.IsShow)
-        {
-            myPanel.Show();
-        }
 
         string leaderboardID = FindRequestedLeaderboard();
 
         BacktoryLeaderBoard topPlayers = new BacktoryLeaderBoard(leaderboardID);
 
         //// Create a leaderboard object
-        Setting.waitingPanel.Show();
+        Setting.waitingPanel.Show("در حال دریافت اطلاعات");
         // Request for top 100 to backtory
         topPlayers.GetTopPlayersInBackground(100, leaderboardResponse =>
         {
+            Setting.waitingPanel.Hide();
 
             foreach (Transform item in scoreContentPanel.transform)
             {
@@ -107,7 +100,6 @@ public class NewHighScorePanelScript : MonoBehaviour
             // Checking if response was fetched successfully
             if (leaderboardResponse.Successful)
             {
-                Setting.waitingPanel.Hide();
                 GetComponent<P2DPanel>().Show();
 
 
@@ -120,7 +112,7 @@ public class NewHighScorePanelScript : MonoBehaviour
                     
                     if(i%2 == 1)
                     {
-                        scoreRow.GetComponent<Image>().color = new Color(0.5f, 0.5f, 0.5f);
+                        scoreRow.GetComponent<Image>().color = new Color(1f, 0.8f, 0.5f,1f);
                     }
 
                     //scoreRow.goalAgainstText.text = "0";
@@ -140,11 +132,6 @@ public class NewHighScorePanelScript : MonoBehaviour
 
     }
 
-    public void Hide()
-    {
-        myPanel.Hide();
-    }
-
     private string FindRequestedLeaderboard()
     {
         switch (leaderboardType)
@@ -153,13 +140,13 @@ public class NewHighScorePanelScript : MonoBehaviour
                 switch (timeLimit)
                 {
                     case TimeLimit.Total:
-                        return "5afd2e4de4b07d19887a280a";
+                        return "5bb7229ae4b03221c8e0064e";
                     case TimeLimit.Month:
-                        return "5afd3045e4b0b0a50c0c1e66";
+                        return "5bb722aae4b03221c8e0064f";
                     case TimeLimit.Week:
-                        return "5afd3058e4b0f2534784976d";
+                        return "5bb722b5e4b03221c8e00650";
                     case TimeLimit.Day:
-                        return "5afd306fe4b0f2534784976e";
+                        return "5bb722bde4b0f623513e0d66";
                     default:
                         break;
                 }
@@ -229,6 +216,6 @@ public class NewHighScorePanelScript : MonoBehaviour
         }
 
 
-        return "5afd2e4de4b07d19887a280a";
+        return "5bb7229ae4b03221c8e0064e";
     }
 }
