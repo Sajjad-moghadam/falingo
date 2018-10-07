@@ -4,12 +4,15 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 using UnityEngine;
 using UnityEngine.UI;
-using System.Collections.Generic; 
+using System.Collections.Generic;
 using System.IO;
 using Backtory.InAppPurchase.Public;
 using System.Text.RegularExpressions;
 using System.Net.Mail;
 using UnityEngine.SceneManagement;
+using GameSparks.Api.Requests;
+using GameSparks.Api.Responses;
+using GameSparks.Core;
 
 public class Signup_Panel : MonoBehaviour
 {
@@ -39,155 +42,108 @@ public class Signup_Panel : MonoBehaviour
         {
             //string savedusername = PlayerPrefs.GetString(usernameKey);
             //string savedpass = PlayerPrefs.GetString(passKey);
-            LoginProcess(false);
+            LoginProcess();
         }
+
+        //var request = new LoginWithAndroidDeviceIDRequest();
+        //request.AndroidDeviceId = SystemInfo.deviceUniqueIdentifier;
+        //PlayFabClientAPI.LoginWithAndroidDeviceID(request, PlayfabLoginCallback, PlayfabLoginCallbackError, "Sajjad");
+
+        //var signupRequest = new RegisterPlayFabUserRequest();
+        //signupRequest.
+        //PlayFabClientAPI.RegisterPlayFabUser()
+
+        //GSRequestData sd = new GSRequestData().AddNumber(Setting.sexKey, 1).AddNumber(Setting.ageKey, 1);
+        //new RegistrationRequest().SetUserName(SystemInfo.deviceUniqueIdentifier).SetPassword(SystemInfo.deviceUniqueIdentifier).SetDisplayName("سجاد").SetScriptData(sd).Send((RegistrationResponse response) =>
+        //{
+        //    if (response.HasErrors)
+        //    {
+
+        //        Setting.MessegeBox.SetMessege("خطا در ایجاد پروفایل کاربری");
+
+        //    }
+        //    else
+        //    {
+        //        PlayerPrefs.SetInt(alreadyRegistered, 1);
+        //        //It worked!!
+        //    }
+        //});
+
+       
+
     }
+
+    void RegisterCallBack(AuthenticationResponse response)
+    {
+
+    }
+
+
+    //void PlayfabLoginCallback(LoginResult result)
+    //{
+    //    Debug.Log("YESSSSSS");
+    //}
+    //void PlayfabLoginCallbackError(PlayFabError error)
+    //{
+    //    Debug.LogError(error.GenerateErrorReport());
+    //}
 
     public void onRegisterClick()
     {
-        // First create a user and fill his/her data
-        BacktoryUser newUser = new BacktoryUser
+
+        if ((usernameInputreg.text != ""))
         {
-            FirstName = usernameInputreg.text,
-            Email = "test@test.com",
-            Username = SystemInfo.deviceUniqueIdentifier,
-            Password = SystemInfo.deviceUniqueIdentifier
-
-        };
-
-        //if(Regex.IsMatch(usernameInputreg.text, "^[a-zA-Z0-9]*$") && (usernameInputreg.text != "") && (emailInputreg.text != "") && (passwordInputreg.text != "") && (IsValidEmail(emailInputreg.text))){
-        if( (usernameInputreg.text != "") ){
-
             Setting.waitingPanel.Show("در حال ثبت نام");
-            // Registring user to backtory (in background)
-            newUser.RegisterInBackground(response =>
+
+
+            GSRequestData sd = new GSRequestData().AddNumber(Setting.sexKey, sexDropDown.value).AddNumber(Setting.ageKey, ageDropDown.value);
+            new RegistrationRequest().SetUserName(SystemInfo.deviceUniqueIdentifier).SetPassword(SystemInfo.deviceUniqueIdentifier).SetDisplayName(usernameInputreg.text).SetScriptData(sd).Send((RegistrationResponse response) =>
             {
                 Setting.waitingPanel.Hide();
 
-                // Checking result of operation
-                if (response.Successful)
+                if (response.HasErrors)
                 {
-                    // save local
-                    PlayerPrefs.SetString(usernameKey, newUser.FirstName);
-                    //PlayerPrefs.SetString(emailKey, newUser.Email);
-                    //PlayerPrefs.SetString(passKey, newUser.Password);
+                    Debug.LogError(response.Errors.BaseData["DETAILS"].ToString());
+                    Setting.MessegeBox.SetMessege("خطا در ایجاد پروفایل کاربری");
 
-                    // register complated and we should login now
-                    LoginProcess(true);
-
-
-                }
-                else if (response.Code == (int)BacktoryHttpStatusCode.Conflict)
-                {
-                    //Setting.MessegeBox.SetMessege("نام کاربری وارد شده موجود می باشد.");
-                    LoginProcess(false);
-                    // Showbaduser();
-                    // Username is invalid
-                    Debug.Log("Bad username; a user with this username already exists.");
                 }
                 else
                 {
-                    Setting.MessegeBox.SetMessege("مشکلی در شبکه بوجود آمده، لطفا دوباره تلاش کنید.");
-                    // Shownetdownregister();
-                    // General failure
-                    Debug.Log("Registration failed; for network or some other reasons.");
+                    PlayerPrefs.SetInt(alreadyRegistered, 1);
+                    LoginProcess();
                 }
             });
+  
         }
-        //else if(!(Regex.IsMatch(usernameInputreg.text, "^[a-zA-Z0-9]*$"))){
-            
-        //    myMessageBox.SetMessage("لطفا نام کاربری خود را انگلیسی وارد کنید.");
-        //    // Showenglishusername();
-        //    // Debug.Log("Oops");
-        //}
-        else if((usernameInputreg.text == "")){
-
-            Setting.MessegeBox.SetMessege("لطفا نام کاربری خود را وارد کنید.");
-            // Showemptyusername();
-            // Debug.Log("Oops");
-        }
-        //else if((emailInputreg.text == "")){
-
-        //    myMessageBox.SetMessage("لطفا ایمیل خود را وراد کنید.");
-        //    // Showemptyemail();
-        //    // Debug.Log("Oops");
-        //}
-        //else if(!(IsValidEmail(emailInputreg.text))){
-
-        //    myMessageBox.SetMessage("ایمیل وارد شده صحیح نمی باشد.");
-        //    // Showfalsemail();
-        //    // Debug.Log("Oops");
-        //}
-        //else if((passwordInputreg.text == "")){
-
-        //    myMessageBox.SetMessage("لطفا کلمه عبور خود را وارد کنید.");
-        //    // Showemptypassword();
-        //    // Debug.Log("Oops");
-        //}
-
-    }
-
-    public void LogInClick()
-    {
-
-        if (usernameInputlog.text != ""){
-            
-            LoginProcess(false);
-
-        }else if ((usernameInputlog.text == ""))
+        else if ((usernameInputreg.text == ""))
         {
-            Setting.MessegeBox.SetMessege("لطفا نام کاربری خود را وارد کنید.");
-            //Showemptyusername();
-            //Debug.Log("Oops");
-        }
 
+            Setting.MessegeBox.SetMessege("لطفا نام کاربری خود را وارد کنید.");
+        }
     }
 
-    public void LoginProcess(bool newUser)
+    public void LoginProcess()
     {
         Setting.waitingPanel.Show("در حال ورود");
 
-        BacktoryUser.LoginInBackground(SystemInfo.deviceUniqueIdentifier, SystemInfo.deviceUniqueIdentifier, loginResponse =>
+        new AuthenticationRequest().SetUserName(SystemInfo.deviceUniqueIdentifier).SetPassword(SystemInfo.deviceUniqueIdentifier).Send((AuthenticationResponse response) =>
         {
             Setting.waitingPanel.Hide();
-            // Login operation done (fail or success), handling it:
-            if (loginResponse.Successful)
-            {
-                Debug.Log("Login Successful.");
-                SceneManager.LoadScene(Setting.mainScene);
 
-                // We have UserId and if it is the first time that he logs in, we should send age and gender to Backtory.
-                if (PlayerPrefs.GetInt(alreadyRegistered) != 1)
-                {
-                    if (newUser)
-                    {
-                        saveAgegen();
-                    }
-                    // If the user is a member of service and because of exchanging his phone or clearing his playerprefs' data,
-                    // we can read his age/gen data locally. 
-                    else
-                    {
-                        PlayerPrefs.SetInt(alreadyRegistered, 1);
-                       //TODO: LoadAgeGen()
-                    }
-                }
-
-            }
-            else if (loginResponse.Code == (int)BacktoryHttpStatusCode.Unauthorized)
+            if (response.HasErrors)
             {
-                Setting.MessegeBox.SetMessege("ابتدا باید ثبت نام کنید.");
-                // Showwrongmailusername();
-                // Username 'mohx' with password '123456' is wrong
-                Debug.Log("Either username or password is wrong.");
+                if(response.Errors.BaseData["DETAILS"].ToString().Contains("UNRECOGNISED"))
+                    Setting.MessegeBox.SetMessege("ابتدا باید ثبت نام کنید.");
+                else
+                    Setting.MessegeBox.SetMessege("ارتباط با سرور برقرار نشد. اینترنت خود را چک کنید.");
+
             }
             else
             {
-                Setting.MessegeBox.SetMessege("مشکلی در شبکه بوجود آمده، لطفا دوباره تلاش کنید.");
-                // Shownetdownlog();
-                // Operation generally failed, maybe internet connection issue
-                Debug.Log("Login failed for other reasons like network issues.");
+                SceneManager.LoadScene(Setting.mainScene);
+
             }
-        });
+        }, 10000);
 
     }
     // Function for save age and gender
@@ -216,11 +172,11 @@ public class Signup_Panel : MonoBehaviour
                 }
             });
         }
-        catch(Exception e)
+        catch (Exception e)
         {
             Debug.LogError(e.Message);
         }
-       
+
     }
     // functions for popup windows
 
@@ -247,7 +203,8 @@ public class Signup_Panel : MonoBehaviour
         string username = usernameInputlog.text;
 
         // Requesting forget password to backtory
-        BacktoryUser.ForgotPasswordInBackground(username, response => {
+        BacktoryUser.ForgotPasswordInBackground(username, response =>
+        {
             if (response.Successful)
             {
                 Setting.MessegeBox.SetMessege("کلمه عبور جدید به ایمیلت ارسال شد.");

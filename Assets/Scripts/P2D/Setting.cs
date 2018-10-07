@@ -37,8 +37,11 @@ public class Setting
     public static string introScene = "Intro";
     public static string mainScene = "MainApp";
 
+    public static string sexKey = "SexKey";
+    public static string ageKey = "AgeKey";
 
-  
+
+
 
     public static bool isSettingInit = false;
 

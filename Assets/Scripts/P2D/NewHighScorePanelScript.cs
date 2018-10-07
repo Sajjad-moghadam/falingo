@@ -38,6 +38,11 @@ public class NewHighScorePanelScript : MonoBehaviour
     {
     }
 
+    private void Start()
+    {
+        ChangeTimeLimit(2);
+    }
+
     public void ChangeTimeLimit(int index)
     {
         timeLimit = (TimeLimit)index;
@@ -82,50 +87,44 @@ public class NewHighScorePanelScript : MonoBehaviour
     public void ShowHighScore()
     {
 
-        string leaderboardID = FindRequestedLeaderboard();
+        string leaderboardName = FindRequestedLeaderboard();
 
-        BacktoryLeaderBoard topPlayers = new BacktoryLeaderBoard(leaderboardID);
-
-        //// Create a leaderboard object
         Setting.waitingPanel.Show("در حال دریافت اطلاعات");
-        // Request for top 100 to backtory
-        topPlayers.GetTopPlayersInBackground(100, leaderboardResponse =>
-        {
+        new GameSparks.Api.Requests.LeaderboardDataRequest().SetLeaderboardShortCode(leaderboardName).SetEntryCount(100).Send((response) => {
             Setting.waitingPanel.Hide();
-
-            foreach (Transform item in scoreContentPanel.transform)
+            if (!response.HasErrors)
             {
-                Destroy(item.gameObject);
-            }
-            // Checking if response was fetched successfully
-            if (leaderboardResponse.Successful)
-            {
-                GetComponent<P2DPanel>().Show();
-
-
-                for (int i = 0; i < leaderboardResponse.Body.UsersProfile.Count; i++)
+                foreach (Transform item in scoreContentPanel.transform)
                 {
-                    LeaderboardScoreRowScript scoreRow = Instantiate(scoreRowLabel, scoreContentPanel.transform).GetComponent<LeaderboardScoreRowScript>();
-                    scoreRow.rankText.text = (i + 1).ToString();
-                    scoreRow.nameText.text = leaderboardResponse.Body.UsersProfile[i].UserBriefProfile.FirstName;
-                    scoreRow.scoreText.text = leaderboardResponse.Body.UsersProfile[i].Scores[0].ToString();
-                    
-                    if(i%2 == 1)
-                    {
-                        scoreRow.GetComponent<Image>().color = new Color(1f, 0.8f, 0.5f,1f);
-                    }
-
-                    //scoreRow.goalAgainstText.text = "0";
-                    //scoreRow.goalForText.text = "0";
-                    //scoreRow.winrateText.text = "0";
-                    //scoreRow.playedNumberText.text = "0";
-                    //scoreRow.playedNumberText.text = leaderboardResponse.Body.UsersProfile[i].Scores[1].ToString();
+                    Destroy(item.gameObject);
                 }
 
+                int i = 0;
+                foreach (GameSparks.Api.Responses.LeaderboardDataResponse._LeaderboardData entry in response.Data)
+                {
+                    int rank = (int)entry.Rank;
+                    string playerName = entry.UserName;
+                    string score = entry.JSONData["Score"].ToString();
+                    Debug.Log("Rank:" + rank + " Name:" + playerName + " \n Score:" + score);
+
+                    LeaderboardScoreRowScript scoreRow = Instantiate(scoreRowLabel, scoreContentPanel.transform).GetComponent<LeaderboardScoreRowScript>();
+                    scoreRow.rankText.text = rank.ToString();
+                    scoreRow.nameText.text = playerName;
+                    scoreRow.scoreText.text = score.ToString();
+
+                    if (i % 2 == 1)
+                    {
+                        scoreRow.GetComponent<Image>().color = new Color(1f, 0.8f, 0.5f, 1f);
+                    }
+
+                    i++;
+
+                }
             }
             else
             {
                 Setting.MessegeBox.SetMessege("ارتباط با سرور برقرار نشد", "", "خطا");
+                Debug.Log("Error Retrieving Leaderboard Data...");
             }
         });
 
@@ -140,13 +139,13 @@ public class NewHighScorePanelScript : MonoBehaviour
                 switch (timeLimit)
                 {
                     case TimeLimit.Total:
-                        return "5bb7229ae4b03221c8e0064e";
+                        return "ScoreTotal";
                     case TimeLimit.Month:
-                        return "5bb722aae4b03221c8e0064f";
+                        return "ScoreMonthly";
                     case TimeLimit.Week:
-                        return "5bb722b5e4b03221c8e00650";
+                        return "ScoreWeakly";
                     case TimeLimit.Day:
-                        return "5bb722bde4b0f623513e0d66";
+                        return "ScoreDaily";
                     default:
                         break;
                 }
@@ -216,6 +215,6 @@ public class NewHighScorePanelScript : MonoBehaviour
         }
 
 
-        return "5bb7229ae4b03221c8e0064e";
+        return "ScoreTotal";
     }
 }

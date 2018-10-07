@@ -304,6 +304,18 @@
     <Reference Include="Backtory.InAppPurchase">
       <HintPath>Assets\Backtory\InAppPurchase\Android\Backtory.InAppPurchase.dll</HintPath>
     </Reference>
+    <Reference Include="BouncyCastle_GameSparks">
+      <HintPath>Assets\GameSparks\Plugins\BouncyCastle_GameSparks.dll</HintPath>
+    </Reference>
+    <Reference Include="GameSparks.Api">
+      <HintPath>Assets\GameSparks\Plugins\GameSparks.Api.dll</HintPath>
+    </Reference>
+    <Reference Include="GameSparks">
+      <HintPath>Assets\GameSparks\Plugins\GameSparks.dll</HintPath>
+    </Reference>
+    <Reference Include="GameSparksRT">
+      <HintPath>Assets\GameSparks\Plugins\GameSparksRT.dll</HintPath>
+    </Reference>
     <Reference Include="DOTween">
       <HintPath>Assets\Scripts\DOTween\DOTween.dll</HintPath>
     </Reference>
@@ -330,6 +342,25 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\GameSparks\GameSparksRTUnity.cs" />
+    <Compile Include="Assets\GameSparks\GameSparksSettings.cs" />
+    <Compile Include="Assets\GameSparks\GameSparksUnity.cs" />
+    <Compile Include="Assets\GameSparks\Platforms\DefaultPlatform.cs" />
+    <Compile Include="Assets\GameSparks\Platforms\IControlledTimer.cs" />
+    <Compile Include="Assets\GameSparks\Platforms\IControlledWebSocket.cs" />
+    <Compile Include="Assets\GameSparks\Platforms\Native\detail\GameSparksNative.cs" />
+    <Compile Include="Assets\GameSparks\Platforms\Native\detail\GameSparksNativePINVOKE.cs" />
+    <Compile Include="Assets\GameSparks\Platforms\Native\detail\NativeWebSocket.cs" />
+    <Compile Include="Assets\GameSparks\Platforms\Native\NativePlatform.cs" />
+    <Compile Include="Assets\GameSparks\Platforms\Native\NativeWebSocket.cs" />
+    <Compile Include="Assets\GameSparks\Platforms\PlatformBase.cs" />
+    <Compile Include="Assets\GameSparks\Platforms\TimerController.cs" />
+    <Compile Include="Assets\GameSparks\Platforms\UnityTimer.cs" />
+    <Compile Include="Assets\GameSparks\Platforms\WebGL\SimpleJson2.cs" />
+    <Compile Include="Assets\GameSparks\Platforms\WebGL\WebGLPlatform.cs" />
+    <Compile Include="Assets\GameSparks\Platforms\WebGL\WebGLWebSocket.cs" />
+    <Compile Include="Assets\GameSparks\Platforms\WebSocketController.cs" />
+    <Compile Include="Assets\GameSparks\TestUI\GameSparksTestUI.cs" />
     <Compile Include="Assets\Scripts\IntroScene\MessageBoxEx.cs" />
     <Compile Include="Assets\Scripts\IntroScene\ScrollSnapRect.cs" />
     <Compile Include="Assets\Scripts\IntroScene\Signup_Panel.cs" />
@@ -389,6 +420,15 @@
   <ItemGroup>
     <None Include="Assets\Backtory\Core\Backtory.xml" />
     <None Include="Assets\Backtory\InAppPurchase\Android\Backtory.InAppPurchase.xml" />
+    <None Include="Assets\GameSparks\Plugins\GameSparks.Api.XML" />
+    <None Include="Assets\GameSparks\Plugins\GameSparks.XML" />
+    <None Include="Assets\GameSparks\Plugins\GameSparksRT.xml" />
+    <None Include="Assets\GameSparks\Plugins\Metro\GameSparks.XML" />
+    <None Include="Assets\GameSparks\Plugins\Metro\GameSparksRT.xml" />
+    <None Include="Assets\GameSparks\Plugins\UWP\GameSparks.XML" />
+    <None Include="Assets\GameSparks\Plugins\WP8\GameSparks.XML" />
+    <None Include="Assets\GameSparks\README.txt" />
+    <None Include="Assets\GameSparks\link.xml" />
     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
     <None Include="Assets\Scripts\DOTween\DOTween.XML" />
     <None Include="Assets\Scripts\DOTween\DOTween43.xml" />

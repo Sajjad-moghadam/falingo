@@ -5,6 +5,9 @@ using UnityEngine.UI;
 using System.Linq;
 using System;
 using Backtory.Core.Public;
+using GameSparks.Api.Requests;
+using GameSparks.Api.Responses;
+using GameSparks.Core;
 
 public enum QuestionMode { Easy, Intermed, Diffy }
 public enum QuestionType { Animals, Actions, Colors, Food, Fruits, BodyParts, Weather, Toys, Sports, Clothes, Jobs, Transport, SchoolThings, Objects }
@@ -55,7 +58,6 @@ public class GameMng : SingletonMahsa<GameMng>
 
         SetMainPanel(0);
 
-
         onScoreChangeEvent += GameMng_onScoreChangeEvent;
 
         UpdateXpShower();
@@ -100,6 +102,10 @@ public class GameMng : SingletonMahsa<GameMng>
         }
 
         mainPanels[panelIndex].SetActive(true);
+
+        if(panelIndex == 1)
+        {
+        }
 
     }
 
@@ -217,33 +223,43 @@ public class GameMng : SingletonMahsa<GameMng>
     {
         try
         {
-            // Step 1: Creating parameters for GameOver event
-            List<BacktoryGameEvent.FieldValue> fieldValues = new List<BacktoryGameEvent.FieldValue>()
-             {
-                 new BacktoryGameEvent.FieldValue("Score", score),
-            };
 
-            // Step 2: Creating GameOver event and filling its data
-            BacktoryGameEvent backtoryGameEvent = new BacktoryGameEvent()
-            {
-                Name = "ScoreChange",
-                FieldsAndValues = fieldValues
-            };
+            new LogEventRequest().SetEventKey("ScoreChange").SetEventAttribute("Score", score)
+                .Send((response) => {
+                    if(response.HasErrors)
+                    {
+                        Debug.LogError(response.Errors.BaseData["DETAILS"].ToString());
+                    }
+                    GSData scriptData = response.ScriptData;
+                });
 
-            // Step 3: Sending event to server
-            backtoryGameEvent.SendInBackground(backtoryResponse =>
-            {
-                // Checking callback from server
-                if (backtoryResponse.Successful)
-                {
-                    Debug.Log("saved event successfully");
-                }
-                else
-                {
-                    Debug.Log(backtoryResponse.Message);
-                    // do something based on BactoryResponse.Code
-                }
-            });
+            //// Step 1: Creating parameters for GameOver event
+            //List<BacktoryGameEvent.FieldValue> fieldValues = new List<BacktoryGameEvent.FieldValue>()
+            // {
+            //     new BacktoryGameEvent.FieldValue("Score", score),
+            //};
+
+            //// Step 2: Creating GameOver event and filling its data
+            //BacktoryGameEvent backtoryGameEvent = new BacktoryGameEvent()
+            //{
+            //    Name = "ScoreChange",
+            //    FieldsAndValues = fieldValues
+            //};
+
+            //// Step 3: Sending event to server
+            //backtoryGameEvent.SendInBackground(backtoryResponse =>
+            //{
+            //    // Checking callback from server
+            //    if (backtoryResponse.Successful)
+            //    {
+            //        Debug.Log("saved event successfully");
+            //    }
+            //    else
+            //    {
+            //        Debug.Log(backtoryResponse.Message);
+            //        // do something based on BactoryResponse.Code
+            //    }
+            //});
         }
         catch (Exception e)
         {
