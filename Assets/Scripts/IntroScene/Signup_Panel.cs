@@ -140,6 +140,9 @@ public class Signup_Panel : MonoBehaviour
             }
             else
             {
+                if (PlayerPrefs.GetInt(alreadyRegistered) == 0)
+                    PlayerPrefs.SetInt(alreadyRegistered,1) ;
+
                 SceneManager.LoadScene(Setting.mainScene);
 
             }
