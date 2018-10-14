@@ -25,10 +25,21 @@ public class P2DCountDownTimer : MonoBehaviour
 
     public TimerType timerType = TimerType.Min;
 
+    DateTime startTime;
     DateTime endTime;
+
+    bool isTimerStarted = false;
 
     private void Start()
     {
+    }
+
+    private void OnEnable()
+    {
+        if(isTimerStarted)
+        {
+            StartCoroutine(timerTick());
+        }
     }
 
 
@@ -38,7 +49,7 @@ public class P2DCountDownTimer : MonoBehaviour
         SetTimer(newDate);
     }
 
-    public void SetTimer(DateTime end,bool autoStart = true)
+    public void SetTimer(DateTime end)
     {
         endTime = end;
 
@@ -48,8 +59,15 @@ public class P2DCountDownTimer : MonoBehaviour
 
     public void StartTimer()
     {
+        isTimerStarted = true;
+        startTime = DateTime.Now;
         StartCoroutine(timerTick());
 
+    }
+
+    public TimeSpan GetElepsedTime()
+    {
+        return DateTime.Now - startTime;
     }
 
     WaitForSeconds oneSecound = new WaitForSeconds(1);
@@ -59,7 +77,6 @@ public class P2DCountDownTimer : MonoBehaviour
 
         while (true)
         {
-            yield return oneSecound;
 
             ts = endTime.Subtract(DateTime.Now);
 
@@ -82,22 +99,25 @@ public class P2DCountDownTimer : MonoBehaviour
 
             if (ts.TotalSeconds <= 0)
             {
-                timerText.text = "تمام";
+                timerText.text = "تمام".faConvert();
                 TimerDone();
                 //transform.DOScale(1.2f, 0.15f).SetLoops(32, LoopType.Yoyo).SetEase(Ease.Flash);
                 break;
             }
+
+            yield return oneSecound;
+
 
         }
     }
 
     public void TimerDone()
     {
-
         if (OnTimerDoneEvent != null)
         {
             OnTimerDoneEvent();
         }
+        isTimerStarted = false;
 
     }
 }

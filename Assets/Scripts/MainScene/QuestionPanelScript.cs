@@ -44,6 +44,7 @@ public class QuestionPanelScript : MonoBehaviour
 
     QType currentQType;
     int currentScore, maxScore;
+    static int correctInRow = 0;
     // Use this for initialization
     void Start()
     {
@@ -205,7 +206,7 @@ public class QuestionPanelScript : MonoBehaviour
         string bestScoreString = GameMng.GetLessonBestScore(GameMng.selectedCategory, GameMng.selectedLessonIndex) + "/" + maxScore.ToString();
 
 
-        if (result >= ResultType.NotBad)
+        if (result >= ResultType.NotBad && currentQType == QType.Practice)
         {
             CheckOpenNextLesson();
             CheckOpenNextCategory();
@@ -217,10 +218,21 @@ public class QuestionPanelScript : MonoBehaviour
 
     private void SaveScore()
     {
-        int lastScore = GameMng.GetLessonBestScore(GameMng.selectedCategory, GameMng.selectedLessonIndex);
-        if (currentScore > lastScore)
+        if (currentQType == QType.Practice)
         {
-            GameMng.SetLessonBestScore(GameMng.selectedCategory, GameMng.selectedLessonIndex, currentScore);
+            int lastScore = GameMng.GetLessonBestScore(GameMng.selectedCategory, GameMng.selectedLessonIndex);
+            if (currentScore > lastScore)
+            {
+                GameMng.SetLessonBestScore(GameMng.selectedCategory, GameMng.selectedLessonIndex, currentScore);
+            }
+        }
+        else
+        {
+            int lastScore = GameMng.GetExamBestScore(GameMng.selectedExam.examTitle);
+            if (currentScore > lastScore)
+            {
+                GameMng.SetExamBestScore(GameMng.selectedExam.examTitle, currentScore);
+            }
         }
     }
 
@@ -404,6 +416,8 @@ public class QuestionPanelScript : MonoBehaviour
         if (index == QuestionList[CurrentQuestionIndex].correctAnswer)
         {
             currentScore += 3;
+            correctInRow++;
+            StartCoroutine(CheckMaxCorrectInRow());
             Setting.AudioPlayer.PlayOneShot(CorrectSound, 0.5f);
 
             if (QuestionList[CurrentQuestionIndex].structure == QuestionStruct.Pic)
@@ -418,14 +432,15 @@ public class QuestionPanelScript : MonoBehaviour
         else
         {
             currentScore -= 1;
+            correctInRow = 0;
             Setting.AudioPlayer.PlayOneShot(WrongSound, 0.5f);
 
-            if(QuestionList[CurrentQuestionIndex].structure == QuestionStruct.Pic)
+            if (QuestionList[CurrentQuestionIndex].structure == QuestionStruct.Pic)
             {
                 PicQuestionButtons[QuestionList[CurrentQuestionIndex].correctAnswer - 1].SetGreenCover();
                 PicQuestionButtons[index - 1].SetRedCover();
             }
-            else if(QuestionList[CurrentQuestionIndex].structure == QuestionStruct.Choice)
+            else if (QuestionList[CurrentQuestionIndex].structure == QuestionStruct.Choice)
             {
                 ChoiceQuestionButtons[QuestionList[CurrentQuestionIndex].correctAnswer - 1].SetGreenCover();
                 ChoiceQuestionButtons[index - 1].SetRedCover();
@@ -437,6 +452,16 @@ public class QuestionPanelScript : MonoBehaviour
         yield return new WaitForSeconds(1);
 
         StartCoroutine(HideCurrentShowNextQuestion());
+    }
+
+    private IEnumerator CheckMaxCorrectInRow()
+    {
+        if (correctInRow > GameMng.GetMaxCorrectInRow())
+        {
+            GameMng.SetMaxCorrectInRow(correctInRow);
+        }
+
+        yield return 0;
     }
 
     public void SkipButtonClick()

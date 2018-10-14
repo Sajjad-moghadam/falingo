@@ -53,13 +53,22 @@ public class ExamPanelScript : MonoBehaviour {
 
     public void ExamRequestClick()
     {
-        Setting.MessegeBox.SetMessege("برای شروع امتحان 50 الماس باید استفاده کنی","","آماده ای");
+        Setting.MessegeBox.SetMessege("برای شروع امتحان " + GameMng.selectedExam.examDiamondPrice + " الماس باید استفاده کنی ", "","آماده ای");
         Setting.MessegeBox.OnOkButtonClickEvent += MessegeBox_OnOkButtonClickEvent;
     }
 
     private void MessegeBox_OnOkButtonClickEvent()
     {
-        myPanel.Hide();
-        GameMng.Instance.ShowExam();
+        if (GameMng.GetDiamondNumber() >= GameMng.selectedExam.examDiamondPrice)
+        {
+            GameMng.Instance.RemoveDiamond(GameMng.selectedExam.examDiamondPrice);
+            myPanel.Hide();
+            GameMng.Instance.ShowExam();
+        }
+        else
+        {
+            Setting.MessegeBox.SetMessege("الماس کافی نداری");
+        }
+          
     }
 }

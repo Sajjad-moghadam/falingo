@@ -30,6 +30,7 @@ public class Setting
     public static AudioSource AudioPlayer;
     public static P2DMessegeBox MessegeBox;
     public static P2DNotification notificationMessage;
+    public static P2DPopUpNotification popupNotification;
     public static WaitingPanelScriptP2D waitingPanel;
     public static P2DCollectManager collectManager;
     private static TextToSpeech text2Speach;
@@ -130,6 +131,7 @@ public class Setting
         AudioPlayer = canvasP2D.transform.Find("AudioSource").GetComponent<AudioSource>();
         MessegeBox = canvasP2D.transform.Find("MessegeBoxPanel").GetComponent<P2DMessegeBox>();
         notificationMessage = canvasP2D.transform.Find("NotificationText").GetComponent<P2DNotification>();
+        popupNotification = canvasP2D.transform.Find("PopUpNotification").GetComponent<P2DPopUpNotification>();
         waitingPanel = canvasP2D.transform.Find("PanelWaiting").GetComponent<WaitingPanelScriptP2D>();
         collectManager = canvasP2D.transform.Find("PanelCollectManager").GetComponent<P2DCollectManager>();
         text2Speach = canvasP2D.transform.Find("Text2Speach").GetComponent<TextToSpeech>();
@@ -154,7 +156,7 @@ public class Setting
    
     public static void ShowSoonNotification()
     {
-        Setting.notificationMessage.Show("به زودی".faConvert());
+        notificationMessage.Show("به زودی".faConvert());
     }
 
     //const string subscribeToken = "tokenKey";

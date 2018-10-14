@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ExamButtonScript : MonoBehaviour {
 
-    public int examCategorys = 6,examQuestions = 30;
+    public int examCategorys = 6,examQuestions = 30,examDiamondPrice = 30;
     public string examTitle = "Biginner";
 
     [SerializeField]
@@ -72,5 +72,14 @@ public class ExamButtonScript : MonoBehaviour {
                 //TODO:Sound
             }
         }
+    }
+
+
+    public bool IsDoneExcelent()
+    {
+        if (GameMng.GetExamBestScore(examTitle) == examQuestions * 3)
+            return true;
+
+        return false;
     }
 }

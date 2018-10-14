@@ -34,10 +34,20 @@ public class GameMng : SingletonMahsa<GameMng>
     List<ExamButtonScript> exams;
 
     [SerializeField]
-    P2DAmountShower xpShower;
+    Transform achivmentParent;
+    List<AchivmentScript> achivmentList = new List<AchivmentScript>(32);
+
+    [SerializeField]
+    P2DAmountShower xpShower,diamondShower;
 
     [SerializeField]
     ExamPanelScript examPanel;
+
+    [SerializeField]
+    Sprite diamondSprite;
+
+    [SerializeField]
+    AudioClip collectClip,removeClip;
 
     private float delay = 1;
 
@@ -46,6 +56,10 @@ public class GameMng : SingletonMahsa<GameMng>
 
     private void Awake()
     {
+#if UNITY_EDITOR
+        PlayerPrefs.DeleteAll(); //danger*****
+#endif
+
         if (GetLastOpenLesson(0) == 0)
         {
             SetLastOpenLesson(0, 1);
@@ -55,13 +69,24 @@ public class GameMng : SingletonMahsa<GameMng>
     void Start()
     {
         Setting.initSetting();
-
+        FillAchivmentList();
         SetMainPanel(0);
 
         onScoreChangeEvent += GameMng_onScoreChangeEvent;
 
         UpdateXpShower();
+        diamondShower.SetAmount(GetDiamondNumber());
 
+    }
+
+    private void FillAchivmentList()
+    {
+        for (int i = 0; i < achivmentParent.childCount; i++)
+        {
+            AchivmentScript temp = achivmentParent.GetChild(i).GetComponent<AchivmentScript>();
+            if (temp != null)
+                achivmentList.Add(temp);
+        }
     }
 
     private void GameMng_onScoreChangeEvent(QuestionType type)
@@ -73,10 +98,20 @@ public class GameMng : SingletonMahsa<GameMng>
     {
         int currentScore = 0;
         int maxScore = (lastCategoryIndex + 1) * 300;
+        int excelentLessons = 0;
+        int excelentCategory = 0;
 
+        int currentExcelentLesson;
+        int currentCategoryScore;
         for (int i = 0; i <= lastCategoryIndex; i++)
         {
-            currentScore += GetCategoryScore((QuestionType)i);
+            currentCategoryScore = GetCategoryScore((QuestionType)i, out currentExcelentLesson);
+            currentScore += currentCategoryScore;
+            excelentLessons += currentExcelentLesson;
+            if (currentCategoryScore == 100)
+                excelentCategory++;
+
+            CheckAchivment(excelentCategory, excelentLessons);
         }
 
         foreach (var item in exams)
@@ -88,11 +123,129 @@ public class GameMng : SingletonMahsa<GameMng>
         xpShower.SetMaxAmount(maxScore);
         xpShower.SetAmount(currentScore);
 
-
-
         SendScore(currentScore);
 
     }
+
+    private void CheckAchivment(int excelentCategory, int excelentLessons)
+    {
+        foreach (var item in achivmentList)
+        {
+            if(item.achivmentType == AchivmentType.ExcelentCategory)
+            {
+                if(!item.IsCollected() && item.requestedAmount <= excelentCategory)
+                {
+                    item.Open2Collect();
+                }
+            }
+            else if (item.achivmentType == AchivmentType.ExcelentLesson)
+            {
+                if (!item.IsCollected() && !item.IsReady2Collect() && item.requestedAmount <= excelentLessons)
+                {
+                    item.Open2Collect();
+                }
+            }
+        }
+    }
+
+    private void CheckAchivment(TimeSpan examSucessTime)
+    {
+        foreach (var item in achivmentList)
+        {
+            if (item.achivmentType == AchivmentType.ExamTime)
+            {
+                if (!item.IsCollected() && !item.IsReady2Collect() && item.requestedAmount >= examSucessTime.TotalMinutes)
+                {
+                    item.Open2Collect();
+                }
+            }
+
+        }
+    }
+
+    private void CheckAchivmentCorrectInRow()
+    {
+        int correctInRow = GetMaxCorrectInRow();
+        foreach (var item in achivmentList)
+        {
+            if (item.achivmentType == AchivmentType.CorrectInRow)
+            {
+                if (!item.IsCollected() && !item.IsReady2Collect() && item.requestedAmount <= correctInRow)
+                {
+                    item.Open2Collect();
+                }
+            }
+
+        }
+    }
+
+    private void CheckAchivmentExcelentExam()
+    {
+        int excelentExams = 0;
+
+        foreach (var item in exams)
+        {
+            if (item.IsDoneExcelent())
+                excelentExams++;
+        }
+
+        foreach (var item in achivmentList)
+        {
+            if (item.achivmentType == AchivmentType.ExcelentExam)
+            {
+                if (!item.IsCollected() && !item.IsReady2Collect() && item.requestedAmount <= excelentExams)
+                {
+                    item.Open2Collect();
+                }
+            }
+
+        }
+    }
+
+    public void AddDiamond(int amount)
+    {
+        int total = GetDiamondNumber() + amount;
+        SetDiamondNumber(total);
+        Setting.collectManager.Collect(diamondSprite, Vector3.zero, new Vector3(-288, 603),amount, collectClip);
+        diamondShower.SetAmount(total);
+    }
+
+    public void RemoveDiamond(int amount)
+    {
+        int total = GetDiamondNumber() - amount;
+        SetDiamondNumber(total);
+        Setting.collectManager.Collect(diamondSprite, new Vector3(-288, 603), Vector3.zero, amount, null);
+        diamondShower.SetAmount(total);
+    }
+
+    const string diamondKey = "diamondKey";
+    public static int GetDiamondNumber()
+    {
+        int val = 0;
+        P2DSecurety.SecureLocalLoad(diamondKey, out val);
+        return val;
+    }
+
+    private static void SetDiamondNumber( int value)
+    {
+        P2DSecurety.SecureLocalSave(diamondKey , value);
+
+    }
+
+    const string correctInRowKey = "correctInRowKey";
+    public static int GetMaxCorrectInRow()
+    {
+        int val = 0;
+        P2DSecurety.SecureLocalLoad(correctInRowKey, out val);
+        return val;
+    }
+
+    public static void SetMaxCorrectInRow(int value)
+    {
+        P2DSecurety.SecureLocalSave(correctInRowKey, value);
+        Instance.CheckAchivmentCorrectInRow();
+    }
+
 
     public void SetMainPanel(int panelIndex)
     {
@@ -188,6 +341,8 @@ public class GameMng : SingletonMahsa<GameMng>
         {
             onScoreChangeEvent((QuestionType)lastCategoryIndex);
         }
+
+       Instance.CheckAchivmentExcelentExam();
     }
 
     public static int GetCategoryScore(QuestionType questionType)
@@ -196,6 +351,25 @@ public class GameMng : SingletonMahsa<GameMng>
         for (int i = 1; i <= 3; i++)
         {
             score += GetLessonBestScore(questionType, i);
+        }
+
+        if (score == 90)
+            score = 100;
+
+        return score;
+    }
+
+    public static int GetCategoryScore(QuestionType questionType,out int excelentLessonNumber)
+    {
+        int score = 0;
+        excelentLessonNumber = 0;
+        for (int i = 1; i <= 3; i++)
+        {
+            int lessonScore = GetLessonBestScore(questionType, i);
+            if (lessonScore == 30)
+                excelentLessonNumber++;
+
+            score += lessonScore;
         }
 
         if (score == 90)

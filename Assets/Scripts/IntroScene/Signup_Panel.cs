@@ -34,9 +34,7 @@ public class Signup_Panel : MonoBehaviour
     {
         Setting.initSetting();
 
-#if UNITY_EDITOR
-        //PlayerPrefs.DeleteAll(); //danger*****
-#endif
+
         // load local
         if (PlayerPrefs.GetInt(alreadyRegistered) == 1)
         {

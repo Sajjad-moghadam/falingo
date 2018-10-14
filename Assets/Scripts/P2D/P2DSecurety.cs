@@ -84,9 +84,10 @@ public class P2DSecurety  {
 
     public static void SecureLocalSave(string key, bool value)
     {
-        PlayerPrefs.SetInt(key, value ? 1 : 0);
+        int intValue = value ? 1 : 0;
+        PlayerPrefs.SetInt(key, intValue);
 
-        PlayerPrefs.SetString(key + hashKey, Md5Sum(value.ToString()));
+        PlayerPrefs.SetString(key + hashKey, Md5Sum(intValue.ToString()));
 
     }
 

@@ -361,6 +361,7 @@
     <Compile Include="Assets\GameSparks\Platforms\WebGL\WebGLWebSocket.cs" />
     <Compile Include="Assets\GameSparks\Platforms\WebSocketController.cs" />
     <Compile Include="Assets\GameSparks\TestUI\GameSparksTestUI.cs" />
+    <Compile Include="Assets\Scripts\AchivmentScript.cs" />
     <Compile Include="Assets\Scripts\IntroScene\MessageBoxEx.cs" />
     <Compile Include="Assets\Scripts\IntroScene\ScrollSnapRect.cs" />
     <Compile Include="Assets\Scripts\IntroScene\Signup_Panel.cs" />
@@ -369,6 +370,7 @@
     <Compile Include="Assets\Scripts\MainScene\ExamPanelScript.cs" />
     <Compile Include="Assets\Scripts\MainScene\GameMng.cs" />
     <Compile Include="Assets\Scripts\MainScene\LessonPanelScript.cs" />
+    <Compile Include="Assets\Scripts\MainScene\NewBehaviourScript.cs" />
     <Compile Include="Assets\Scripts\MainScene\Prize.cs" />
     <Compile Include="Assets\Scripts\MainScene\QuestionPanelScript.cs" />
     <Compile Include="Assets\Scripts\MainScene\ResultPanelScript.cs" />
@@ -395,12 +397,14 @@
     <Compile Include="Assets\Scripts\P2D\P2DMessegeBox.cs" />
     <Compile Include="Assets\Scripts\P2D\P2DNotification.cs" />
     <Compile Include="Assets\Scripts\P2D\P2DPanel.cs" />
+    <Compile Include="Assets\Scripts\P2D\P2DPopUpNotification.cs" />
     <Compile Include="Assets\Scripts\P2D\P2DSecurety.cs" />
     <Compile Include="Assets\Scripts\P2D\Setting.cs" />
     <Compile Include="Assets\Scripts\P2D\TranslatorEditor.cs" />
     <Compile Include="Assets\Scripts\P2D\uGUITools.cs" />
     <Compile Include="Assets\Scripts\P2D\UIHealper.cs" />
     <Compile Include="Assets\Scripts\P2D\WaitingPanelScriptP2D.cs" />
+    <Compile Include="Assets\Scripts\PrizeScript.cs" />
     <Compile Include="Assets\Scripts\QuestionButtonScript.cs" />
     <Compile Include="Assets\Scripts\ScriptableObject\Category.cs" />
     <Compile Include="Assets\Scripts\ScriptableObject\Lesson.cs" />
