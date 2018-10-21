@@ -40,17 +40,18 @@ public class AchivmentScript : MonoBehaviour
 
     }
 
-    private void HideButtons()
+    private void ChangeButton()
     {
         prizeValueText.transform.parent.gameObject.SetActive(false);
-        collectRewardButton.gameObject.SetActive(false);
+        collectRewardButton.transform.Find("Text").GetComponent<Text>().text = "مشاهده";
+        collectRewardButton.interactable = true;
     }
 
     private void OnEnable()
     {
         if (IsCollected())
         {
-            HideButtons();
+            ChangeButton();
         }
         else if (IsReady2Collect())
         {
@@ -96,14 +97,24 @@ public class AchivmentScript : MonoBehaviour
     private void SetCollected()
     {
         P2DSecurety.SecureLocalSave(achivmentType.ToString() + requestedAmount, true);
-        HideButtons();
+        ChangeButton();
     }
 
     public void OnCollectClick()
     {
-        GameMng.Instance.AddDiamond(Prize);
+        if(!IsCollected())
+        {
+            GameMng.Instance.AddDiamond(Prize);
 
-        SetCollected();
+            SetCollected();
+
+        }
+        else
+        {
+            Sprite sprite = transform.Find("column3").Find("Image").GetComponent<Image>().sprite;
+            GameMng.Instance.ShowAchivmentBigPanel("اچیومنت", sprite);
+        }
+      
     }
 
 }

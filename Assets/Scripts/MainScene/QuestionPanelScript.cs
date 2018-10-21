@@ -31,6 +31,9 @@ public class QuestionPanelScript : MonoBehaviour
     P2DCountDownTimer timerPanel;
 
     [SerializeField]
+    WordsGameManager wordGameManager;
+
+    [SerializeField]
     Button verifyButton;
 
     public P2DAmountShower ProgressBarAmount;
@@ -320,6 +323,11 @@ public class QuestionPanelScript : MonoBehaviour
         {
             ShowPicQuestion();
         }
+        else if(QuestionList[CurrentQuestionIndex].structure == QuestionStruct.WordGame)
+        {
+            queText.text = "";
+            wordGameManager.ShowPanel(QuestionList[CurrentQuestionIndex]);
+        }
     }
 
     public void ShowChoiceQuestion()
@@ -410,41 +418,16 @@ public class QuestionPanelScript : MonoBehaviour
             Setting.notificationMessage.Show("گزینه ای انتخاب نشده".faConvert());
     }
 
-    public IEnumerator VerifyAnswer(int index)
+    public IEnumerator VerifyAnswer(int index,bool winWordgame = false)
     {
         //GetComponent<Button>().interactable = false;
         if (index == QuestionList[CurrentQuestionIndex].correctAnswer)
         {
-            currentScore += 3;
-            correctInRow++;
-            StartCoroutine(CheckMaxCorrectInRow());
-            Setting.AudioPlayer.PlayOneShot(CorrectSound, 0.5f);
-
-            if (QuestionList[CurrentQuestionIndex].structure == QuestionStruct.Pic)
-            {
-                PicQuestionButtons[index - 1].SetGreenCover();
-            }
-            else if (QuestionList[CurrentQuestionIndex].structure == QuestionStruct.Choice)
-            {
-                ChoiceQuestionButtons[index - 1].SetGreenCover();
-            }
+            AfterCorrectAnswer(index);
         }
         else
         {
-            currentScore -= 1;
-            correctInRow = 0;
-            Setting.AudioPlayer.PlayOneShot(WrongSound, 0.5f);
-
-            if (QuestionList[CurrentQuestionIndex].structure == QuestionStruct.Pic)
-            {
-                PicQuestionButtons[QuestionList[CurrentQuestionIndex].correctAnswer - 1].SetGreenCover();
-                PicQuestionButtons[index - 1].SetRedCover();
-            }
-            else if (QuestionList[CurrentQuestionIndex].structure == QuestionStruct.Choice)
-            {
-                ChoiceQuestionButtons[QuestionList[CurrentQuestionIndex].correctAnswer - 1].SetGreenCover();
-                ChoiceQuestionButtons[index - 1].SetRedCover();
-            }
+            AfterWrongAnswer(index);
 
         }
         UpdateProgress();
@@ -452,6 +435,41 @@ public class QuestionPanelScript : MonoBehaviour
         yield return new WaitForSeconds(1);
 
         StartCoroutine(HideCurrentShowNextQuestion());
+    }
+
+    private void AfterWrongAnswer(int index)
+    {
+        currentScore -= 1;
+        correctInRow = 0;
+        Setting.AudioPlayer.PlayOneShot(WrongSound, 0.5f);
+
+        if (QuestionList[CurrentQuestionIndex].structure == QuestionStruct.Pic)
+        {
+            PicQuestionButtons[QuestionList[CurrentQuestionIndex].correctAnswer - 1].SetGreenCover();
+            PicQuestionButtons[index - 1].SetRedCover();
+        }
+        else if (QuestionList[CurrentQuestionIndex].structure == QuestionStruct.Choice)
+        {
+            ChoiceQuestionButtons[QuestionList[CurrentQuestionIndex].correctAnswer - 1].SetGreenCover();
+            ChoiceQuestionButtons[index - 1].SetRedCover();
+        }
+    }
+
+    private void AfterCorrectAnswer(int index)
+    {
+        currentScore += 3;
+        correctInRow++;
+        StartCoroutine(CheckMaxCorrectInRow());
+        Setting.AudioPlayer.PlayOneShot(CorrectSound, 0.5f);
+
+        if (QuestionList[CurrentQuestionIndex].structure == QuestionStruct.Pic)
+        {
+            PicQuestionButtons[index - 1].SetGreenCover();
+        }
+        else if (QuestionList[CurrentQuestionIndex].structure == QuestionStruct.Choice)
+        {
+            ChoiceQuestionButtons[index - 1].SetGreenCover();
+        }
     }
 
     private IEnumerator CheckMaxCorrectInRow()
@@ -476,10 +494,13 @@ public class QuestionPanelScript : MonoBehaviour
         {
             questionAnimator.SetTrigger("ChoiceOut");
         }
-        else
+        else if (QuestionList[CurrentQuestionIndex].structure == QuestionStruct.Pic)
         {
             questionAnimator.SetTrigger("PicOut");
-
+        }
+        else
+        {
+            WordsGameManager.Instance.Hide();
         }
 
         yield return new WaitForSeconds(1);

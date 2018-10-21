@@ -13,6 +13,11 @@ public class ExamPanelScript : MonoBehaviour {
     [SerializeField]
     Animator stampAnimator;
 
+    [SerializeField]
+    Button CertificateButton;
+
+    [SerializeField]
+    CertificatePanel certificatePanel;
 
 	// Use this for initialization
 	void Awake ()
@@ -34,9 +39,11 @@ public class ExamPanelScript : MonoBehaviour {
         if(bestScore >= maxScore/2f)
         {
             StartCoroutine(ShowStamp());
+            CertificateButton.gameObject.SetActive(true);
         }
         else
         {
+            CertificateButton.gameObject.SetActive(true);
             stampAnimator.gameObject.SetActive(false);
 
         }
@@ -70,5 +77,10 @@ public class ExamPanelScript : MonoBehaviour {
             Setting.MessegeBox.SetMessege("الماس کافی نداری");
         }
           
+    }
+
+    public void ShowCertificatePanel()
+    {
+        certificatePanel.Show(bestScoreText.text, "شما", GameMng.selectedExam.examTitle, GameMng.selectedExam.examDegree);
     }
 }

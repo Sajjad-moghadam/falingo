@@ -23,6 +23,7 @@ public class WordsGameManager : SingletonMahsa<WordsGameManager>
 
 
     public Question question;
+    int findedWords = 0;
     int questionLines;
 
     [SerializeField]
@@ -38,6 +39,11 @@ public class WordsGameManager : SingletonMahsa<WordsGameManager>
 
     List<LineManager> lines = new List<LineManager>();
     List<WordLineManager> correctWords= new List<WordLineManager>();
+
+    [SerializeField]
+    QuestionPanelScript questionPanel;
+
+    P2DPanel myPanel;
 
     [HideInInspector]
     public CharacterButtonManager lastSelectedButton;
@@ -68,6 +74,12 @@ public class WordsGameManager : SingletonMahsa<WordsGameManager>
 
     int wordGameSize;
 
+    private void Awake()
+    {
+        myPanel = GetComponent<P2DPanel>();
+
+    }
+
     // Use this for initialization
     void Start()
     {
@@ -81,8 +93,21 @@ public class WordsGameManager : SingletonMahsa<WordsGameManager>
             correctWords.Add(Instantiate(wordPrefab, panelCorrectWordsContainer));
         }
 
+       
+    }
+
+    public void ShowPanel(Question question)
+    {
+        myPanel.Show();
+        this.question = question;
+        findedWords = 0;
+
         SetQuestion();
         SetCorrectWords();
+    }
+    public void Hide()
+    {
+        myPanel.Hide();
     }
 
     private void SetCorrectWords()
@@ -170,11 +195,17 @@ public class WordsGameManager : SingletonMahsa<WordsGameManager>
 
             if (correctIndexes)
             {
+                findedWords++;
                 correctWords[correctWordIndex].ShowCorrect();
 
                 for (int i = 0; i < wordGameSize; i++)
                 {
                     lines[i].RemoveSelected();
+                }
+
+                if(findedWords >= question.words.Length)
+                {
+                    StartCoroutine(questionPanel.VerifyAnswer(0, true));
                 }
             }
             selectedString = "";

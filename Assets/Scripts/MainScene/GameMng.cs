@@ -8,6 +8,7 @@ using Backtory.Core.Public;
 using GameSparks.Api.Requests;
 using GameSparks.Api.Responses;
 using GameSparks.Core;
+using System.IO;
 
 public enum QuestionMode { Easy, Intermed, Diffy }
 public enum QuestionType { Animals, Actions, Colors, Food, Fruits, BodyParts, Weather, Toys, Sports, Clothes, Jobs, Transport, SchoolThings, Objects }
@@ -34,6 +35,9 @@ public class GameMng : SingletonMahsa<GameMng>
     List<ExamButtonScript> exams;
 
     [SerializeField]
+    AchivmentPanelScript achivmentBigPanel;
+
+    [SerializeField]
     Transform achivmentParent;
     List<AchivmentScript> achivmentList = new List<AchivmentScript>(32);
 
@@ -57,7 +61,7 @@ public class GameMng : SingletonMahsa<GameMng>
     private void Awake()
     {
 #if UNITY_EDITOR
-        PlayerPrefs.DeleteAll(); //danger*****
+        //PlayerPrefs.DeleteAll(); //danger*****
 #endif
 
         if (GetLastOpenLesson(0) == 0)
@@ -77,6 +81,12 @@ public class GameMng : SingletonMahsa<GameMng>
         UpdateXpShower();
         diamondShower.SetAmount(GetDiamondNumber());
 
+    }
+
+
+    public void ShowAchivmentBigPanel(string message, Sprite icon)
+    {
+        achivmentBigPanel.Show(message, icon);
     }
 
     private void FillAchivmentList()
@@ -443,4 +453,61 @@ public class GameMng : SingletonMahsa<GameMng>
     }
 
 
+    private string shareText;
+    private static string gameLink = "www.test.com";
+    private string subject;
+    public static IEnumerator TakeImage()
+    {
+
+        // wait for graphics to render
+        yield return new WaitForEndOfFrame();
+        //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- PHOTO
+        // create the texture
+        Texture2D screenTexture = new Texture2D(Screen.width, (int)(Screen.height), TextureFormat.RGB24, false);
+
+        // put buffer into texture
+        screenTexture.ReadPixels(new Rect(0f, 0, Screen.width, (Screen.height)), 0, 0);
+
+        // apply
+        screenTexture.Apply();
+        //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- PHOTO
+
+        yield return screenTexture;
+
+    }
+
+    public static void ShareImage(Texture2D shareTexture)
+    {
+        byte[] dataToSave = shareTexture.EncodeToJPG();
+
+        string destination = Path.Combine(Application.persistentDataPath, System.DateTime.Now.ToString("yyyy-MM-dd-HHmmss") + ".png");
+
+        File.WriteAllBytes(destination, dataToSave);
+
+        if (!Application.isEditor)
+        {
+            // block to open the file and share it ------------START
+            AndroidJavaClass intentClass = new AndroidJavaClass("android.content.Intent");
+            AndroidJavaObject intentObject = new AndroidJavaObject("android.content.Intent");
+            intentObject.Call<AndroidJavaObject>("setAction", intentClass.GetStatic<string>("ACTION_SEND"));
+            AndroidJavaClass uriClass = new AndroidJavaClass("android.net.Uri");
+            AndroidJavaObject uriObject = uriClass.CallStatic<AndroidJavaObject>("parse", "file://" + destination);
+            intentObject.Call<AndroidJavaObject>("putExtra", intentClass.GetStatic<string>("EXTRA_STREAM"), uriObject);
+            intentObject.Call<AndroidJavaObject>("putExtra", intentClass.GetStatic<string>("EXTRA_TEXT"), gameLink);
+            //intentObject.Call<AndroidJavaObject>("putExtra", intentClass.GetStatic<string>("EXTRA_SUBJECT"), gameLink);
+            intentObject.Call<AndroidJavaObject>("setType", "image/jpeg");
+            AndroidJavaClass unity = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
+            AndroidJavaObject currentActivity = unity.GetStatic<AndroidJavaObject>("currentActivity");
+
+            // option one WITHOUT chooser:
+            currentActivity.Call("startActivity", intentObject);
+
+            // option two WITH chooser:
+            //AndroidJavaObject jChooser = intentClass.CallStatic<AndroidJavaObject>("createChooser", intentObject, "YO BRO! WANNA SHARE?");
+            //currentActivity.Call("startActivity", jChooser);
+
+            // block to open the file and share it ------------END
+
+        }
+    }
 }

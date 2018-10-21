@@ -365,7 +365,9 @@
     <Compile Include="Assets\Scripts\IntroScene\MessageBoxEx.cs" />
     <Compile Include="Assets\Scripts\IntroScene\ScrollSnapRect.cs" />
     <Compile Include="Assets\Scripts\IntroScene\Signup_Panel.cs" />
+    <Compile Include="Assets\Scripts\MainScene\AchivmentPanelScript.cs" />
     <Compile Include="Assets\Scripts\MainScene\CategoryButtonScript.cs" />
+    <Compile Include="Assets\Scripts\MainScene\CertificatePanel.cs" />
     <Compile Include="Assets\Scripts\MainScene\ExamButtonScript.cs" />
     <Compile Include="Assets\Scripts\MainScene\ExamPanelScript.cs" />
     <Compile Include="Assets\Scripts\MainScene\GameMng.cs" />
@@ -378,6 +380,7 @@
     <Compile Include="Assets\Scripts\P2D\AnimateStructP2D.cs" />
     <Compile Include="Assets\Scripts\P2D\ChangePanelEffectScript.cs" />
     <Compile Include="Assets\Scripts\P2D\ColorfulEffectScript.cs" />
+    <Compile Include="Assets\Scripts\P2D\CoroutineWithData.cs" />
     <Compile Include="Assets\Scripts\P2D\EffectP2D.cs" />
     <Compile Include="Assets\Scripts\P2D\EffectP2DManager.cs" />
     <Compile Include="Assets\Scripts\P2D\Fa.cs" />

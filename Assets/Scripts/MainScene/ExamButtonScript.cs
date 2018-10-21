@@ -7,6 +7,7 @@ public class ExamButtonScript : MonoBehaviour {
 
     public int examCategorys = 6,examQuestions = 30,examDiamondPrice = 30;
     public string examTitle = "Biginner";
+    public int examDegree = 0;
 
     [SerializeField]
     Text examScoreText;
@@ -42,16 +43,16 @@ public class ExamButtonScript : MonoBehaviour {
 
     public void OnClick()
     {
-        if(score >= MinScore2Open())
+       // if(score >= MinScore2Open())
         {
             GameMng.selectedExam = this;
             GameMng.Instance.ShowExamPanel();
 
         }
-        else
-        {
-            Setting.MessegeBox.SetMessege("برای ورود به امتحان باید حداقل " + MinScore2Open() + " امتیاز از مراحل قبل بدست بیاری.","","امتیازت کافی نیست");
-        }
+        //else
+        //{
+        //    Setting.MessegeBox.SetMessege("برای ورود به امتحان باید حداقل " + MinScore2Open() + " امتیاز از مراحل قبل بدست بیاری.","","امتیازت کافی نیست");
+        //}
     }
 
     int MinScore2Open()
