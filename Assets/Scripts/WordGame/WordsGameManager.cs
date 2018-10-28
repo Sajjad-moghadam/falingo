@@ -105,9 +105,9 @@ public class WordsGameManager : SingletonMahsa<WordsGameManager>
         SetQuestion();
         SetCorrectWords();
     }
-    public void Hide()
+    public void Hide(bool immidiate = false)
     {
-        myPanel.Hide();
+        myPanel.Hide(immidiate);
     }
 
     private void SetCorrectWords()

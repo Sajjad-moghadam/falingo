@@ -88,6 +88,21 @@ public class QuestionPanelScript : MonoBehaviour
         StartCoroutine(ShowStart());
     }
 
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            Setting.MessegeBox.SetMessege("به منو بازمیگردید", "آیا مطمئنید؟", "بازگشت");
+            Setting.MessegeBox.OnOkButtonClickEvent += MessegeBox_OnOkButtonClickEvent;
+        }
+    }
+
+    private void MessegeBox_OnOkButtonClickEvent()
+    {
+        HideCurrentQuestion();
+        Hide();
+    }
+
     private List<Question> GetExamQuestion()
     {
         List<Question> currentList = new List<Question>();
@@ -330,6 +345,47 @@ public class QuestionPanelScript : MonoBehaviour
         }
     }
 
+    public void HintClick()
+    {
+        if(QuestionList[CurrentQuestionIndex].structure != QuestionStruct.WordGame)
+        {
+            if (GameMng.GetDiamondNumber() < 5)
+                Setting.notificationMessage.Show("الماس کافی نداری".faConvert());
+            else
+            {
+                GameMng.Instance.RemoveDiamond(5);
+                Setting.notificationMessage.Show("5 تا الماس استفاده کردی ".faConvert());
+                if (QuestionList[CurrentQuestionIndex].correctAnswer == 2 || QuestionList[CurrentQuestionIndex].correctAnswer == 3)
+                {
+                    if(QuestionList[CurrentQuestionIndex].structure == QuestionStruct.Choice)
+                    {
+                        ChoiceQuestionButtons[0].gameObject.SetActive(false);
+                        ChoiceQuestionButtons[3].gameObject.SetActive(false);
+                    }
+                    else
+                    {
+                        PicQuestionButtons[0].gameObject.SetActive(false);
+                        PicQuestionButtons[3].gameObject.SetActive(false);
+                    }
+                }
+                else
+                {
+                    if (QuestionList[CurrentQuestionIndex].structure == QuestionStruct.Choice)
+                    {
+                        ChoiceQuestionButtons[1].gameObject.SetActive(false);
+                        ChoiceQuestionButtons[2].gameObject.SetActive(false);
+                    }
+                    else
+                    {
+                        PicQuestionButtons[1].gameObject.SetActive(false);
+                        PicQuestionButtons[2].gameObject.SetActive(false);
+                    }
+                }
+            }
+        }
+       
+    }
+
     public void ShowChoiceQuestion()
     {
 
@@ -489,7 +545,15 @@ public class QuestionPanelScript : MonoBehaviour
 
     IEnumerator HideCurrentShowNextQuestion()
     {
+        HideCurrentQuestion();
 
+        yield return new WaitForSeconds(1);
+
+        ShowNextQuestion();
+    }
+
+    private void HideCurrentQuestion()
+    {
         if (QuestionList[CurrentQuestionIndex].structure == QuestionStruct.Choice)
         {
             questionAnimator.SetTrigger("ChoiceOut");
@@ -502,12 +566,7 @@ public class QuestionPanelScript : MonoBehaviour
         {
             WordsGameManager.Instance.Hide();
         }
-
-        yield return new WaitForSeconds(1);
-
-        ShowNextQuestion();
     }
-
 
     public void UpdateProgress()
     {

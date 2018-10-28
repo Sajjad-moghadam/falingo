@@ -454,7 +454,7 @@ public class GameMng : SingletonMahsa<GameMng>
 
 
     private string shareText;
-    private static string gameLink = "www.test.com";
+    private static string gameLink = "ببین تو لینگولند چی کردم!!!";
     private string subject;
     public static IEnumerator TakeImage()
     {

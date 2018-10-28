@@ -41,6 +41,7 @@ public class QuestionButtonScript : MonoBehaviour {
 
     public void SetButton(string text,Sprite image = null)
     {
+        gameObject.SetActive(true);
         toggle.isOn = false;
         coverImage.gameObject.SetActive(false);
         buttonText.text = text;
