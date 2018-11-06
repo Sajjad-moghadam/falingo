@@ -129,7 +129,7 @@ namespace System.Collections
         public static bool isFarsi(char ch)
         {
             int ch16 = Convert.ToInt32(ch);
-            if ((ch16 >= 1536 && ch16 <= 1791) || (ch16 >= 65136 && ch16 <= 65279) || (ch16 >= 32 && ch16 <= 38) || ch16 == 58)
+            if ((ch16 >= 1536 && ch16 <= 1791) || (ch16 >= 65136 && ch16 <= 65279))
                 return true;
             else
                 return false;

@@ -73,7 +73,7 @@ public class PrizeScript : MonoBehaviour {
 
     private void SetNextDate()
     {
-        DateTime newDate = DateTime.Now.AddSeconds((int)prizeTime);
+        DateTime newDate = DateTime.Now.AddHours((int)prizeTime);
         P2DSecurety.SecureLocalSave(timerKey + prizeTime, Convert.ToString(newDate));
     }
 }

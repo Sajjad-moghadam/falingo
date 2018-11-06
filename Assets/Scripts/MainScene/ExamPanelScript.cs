@@ -8,7 +8,7 @@ public class ExamPanelScript : MonoBehaviour {
     P2DPanel myPanel;
 
     [SerializeField]
-    Text bestScoreText;
+    Text bestScoreText,diamondRequestedText;
 
     [SerializeField]
     Animator stampAnimator;
@@ -35,8 +35,9 @@ public class ExamPanelScript : MonoBehaviour {
         int maxScore = GameMng.selectedExam.examQuestions * 3;
 
         bestScoreText.text = bestScore + "/" + maxScore;
+        diamondRequestedText.text = GameMng.selectedExam.examDiamondPrice.ToString();
 
-        if(bestScore >= maxScore/2f)
+        if (bestScore >= maxScore/2f)
         {
             StartCoroutine(ShowStamp());
             CertificateButton.gameObject.SetActive(true);
@@ -81,6 +82,10 @@ public class ExamPanelScript : MonoBehaviour {
 
     public void ShowCertificatePanel()
     {
-        certificatePanel.Show(bestScoreText.text, Setting.authResponse.DisplayName, GameMng.selectedExam.examTitle, GameMng.selectedExam.examDegree);
+        string name = "شما";
+        if (Setting.authResponse != null && Setting.authResponse.DisplayName != null)
+            name = Setting.authResponse.DisplayName;
+
+        certificatePanel.Show(bestScoreText.text, name, GameMng.selectedExam.examTitle, GameMng.selectedExam.examDegree);
     }
 }

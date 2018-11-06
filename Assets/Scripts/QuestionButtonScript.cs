@@ -44,8 +44,12 @@ public class QuestionButtonScript : MonoBehaviour {
         gameObject.SetActive(true);
         toggle.isOn = false;
         coverImage.gameObject.SetActive(false);
-        buttonText.text = text.faConvert();
-        if(image != null)
+        if (Fa.isFarsi(text[0]))
+            buttonText.text = text.faConvert();
+        else
+            buttonText.text = text;
+
+        if (image != null)
         {
             if(buttonImage != null)
             {

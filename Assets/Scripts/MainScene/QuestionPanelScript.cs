@@ -62,6 +62,7 @@ public class QuestionPanelScript : MonoBehaviour
     {
         currentQType = type;
         myPanel.Show();
+        qTitleText.text = "";
 
 
         hintCloud.DOFade(1, 1).SetDelay(1).OnComplete(() =>
@@ -81,6 +82,7 @@ public class QuestionPanelScript : MonoBehaviour
         if (currentQType == QType.Practice)
         {
             currentList = GetPracticeQuestion();
+            timerPanel.gameObject.SetActive(false);
         }
         else
         {
@@ -110,7 +112,6 @@ public class QuestionPanelScript : MonoBehaviour
 
     private void MessegeBox_OnOkButtonClickEvent()
     {
-        HideCurrentQuestion();
         Hide();
     }
 
@@ -166,7 +167,7 @@ public class QuestionPanelScript : MonoBehaviour
 
         if (currentQType == QType.Exam)
         {
-            int timeSecound = QuestionList.Count * 1;
+            int timeSecound = (int)(QuestionList.Count * 0.2f);
             timerPanel.SetTimer(0, 0, 0, timeSecound);
             timerPanel.OnTimerDoneEvent += TimerPanel_OnTimerDoneEvent;
         }
@@ -240,8 +241,11 @@ public class QuestionPanelScript : MonoBehaviour
             CheckOpenNextLesson();
             CheckOpenNextCategory();
         }
+        bool canRestart = true;
+        if (currentQType == QType.Exam)
+            canRestart = false;
 
-        ResultsPanel.Show(curentScoreString, bestScoreString, result);
+        ResultsPanel.Show(curentScoreString, bestScoreString, result,canRestart);
     }
 
 
@@ -316,7 +320,7 @@ public class QuestionPanelScript : MonoBehaviour
         {
             return ResultType.NotGood;
         }
-        else if (scorePercent < 60f)
+        else if (scorePercent < 0.60f)
         {
             return ResultType.NotBad;
         }
@@ -328,7 +332,7 @@ public class QuestionPanelScript : MonoBehaviour
         {
             return ResultType.Good;
         }
-        else if (scorePercent < 90)
+        else if (scorePercent < 0.9f)
         {
             return ResultType.VeryGood;
         }
@@ -421,17 +425,19 @@ public class QuestionPanelScript : MonoBehaviour
 
     private void SetQuestion()
     {
-        if (IsPersianQuestion(QuestionList[CurrentQuestionIndex].Que))
+        if (IsPersianQuestion(QuestionList[CurrentQuestionIndex].Title))
         {
             //queText.lineSpacing = -1;
             //queText.text = QuestionList[CurrentQuestionIndex].Que.faConvert();
-            qTitleText.text = QuestionList[CurrentQuestionIndex].Title;
+            qTitleText.lineSpacing = -1;
+            qTitleText.text = QuestionList[CurrentQuestionIndex].Title.faConvert();
 
         }
         else
         {
             //queText.lineSpacing = 1;
             //queText.text = QuestionList[CurrentQuestionIndex].Que;
+            qTitleText.lineSpacing = 1;
             qTitleText.text = QuestionList[CurrentQuestionIndex].Title;
         }
     }
@@ -601,6 +607,7 @@ public class QuestionPanelScript : MonoBehaviour
 
     public void Hide()
     {
+        HideCurrentQuestion();
         myPanel.Hide();
     }
 

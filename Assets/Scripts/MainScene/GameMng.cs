@@ -81,6 +81,7 @@ public class GameMng : SingletonMahsa<GameMng>
         UpdateXpShower();
         diamondShower.SetAmount(GetDiamondNumber());
 
+        //AddDiamond(1000); //***** remove
     }
 
 

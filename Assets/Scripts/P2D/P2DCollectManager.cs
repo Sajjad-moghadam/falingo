@@ -23,13 +23,18 @@ public class P2DCollectManager : MonoBehaviour
     [SerializeField]
     GameObject collectObject;
 
-    void Start()
+    private void Awake()
     {
         for (int i = 0; i < maxImage; i++)
         {
             collectImages.Add(Instantiate(collectObject, transform).GetComponent<Image>());
             collectImages2.Add(Instantiate(collectObject, transform).GetComponent<Image>());
         }
+    }
+
+    void Start()
+    {
+       
     }
 
     public void Collect(Sprite sprite, Vector3 startCenter, Vector3 target, int number, AudioClip collectClip, CollectType type = CollectType.RandomStart, float startScale = 1, float endScale = 0.75f, int group = 1)

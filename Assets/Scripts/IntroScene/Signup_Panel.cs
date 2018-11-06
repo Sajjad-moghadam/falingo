@@ -27,11 +27,14 @@ public class Signup_Panel : MonoBehaviour
     public Dropdown ageDropDown;
     public Dropdown sexDropDown;
 
+    string testPre = "";
+
     // Login Panel
     public InputField usernameInputlog;
 
     public void Start()
     {
+        //PlayerPrefs.DeleteAll();
         Setting.initSetting();
 
 
@@ -95,7 +98,7 @@ public class Signup_Panel : MonoBehaviour
 
 
             GSRequestData sd = new GSRequestData().AddNumber(Setting.sexKey, sexDropDown.value).AddNumber(Setting.ageKey, ageDropDown.value);
-            new RegistrationRequest().SetUserName(SystemInfo.deviceUniqueIdentifier).SetPassword(SystemInfo.deviceUniqueIdentifier).SetDisplayName(usernameInputreg.text).SetScriptData(sd).Send((RegistrationResponse response) =>
+            new RegistrationRequest().SetUserName(SystemInfo.deviceUniqueIdentifier + testPre).SetPassword(SystemInfo.deviceUniqueIdentifier).SetDisplayName(usernameInputreg.text).SetScriptData(sd).Send((RegistrationResponse response) =>
             {
                 Setting.waitingPanel.Hide();
 
@@ -124,7 +127,7 @@ public class Signup_Panel : MonoBehaviour
     {
         Setting.waitingPanel.Show("در حال ورود");
 
-        new AuthenticationRequest().SetUserName(SystemInfo.deviceUniqueIdentifier).SetPassword(SystemInfo.deviceUniqueIdentifier).Send((AuthenticationResponse response) =>
+        new AuthenticationRequest().SetUserName(SystemInfo.deviceUniqueIdentifier + testPre).SetPassword(SystemInfo.deviceUniqueIdentifier).Send((AuthenticationResponse response) =>
         {
             Setting.waitingPanel.Hide();
 

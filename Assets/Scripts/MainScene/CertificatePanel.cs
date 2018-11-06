@@ -21,6 +21,9 @@ public class CertificatePanel : MonoBehaviour {
     [SerializeField]
     Button shareButton, BackButton;
 
+    [SerializeField]
+    AudioClip TadaClip;
+
     // Use this for initialization
     void Start () {
        myPanel = GetComponent<P2DPanel>();
@@ -29,6 +32,7 @@ public class CertificatePanel : MonoBehaviour {
 	public void Show(string result,string name,string course,int degree)
     {
         myPanel.Show();
+        Setting.AudioPlayer.PlayOneShot(TadaClip);
         backImage.sprite = sprites[degree%sprites.Count];
         resultText.text = result;
 

@@ -128,6 +128,7 @@ public class WordsGameManager : SingletonMahsa<WordsGameManager>
     public void SetQuestion()
     {
         titleQuestionText.text = question.Title;
+        selectedStringText.text = "";
         foreach (var item in lines)
         {
             item.HideLine();

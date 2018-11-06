@@ -35,15 +35,15 @@ public class ResultPanelScript : MonoBehaviour {
 	void Start () {
         myPanel = GetComponent<P2DPanel>();
 	}
-	
-	public void Show(string score,string bestScore,ResultType type)
+
+    public void Show(string score, string bestScore, ResultType type, bool canRestart)
     {
         myPanel.Show();
         titleText.text = GetTitleFromType(type);
         scoreText.text = score;
         bestScoreText.text = bestScore;
-        
-        if(type >= ResultType.NotBad)
+
+        if (type >= ResultType.NotBad)
         {
             StartCoroutine(ShowStamp());
             nextButton.interactable = true;
@@ -55,6 +55,15 @@ public class ResultPanelScript : MonoBehaviour {
             nextButton.interactable = false;
         }
 
+        if (canRestart)
+        {
+            restartButton.interactable = true;
+        }
+        else
+        {
+            restartButton.interactable = false;
+
+        }
     }
 
     IEnumerator ShowStamp()
