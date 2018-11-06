@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QJ5
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Dentist.
+  Title: Dentist
+  Que: 
   Mode: 0
   type: 10
   structure: 1
-  correctAnswer: 4
-  options: []
-  picoptions: []
+  wordGameSize: 2
+  correctAnswer: 1
+  options:
+  - "\u062F\u0646\u062F\u0627\u0646\u067E\u0632\u0634\u06A9"
+  - "\u0627\u0641\u0633\u0631 \u067E\u0644\u06CC\u0633"
+  - "\u0631\u0627\u0646\u0646\u062F\u0647 \u062A\u0627\u06A9\u0633\u06CC"
+  - "\u0622\u062A\u0634 \u0646\u0634\u0627\u0646"
   pics:
-  - {fileID: 21300018, guid: 1e491b1b65a874ba38ea66adca5f169a, type: 3}
-  - {fileID: 21300020, guid: 1e491b1b65a874ba38ea66adca5f169a, type: 3}
-  - {fileID: 21300006, guid: 1e491b1b65a874ba38ea66adca5f169a, type: 3}
-  - {fileID: 21300008, guid: 1e491b1b65a874ba38ea66adca5f169a, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300122, guid: 280a6bbdf06af4301b41e05700fbc896, type: 3}
+  - {fileID: 21300124, guid: 280a6bbdf06af4301b41e05700fbc896, type: 3}
+  - {fileID: 21300126, guid: 280a6bbdf06af4301b41e05700fbc896, type: 3}
+  - {fileID: 21300120, guid: 280a6bbdf06af4301b41e05700fbc896, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

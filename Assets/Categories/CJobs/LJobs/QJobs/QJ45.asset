@@ -12,17 +12,29 @@ MonoBehaviour:
   m_Name: QJ45
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Reporter.
-  Mode: 2
+  Title: "..... \u0645\u06CC \u062A\u0648\u0627\u0646\u062F \u062F\u0631 \u0641\u0636\u0627
+    \u0645\u0639\u0644\u0642 \u0628\u0627\u0634\u062F"
+  Que: 
+  Mode: 1
   type: 10
   structure: 1
-  correctAnswer: 1
-  options: []
-  picoptions: []
+  wordGameSize: 3
+  correctAnswer: 2
+  options:
+  - Electrician
+  - Astronout
+  - Engineer
+  - Builder
   pics:
-  - {fileID: 21300040, guid: a683d7b7479614a4aa583b5cf927e3be, type: 3}
-  - {fileID: 21300020, guid: a683d7b7479614a4aa583b5cf927e3be, type: 3}
-  - {fileID: 21300022, guid: a683d7b7479614a4aa583b5cf927e3be, type: 3}
-  - {fileID: 21300038, guid: a683d7b7479614a4aa583b5cf927e3be, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300046, guid: 8fb436317b6b041668dfa0b66b9ab6cb, type: 3}
+  - {fileID: 21300018, guid: 8fb436317b6b041668dfa0b66b9ab6cb, type: 3}
+  - {fileID: 21300020, guid: 8fb436317b6b041668dfa0b66b9ab6cb, type: 3}
+  - {fileID: 21300034, guid: 8fb436317b6b041668dfa0b66b9ab6cb, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

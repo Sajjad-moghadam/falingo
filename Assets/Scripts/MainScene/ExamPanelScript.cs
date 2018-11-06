@@ -81,6 +81,6 @@ public class ExamPanelScript : MonoBehaviour {
 
     public void ShowCertificatePanel()
     {
-        certificatePanel.Show(bestScoreText.text, "شما", GameMng.selectedExam.examTitle, GameMng.selectedExam.examDegree);
+        certificatePanel.Show(bestScoreText.text, Setting.authResponse.DisplayName, GameMng.selectedExam.examTitle, GameMng.selectedExam.examDegree);
     }
 }

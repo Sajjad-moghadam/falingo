@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: Q40
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Crab.
+  Title: Giraffe
+  Que: 
   Mode: 1
   type: 0
   structure: 1
-  correctAnswer: 3
-  options: []
-  picoptions: []
+  wordGameSize: 2
+  correctAnswer: 1
+  options:
+  - "\u0632\u0631\u0627\u0641\u0647"
+  - "\u062D\u0644\u0632\u0648\u0646"
+  - "\u0631\u0648\u0628\u0627\u0647"
+  - "\u06A9\u0631\u06AF\u062F\u0646"
   pics:
-  - {fileID: 21300010, guid: 0f36acba88eb0474382d38666169c1ae, type: 3}
-  - {fileID: 21300030, guid: 0f36acba88eb0474382d38666169c1ae, type: 3}
-  - {fileID: 21300058, guid: cfdbc4d006574495f9a3a32e6690e0e6, type: 3}
-  - {fileID: 21300058, guid: 0f36acba88eb0474382d38666169c1ae, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300070, guid: a917c6185f7084515966a0e55108ab5a, type: 3}
+  - {fileID: 21300090, guid: a917c6185f7084515966a0e55108ab5a, type: 3}
+  - {fileID: 21300074, guid: a917c6185f7084515966a0e55108ab5a, type: 3}
+  - {fileID: 21300072, guid: a917c6185f7084515966a0e55108ab5a, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

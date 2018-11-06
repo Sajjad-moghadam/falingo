@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QS49
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Dancing.
+  Title: 
+  Que: 
   Mode: 1
   type: 8
-  structure: 1
-  correctAnswer: 3
+  structure: 2
+  wordGameSize: 3
+  correctAnswer: 0
   options: []
-  picoptions: []
-  pics:
-  - {fileID: 21300002, guid: df90dcc7d5a4448daabc44629e95ed2f, type: 3}
-  - {fileID: 21300026, guid: df90dcc7d5a4448daabc44629e95ed2f, type: 3}
-  - {fileID: 21300030, guid: df90dcc7d5a4448daabc44629e95ed2f, type: 3}
-  - {fileID: 21300022, guid: df90dcc7d5a4448daabc44629e95ed2f, type: 3}
-  UserGaveRightAnswer: 0
+  pics: []
+  words:
+  - surfing
+  words1Positions:
+  - {x: 1, y: 0}
+  - {x: 2, y: 0}
+  - {x: 2, y: 1}
+  - {x: 1, y: 1}
+  - {x: 0, y: 1}
+  - {x: 0, y: 2}
+  - {x: 1, y: 2}
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

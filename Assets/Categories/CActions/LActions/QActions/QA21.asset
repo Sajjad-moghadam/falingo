@@ -12,17 +12,25 @@ MonoBehaviour:
   m_Name: QA21
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Scream.
-  Mode: 1
+  Title: "\u0642\u062F\u0645 \u0632\u062F\u0646"
+  Que: 
+  Mode: 0
   type: 1
-  structure: 1
-  correctAnswer: 1
+  structure: 2
+  wordGameSize: 2
+  correctAnswer: 0
   options: []
-  picoptions: []
-  pics:
-  - {fileID: 21300014, guid: b2d3e35c6d4e347708a61eb2811ab769, type: 3}
-  - {fileID: 21300042, guid: e3f85b09478824c078e3e7783173dc82, type: 3}
-  - {fileID: 21300010, guid: b2d3e35c6d4e347708a61eb2811ab769, type: 3}
-  - {fileID: 21300022, guid: b2d3e35c6d4e347708a61eb2811ab769, type: 3}
-  UserGaveRightAnswer: 0
+  pics: []
+  words:
+  - walk
+  words1Positions:
+  - {x: 0, y: 0}
+  - {x: 1, y: 1}
+  - {x: 1, y: 0}
+  - {x: 0, y: 1}
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QTR32
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Plane.
+  Title: "\u0645\u0648\u0634\u06A9"
+  Que: 
   Mode: 1
   type: 11
   structure: 1
+  wordGameSize: 3
   correctAnswer: 3
-  options: []
-  picoptions: []
+  options:
+  - Spaceship
+  - Jet ski
+  - Rocketship
+  - Speedboat
   pics:
-  - {fileID: 21300008, guid: dbdb65bbb42c64c2286a13f211290886, type: 3}
-  - {fileID: 21300004, guid: dbdb65bbb42c64c2286a13f211290886, type: 3}
-  - {fileID: 21300006, guid: fae5afad0ef65490082cfb9bb6d01bba, type: 3}
-  - {fileID: 21300012, guid: fae5afad0ef65490082cfb9bb6d01bba, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300032, guid: 18b2d13746e9943528ceb7b65d7c3a2d, type: 3}
+  - {fileID: 21300012, guid: 18b2d13746e9943528ceb7b65d7c3a2d, type: 3}
+  - {fileID: 21300002, guid: 18b2d13746e9943528ceb7b65d7c3a2d, type: 3}
+  - {fileID: 21300010, guid: 18b2d13746e9943528ceb7b65d7c3a2d, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

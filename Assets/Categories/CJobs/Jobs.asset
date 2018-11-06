@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e32e9740164fe495db5b26912a4c0c36, type: 3}
   m_Name: Jobs
   m_EditorClassIdentifier: 
-  questionType: 10
+  questionType: 12
   buttonSprite: {fileID: 21300046, guid: 02e84baf20b94de4dbffa8a2490b4e21, type: 3}
   lessons:
   - {fileID: 11400000, guid: 32ecec37cdc1d458982142063a54c9c4, type: 2}

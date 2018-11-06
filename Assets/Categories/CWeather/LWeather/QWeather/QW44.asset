@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QW44
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Cliff.
-  Mode: 2
+  Title: Smoke
+  Que: 
+  Mode: 1
   type: 6
   structure: 1
+  wordGameSize: 2
   correctAnswer: 4
-  options: []
-  picoptions: []
+  options:
+  - "\u062C\u0646\u06AF\u0644"
+  - "\u062E\u0634\u06A9\u06CC"
+  - "\u0633\u0627\u062D\u0644 \u062F\u0631\u06CC\u0627"
+  - "\u062F\u0648\u062F"
   pics:
-  - {fileID: 21300024, guid: 0d3aed582d0e140bab700918156c0ea5, type: 3}
-  - {fileID: 21300010, guid: 630992e2729ea495eb5a7680dccdb0cb, type: 3}
-  - {fileID: 21300020, guid: 630992e2729ea495eb5a7680dccdb0cb, type: 3}
-  - {fileID: 21300034, guid: 630992e2729ea495eb5a7680dccdb0cb, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300054, guid: 16545ae5c964748df98bdb89213a095a, type: 3}
+  - {fileID: 21300060, guid: 16545ae5c964748df98bdb89213a095a, type: 3}
+  - {fileID: 21300036, guid: 16545ae5c964748df98bdb89213a095a, type: 3}
+  - {fileID: 21300076, guid: 16545ae5c964748df98bdb89213a095a, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

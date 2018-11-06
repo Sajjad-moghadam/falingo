@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QFR57
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Blood orange.
+  Title: Cantaloupe
+  Que: 
   Mode: 2
   type: 4
   structure: 1
+  wordGameSize: 4
   correctAnswer: 1
-  options: []
-  picoptions: []
+  options:
+  - "\u0637\u0627\u0644\u0628\u06CC"
+  - "\u062E\u06CC\u0627\u0631 \u067E\u0627\u067E\u0627\u06CC\u0627"
+  - "\u06A9\u062F\u0648 \u062D\u0644\u0648\u0627\u06CC\u06CC"
+  - "\u0641\u0644\u0641\u0644 \u0647\u0646\u062F\u06CC"
   pics:
-  - {fileID: 21300022, guid: 26dd472b7c3484d49be0bd9478d08b05, type: 3}
-  - {fileID: 21300014, guid: 26dd472b7c3484d49be0bd9478d08b05, type: 3}
-  - {fileID: 21300006, guid: 26dd472b7c3484d49be0bd9478d08b05, type: 3}
-  - {fileID: 21300020, guid: 26dd472b7c3484d49be0bd9478d08b05, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300074, guid: 8693a8e03533c44dab5c24847071dd58, type: 3}
+  - {fileID: 21300088, guid: 8693a8e03533c44dab5c24847071dd58, type: 3}
+  - {fileID: 21300100, guid: 8693a8e03533c44dab5c24847071dd58, type: 3}
+  - {fileID: 21300098, guid: 8693a8e03533c44dab5c24847071dd58, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

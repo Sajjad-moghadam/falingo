@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QCL29
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Cap.
+  Title: "\u06A9\u0645\u0631\u0628\u0646\u062F"
+  Que: 
   Mode: 1
   type: 9
   structure: 1
+  wordGameSize: 3
   correctAnswer: 4
-  options: []
-  picoptions: []
+  options:
+  - Gloves
+  - School bag
+  - Head scarf
+  - Belt
   pics:
-  - {fileID: 21300016, guid: 79e333a9ea32c4570b318c588f531cc0, type: 3}
-  - {fileID: 21300060, guid: 9bf05a1cc732e4803b61305721fb1c9e, type: 3}
-  - {fileID: 21300002, guid: 79e333a9ea32c4570b318c588f531cc0, type: 3}
-  - {fileID: 21300058, guid: 9bf05a1cc732e4803b61305721fb1c9e, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300044, guid: 280a6bbdf06af4301b41e05700fbc896, type: 3}
+  - {fileID: 21300056, guid: 280a6bbdf06af4301b41e05700fbc896, type: 3}
+  - {fileID: 21300058, guid: 280a6bbdf06af4301b41e05700fbc896, type: 3}
+  - {fileID: 21300042, guid: 280a6bbdf06af4301b41e05700fbc896, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

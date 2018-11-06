@@ -12,17 +12,25 @@ MonoBehaviour:
   m_Name: QC25
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Answer.
-  Que: What is the Color of Sky in day time?
-  Mode: 1
+  Title: "\u0637\u0644\u0627\u06CC\u06CC"
+  Que: 
+  Mode: 0
   type: 2
-  structure: 0
-  correctAnswer: 4
-  options:
-  - Black
-  - Grey
-  - Green
-  - Blue
-  picoptions: []
+  structure: 2
+  wordGameSize: 2
+  correctAnswer: 0
+  options: []
   pics: []
-  UserGaveRightAnswer: 0
+  words:
+  - gold
+  words1Positions:
+  - {x: 1, y: 0}
+  - {x: 0, y: 1}
+  - {x: 0, y: 0}
+  - {x: 1, y: 1}
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QS34
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Knee and elbow pads.
+  Title: "\u0645\u0648\u062C \u0633\u0648\u0627\u0631\u06CC "
+  Que: 
   Mode: 1
   type: 8
   structure: 1
-  correctAnswer: 2
-  options: []
-  picoptions: []
+  wordGameSize: 3
+  correctAnswer: 4
+  options:
+  - Jumping
+  - Football kit
+  - Racquet
+  - Surfing
   pics:
-  - {fileID: 21300006, guid: 2e028348e758e402bb576a9305f5e413, type: 3}
-  - {fileID: 21300010, guid: df90dcc7d5a4448daabc44629e95ed2f, type: 3}
-  - {fileID: 21300016, guid: df90dcc7d5a4448daabc44629e95ed2f, type: 3}
-  - {fileID: 21300042, guid: df90dcc7d5a4448daabc44629e95ed2f, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300062, guid: d92e4f3037a0c4f86b94ebb8dac19a0e, type: 3}
+  - {fileID: 21300054, guid: d92e4f3037a0c4f86b94ebb8dac19a0e, type: 3}
+  - {fileID: 21300026, guid: d92e4f3037a0c4f86b94ebb8dac19a0e, type: 3}
+  - {fileID: 21300050, guid: d92e4f3037a0c4f86b94ebb8dac19a0e, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

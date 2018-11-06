@@ -12,17 +12,29 @@ MonoBehaviour:
   m_Name: QSC7
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: School bag.
+  Title: "\u062A\u062E\u062A\u0647 \u0633\u0641\u06CC\u062F\u06CC \u06A9\u0647 \u0628\u0627
+    \u0645\u0627\u0698\u06CC\u06A9 \u0631\u0648\u06CC \u0622\u0646 \u0645\u06CC \u0646\u0648\u06CC\u0633\u0646\u062F"
+  Que: 
   Mode: 0
   type: 12
   structure: 1
-  correctAnswer: 2
-  options: []
-  picoptions: []
+  wordGameSize: 2
+  correctAnswer: 3
+  options:
+  - Pencil case
+  - Scissors
+  - White board
+  - "\u0654Notebook"
   pics:
-  - {fileID: 21300026, guid: 0bb50d0b397984890b27ecaff3ba1825, type: 3}
-  - {fileID: 21300012, guid: 0bb50d0b397984890b27ecaff3ba1825, type: 3}
-  - {fileID: 21300030, guid: 0bb50d0b397984890b27ecaff3ba1825, type: 3}
-  - {fileID: 21300052, guid: 0bb50d0b397984890b27ecaff3ba1825, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300004, guid: b7939f77e315842068a6c709a4a705a9, type: 3}
+  - {fileID: 21300006, guid: b7939f77e315842068a6c709a4a705a9, type: 3}
+  - {fileID: 21300112, guid: 8fb436317b6b041668dfa0b66b9ab6cb, type: 3}
+  - {fileID: 21300002, guid: b7939f77e315842068a6c709a4a705a9, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

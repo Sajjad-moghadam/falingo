@@ -12,17 +12,25 @@ MonoBehaviour:
   m_Name: QTR21
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Sailboat.
-  Mode: 1
+  Title: "\u0642\u0627\u06CC\u0642"
+  Que: 
+  Mode: 0
   type: 11
   structure: 1
-  correctAnswer: 3
+  wordGameSize: 2
+  correctAnswer: 0
   options: []
-  picoptions: []
-  pics:
-  - {fileID: 21300010, guid: dbdb65bbb42c64c2286a13f211290886, type: 3}
-  - {fileID: 21300018, guid: dbdb65bbb42c64c2286a13f211290886, type: 3}
-  - {fileID: 21300042, guid: 964457dd956d64da5bacc4dbf40f2da4, type: 3}
-  - {fileID: 21300004, guid: fae5afad0ef65490082cfb9bb6d01bba, type: 3}
-  UserGaveRightAnswer: 0
+  pics: []
+  words:
+  - boat
+  words1Positions:
+  - {x: 1, y: 0}
+  - {x: 1, y: 1}
+  - {x: 0, y: 1}
+  - {x: 0, y: 0}
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

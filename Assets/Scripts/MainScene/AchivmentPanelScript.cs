@@ -32,8 +32,8 @@ public class AchivmentPanelScript : MonoBehaviour {
     {
         myPanel.Show();
 
-        //text.text = message;
-        //image.sprite = icon;
+        text.text = message;
+        image.sprite = icon;
     }
 
     public void ShareClick()

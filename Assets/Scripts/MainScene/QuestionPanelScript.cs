@@ -34,7 +34,10 @@ public class QuestionPanelScript : MonoBehaviour
     WordsGameManager wordGameManager;
 
     [SerializeField]
-    Button verifyButton;
+    Button verifyButton, hintButton;
+
+    [SerializeField]
+    CanvasGroup hintCloud;
 
     public P2DAmountShower ProgressBarAmount;
     public Text qTitleText, queText;
@@ -43,7 +46,7 @@ public class QuestionPanelScript : MonoBehaviour
 
     public QuestionButtonScript[] PicQuestionButtons, ChoiceQuestionButtons;
 
-    public AudioClip CorrectSound, WrongSound;
+    public AudioClip CorrectSound, WrongSound,NewGroupOpenedClip;
 
     QType currentQType;
     int currentScore, maxScore;
@@ -52,12 +55,20 @@ public class QuestionPanelScript : MonoBehaviour
     void Start()
     {
         myPanel = GetComponent<P2DPanel>();
+
     }
 
     public void Show(QType type = QType.Practice)
     {
         currentQType = type;
         myPanel.Show();
+
+
+        hintCloud.DOFade(1, 1).SetDelay(1).OnComplete(() =>
+        {
+            hintCloud.DOFade(0, 2).SetDelay(3);
+        }
+        );
 
         Restart();
 
@@ -90,7 +101,7 @@ public class QuestionPanelScript : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             Setting.MessegeBox.SetMessege("به منو بازمیگردید", "آیا مطمئنید؟", "بازگشت");
             Setting.MessegeBox.OnOkButtonClickEvent += MessegeBox_OnOkButtonClickEvent;
@@ -284,6 +295,7 @@ public class QuestionPanelScript : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
 
         //TODO:SOUND, Particle
+        Setting.AudioPlayer.PlayOneShot(NewGroupOpenedClip);
         Setting.MessegeBox.SetMessege("یک دسته سوال جدید باز کردی", (nextCat).ToString(), "هوووووراااا");
 
     }
@@ -332,32 +344,37 @@ public class QuestionPanelScript : MonoBehaviour
 
         if (QuestionList[CurrentQuestionIndex].structure == QuestionStruct.Choice)
         {
+            hintButton.gameObject.SetActive(true);
             ShowChoiceQuestion();
         }
         else if (QuestionList[CurrentQuestionIndex].structure == QuestionStruct.Pic)
         {
+            hintButton.gameObject.SetActive(true);
             ShowPicQuestion();
         }
-        else if(QuestionList[CurrentQuestionIndex].structure == QuestionStruct.WordGame)
+        else if (QuestionList[CurrentQuestionIndex].structure == QuestionStruct.WordGame)
         {
-            queText.text = "";
+            hintButton.gameObject.SetActive(false);
+            //queText.text = "";
+            qTitleText.text = "";
             wordGameManager.ShowPanel(QuestionList[CurrentQuestionIndex]);
         }
     }
 
     public void HintClick()
     {
-        if(QuestionList[CurrentQuestionIndex].structure != QuestionStruct.WordGame)
+        if (QuestionList[CurrentQuestionIndex].structure != QuestionStruct.WordGame)
         {
             if (GameMng.GetDiamondNumber() < 5)
                 Setting.notificationMessage.Show("الماس کافی نداری".faConvert());
             else
             {
+                hintButton.gameObject.SetActive(false);
                 GameMng.Instance.RemoveDiamond(5);
                 Setting.notificationMessage.Show("5 تا الماس استفاده کردی ".faConvert());
                 if (QuestionList[CurrentQuestionIndex].correctAnswer == 2 || QuestionList[CurrentQuestionIndex].correctAnswer == 3)
                 {
-                    if(QuestionList[CurrentQuestionIndex].structure == QuestionStruct.Choice)
+                    if (QuestionList[CurrentQuestionIndex].structure == QuestionStruct.Choice)
                     {
                         ChoiceQuestionButtons[0].gameObject.SetActive(false);
                         ChoiceQuestionButtons[3].gameObject.SetActive(false);
@@ -383,7 +400,7 @@ public class QuestionPanelScript : MonoBehaviour
                 }
             }
         }
-       
+
     }
 
     public void ShowChoiceQuestion()
@@ -406,14 +423,16 @@ public class QuestionPanelScript : MonoBehaviour
     {
         if (IsPersianQuestion(QuestionList[CurrentQuestionIndex].Que))
         {
-            queText.lineSpacing = -1;
-            queText.text = QuestionList[CurrentQuestionIndex].Que.faConvert();
+            //queText.lineSpacing = -1;
+            //queText.text = QuestionList[CurrentQuestionIndex].Que.faConvert();
+            qTitleText.text = QuestionList[CurrentQuestionIndex].Title;
 
         }
         else
         {
-            queText.lineSpacing = 1;
-            queText.text = QuestionList[CurrentQuestionIndex].Que;
+            //queText.lineSpacing = 1;
+            //queText.text = QuestionList[CurrentQuestionIndex].Que;
+            qTitleText.text = QuestionList[CurrentQuestionIndex].Title;
         }
     }
 
@@ -461,6 +480,12 @@ public class QuestionPanelScript : MonoBehaviour
     public void SelectedButtonChange(int index)
     {
         selectedAnswerIndex = index;
+
+        string temp = QuestionList[CurrentQuestionIndex].options[index - 1];
+        if (temp != string.Empty && !Fa.isFarsi(temp[0]))
+        {
+            Setting.Speak(temp);
+        }
     }
 
     public void CheckAnswerClick()
@@ -474,7 +499,7 @@ public class QuestionPanelScript : MonoBehaviour
             Setting.notificationMessage.Show("گزینه ای انتخاب نشده".faConvert());
     }
 
-    public IEnumerator VerifyAnswer(int index,bool winWordgame = false)
+    public IEnumerator VerifyAnswer(int index, bool winWordgame = false)
     {
         //GetComponent<Button>().interactable = false;
         if (index == QuestionList[CurrentQuestionIndex].correctAnswer)

@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QB7
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Ear.
+  Title: Ear
+  Que: 
   Mode: 0
   type: 5
   structure: 1
+  wordGameSize: 2
   correctAnswer: 3
-  options: []
-  picoptions: []
+  options:
+  - "\u06AF\u0631\u062F\u0646"
+  - "\u0635\u0648\u0631\u062A"
+  - "\u06AF\u0648\u0634"
+  - "\u0645\u0648"
   pics:
-  - {fileID: 21300034, guid: 8e22c2ac74dcb4ce8bb78d7e530deccf, type: 3}
-  - {fileID: 21300020, guid: 8e22c2ac74dcb4ce8bb78d7e530deccf, type: 3}
-  - {fileID: 21300012, guid: 8e22c2ac74dcb4ce8bb78d7e530deccf, type: 3}
-  - {fileID: 21300028, guid: 8e22c2ac74dcb4ce8bb78d7e530deccf, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300144, guid: 8693a8e03533c44dab5c24847071dd58, type: 3}
+  - {fileID: 21300136, guid: 8693a8e03533c44dab5c24847071dd58, type: 3}
+  - {fileID: 21300138, guid: 8693a8e03533c44dab5c24847071dd58, type: 3}
+  - {fileID: 21300140, guid: 8693a8e03533c44dab5c24847071dd58, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

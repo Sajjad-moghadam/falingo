@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e32e9740164fe495db5b26912a4c0c36, type: 3}
   m_Name: BodyParts
   m_EditorClassIdentifier: 
-  questionType: 5
+  questionType: 6
   buttonSprite: {fileID: 21300036, guid: 02e84baf20b94de4dbffa8a2490b4e21, type: 3}
   lessons:
   - {fileID: 11400000, guid: 1eec517cdba4248238b945dca4b9daa5, type: 2}

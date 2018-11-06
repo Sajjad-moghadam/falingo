@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QJ42
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Painter.
-  Mode: 2
+  Title: "\u0648\u06A9\u06CC\u0644"
+  Que: 
+  Mode: 1
   type: 10
   structure: 1
-  correctAnswer: 2
-  options: []
-  picoptions: []
+  wordGameSize: 3
+  correctAnswer: 4
+  options:
+  - Cashier
+  - Flight attandant
+  - Cleaner
+  - Lawyer
   pics:
-  - {fileID: 21300028, guid: a683d7b7479614a4aa583b5cf927e3be, type: 3}
-  - {fileID: 21300034, guid: a683d7b7479614a4aa583b5cf927e3be, type: 3}
-  - {fileID: 21300036, guid: a683d7b7479614a4aa583b5cf927e3be, type: 3}
-  - {fileID: 21300038, guid: a683d7b7479614a4aa583b5cf927e3be, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300040, guid: 8fb436317b6b041668dfa0b66b9ab6cb, type: 3}
+  - {fileID: 21300050, guid: 8fb436317b6b041668dfa0b66b9ab6cb, type: 3}
+  - {fileID: 21300044, guid: 8fb436317b6b041668dfa0b66b9ab6cb, type: 3}
+  - {fileID: 21300056, guid: 8fb436317b6b041668dfa0b66b9ab6cb, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

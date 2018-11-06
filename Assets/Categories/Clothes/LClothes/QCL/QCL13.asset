@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QCL13
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Short.
+  Title: "\u0644\u0628\u0627\u0633 \u062E\u0648\u0627\u0628 \u0645\u0631\u062F\u0627\u0646\u0647"
+  Que: 
   Mode: 0
   type: 9
   structure: 1
-  correctAnswer: 1
-  options: []
-  picoptions: []
+  wordGameSize: 2
+  correctAnswer: 3
+  options:
+  - Blouse
+  - Watch
+  - Pyjamas
+  - Boots
   pics:
-  - {fileID: 21300024, guid: 9bf05a1cc732e4803b61305721fb1c9e, type: 3}
-  - {fileID: 21300056, guid: 9bf05a1cc732e4803b61305721fb1c9e, type: 3}
-  - {fileID: 21300026, guid: 9bf05a1cc732e4803b61305721fb1c9e, type: 3}
-  - {fileID: 21300046, guid: 9bf05a1cc732e4803b61305721fb1c9e, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300030, guid: 280a6bbdf06af4301b41e05700fbc896, type: 3}
+  - {fileID: 21300046, guid: 280a6bbdf06af4301b41e05700fbc896, type: 3}
+  - {fileID: 21300020, guid: 280a6bbdf06af4301b41e05700fbc896, type: 3}
+  - {fileID: 21300022, guid: 280a6bbdf06af4301b41e05700fbc896, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

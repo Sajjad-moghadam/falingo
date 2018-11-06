@@ -12,17 +12,24 @@ MonoBehaviour:
   m_Name: QW42
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Dune.
-  Mode: 2
+  Title: "\u062E\u0634\u06A9\u06CC"
+  Que: 
+  Mode: 1
   type: 6
-  structure: 1
-  correctAnswer: 2
-  options: []
-  picoptions: []
-  pics:
-  - {fileID: 21300032, guid: 630992e2729ea495eb5a7680dccdb0cb, type: 3}
-  - {fileID: 21300030, guid: 630992e2729ea495eb5a7680dccdb0cb, type: 3}
-  - {fileID: 21300010, guid: 4e15d2b80c36344d4953321f0bd84297, type: 3}
-  - {fileID: 21300006, guid: 4e15d2b80c36344d4953321f0bd84297, type: 3}
-  UserGaveRightAnswer: 0
+  structure: 0
+  wordGameSize: 2
+  correctAnswer: 3
+  options:
+  - Raindrop
+  - Stone
+  - Land
+  - Field
+  pics: []
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

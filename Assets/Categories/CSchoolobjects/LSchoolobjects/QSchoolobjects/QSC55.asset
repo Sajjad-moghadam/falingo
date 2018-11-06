@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QSC55
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: File holder.
+  Title: "\u0645\u0646\u06AF\u0646\u0647"
+  Que: 
   Mode: 2
   type: 12
   structure: 1
-  correctAnswer: 2
-  options: []
-  picoptions: []
+  wordGameSize: 4
+  correctAnswer: 1
+  options:
+  - Stapler
+  - Bin
+  - Ballpoint
+  - Rubber
   pics:
-  - {fileID: 21300052, guid: 65ea0b24e5b024d94a344a35fff49310, type: 3}
-  - {fileID: 21300048, guid: 65ea0b24e5b024d94a344a35fff49310, type: 3}
-  - {fileID: 21300050, guid: 65ea0b24e5b024d94a344a35fff49310, type: 3}
-  - {fileID: 21300042, guid: 65ea0b24e5b024d94a344a35fff49310, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300056, guid: b7939f77e315842068a6c709a4a705a9, type: 3}
+  - {fileID: 21300012, guid: b7939f77e315842068a6c709a4a705a9, type: 3}
+  - {fileID: 21300060, guid: b7939f77e315842068a6c709a4a705a9, type: 3}
+  - {fileID: 21300064, guid: b7939f77e315842068a6c709a4a705a9, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

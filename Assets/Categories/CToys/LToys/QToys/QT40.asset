@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QT40
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Answer.
-  Que: Has wings.
+  Title: "\u062A\u062E\u062A\u0647 \u0627\u0633\u06A9\u06CC\u062A"
+  Que: 
   Mode: 1
   type: 7
-  structure: 0
-  correctAnswer: 2
+  structure: 1
+  wordGameSize: 2
+  correctAnswer: 3
   options:
-  - Boat
-  - Plane
-  - Kite
-  - Train
-  picoptions: []
-  pics: []
-  UserGaveRightAnswer: 0
+  - Yo-Yo
+  - Dice
+  - Skateboard
+  - Cards
+  pics:
+  - {fileID: 21300026, guid: 7c2d6ddb8d9854757a40a13bcd734e92, type: 3}
+  - {fileID: 21300066, guid: 7c2d6ddb8d9854757a40a13bcd734e92, type: 3}
+  - {fileID: 21300076, guid: 7c2d6ddb8d9854757a40a13bcd734e92, type: 3}
+  - {fileID: 21300062, guid: 7c2d6ddb8d9854757a40a13bcd734e92, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

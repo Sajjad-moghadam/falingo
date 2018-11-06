@@ -12,17 +12,25 @@ MonoBehaviour:
   m_Name: QC21
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Answer.
-  Que: What is the Color of Mango?
-  Mode: 1
+  Title: "\u0622\u0628\u06CC"
+  Que: 
+  Mode: 0
   type: 2
-  structure: 0
-  correctAnswer: 1
-  options:
-  - Yellow
-  - Red
-  - Pink
-  - White
-  picoptions: []
+  structure: 2
+  wordGameSize: 2
+  correctAnswer: 0
+  options: []
   pics: []
-  UserGaveRightAnswer: 0
+  words:
+  - blue
+  words1Positions:
+  - {x: 1, y: 0}
+  - {x: 1, y: 1}
+  - {x: 0, y: 1}
+  - {x: 0, y: 0}
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

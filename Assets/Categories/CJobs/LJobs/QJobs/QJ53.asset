@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QJ53
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Waiter.
+  Title: "\u0628\u0627\u0631\u0628\u0631"
+  Que: 
   Mode: 2
   type: 10
   structure: 1
+  wordGameSize: 4
   correctAnswer: 3
-  options: []
-  picoptions: []
+  options:
+  - Reporter
+  - Sales assistant
+  - Porter
+  - Receptionist
   pics:
-  - {fileID: 21300000, guid: a683d7b7479614a4aa583b5cf927e3be, type: 3}
-  - {fileID: 21300044, guid: a683d7b7479614a4aa583b5cf927e3be, type: 3}
-  - {fileID: 21300056, guid: a683d7b7479614a4aa583b5cf927e3be, type: 3}
-  - {fileID: 21300034, guid: a683d7b7479614a4aa583b5cf927e3be, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300066, guid: 8fb436317b6b041668dfa0b66b9ab6cb, type: 3}
+  - {fileID: 21300068, guid: 8fb436317b6b041668dfa0b66b9ab6cb, type: 3}
+  - {fileID: 21300062, guid: 8fb436317b6b041668dfa0b66b9ab6cb, type: 3}
+  - {fileID: 21300064, guid: 8fb436317b6b041668dfa0b66b9ab6cb, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

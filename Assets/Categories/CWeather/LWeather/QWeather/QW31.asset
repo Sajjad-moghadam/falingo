@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QW31
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Island.
+  Title: "\u0645\u0647 \u0622\u0644\u0648\u062F"
+  Que: 
   Mode: 1
   type: 6
   structure: 1
-  correctAnswer: 3
-  options: []
-  picoptions: []
+  wordGameSize: 2
+  correctAnswer: 2
+  options:
+  - Boiling
+  - Foggy
+  - Flood
+  - Freezing
   pics:
-  - {fileID: 21300012, guid: 630992e2729ea495eb5a7680dccdb0cb, type: 3}
-  - {fileID: 21300002, guid: 630992e2729ea495eb5a7680dccdb0cb, type: 3}
-  - {fileID: 21300004, guid: 630992e2729ea495eb5a7680dccdb0cb, type: 3}
-  - {fileID: 21300010, guid: 0d3aed582d0e140bab700918156c0ea5, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300116, guid: d21ee2e8d19184f6a9fcf4ce715b5ec7, type: 3}
+  - {fileID: 21300118, guid: d21ee2e8d19184f6a9fcf4ce715b5ec7, type: 3}
+  - {fileID: 21300124, guid: d21ee2e8d19184f6a9fcf4ce715b5ec7, type: 3}
+  - {fileID: 21300112, guid: d21ee2e8d19184f6a9fcf4ce715b5ec7, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

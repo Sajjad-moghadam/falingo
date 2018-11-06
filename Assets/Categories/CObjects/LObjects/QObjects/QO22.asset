@@ -12,17 +12,25 @@ MonoBehaviour:
   m_Name: QO22
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: World map.
-  Mode: 1
+  Title: "\u06A9\u0627\u0646\u0627\u067E\u0647"
+  Que: 
+  Mode: 0
   type: 13
-  structure: 1
-  correctAnswer: 3
+  structure: 2
+  wordGameSize: 2
+  correctAnswer: 0
   options: []
-  picoptions: []
-  pics:
-  - {fileID: 21300016, guid: 3af9d8268e65e42b0afaa569c5bc9605, type: 3}
-  - {fileID: 21300040, guid: 6b6c6fa6d5482468abc750d2548ca733, type: 3}
-  - {fileID: 21300042, guid: 6b6c6fa6d5482468abc750d2548ca733, type: 3}
-  - {fileID: 21300056, guid: 3af9d8268e65e42b0afaa569c5bc9605, type: 3}
-  UserGaveRightAnswer: 0
+  pics: []
+  words:
+  - sofa
+  words1Positions:
+  - {x: 1, y: 0}
+  - {x: 1, y: 1}
+  - {x: 0, y: 1}
+  - {x: 0, y: 0}
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

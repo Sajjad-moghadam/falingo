@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QJ55
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Clown.
+  Title: "\u06AF\u0632\u0627\u0631\u0634\u06AF\u0631"
+  Que: 
   Mode: 2
   type: 10
   structure: 1
+  wordGameSize: 4
   correctAnswer: 1
-  options: []
-  picoptions: []
+  options:
+  - Reporter
+  - Sales assistant
+  - Scientist
+  - Secretary
   pics:
-  - {fileID: 21300060, guid: a683d7b7479614a4aa583b5cf927e3be, type: 3}
-  - {fileID: 21300046, guid: a683d7b7479614a4aa583b5cf927e3be, type: 3}
-  - {fileID: 21300000, guid: 365bb0c4b2902408cbf8bb5f8084cbb4, type: 3}
-  - {fileID: 21300034, guid: a683d7b7479614a4aa583b5cf927e3be, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300066, guid: 8fb436317b6b041668dfa0b66b9ab6cb, type: 3}
+  - {fileID: 21300068, guid: 8fb436317b6b041668dfa0b66b9ab6cb, type: 3}
+  - {fileID: 21300074, guid: 8fb436317b6b041668dfa0b66b9ab6cb, type: 3}
+  - {fileID: 21300072, guid: 8fb436317b6b041668dfa0b66b9ab6cb, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

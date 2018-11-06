@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QCL18
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Flip flops.
+  Title: "\u0634\u0627\u0644 \u06AF\u0631\u062F\u0646"
+  Que: 
   Mode: 0
   type: 9
   structure: 1
+  wordGameSize: 2
   correctAnswer: 4
-  options: []
-  picoptions: []
+  options:
+  - Boots
+  - Watch
+  - Sandals
+  - Scarf
   pics:
-  - {fileID: 21300012, guid: 79e333a9ea32c4570b318c588f531cc0, type: 3}
-  - {fileID: 21300046, guid: 79e333a9ea32c4570b318c588f531cc0, type: 3}
-  - {fileID: 21300020, guid: 9bf05a1cc732e4803b61305721fb1c9e, type: 3}
-  - {fileID: 21300036, guid: 9bf05a1cc732e4803b61305721fb1c9e, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300022, guid: 280a6bbdf06af4301b41e05700fbc896, type: 3}
+  - {fileID: 21300046, guid: 280a6bbdf06af4301b41e05700fbc896, type: 3}
+  - {fileID: 21300016, guid: 280a6bbdf06af4301b41e05700fbc896, type: 3}
+  - {fileID: 21300054, guid: 280a6bbdf06af4301b41e05700fbc896, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

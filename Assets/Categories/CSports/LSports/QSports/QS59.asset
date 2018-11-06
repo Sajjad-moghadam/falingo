@@ -12,17 +12,29 @@ MonoBehaviour:
   m_Name: QS59
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Biathlon.
-  Mode: 1
+  Title: "\u0627\u0633\u0646\u0648\u0628\u0631\u062F \u0633\u0648\u0627\u0631\u06CC
+    \u06A9\u0631\u062F\u0646"
+  Que: 
+  Mode: 2
   type: 8
   structure: 1
-  correctAnswer: 2
-  options: []
-  picoptions: []
+  wordGameSize: 4
+  correctAnswer: 1
+  options:
+  - Snowboarding
+  - Hockey stick
+  - Knee and elbow pads
+  - Oars
   pics:
-  - {fileID: 21300006, guid: a69f3330ed5fc4a45918136d13a11756, type: 3}
-  - {fileID: 21300002, guid: a69f3330ed5fc4a45918136d13a11756, type: 3}
-  - {fileID: 21300024, guid: df90dcc7d5a4448daabc44629e95ed2f, type: 3}
-  - {fileID: 21300010, guid: 2e028348e758e402bb576a9305f5e413, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300048, guid: d92e4f3037a0c4f86b94ebb8dac19a0e, type: 3}
+  - {fileID: 21300056, guid: d92e4f3037a0c4f86b94ebb8dac19a0e, type: 3}
+  - {fileID: 21300058, guid: d92e4f3037a0c4f86b94ebb8dac19a0e, type: 3}
+  - {fileID: 21300060, guid: d92e4f3037a0c4f86b94ebb8dac19a0e, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QC35
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Answer.
-  Que: When you mix blue with red you get _______Color
+  Title: "\u062E\u0627\u06A9\u06CC"
+  Que: 
   Mode: 1
   type: 2
-  structure: 0
+  structure: 1
+  wordGameSize: 2
   correctAnswer: 2
   options:
-  - Blue
-  - Purple
-  - Red
-  - Pink
-  picoptions: []
-  pics: []
-  UserGaveRightAnswer: 0
+  - Olive
+  - Khaki
+  - Hot pink
+  - Golden
+  pics:
+  - {fileID: 21300012, guid: 472c5c0f2fed64837b1f6139d8407440, type: 3}
+  - {fileID: 21300006, guid: 472c5c0f2fed64837b1f6139d8407440, type: 3}
+  - {fileID: 21300008, guid: 472c5c0f2fed64837b1f6139d8407440, type: 3}
+  - {fileID: 21300010, guid: 472c5c0f2fed64837b1f6139d8407440, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QSC12
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Scissors.
+  Title: "\u0645\u062F\u0627\u062F \u062A\u0631\u0627\u0634"
+  Que: 
   Mode: 0
   type: 12
   structure: 1
-  correctAnswer: 3
-  options: []
-  picoptions: []
+  wordGameSize: 2
+  correctAnswer: 4
+  options:
+  - Folder
+  - Claculator
+  - Paper
+  - Sharpner
   pics:
-  - {fileID: 21300044, guid: 0bb50d0b397984890b27ecaff3ba1825, type: 3}
-  - {fileID: 21300020, guid: 0bb50d0b397984890b27ecaff3ba1825, type: 3}
-  - {fileID: 21300022, guid: 0bb50d0b397984890b27ecaff3ba1825, type: 3}
-  - {fileID: 21300000, guid: 65ea0b24e5b024d94a344a35fff49310, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300014, guid: b7939f77e315842068a6c709a4a705a9, type: 3}
+  - {fileID: 21300016, guid: b7939f77e315842068a6c709a4a705a9, type: 3}
+  - {fileID: 21300018, guid: b7939f77e315842068a6c709a4a705a9, type: 3}
+  - {fileID: 21300010, guid: b7939f77e315842068a6c709a4a705a9, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

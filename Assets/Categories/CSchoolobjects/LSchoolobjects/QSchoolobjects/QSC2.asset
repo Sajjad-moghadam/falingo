@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QSC2
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Pen.
+  Title: "\u0645\u062F\u0627\u062F"
+  Que: 
   Mode: 0
   type: 12
   structure: 1
+  wordGameSize: 2
   correctAnswer: 2
-  options: []
-  picoptions: []
+  options:
+  - Desk
+  - Pencil
+  - Ruler
+  - Eraser
   pics:
-  - {fileID: 21300018, guid: 0bb50d0b397984890b27ecaff3ba1825, type: 3}
-  - {fileID: 21300002, guid: 0bb50d0b397984890b27ecaff3ba1825, type: 3}
-  - {fileID: 21300004, guid: 0bb50d0b397984890b27ecaff3ba1825, type: 3}
-  - {fileID: 21300006, guid: 0bb50d0b397984890b27ecaff3ba1825, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300108, guid: 8fb436317b6b041668dfa0b66b9ab6cb, type: 3}
+  - {fileID: 21300102, guid: 8fb436317b6b041668dfa0b66b9ab6cb, type: 3}
+  - {fileID: 21300104, guid: 8fb436317b6b041668dfa0b66b9ab6cb, type: 3}
+  - {fileID: 21300106, guid: 8fb436317b6b041668dfa0b66b9ab6cb, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

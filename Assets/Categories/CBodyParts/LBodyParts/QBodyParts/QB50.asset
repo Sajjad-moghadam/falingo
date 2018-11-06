@@ -12,17 +12,31 @@ MonoBehaviour:
   m_Name: QB50
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Mustache.
-  Mode: 2
+  Title: 
+  Que: 
+  Mode: 1
   type: 5
-  structure: 1
-  correctAnswer: 4
+  structure: 2
+  wordGameSize: 3
+  correctAnswer: 0
   options: []
-  picoptions: []
-  pics:
-  - {fileID: 21300036, guid: 8e22c2ac74dcb4ce8bb78d7e530deccf, type: 3}
-  - {fileID: 21300022, guid: bb50805e8c8dd40c7a74db4224e6e9ae, type: 3}
-  - {fileID: 21300020, guid: bb50805e8c8dd40c7a74db4224e6e9ae, type: 3}
-  - {fileID: 21300018, guid: bb50805e8c8dd40c7a74db4224e6e9ae, type: 3}
-  UserGaveRightAnswer: 0
+  pics: []
+  words:
+  - thigh
+  - toes
+  words1Positions:
+  - {x: 2, y: 0}
+  - {x: 2, y: 1}
+  - {x: 1, y: 1}
+  - {x: 1, y: 0}
+  - {x: 0, y: 0}
+  words2Positions:
+  - {x: 0, y: 1}
+  - {x: 0, y: 2}
+  - {x: 1, y: 2}
+  - {x: 2, y: 2}
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

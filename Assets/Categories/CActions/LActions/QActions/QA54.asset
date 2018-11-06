@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QA54
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Slide.
+  Title: "\u0628\u0627\u0645\u0632\u0647 \u062E\u0646\u062F\u06CC\u062F\u0646"
+  Que: 
   Mode: 2
   type: 1
   structure: 1
-  correctAnswer: 2
-  options: []
-  picoptions: []
+  wordGameSize: 2
+  correctAnswer: 3
+  options:
+  - Blow
+  - Yawn
+  - Funny laugh
+  - Argue
   pics:
-  - {fileID: 21300052, guid: b2d3e35c6d4e347708a61eb2811ab769, type: 3}
-  - {fileID: 21300048, guid: b2d3e35c6d4e347708a61eb2811ab769, type: 3}
-  - {fileID: 21300062, guid: b2d3e35c6d4e347708a61eb2811ab769, type: 3}
-  - {fileID: 21300020, guid: b2d3e35c6d4e347708a61eb2811ab769, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300152, guid: a917c6185f7084515966a0e55108ab5a, type: 3}
+  - {fileID: 21300160, guid: a917c6185f7084515966a0e55108ab5a, type: 3}
+  - {fileID: 21300150, guid: a917c6185f7084515966a0e55108ab5a, type: 3}
+  - {fileID: 21300164, guid: a917c6185f7084515966a0e55108ab5a, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

@@ -12,17 +12,25 @@ MonoBehaviour:
   m_Name: QF21
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Nuts.
-  Mode: 1
+  Title: "\u06AF\u0648\u0634\u062A"
+  Que: 
+  Mode: 0
   type: 3
-  structure: 1
-  correctAnswer: 4
+  structure: 2
+  wordGameSize: 2
+  correctAnswer: 0
   options: []
-  picoptions: []
-  pics:
-  - {fileID: 21300044, guid: 6267737441bc842f48d8656a00f543ec, type: 3}
-  - {fileID: 21300014, guid: b566ece7198bc443fb55f952b45c7c0a, type: 3}
-  - {fileID: 21300000, guid: b566ece7198bc443fb55f952b45c7c0a, type: 3}
-  - {fileID: 21300040, guid: 6267737441bc842f48d8656a00f543ec, type: 3}
-  UserGaveRightAnswer: 0
+  pics: []
+  words:
+  - meat
+  words1Positions:
+  - {x: 1, y: 1}
+  - {x: 0, y: 1}
+  - {x: 0, y: 0}
+  - {x: 1, y: 0}
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

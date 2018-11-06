@@ -12,17 +12,24 @@ MonoBehaviour:
   m_Name: QFR38
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Cherry tomatoes.
+  Title: '..... , spinach, broccoli and onions are considered vegetables'
+  Que: 
   Mode: 1
   type: 4
-  structure: 1
-  correctAnswer: 2
-  options: []
-  picoptions: []
-  pics:
-  - {fileID: 21300068, guid: 2518ab7a2279c49e3b576d9a93b8e11a, type: 3}
-  - {fileID: 21300072, guid: 2518ab7a2279c49e3b576d9a93b8e11a, type: 3}
-  - {fileID: 21300076, guid: 2518ab7a2279c49e3b576d9a93b8e11a, type: 3}
-  - {fileID: 21300080, guid: 2518ab7a2279c49e3b576d9a93b8e11a, type: 3}
-  UserGaveRightAnswer: 0
+  structure: 0
+  wordGameSize: 5
+  correctAnswer: 1
+  options:
+  - Cucumber
+  - Coconut
+  - Melon
+  - Pineapple
+  pics: []
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

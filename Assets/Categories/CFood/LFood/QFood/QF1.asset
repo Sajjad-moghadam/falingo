@@ -12,17 +12,25 @@ MonoBehaviour:
   m_Name: QF1
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Cake.
+  Title: "\u06CC\u06A9 \u063A\u0630\u0627\u06CC \u067E\u062E\u062A\u0647\u200C \u06CC
+    \u0634\u06CC\u0631\u06CC\u0646"
+  Que: 
   Mode: 0
   type: 3
-  structure: 1
+  structure: 0
+  wordGameSize: 2
   correctAnswer: 1
-  options: []
-  picoptions: []
-  pics:
-  - {fileID: 21300000, guid: 6267737441bc842f48d8656a00f543ec, type: 3}
-  - {fileID: 21300002, guid: 6267737441bc842f48d8656a00f543ec, type: 3}
-  - {fileID: 21300004, guid: 6267737441bc842f48d8656a00f543ec, type: 3}
-  - {fileID: 21300006, guid: 6267737441bc842f48d8656a00f543ec, type: 3}
-  UserGaveRightAnswer: 0
+  options:
+  - Cake
+  - Chicken
+  - Chips
+  - Fish
+  pics: []
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

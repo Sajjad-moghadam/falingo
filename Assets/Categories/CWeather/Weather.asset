@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e32e9740164fe495db5b26912a4c0c36, type: 3}
   m_Name: Weather
   m_EditorClassIdentifier: 
-  questionType: 6
+  questionType: 8
   buttonSprite: {fileID: 21300038, guid: 02e84baf20b94de4dbffa8a2490b4e21, type: 3}
   lessons:
   - {fileID: 11400000, guid: 25cd754eb1aa0475a96ee14fc76b6d41, type: 2}

@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QC34
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Answer.
-  Que: Oranges are _______
+  Title: "\u0622\u0644\u0628\u0627\u0644\u0648\u06CC\u06CC"
+  Que: 
   Mode: 1
   type: 2
-  structure: 0
-  correctAnswer: 4
+  structure: 1
+  wordGameSize: 2
+  correctAnswer: 1
   options:
-  - Red
-  - Yellow
-  - Black
-  - Orange
-  picoptions: []
-  pics: []
-  UserGaveRightAnswer: 0
+  - Maroon
+  - Khaki
+  - Hot pink
+  - Golden
+  pics:
+  - {fileID: 21300004, guid: 472c5c0f2fed64837b1f6139d8407440, type: 3}
+  - {fileID: 21300006, guid: 472c5c0f2fed64837b1f6139d8407440, type: 3}
+  - {fileID: 21300008, guid: 472c5c0f2fed64837b1f6139d8407440, type: 3}
+  - {fileID: 21300010, guid: 472c5c0f2fed64837b1f6139d8407440, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

@@ -12,17 +12,29 @@ MonoBehaviour:
   m_Name: QW22
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Spring.
-  Mode: 1
+  Title: "\u06A9\u0648\u0647"
+  Que: 
+  Mode: 0
   type: 6
-  structure: 1
-  correctAnswer: 1
+  structure: 2
+  wordGameSize: 4
+  correctAnswer: 0
   options: []
-  picoptions: []
-  pics:
-  - {fileID: 21300040, guid: 0d3aed582d0e140bab700918156c0ea5, type: 3}
-  - {fileID: 21300046, guid: 0d3aed582d0e140bab700918156c0ea5, type: 3}
-  - {fileID: 21300008, guid: 630992e2729ea495eb5a7680dccdb0cb, type: 3}
-  - {fileID: 21300026, guid: 630992e2729ea495eb5a7680dccdb0cb, type: 3}
-  UserGaveRightAnswer: 0
+  pics: []
+  words:
+  - mountain
+  words1Positions:
+  - {x: 3, y: 1}
+  - {x: 2, y: 0}
+  - {x: 1, y: 0}
+  - {x: 0, y: 1}
+  - {x: 1, y: 1}
+  - {x: 2, y: 1}
+  - {x: 2, y: 2}
+  - {x: 2, y: 3}
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

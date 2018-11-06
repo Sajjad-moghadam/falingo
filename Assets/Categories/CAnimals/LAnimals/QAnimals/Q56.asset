@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: Q56
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Aardvark.
+  Title: Crab
+  Que: 
   Mode: 2
   type: 0
   structure: 1
+  wordGameSize: 2
   correctAnswer: 1
-  options: []
-  picoptions: []
+  options:
+  - "\u0644\u0627\u06A9 \u067E\u0634\u062A"
+  - "\u062E\u0631\u0686\u0646\u06AF"
+  - "\u0633\u0646\u062C\u0627\u0628"
+  - "\u062E\u0631\u06AF\u0648\u0634 \u0635\u062D\u0631\u0627\u06CC\u06CC"
   pics:
-  - {fileID: 21300052, guid: 0f36acba88eb0474382d38666169c1ae, type: 3}
-  - {fileID: 21300054, guid: 0f36acba88eb0474382d38666169c1ae, type: 3}
-  - {fileID: 21300014, guid: cfdbc4d006574495f9a3a32e6690e0e6, type: 3}
-  - {fileID: 21300036, guid: 0f36acba88eb0474382d38666169c1ae, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300050, guid: a917c6185f7084515966a0e55108ab5a, type: 3}
+  - {fileID: 21300056, guid: a917c6185f7084515966a0e55108ab5a, type: 3}
+  - {fileID: 21300080, guid: a917c6185f7084515966a0e55108ab5a, type: 3}
+  - {fileID: 21300082, guid: a917c6185f7084515966a0e55108ab5a, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

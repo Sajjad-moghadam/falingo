@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e816bc4f30ab4ea4b17f0d18a4f2cde, type: 3}
+  m_Name: LQGram36
+  m_EditorClassIdentifier: 
+  QuestionNum: 0
+  Title: "\u0645\u0646 \u0627\u0645\u0631\u0648\u0632 \u0635\u0628\u062D \u062C\u06CC\u0645
+    \u0648 \u062F\u06CC\u0648\u06CC\u062F \u0631\u0627 \u062F\u06CC\u062F\u0645 \u0648
+    \u0634\u0645\u0627\u0631\u0647 \u0645\u0648\u0628\u0627\u06CC\u0644\u0645\u0648
+    \u062A\u0648\u0631\u0648 \u0628\u0647\u0634\u0648\u0646 \u062F\u0627\u062F\u0645"
+  Que: 
+  Mode: 1
+  type: 15
+  structure: 0
+  wordGameSize: 2
+  correctAnswer: 2
+  options:
+  - I saw Jim and David this morning. I gave him your mobile number
+  - I saw Jim and David this morning. I gave them your mobile number
+  - I saw Jim and David this morning. I gave us your mobile number
+  - I saw Jim and David this morning. I gave they your mobile number
+  pics: []
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

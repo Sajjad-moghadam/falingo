@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: Q9
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Rooster.
+  Title: Tiger
+  Que: 
   Mode: 0
   type: 0
   structure: 1
-  correctAnswer: 2
-  options: []
-  picoptions: []
+  wordGameSize: 2
+  correctAnswer: 1
+  options:
+  - "\u0628\u0628\u0631"
+  - "\u067E\u0627\u0646\u062F\u0627"
+  - "\u0645\u0627\u0631"
+  - "\u0627\u0633\u0628 \u0622\u0628\u06CC"
   pics:
-  - {fileID: 21300042, guid: cfdbc4d006574495f9a3a32e6690e0e6, type: 3}
-  - {fileID: 21300016, guid: cfdbc4d006574495f9a3a32e6690e0e6, type: 3}
-  - {fileID: 21300040, guid: cfdbc4d006574495f9a3a32e6690e0e6, type: 3}
-  - {fileID: 21300048, guid: cfdbc4d006574495f9a3a32e6690e0e6, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300032, guid: a917c6185f7084515966a0e55108ab5a, type: 3}
+  - {fileID: 21300036, guid: a917c6185f7084515966a0e55108ab5a, type: 3}
+  - {fileID: 21300048, guid: a917c6185f7084515966a0e55108ab5a, type: 3}
+  - {fileID: 21300058, guid: a917c6185f7084515966a0e55108ab5a, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

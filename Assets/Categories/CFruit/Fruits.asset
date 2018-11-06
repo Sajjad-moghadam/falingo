@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e32e9740164fe495db5b26912a4c0c36, type: 3}
   m_Name: Fruits
   m_EditorClassIdentifier: 
-  questionType: 4
+  questionType: 5
   buttonSprite: {fileID: 21300034, guid: 02e84baf20b94de4dbffa8a2490b4e21, type: 3}
   lessons:
   - {fileID: 11400000, guid: 249d14e6244d84d189a350b6cb719f35, type: 2}

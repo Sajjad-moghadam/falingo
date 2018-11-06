@@ -12,17 +12,46 @@ MonoBehaviour:
   m_Name: QFR25
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Pepper.
-  Mode: 1
+  Title: "\u0647\u0644\u0648 - \u0641\u0644\u0641\u0644 \u0633\u0628\u0632 - \u0644\u06CC\u0645\u0648
+    - \u06A9\u06CC\u0648\u06CC"
+  Que: 
+  Mode: 0
   type: 4
-  structure: 1
-  correctAnswer: 2
+  structure: 2
+  wordGameSize: 5
+  correctAnswer: 0
   options: []
-  picoptions: []
-  pics:
-  - {fileID: 21300052, guid: 2518ab7a2279c49e3b576d9a93b8e11a, type: 3}
-  - {fileID: 21300048, guid: 2518ab7a2279c49e3b576d9a93b8e11a, type: 3}
-  - {fileID: 21300072, guid: 2518ab7a2279c49e3b576d9a93b8e11a, type: 3}
-  - {fileID: 21300028, guid: 26dd472b7c3484d49be0bd9478d08b05, type: 3}
-  UserGaveRightAnswer: 0
+  pics: []
+  words:
+  - peach
+  - greenpepper
+  - lemon
+  - kiwi
+  words1Positions:
+  - {x: 1, y: 4}
+  - {x: 2, y: 4}
+  - {x: 3, y: 4}
+  - {x: 4, y: 4}
+  - {x: 4, y: 3}
+  words2Positions:
+  - {x: 0, y: 4}
+  - {x: 0, y: 3}
+  - {x: 1, y: 3}
+  - {x: 2, y: 3}
+  - {x: 3, y: 3}
+  - {x: 3, y: 2}
+  - {x: 4, y: 2}
+  - {x: 4, y: 1}
+  - {x: 4, y: 0}
+  - {x: 3, y: 0}
+  - {x: 3, y: 1}
+  words3Positions:
+  - {x: 2, y: 0}
+  - {x: 2, y: 1}
+  - {x: 2, y: 2}
+  - {x: 1, y: 2}
+  - {x: 0, y: 2}
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

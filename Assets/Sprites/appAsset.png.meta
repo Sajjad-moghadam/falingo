@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 02e84baf20b94de4dbffa8a2490b4e21
-timeCreated: 1539538068
+timeCreated: 1541500347
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
@@ -60,6 +60,12 @@ TextureImporter:
     21300106: prizeBox
     21300108: iii
     21300110: panelOrangeHalfBack
+    21300112: Grammer1
+    21300114: Grammer2
+    21300116: Grammer3
+    21300118: Grammer4
+    21300120: HintButton
+    21300122: cloudHint
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -376,7 +382,7 @@ TextureImporter:
         x: 1553
         y: 0
         width: 163
-        height: 166
+        height: 163
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -923,6 +929,90 @@ TextureImporter:
         y: 1793
         width: 381
         height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Grammer1
+      rect:
+        serializedVersion: 2
+        x: 1544
+        y: 165
+        width: 166
+        height: 167
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Grammer2
+      rect:
+        serializedVersion: 2
+        x: 1374
+        y: 165
+        width: 166
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Grammer3
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 169
+        width: 165
+        height: 167
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Grammer4
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 170
+        width: 165
+        height: 167
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HintButton
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 557
+        width: 171
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: cloudHint
+      rect:
+        serializedVersion: 2
+        x: 1451
+        y: 644
+        width: 296
+        height: 179
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QO2
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Soap.
+  Title: "\u0635\u0627\u0628\u0648\u0646"
+  Que: 
   Mode: 0
   type: 13
   structure: 1
+  wordGameSize: 2
   correctAnswer: 2
-  options: []
-  picoptions: []
+  options:
+  - Brush
+  - Soap
+  - Toothbrush
+  - Toothpaste
   pics:
-  - {fileID: 21300014, guid: 6b6c6fa6d5482468abc750d2548ca733, type: 3}
-  - {fileID: 21300002, guid: 6b6c6fa6d5482468abc750d2548ca733, type: 3}
-  - {fileID: 21300004, guid: 6b6c6fa6d5482468abc750d2548ca733, type: 3}
-  - {fileID: 21300006, guid: 6b6c6fa6d5482468abc750d2548ca733, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300094, guid: 18b2d13746e9943528ceb7b65d7c3a2d, type: 3}
+  - {fileID: 21300086, guid: 18b2d13746e9943528ceb7b65d7c3a2d, type: 3}
+  - {fileID: 21300088, guid: 18b2d13746e9943528ceb7b65d7c3a2d, type: 3}
+  - {fileID: 21300090, guid: 18b2d13746e9943528ceb7b65d7c3a2d, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

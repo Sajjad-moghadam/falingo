@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QC57
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Oval.
+  Title: "\u0645\u0631\u062C\u0627\u0646\u06CC"
+  Que: 
   Mode: 2
   type: 2
   structure: 1
-  correctAnswer: 2
-  options: []
-  picoptions: []
+  wordGameSize: 3
+  correctAnswer: 4
+  options:
+  - Wheat
+  - Fuchsia
+  - Pea green
+  - Coral
   pics:
-  - {fileID: 21300002, guid: 10fd9496de24d4d3d83f03abbaa7fbeb, type: 3}
-  - {fileID: 21300004, guid: 10fd9496de24d4d3d83f03abbaa7fbeb, type: 3}
-  - {fileID: 21300038, guid: 0619ab7de4dad42a5896f454e75995a1, type: 3}
-  - {fileID: 21300022, guid: 0619ab7de4dad42a5896f454e75995a1, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300110, guid: d10f1ec5755924d45aa73cc9433a0bd2, type: 3}
+  - {fileID: 21300112, guid: d10f1ec5755924d45aa73cc9433a0bd2, type: 3}
+  - {fileID: 21300106, guid: d10f1ec5755924d45aa73cc9433a0bd2, type: 3}
+  - {fileID: 21300114, guid: d10f1ec5755924d45aa73cc9433a0bd2, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

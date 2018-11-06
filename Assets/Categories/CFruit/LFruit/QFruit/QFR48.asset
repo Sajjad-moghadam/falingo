@@ -12,17 +12,39 @@ MonoBehaviour:
   m_Name: QFR48
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Pumpkin.
-  Mode: 2
+  Title: 
+  Que: 
+  Mode: 1
   type: 4
-  structure: 1
-  correctAnswer: 2
+  structure: 2
+  wordGameSize: 4
+  correctAnswer: 0
   options: []
-  picoptions: []
-  pics:
-  - {fileID: 21300012, guid: 26dd472b7c3484d49be0bd9478d08b05, type: 3}
-  - {fileID: 21300004, guid: 26dd472b7c3484d49be0bd9478d08b05, type: 3}
-  - {fileID: 21300022, guid: 26dd472b7c3484d49be0bd9478d08b05, type: 3}
-  - {fileID: 21300000, guid: 26dd472b7c3484d49be0bd9478d08b05, type: 3}
-  UserGaveRightAnswer: 0
+  pics: []
+  words:
+  - coconut
+  - melon
+  - lime
+  words1Positions:
+  - {x: 1, y: 2}
+  - {x: 2, y: 2}
+  - {x: 3, y: 2}
+  - {x: 3, y: 3}
+  - {x: 2, y: 3}
+  - {x: 1, y: 3}
+  - {x: 0, y: 3}
+  words2Positions:
+  - {x: 0, y: 2}
+  - {x: 0, y: 1}
+  - {x: 1, y: 1}
+  - {x: 2, y: 1}
+  - {x: 3, y: 1}
+  words3Positions:
+  - {x: 0, y: 0}
+  - {x: 1, y: 0}
+  - {x: 2, y: 0}
+  - {x: 3, y: 0}
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

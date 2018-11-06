@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QTR13
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Caravan.
+  Title: "\u0633\u0631\u0648\u06CC\u0633 \u0645\u062F\u0631\u0633\u0647"
+  Que: 
   Mode: 0
   type: 11
   structure: 1
-  correctAnswer: 2
-  options: []
-  picoptions: []
+  wordGameSize: 2
+  correctAnswer: 3
+  options:
+  - Subway
+  - Plane
+  - School bus
+  - Van
   pics:
-  - {fileID: 21300024, guid: 964457dd956d64da5bacc4dbf40f2da4, type: 3}
-  - {fileID: 21300026, guid: 964457dd956d64da5bacc4dbf40f2da4, type: 3}
-  - {fileID: 21300044, guid: 964457dd956d64da5bacc4dbf40f2da4, type: 3}
-  - {fileID: 21300048, guid: 964457dd956d64da5bacc4dbf40f2da4, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300024, guid: 18b2d13746e9943528ceb7b65d7c3a2d, type: 3}
+  - {fileID: 21300026, guid: 18b2d13746e9943528ceb7b65d7c3a2d, type: 3}
+  - {fileID: 21300022, guid: 18b2d13746e9943528ceb7b65d7c3a2d, type: 3}
+  - {fileID: 21300136, guid: b7939f77e315842068a6c709a4a705a9, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QJ40
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Answer.
-  Que: I fix water pipes.
+  Title: Flight attandant
+  Que: 
   Mode: 1
   type: 10
-  structure: 0
-  correctAnswer: 1
+  structure: 1
+  wordGameSize: 3
+  correctAnswer: 2
   options:
-  - plumber
-  - boxer
-  - dancer
-  - builder
-  picoptions: []
-  pics: []
-  UserGaveRightAnswer: 0
+  - "\u0645\u0627\u0647\u06CC \u0641\u0631\u0648\u0634"
+  - "\u0645\u0647\u0645\u0627\u0646 \u062F\u0627\u0631"
+  - "\u0622\u0631\u0627\u06CC\u0634\u06AF\u0631"
+  - "\u0648\u06A9\u06CC\u0644"
+  pics:
+  - {fileID: 21300048, guid: 8fb436317b6b041668dfa0b66b9ab6cb, type: 3}
+  - {fileID: 21300050, guid: 8fb436317b6b041668dfa0b66b9ab6cb, type: 3}
+  - {fileID: 21300052, guid: 8fb436317b6b041668dfa0b66b9ab6cb, type: 3}
+  - {fileID: 21300056, guid: 8fb436317b6b041668dfa0b66b9ab6cb, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

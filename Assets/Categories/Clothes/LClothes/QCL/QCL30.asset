@@ -12,17 +12,26 @@ MonoBehaviour:
   m_Name: QCL30
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Glasses.
+  Title: "..... \u0627\u0646\u06AF\u0634\u062A\u0627\u0646 \u0631\u0627 \u0627\u0632
+    \u0633\u0631\u0645\u0627\u0632\u062F\u06AF\u06CC \u062D\u0641\u0638 \u0645\u06CC
+    \u06A9\u0646\u062F"
+  Que: 
   Mode: 1
   type: 9
-  structure: 1
+  structure: 0
+  wordGameSize: 3
   correctAnswer: 1
-  options: []
-  picoptions: []
-  pics:
-  - {fileID: 21300060, guid: 9bf05a1cc732e4803b61305721fb1c9e, type: 3}
-  - {fileID: 21300012, guid: 79e333a9ea32c4570b318c588f531cc0, type: 3}
-  - {fileID: 21300044, guid: 79e333a9ea32c4570b318c588f531cc0, type: 3}
-  - {fileID: 21300058, guid: 9bf05a1cc732e4803b61305721fb1c9e, type: 3}
-  UserGaveRightAnswer: 0
+  options:
+  - Gloves
+  - School bag
+  - Head scarf
+  - Wool hat
+  pics: []
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e816bc4f30ab4ea4b17f0d18a4f2cde, type: 3}
+  m_Name: LQGram27
+  m_EditorClassIdentifier: 
+  QuestionNum: 0
+  Title: "\u0627\u06CC\u0627 \u062F\u06CC\u0631\u0648\u0632 \u0645\u0634\u06A9\u0644\u06CC
+    \u062F\u0631 \u062F\u0641\u062A\u0631 \u0648\u062C\u0648\u062F \u062F\u0627\u0634\u062A\u061F"
+  Que: 
+  Mode: 1
+  type: 15
+  structure: 0
+  wordGameSize: 2
+  correctAnswer: 3
+  options:
+  - Is there any problems in the office yesterday?
+  - Was there any problems in the office yesterday?
+  - Were there any problems in the office yesterday?
+  - There was any problems in the office yesterday?
+  pics: []
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

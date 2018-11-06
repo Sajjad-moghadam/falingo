@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QB12
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Tongue.
+  Title: Tongue
+  Que: 
   Mode: 0
   type: 5
   structure: 1
+  wordGameSize: 2
   correctAnswer: 4
-  options: []
-  picoptions: []
+  options:
+  - "\u0628\u0627\u0632\u0648"
+  - "\u067E\u0627"
+  - "\u06AF\u0648\u0646\u0647"
+  - "\u0632\u0628\u0627\u0646"
   pics:
-  - {fileID: 21300000, guid: 8e22c2ac74dcb4ce8bb78d7e530deccf, type: 3}
-  - {fileID: 21300042, guid: 8e22c2ac74dcb4ce8bb78d7e530deccf, type: 3}
-  - {fileID: 21300034, guid: 8e22c2ac74dcb4ce8bb78d7e530deccf, type: 3}
-  - {fileID: 21300022, guid: 8e22c2ac74dcb4ce8bb78d7e530deccf, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300004, guid: d21ee2e8d19184f6a9fcf4ce715b5ec7, type: 3}
+  - {fileID: 21300000, guid: d21ee2e8d19184f6a9fcf4ce715b5ec7, type: 3}
+  - {fileID: 21300146, guid: 8693a8e03533c44dab5c24847071dd58, type: 3}
+  - {fileID: 21300148, guid: 8693a8e03533c44dab5c24847071dd58, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

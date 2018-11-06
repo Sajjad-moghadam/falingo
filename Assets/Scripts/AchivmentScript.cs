@@ -20,6 +20,7 @@ public class AchivmentScript : MonoBehaviour
     public AchivmentType achivmentType;
     public int requestedAmount;
     public int Prize;
+    public string myMessage = "عالی بود";
 
 
     [SerializeField]
@@ -112,7 +113,7 @@ public class AchivmentScript : MonoBehaviour
         else
         {
             Sprite sprite = transform.Find("column3").Find("Image").GetComponent<Image>().sprite;
-            GameMng.Instance.ShowAchivmentBigPanel("اچیومنت", sprite);
+            GameMng.Instance.ShowAchivmentBigPanel(myMessage, sprite);
         }
       
     }

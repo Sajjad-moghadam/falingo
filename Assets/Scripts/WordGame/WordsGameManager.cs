@@ -32,7 +32,7 @@ public class WordsGameManager : SingletonMahsa<WordsGameManager>
     WordLineManager wordPrefab;
 
     [SerializeField]
-    Text selectedStringText;
+    Text selectedStringText,titleQuestionText;
 
     [SerializeField]
     Transform panelLineContainer,panelCorrectWordsContainer;
@@ -127,6 +127,7 @@ public class WordsGameManager : SingletonMahsa<WordsGameManager>
 
     public void SetQuestion()
     {
+        titleQuestionText.text = question.Title;
         foreach (var item in lines)
         {
             item.HideLine();

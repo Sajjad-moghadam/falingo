@@ -12,17 +12,27 @@ MonoBehaviour:
   m_Name: QTR25
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Jet ski.
-  Mode: 1
+  Title: "\u0645\u062A\u0631\u0648"
+  Que: 
+  Mode: 0
   type: 11
   structure: 1
-  correctAnswer: 2
+  wordGameSize: 3
+  correctAnswer: 0
   options: []
-  picoptions: []
-  pics:
-  - {fileID: 21300056, guid: 964457dd956d64da5bacc4dbf40f2da4, type: 3}
-  - {fileID: 21300050, guid: 964457dd956d64da5bacc4dbf40f2da4, type: 3}
-  - {fileID: 21300040, guid: 964457dd956d64da5bacc4dbf40f2da4, type: 3}
-  - {fileID: 21300006, guid: dbdb65bbb42c64c2286a13f211290886, type: 3}
-  UserGaveRightAnswer: 0
+  pics: []
+  words:
+  - subway
+  words1Positions:
+  - {x: 1, y: 2}
+  - {x: 0, y: 2}
+  - {x: 0, y: 0}
+  - {x: 1, y: 1}
+  - {x: 2, y: 1}
+  - {x: 2, y: 0}
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

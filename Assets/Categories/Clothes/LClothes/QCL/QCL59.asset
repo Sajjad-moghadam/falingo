@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QCL59
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Answer.
-  Que: Which of these clothes do we wear in hot weather?
+  Title: "\u06AF\u0631\u0645\u06A9\u0646 \u0648\u0631\u0632\u0634\u06CC"
+  Que: 
   Mode: 2
   type: 9
-  structure: 0
+  structure: 1
+  wordGameSize: 4
   correctAnswer: 2
   options:
-  - '  a scarf and gloves'
-  - '  a t-shirt and shorts'
-  - '  a sweater and jeans'
-  - boots and jeans
-  picoptions: []
-  pics: []
-  UserGaveRightAnswer: 0
+  - Cap
+  - Track suit
+  - Wedding dress
+  - Dressing gown
+  pics:
+  - {fileID: 21300048, guid: 280a6bbdf06af4301b41e05700fbc896, type: 3}
+  - {fileID: 21300064, guid: 280a6bbdf06af4301b41e05700fbc896, type: 3}
+  - {fileID: 21300088, guid: 280a6bbdf06af4301b41e05700fbc896, type: 3}
+  - {fileID: 21300090, guid: 280a6bbdf06af4301b41e05700fbc896, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e816bc4f30ab4ea4b17f0d18a4f2cde, type: 3}
+  m_Name: QS70
+  m_EditorClassIdentifier: 
+  QuestionNum: 0
+  Title: Biathlon
+  Que: 
+  Mode: 2
+  type: 8
+  structure: 1
+  wordGameSize: 4
+  correctAnswer: 3
+  options:
+  - "\u067E\u062F \u0632\u0627\u0646\u0648 \u0648 \u0622\u0631\u0646\u062C"
+  - "\u0627\u0633\u06A9\u06CC \u0631\u0648\u06CC \u0622\u0628"
+  - "\u062A\u06CC\u0631\u0627\u0646\u062F\u0627\u0632\u06CC \u062F\u0631 \u062D\u0627\u0644
+    \u0627\u0633\u06A9\u06CC \u06A9\u0631\u062F\u0646"
+  - "\u0645\u0648\u062A\u0648\u0631 \u0633\u0648\u0627\u0631\u06CC"
+  pics:
+  - {fileID: 21300058, guid: d92e4f3037a0c4f86b94ebb8dac19a0e, type: 3}
+  - {fileID: 21300108, guid: d92e4f3037a0c4f86b94ebb8dac19a0e, type: 3}
+  - {fileID: 21300110, guid: d92e4f3037a0c4f86b94ebb8dac19a0e, type: 3}
+  - {fileID: 21300100, guid: d92e4f3037a0c4f86b94ebb8dac19a0e, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

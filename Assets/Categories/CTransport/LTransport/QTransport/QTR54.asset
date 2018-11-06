@@ -12,17 +12,29 @@ MonoBehaviour:
   m_Name: QTR54
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Trolley bus.
+  Title: "\u0646\u0648\u0639\u06CC \u0628\u0627\u0644\u0648\u0646 \u0647\u0648\u0627\u06CC\u06CC
+    \u06A9\u0648\u0686\u06A9"
+  Que: 
   Mode: 2
   type: 11
   structure: 1
+  wordGameSize: 4
   correctAnswer: 3
-  options: []
-  picoptions: []
+  options:
+  - Cargo ship
+  - Submarine
+  - Blimp
+  - Pirate ship
   pics:
-  - {fileID: 21300008, guid: 964457dd956d64da5bacc4dbf40f2da4, type: 3}
-  - {fileID: 21300000, guid: dbdb65bbb42c64c2286a13f211290886, type: 3}
-  - {fileID: 21300008, guid: dbdb65bbb42c64c2286a13f211290886, type: 3}
-  - {fileID: 21300018, guid: dbdb65bbb42c64c2286a13f211290886, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300008, guid: 18b2d13746e9943528ceb7b65d7c3a2d, type: 3}
+  - {fileID: 21300138, guid: b7939f77e315842068a6c709a4a705a9, type: 3}
+  - {fileID: 21300000, guid: 18b2d13746e9943528ceb7b65d7c3a2d, type: 3}
+  - {fileID: 21300014, guid: 18b2d13746e9943528ceb7b65d7c3a2d, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

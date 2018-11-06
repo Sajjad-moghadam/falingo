@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QFR30
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Broccoli.
+  Title: Lime
+  Que: 
   Mode: 1
   type: 4
   structure: 1
-  correctAnswer: 2
-  options: []
-  picoptions: []
+  wordGameSize: 5
+  correctAnswer: 1
+  options:
+  - "\u0644\u06CC\u0645\u0648 \u062A\u0631\u0634"
+  - "\u062A\u0648\u062A \u0641\u0631\u0646\u06AF\u06CC"
+  - "\u0644\u0648\u0628\u06CC\u0627 \u0633\u0628\u0632"
+  - "\u0646\u062E\u0648\u062F \u0641\u0631\u0646\u06AF\u06CC"
   pics:
-  - {fileID: 21300062, guid: 2518ab7a2279c49e3b576d9a93b8e11a, type: 3}
-  - {fileID: 21300078, guid: 2518ab7a2279c49e3b576d9a93b8e11a, type: 3}
-  - {fileID: 21300016, guid: 26dd472b7c3484d49be0bd9478d08b05, type: 3}
-  - {fileID: 21300028, guid: 26dd472b7c3484d49be0bd9478d08b05, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300024, guid: 8693a8e03533c44dab5c24847071dd58, type: 3}
+  - {fileID: 21300032, guid: 8693a8e03533c44dab5c24847071dd58, type: 3}
+  - {fileID: 21300034, guid: 8693a8e03533c44dab5c24847071dd58, type: 3}
+  - {fileID: 21300038, guid: 8693a8e03533c44dab5c24847071dd58, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QF2
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Chicken.
+  Title: Chicken
+  Que: 
   Mode: 0
   type: 3
   structure: 1
+  wordGameSize: 2
   correctAnswer: 2
-  options: []
-  picoptions: []
+  options:
+  - "\u06A9\u06CC\u06A9"
+  - "\u062C\u0648\u062C\u0647"
+  - "\u0686\u06CC\u067E\u0633"
+  - "\u0645\u0627\u0647\u06CC"
   pics:
-  - {fileID: 21300010, guid: 6267737441bc842f48d8656a00f543ec, type: 3}
-  - {fileID: 21300002, guid: 6267737441bc842f48d8656a00f543ec, type: 3}
-  - {fileID: 21300024, guid: 6267737441bc842f48d8656a00f543ec, type: 3}
-  - {fileID: 21300006, guid: 6267737441bc842f48d8656a00f543ec, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300036, guid: 472c5c0f2fed64837b1f6139d8407440, type: 3}
+  - {fileID: 21300038, guid: 472c5c0f2fed64837b1f6139d8407440, type: 3}
+  - {fileID: 21300040, guid: 472c5c0f2fed64837b1f6139d8407440, type: 3}
+  - {fileID: 21300042, guid: 472c5c0f2fed64837b1f6139d8407440, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

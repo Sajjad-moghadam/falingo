@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QA38
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Sit.
+  Title: Wave
+  Que: 
   Mode: 1
   type: 1
   structure: 1
-  correctAnswer: 1
-  options: []
-  picoptions: []
+  wordGameSize: 2
+  correctAnswer: 3
+  options:
+  - "\u0686\u0631\u062E\u06CC\u062F\u0646"
+  - "\u062F\u0646\u0628\u0627\u0644 \u06A9\u0631\u062F\u0646"
+  - "\u062F\u0633\u062A \u062A\u06A9\u0627\u0646 \u062F\u0627\u062F\u0646"
+  - "\u0628\u0628\u062E\u0634\u06CC\u062F \u06AF\u0641\u062A\u0646"
   pics:
-  - {fileID: 21300048, guid: e3f85b09478824c078e3e7783173dc82, type: 3}
-  - {fileID: 21300050, guid: e3f85b09478824c078e3e7783173dc82, type: 3}
-  - {fileID: 21300052, guid: e3f85b09478824c078e3e7783173dc82, type: 3}
-  - {fileID: 21300054, guid: b2d3e35c6d4e347708a61eb2811ab769, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300166, guid: a917c6185f7084515966a0e55108ab5a, type: 3}
+  - {fileID: 21300144, guid: a917c6185f7084515966a0e55108ab5a, type: 3}
+  - {fileID: 21300128, guid: a917c6185f7084515966a0e55108ab5a, type: 3}
+  - {fileID: 21300172, guid: a917c6185f7084515966a0e55108ab5a, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

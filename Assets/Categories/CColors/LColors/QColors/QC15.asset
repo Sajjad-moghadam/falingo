@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QC15
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Lime.
+  Title: Gold
+  Que: 
   Mode: 0
   type: 2
   structure: 1
-  correctAnswer: 1
-  options: []
-  picoptions: []
+  wordGameSize: 2
+  correctAnswer: 4
+  options:
+  - "\u0633\u0628\u0632 \u0631\u0648\u0634\u0646"
+  - "\u0646\u0642\u0631\u0647 \u0627\u06CC"
+  - "\u0633\u0628\u0632 \u062A\u06CC\u0631\u0647"
+  - "\u0637\u0644\u0627\u06CC\u06CC"
   pics:
-  - {fileID: 21300004, guid: b36e31022e21243468fd6c1e721de66f, type: 3}
-  - {fileID: 21300018, guid: b36e31022e21243468fd6c1e721de66f, type: 3}
-  - {fileID: 21300036, guid: b36e31022e21243468fd6c1e721de66f, type: 3}
-  - {fileID: 21300038, guid: b36e31022e21243468fd6c1e721de66f, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300100, guid: d10f1ec5755924d45aa73cc9433a0bd2, type: 3}
+  - {fileID: 21300094, guid: d10f1ec5755924d45aa73cc9433a0bd2, type: 3}
+  - {fileID: 21300098, guid: d10f1ec5755924d45aa73cc9433a0bd2, type: 3}
+  - {fileID: 21300096, guid: d10f1ec5755924d45aa73cc9433a0bd2, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

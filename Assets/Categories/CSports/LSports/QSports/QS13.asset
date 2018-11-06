@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QS13
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Bat.
+  Title: Skiing
+  Que: 
   Mode: 0
   type: 8
   structure: 1
-  correctAnswer: 4
-  options: []
-  picoptions: []
+  wordGameSize: 2
+  correctAnswer: 2
+  options:
+  - "\u063A\u0627\u0631\u0646\u0648\u0631\u062F\u06CC"
+  - "\u0627\u0633\u06A9\u06CC \u0628\u0627\u0632\u06CC"
+  - "\u0628\u0648\u06A9\u0633"
+  - "\u06CC\u0648\u06AF\u0627"
   pics:
-  - {fileID: 21300044, guid: df90dcc7d5a4448daabc44629e95ed2f, type: 3}
-  - {fileID: 21300034, guid: 2e028348e758e402bb576a9305f5e413, type: 3}
-  - {fileID: 21300032, guid: 2e028348e758e402bb576a9305f5e413, type: 3}
-  - {fileID: 21300024, guid: 2e028348e758e402bb576a9305f5e413, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300038, guid: d92e4f3037a0c4f86b94ebb8dac19a0e, type: 3}
+  - {fileID: 21300046, guid: d92e4f3037a0c4f86b94ebb8dac19a0e, type: 3}
+  - {fileID: 21300064, guid: d92e4f3037a0c4f86b94ebb8dac19a0e, type: 3}
+  - {fileID: 21300070, guid: d92e4f3037a0c4f86b94ebb8dac19a0e, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

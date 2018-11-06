@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e816bc4f30ab4ea4b17f0d18a4f2cde, type: 3}
+  m_Name: QJ70
+  m_EditorClassIdentifier: 
+  QuestionNum: 0
+  Title: "\u0645\u062C\u0631\u06CC"
+  Que: 
+  Mode: 2
+  type: 10
+  structure: 1
+  wordGameSize: 4
+  correctAnswer: 3
+  options:
+  - Sale representative
+  - Technician
+  - Spy
+  - Talk show host
+  pics:
+  - {fileID: 21300070, guid: 8fb436317b6b041668dfa0b66b9ab6cb, type: 3}
+  - {fileID: 21300080, guid: 8fb436317b6b041668dfa0b66b9ab6cb, type: 3}
+  - {fileID: 21300094, guid: 8fb436317b6b041668dfa0b66b9ab6cb, type: 3}
+  - {fileID: 21300096, guid: 8fb436317b6b041668dfa0b66b9ab6cb, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

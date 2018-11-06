@@ -1,0 +1,977 @@
+fileFormatVersion: 2
+guid: d10f1ec5755924d45aa73cc9433a0bd2
+timeCreated: 1539100521
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Questions2_0
+    21300002: Questions2_1
+    21300004: Questions2_2
+    21300006: Questions2_3
+    21300008: Questions2_4
+    21300010: Questions2_5
+    21300012: Questions2_6
+    21300014: Questions2_7
+    21300016: Questions2_8
+    21300018: Questions2_9
+    21300020: Questions2_10
+    21300022: Questions2_11
+    21300024: Questions2_12
+    21300026: Questions2_13
+    21300028: Questions2_14
+    21300030: Questions2_15
+    21300032: Questions2_16
+    21300034: Questions2_17
+    21300036: Questions2_18
+    21300038: Questions2_19
+    21300040: Questions2_20
+    21300042: Questions2_21
+    21300044: Questions2_22
+    21300046: Questions2_23
+    21300048: Questions2_24
+    21300050: Questions2_25
+    21300052: Questions2_26
+    21300054: Questions2_27
+    21300056: Questions2_28
+    21300058: Questions2_29
+    21300060: Questions2_30
+    21300062: Questions2_31
+    21300064: Questions2_32
+    21300066: Questions2_33
+    21300068: Questions2_34
+    21300070: Questions2_35
+    21300072: Questions2_36
+    21300074: Questions2_37
+    21300076: Questions2_38
+    21300078: Questions2_39
+    21300080: Questions2_40
+    21300082: Questions2_41
+    21300084: Questions2_42
+    21300086: Questions2_43
+    21300088: Questions2_44
+    21300090: Questions2_45
+    21300092: Questions2_46
+    21300094: Questions2_47
+    21300096: Questions2_48
+    21300098: Questions2_49
+    21300100: Questions2_50
+    21300102: Questions2_51
+    21300104: Questions2_52
+    21300106: Questions2_53
+    21300108: Questions2_54
+    21300110: Questions2_55
+    21300112: Questions2_56
+    21300114: Questions2_57
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 47
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Questions2_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 1800
+        width: 189
+        height: 234
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Questions2_1
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 1787
+        width: 213
+        height: 234
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Questions2_2
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 1779
+        width: 180
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Questions2_3
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 1774
+        width: 181
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Questions2_4
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 1779
+        width: 226
+        height: 253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Questions2_5
+      rect:
+        serializedVersion: 2
+        x: 1145
+        y: 1800
+        width: 247
+        height: 232
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Questions2_6
+      rect:
+        serializedVersion: 2
+        x: 1416
+        y: 1774
+        width: 237
+        height: 252
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Questions2_7
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 1774
+        width: 229
+        height: 258
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Questions2_8
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1508
+        width: 218
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Questions2_9
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 1524
+        width: 239
+        height: 226
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Questions2_10
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 1500
+        width: 239
+        height: 242
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Questions2_11
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 1503
+        width: 221
+        height: 239
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Questions2_12
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 1521
+        width: 212
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Questions2_13
+      rect:
+        serializedVersion: 2
+        x: 1257
+        y: 1525
+        width: 231
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Questions2_14
+      rect:
+        serializedVersion: 2
+        x: 1508
+        y: 1503
+        width: 245
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Questions2_15
+      rect:
+        serializedVersion: 2
+        x: 1788
+        y: 1500
+        width: 228
+        height: 249
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Questions2_16
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1250
+        width: 243
+        height: 236
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Questions2_17
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 1243
+        width: 227
+        height: 251
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Questions2_18
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 1231
+        width: 249
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Questions2_19
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 1217
+        width: 212
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Questions2_21
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 1258
+        width: 151
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Questions2_22
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 1243
+        width: 233
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Questions2_23
+      rect:
+        serializedVersion: 2
+        x: 1692
+        y: 1227
+        width: 255
+        height: 245
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Questions2_24
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 988
+        width: 184
+        height: 239
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Questions2_25
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 999
+        width: 237
+        height: 226
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Questions2_26
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 958
+        width: 238
+        height: 251
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Questions2_27
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 948
+        width: 206
+        height: 259
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Questions2_28
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 954
+        width: 228
+        height: 249
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Questions2_29
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 976
+        width: 243
+        height: 249
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Questions2_30
+      rect:
+        serializedVersion: 2
+        x: 1537
+        y: 958
+        width: 245
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Questions2_31
+      rect:
+        serializedVersion: 2
+        x: 1829
+        y: 972
+        width: 177
+        height: 239
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Questions2_32
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 735
+        width: 165
+        height: 221
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Questions2_33
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 740
+        width: 170
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Questions2_34
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 711
+        width: 164
+        height: 226
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Questions2_35
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 719
+        width: 161
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Questions2_36
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 711
+        width: 170
+        height: 214
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Questions2_37
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 693
+        width: 175
+        height: 234
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Questions2_38
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 707
+        width: 163
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Questions2_39
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 693
+        width: 174
+        height: 238
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Questions2_40
+      rect:
+        serializedVersion: 2
+        x: 1722
+        y: 709
+        width: 164
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Questions2_41
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 472
+        width: 167
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Questions2_42
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 505
+        width: 194
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Questions2_43
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 511
+        width: 169
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Questions2_44
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 501
+        width: 204
+        height: 191
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Questions2_45
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 482
+        width: 186
+        height: 202
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Questions2_46
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 474
+        width: 177
+        height: 196
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Questions2_47
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 468
+        width: 192
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Questions2_48
+      rect:
+        serializedVersion: 2
+        x: 1561
+        y: 480
+        width: 192
+        height: 196
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Questions2_49
+      rect:
+        serializedVersion: 2
+        x: 1771
+        y: 419
+        width: 257
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Questions2_50
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 189
+        width: 255
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Questions2_51
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 227
+        width: 184
+        height: 241
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Questions2_52
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 213
+        width: 216
+        height: 245
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Questions2_53
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 199
+        width: 211
+        height: 239
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Questions2_54
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 203
+        width: 227
+        height: 235
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Questions2_55
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 185
+        width: 241
+        height: 244
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Questions2_56
+      rect:
+        serializedVersion: 2
+        x: 1565
+        y: 115
+        width: 215
+        height: 245
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Questions2_57
+      rect:
+        serializedVersion: 2
+        x: 1796
+        y: 44
+        width: 218
+        height: 243
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Questions2_20
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 1247
+        width: 181
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

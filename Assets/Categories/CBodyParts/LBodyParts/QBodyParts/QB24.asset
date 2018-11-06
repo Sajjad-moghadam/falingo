@@ -12,17 +12,31 @@ MonoBehaviour:
   m_Name: QB24
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Ankle.
-  Mode: 1
+  Title: "\u0627\u0646\u06AF\u0634\u062A - \u0628\u0627\u0632\u0648"
+  Que: 
+  Mode: 0
   type: 5
-  structure: 1
-  correctAnswer: 2
+  structure: 2
+  wordGameSize: 3
+  correctAnswer: 0
   options: []
-  picoptions: []
-  pics:
-  - {fileID: 21300052, guid: 8e22c2ac74dcb4ce8bb78d7e530deccf, type: 3}
-  - {fileID: 21300046, guid: 8e22c2ac74dcb4ce8bb78d7e530deccf, type: 3}
-  - {fileID: 21300034, guid: bb50805e8c8dd40c7a74db4224e6e9ae, type: 3}
-  - {fileID: 21300042, guid: 8e22c2ac74dcb4ce8bb78d7e530deccf, type: 3}
-  UserGaveRightAnswer: 0
+  pics: []
+  words:
+  - finger
+  - arm
+  words1Positions:
+  - {x: 0, y: 0}
+  - {x: 1, y: 0}
+  - {x: 2, y: 0}
+  - {x: 2, y: 1}
+  - {x: 2, y: 2}
+  - {x: 1, y: 2}
+  words2Positions:
+  - {x: 0, y: 2}
+  - {x: 0, y: 1}
+  - {x: 1, y: 1}
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

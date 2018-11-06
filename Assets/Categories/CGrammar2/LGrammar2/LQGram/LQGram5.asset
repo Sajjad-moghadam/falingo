@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e816bc4f30ab4ea4b17f0d18a4f2cde, type: 3}
+  m_Name: LQGram5
+  m_EditorClassIdentifier: 
+  QuestionNum: 0
+  Title: "\u0622\u06CC\u0627 \u062E\u0648\u0627\u0647\u0631\u062A \u0639\u0635\u0631\u0647\u0627
+    \u0628\u06CC\u0631\u0648\u0646 \u0645\u06CC\u0631\u0647\u061F"
+  Que: 
+  Mode: 0
+  type: 15
+  structure: 0
+  wordGameSize: 2
+  correctAnswer: 4
+  options:
+  - Do she go out your sister in the evenings?
+  - Goes out your sister in the evenings?
+  - Does she go out your sister in the evenings?
+  - Does your sister go out in the evenings?
+  pics: []
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

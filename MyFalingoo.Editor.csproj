@@ -283,27 +283,6 @@
     <Reference Include="UnityEngine.StandardEvents">
       <HintPath>Library\UnityAssemblies\UnityEngine.StandardEvents.dll</HintPath>
     </Reference>
-    <Reference Include="Backtory">
-      <HintPath>Assets\Backtory\Core\Backtory.dll</HintPath>
-    </Reference>
-    <Reference Include="Ionic.ZLib">
-      <HintPath>Assets\Backtory\Core\Ionic.ZLib.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>Assets\Backtory\Core\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="RestSharp">
-      <HintPath>Assets\Backtory\Core\RestSharp.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Compat">
-      <HintPath>Assets\Backtory\Core\Unity.Compat.dll</HintPath>
-    </Reference>
-    <Reference Include="websocket-sharp">
-      <HintPath>Assets\Backtory\Core\websocket-sharp.dll</HintPath>
-    </Reference>
-    <Reference Include="Backtory.InAppPurchase">
-      <HintPath>Assets\Backtory\InAppPurchase\Android\Backtory.InAppPurchase.dll</HintPath>
-    </Reference>
     <Reference Include="BouncyCastle_GameSparks">
       <HintPath>Assets\GameSparks\Plugins\BouncyCastle_GameSparks.dll</HintPath>
     </Reference>
@@ -346,7 +325,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Backtory\Editor\BacktorySettingEditor.cs" />
     <Compile Include="Assets\GameSparks\Editor\GameSparksEditorFormUpload.cs" />
     <Compile Include="Assets\GameSparks\Editor\GameSparksPopUp.cs" />
     <Compile Include="Assets\GameSparks\Editor\GameSparksRestApi.cs" />
@@ -356,8 +334,6 @@
     <Compile Include="Assets\Scripts\UPersian\Scripts\Editor\UPersianContext.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Backtory\Core\Backtory.xml" />
-    <None Include="Assets\Backtory\InAppPurchase\Android\Backtory.InAppPurchase.xml" />
     <None Include="Assets\GameSparks\Plugins\GameSparks.Api.XML" />
     <None Include="Assets\GameSparks\Plugins\GameSparks.XML" />
     <None Include="Assets\GameSparks\Plugins\GameSparksRT.xml" />

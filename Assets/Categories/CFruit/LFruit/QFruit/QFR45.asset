@@ -12,17 +12,24 @@ MonoBehaviour:
   m_Name: QFR45
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Green bell peppers.
-  Mode: 2
+  Title: A vegetable with long, green stems that can be eaten raw or cooked
+  Que: 
+  Mode: 1
   type: 4
   structure: 1
-  correctAnswer: 3
-  options: []
-  picoptions: []
-  pics:
-  - {fileID: 21300074, guid: 2518ab7a2279c49e3b576d9a93b8e11a, type: 3}
-  - {fileID: 21300078, guid: 2518ab7a2279c49e3b576d9a93b8e11a, type: 3}
-  - {fileID: 21300088, guid: 2518ab7a2279c49e3b576d9a93b8e11a, type: 3}
-  - {fileID: 21300014, guid: 2518ab7a2279c49e3b576d9a93b8e11a, type: 3}
-  UserGaveRightAnswer: 0
+  wordGameSize: 5
+  correctAnswer: 1
+  options:
+  - Celery
+  - Spinach
+  - Turnips
+  - Blue berry
+  pics: []
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

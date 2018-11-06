@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QT59
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Answer.
-  Que: Lego blocks.
+  Title: "\u062C\u063A\u062C\u063A\u0647"
+  Que: 
   Mode: 2
   type: 7
   structure: 1
-  correctAnswer: 4
-  options: []
-  picoptions: []
+  wordGameSize: 4
+  correctAnswer: 2
+  options:
+  - Jacks
+  - Rattle
+  - Spinning top
+  - Bulldozer
   pics:
-  - {fileID: 21300026, guid: 1feb98fd9384e4975bb09eb297ac743e, type: 3}
-  - {fileID: 21300010, guid: 1feb98fd9384e4975bb09eb297ac743e, type: 3}
-  - {fileID: 21300028, guid: 1feb98fd9384e4975bb09eb297ac743e, type: 3}
-  - {fileID: 21300026, guid: 1feb98fd9384e4975bb09eb297ac743e, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300056, guid: 7c2d6ddb8d9854757a40a13bcd734e92, type: 3}
+  - {fileID: 21300034, guid: 7c2d6ddb8d9854757a40a13bcd734e92, type: 3}
+  - {fileID: 21300038, guid: 7c2d6ddb8d9854757a40a13bcd734e92, type: 3}
+  - {fileID: 21300020, guid: 7c2d6ddb8d9854757a40a13bcd734e92, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

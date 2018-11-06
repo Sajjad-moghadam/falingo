@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QA36
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Watch.
+  Title: Say sorry
+  Que: 
   Mode: 1
   type: 1
   structure: 1
-  correctAnswer: 2
-  options: []
-  picoptions: []
+  wordGameSize: 2
+  correctAnswer: 4
+  options:
+  - "\u06A9\u0634\u06CC\u062F\u0646"
+  - "\u0628\u0627\u0644\u0627 \u0631\u0641\u062A\u0646"
+  - "\u062F\u0633\u062A \u062A\u06A9\u0627\u0646 \u062F\u0627\u062F\u0646"
+  - "\u0628\u0628\u062E\u0634\u06CC\u062F \u06AF\u0641\u062A\u0646"
   pics:
-  - {fileID: 21300002, guid: b2d3e35c6d4e347708a61eb2811ab769, type: 3}
-  - {fileID: 21300044, guid: e3f85b09478824c078e3e7783173dc82, type: 3}
-  - {fileID: 21300056, guid: b2d3e35c6d4e347708a61eb2811ab769, type: 3}
-  - {fileID: 21300050, guid: b2d3e35c6d4e347708a61eb2811ab769, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300162, guid: a917c6185f7084515966a0e55108ab5a, type: 3}
+  - {fileID: 21300042, guid: d10f1ec5755924d45aa73cc9433a0bd2, type: 3}
+  - {fileID: 21300128, guid: a917c6185f7084515966a0e55108ab5a, type: 3}
+  - {fileID: 21300172, guid: a917c6185f7084515966a0e55108ab5a, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

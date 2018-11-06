@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QS29
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Snowboarding.
+  Title: "\u0631\u0627\u06A9\u062A"
+  Que: 
   Mode: 1
   type: 8
   structure: 1
-  correctAnswer: 2
-  options: []
-  picoptions: []
+  wordGameSize: 3
+  correctAnswer: 1
+  options:
+  - Bat
+  - Golf club
+  - Rugby
+  - Goggles
   pics:
-  - {fileID: 21300054, guid: 2e028348e758e402bb576a9305f5e413, type: 3}
-  - {fileID: 21300000, guid: df90dcc7d5a4448daabc44629e95ed2f, type: 3}
-  - {fileID: 21300002, guid: df90dcc7d5a4448daabc44629e95ed2f, type: 3}
-  - {fileID: 21300028, guid: df90dcc7d5a4448daabc44629e95ed2f, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300016, guid: d92e4f3037a0c4f86b94ebb8dac19a0e, type: 3}
+  - {fileID: 21300022, guid: d92e4f3037a0c4f86b94ebb8dac19a0e, type: 3}
+  - {fileID: 21300006, guid: d92e4f3037a0c4f86b94ebb8dac19a0e, type: 3}
+  - {fileID: 21300020, guid: d92e4f3037a0c4f86b94ebb8dac19a0e, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

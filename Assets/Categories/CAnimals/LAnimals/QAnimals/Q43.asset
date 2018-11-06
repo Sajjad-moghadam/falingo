@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: Q43
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Antelope.
-  Mode: 2
+  Title: Snail
+  Que: 
+  Mode: 1
   type: 0
   structure: 1
-  correctAnswer: 3
-  options: []
-  picoptions: []
+  wordGameSize: 2
+  correctAnswer: 2
+  options:
+  - "\u06AF\u0631\u06AF"
+  - "\u062D\u0644\u0632\u0648\u0646"
+  - "\u0631\u0648\u0628\u0627\u0647"
+  - "\u06A9\u0631\u06AF\u062F\u0646"
   pics:
-  - {fileID: 21300058, guid: 0f36acba88eb0474382d38666169c1ae, type: 3}
-  - {fileID: 21300012, guid: 0f36acba88eb0474382d38666169c1ae, type: 3}
-  - {fileID: 21300024, guid: 0f36acba88eb0474382d38666169c1ae, type: 3}
-  - {fileID: 21300048, guid: 0f36acba88eb0474382d38666169c1ae, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300096, guid: a917c6185f7084515966a0e55108ab5a, type: 3}
+  - {fileID: 21300090, guid: a917c6185f7084515966a0e55108ab5a, type: 3}
+  - {fileID: 21300074, guid: a917c6185f7084515966a0e55108ab5a, type: 3}
+  - {fileID: 21300072, guid: a917c6185f7084515966a0e55108ab5a, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

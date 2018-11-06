@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QF38
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Bscuits.
+  Title: Hot dog
+  Que: 
   Mode: 1
   type: 3
   structure: 1
+  wordGameSize: 3
   correctAnswer: 2
-  options: []
-  picoptions: []
+  options:
+  - "\u0686\u06CC\u067E\u0633"
+  - "\u0647\u0627\u062A \u062F\u0627\u06AF"
+  - "\u0634\u06A9\u0644\u0627\u062A \u062F\u0627\u063A"
+  - "\u0644\u06CC\u0645\u0648\u0646\u0627\u062F"
   pics:
-  - {fileID: 21300068, guid: 6267737441bc842f48d8656a00f543ec, type: 3}
-  - {fileID: 21300044, guid: 6267737441bc842f48d8656a00f543ec, type: 3}
-  - {fileID: 21300004, guid: b566ece7198bc443fb55f952b45c7c0a, type: 3}
-  - {fileID: 21300008, guid: b566ece7198bc443fb55f952b45c7c0a, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300082, guid: 472c5c0f2fed64837b1f6139d8407440, type: 3}
+  - {fileID: 21300100, guid: 472c5c0f2fed64837b1f6139d8407440, type: 3}
+  - {fileID: 21300090, guid: 472c5c0f2fed64837b1f6139d8407440, type: 3}
+  - {fileID: 21300092, guid: 472c5c0f2fed64837b1f6139d8407440, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

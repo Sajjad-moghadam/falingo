@@ -12,17 +12,31 @@ MonoBehaviour:
   m_Name: QF49
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Waffle.
-  Mode: 2
+  Title: 
+  Que: 
+  Mode: 1
   type: 3
-  structure: 1
-  correctAnswer: 4
+  structure: 2
+  wordGameSize: 3
+  correctAnswer: 0
   options: []
-  picoptions: []
-  pics:
-  - {fileID: 21300014, guid: b566ece7198bc443fb55f952b45c7c0a, type: 3}
-  - {fileID: 21300004, guid: b566ece7198bc443fb55f952b45c7c0a, type: 3}
-  - {fileID: 21300038, guid: b566ece7198bc443fb55f952b45c7c0a, type: 3}
-  - {fileID: 21300018, guid: b566ece7198bc443fb55f952b45c7c0a, type: 3}
-  UserGaveRightAnswer: 0
+  pics: []
+  words:
+  - water
+  - spaghetti
+  words1Positions:
+  - {x: 1, y: 1}
+  - {x: 1, y: 2}
+  - {x: 2, y: 2}
+  - {x: 2, y: 1}
+  - {x: 2, y: 0}
+  words2Positions:
+  - {x: 1, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 1}
+  - {x: 0, y: 2}
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

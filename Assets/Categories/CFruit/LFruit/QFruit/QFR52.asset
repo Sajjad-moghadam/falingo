@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QFR52
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Turnips.
+  Title: Aubergine
+  Que: 
   Mode: 2
   type: 4
   structure: 1
-  correctAnswer: 4
-  options: []
-  picoptions: []
+  wordGameSize: 4
+  correctAnswer: 2
+  options:
+  - "\u0622\u0644\u0648"
+  - "\u0628\u0627\u062F\u0645\u062C\u0627\u0646"
+  - "\u0632\u063A\u0627\u0644 \u0627\u062E\u062A\u0647"
+  - "\u06A9\u062F\u0648\u06CC \u062A\u0627\u0628\u0633\u062A\u0627\u0646\u06CC"
   pics:
-  - {fileID: 21300034, guid: 2518ab7a2279c49e3b576d9a93b8e11a, type: 3}
-  - {fileID: 21300084, guid: 2518ab7a2279c49e3b576d9a93b8e11a, type: 3}
-  - {fileID: 21300022, guid: 26dd472b7c3484d49be0bd9478d08b05, type: 3}
-  - {fileID: 21300012, guid: 26dd472b7c3484d49be0bd9478d08b05, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300072, guid: 8693a8e03533c44dab5c24847071dd58, type: 3}
+  - {fileID: 21300056, guid: 8693a8e03533c44dab5c24847071dd58, type: 3}
+  - {fileID: 21300068, guid: 8693a8e03533c44dab5c24847071dd58, type: 3}
+  - {fileID: 21300058, guid: 8693a8e03533c44dab5c24847071dd58, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

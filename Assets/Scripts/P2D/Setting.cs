@@ -2,15 +2,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using System;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Serialization;
-using Backtory.Core.Public;
+//using Newtonsoft.Json;
+//using Newtonsoft.Json.Serialization;
+//using Backtory.Core.Public;
 using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
 using System.Text.RegularExpressions;
 using System.Net;
 using UnityEngine.Networking;
-
+using GameSparks.Api.Responses;
 
 public class Setting
 {
@@ -26,7 +26,7 @@ public class Setting
 
     };
 
-
+    public static AuthenticationResponse authResponse;
     public static AudioSource AudioPlayer;
     public static P2DMessegeBox MessegeBox;
     public static P2DNotification notificationMessage;
@@ -264,17 +264,17 @@ public class Setting
     }
 
 
-    public static JsonSerializerSettings JsonnetSetting()
-    {
-        return new JsonSerializerSettings()
-        {
-            MissingMemberHandling = MissingMemberHandling.Ignore,
-            NullValueHandling = NullValueHandling.Ignore,
-            DefaultValueHandling = DefaultValueHandling.Include,
-            ContractResolver = new CamelCasePropertyNamesContractResolver(),
-            ReferenceLoopHandling = ReferenceLoopHandling.Ignore
-        };
-    }
+    //public static JsonSerializerSettings JsonnetSetting()
+    //{
+    //    return new JsonSerializerSettings()
+    //    {
+    //        MissingMemberHandling = MissingMemberHandling.Ignore,
+    //        NullValueHandling = NullValueHandling.Ignore,
+    //        DefaultValueHandling = DefaultValueHandling.Include,
+    //        ContractResolver = new CamelCasePropertyNamesContractResolver(),
+    //        ReferenceLoopHandling = ReferenceLoopHandling.Ignore
+    //    };
+    //}
 
     public static bool IsPhoneNumber(string number)
     {

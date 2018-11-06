@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QFR34
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Plums.
+  Title: Corn
+  Que: 
   Mode: 1
   type: 4
   structure: 1
-  correctAnswer: 2
-  options: []
-  picoptions: []
+  wordGameSize: 5
+  correctAnswer: 1
+  options:
+  - "\u0630\u0631\u062A"
+  - "\u0642\u0627\u0631\u0686"
+  - "\u06A9\u0627\u0647\u0648"
+  - "\u0641\u0644\u0641\u0644"
   pics:
-  - {fileID: 21300076, guid: 2518ab7a2279c49e3b576d9a93b8e11a, type: 3}
-  - {fileID: 21300064, guid: 2518ab7a2279c49e3b576d9a93b8e11a, type: 3}
-  - {fileID: 21300072, guid: 2518ab7a2279c49e3b576d9a93b8e11a, type: 3}
-  - {fileID: 21300020, guid: 26dd472b7c3484d49be0bd9478d08b05, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300046, guid: 8693a8e03533c44dab5c24847071dd58, type: 3}
+  - {fileID: 21300048, guid: 8693a8e03533c44dab5c24847071dd58, type: 3}
+  - {fileID: 21300050, guid: 8693a8e03533c44dab5c24847071dd58, type: 3}
+  - {fileID: 21300054, guid: 8693a8e03533c44dab5c24847071dd58, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

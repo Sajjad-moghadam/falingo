@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QS1
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Badminton.
+  Title: "\u0628\u062F\u0645\u06CC\u0646\u062A\u0648\u0646"
+  Que: 
   Mode: 0
   type: 8
   structure: 1
+  wordGameSize: 2
   correctAnswer: 1
-  options: []
-  picoptions: []
+  options:
+  - Badminton
+  - Basketball
+  - Football
+  - Golf
   pics:
-  - {fileID: 21300000, guid: 2e028348e758e402bb576a9305f5e413, type: 3}
-  - {fileID: 21300002, guid: 2e028348e758e402bb576a9305f5e413, type: 3}
-  - {fileID: 21300004, guid: 2e028348e758e402bb576a9305f5e413, type: 3}
-  - {fileID: 21300006, guid: 2e028348e758e402bb576a9305f5e413, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300094, guid: 7c2d6ddb8d9854757a40a13bcd734e92, type: 3}
+  - {fileID: 21300092, guid: 7c2d6ddb8d9854757a40a13bcd734e92, type: 3}
+  - {fileID: 21300088, guid: 7c2d6ddb8d9854757a40a13bcd734e92, type: 3}
+  - {fileID: 21300000, guid: d92e4f3037a0c4f86b94ebb8dac19a0e, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QJ54
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Welder.
+  Title: "\u0645\u06CC\u0632\u0628\u0627\u0646"
+  Que: 
   Mode: 2
   type: 10
   structure: 1
-  correctAnswer: 3
-  options: []
-  picoptions: []
+  wordGameSize: 4
+  correctAnswer: 4
+  options:
+  - Reporter
+  - Sales assistant
+  - Scientist
+  - Receptionist
   pics:
-  - {fileID: 21300002, guid: 1e491b1b65a874ba38ea66adca5f169a, type: 3}
-  - {fileID: 21300044, guid: a683d7b7479614a4aa583b5cf927e3be, type: 3}
-  - {fileID: 21300058, guid: a683d7b7479614a4aa583b5cf927e3be, type: 3}
-  - {fileID: 21300034, guid: a683d7b7479614a4aa583b5cf927e3be, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300066, guid: 8fb436317b6b041668dfa0b66b9ab6cb, type: 3}
+  - {fileID: 21300068, guid: 8fb436317b6b041668dfa0b66b9ab6cb, type: 3}
+  - {fileID: 21300074, guid: 8fb436317b6b041668dfa0b66b9ab6cb, type: 3}
+  - {fileID: 21300064, guid: 8fb436317b6b041668dfa0b66b9ab6cb, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

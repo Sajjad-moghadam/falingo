@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QCL45
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Nappy.
-  Mode: 2
+  Title: "\u062F\u0633\u062A\u0628\u0646\u062F"
+  Que: 
+  Mode: 1
   type: 9
   structure: 1
-  correctAnswer: 4
-  options: []
-  picoptions: []
+  wordGameSize: 3
+  correctAnswer: 1
+  options:
+  - Bracelet
+  - Earings
+  - Tight
+  - Wool hat
   pics:
-  - {fileID: 21300016, guid: 79e333a9ea32c4570b318c588f531cc0, type: 3}
-  - {fileID: 21300002, guid: 79e333a9ea32c4570b318c588f531cc0, type: 3}
-  - {fileID: 21300026, guid: 79e333a9ea32c4570b318c588f531cc0, type: 3}
-  - {fileID: 21300028, guid: 79e333a9ea32c4570b318c588f531cc0, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300106, guid: 280a6bbdf06af4301b41e05700fbc896, type: 3}
+  - {fileID: 21300100, guid: 280a6bbdf06af4301b41e05700fbc896, type: 3}
+  - {fileID: 21300092, guid: 280a6bbdf06af4301b41e05700fbc896, type: 3}
+  - {fileID: 21300070, guid: 280a6bbdf06af4301b41e05700fbc896, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

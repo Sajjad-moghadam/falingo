@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QO32
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Ladder.
+  Title: "\u0646\u0642\u0634\u0647 \u062C\u0647\u0627\u0646"
+  Que: 
   Mode: 1
   type: 13
   structure: 1
-  correctAnswer: 1
-  options: []
-  picoptions: []
+  wordGameSize: 3
+  correctAnswer: 4
+  options:
+  - Storybook
+  - Telephone
+  - Rope
+  - World map
   pics:
-  - {fileID: 21300002, guid: 3af9d8268e65e42b0afaa569c5bc9605, type: 3}
-  - {fileID: 21300046, guid: 6b6c6fa6d5482468abc750d2548ca733, type: 3}
-  - {fileID: 21300014, guid: 3af9d8268e65e42b0afaa569c5bc9605, type: 3}
-  - {fileID: 21300052, guid: 3af9d8268e65e42b0afaa569c5bc9605, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300022, guid: 96e073f4f374b4a04a463ac441e40680, type: 3}
+  - {fileID: 21300042, guid: 96e073f4f374b4a04a463ac441e40680, type: 3}
+  - {fileID: 21300014, guid: 96e073f4f374b4a04a463ac441e40680, type: 3}
+  - {fileID: 21300018, guid: 96e073f4f374b4a04a463ac441e40680, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QT30
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Pyramid.
+  Title: "\u0647\u0631\u0645 "
+  Que: 
   Mode: 1
   type: 7
   structure: 1
-  correctAnswer: 2
-  options: []
-  picoptions: []
+  wordGameSize: 2
+  correctAnswer: 1
+  options:
+  - Pyramid
+  - Microphone
+  - Playhouse
+  - Cards
   pics:
-  - {fileID: 21300014, guid: ad1826497cee34efd8a751a2774634ca, type: 3}
-  - {fileID: 21300016, guid: ad1826497cee34efd8a751a2774634ca, type: 3}
-  - {fileID: 21300032, guid: ad1826497cee34efd8a751a2774634ca, type: 3}
-  - {fileID: 21300040, guid: ad1826497cee34efd8a751a2774634ca, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300032, guid: 7c2d6ddb8d9854757a40a13bcd734e92, type: 3}
+  - {fileID: 21300040, guid: 7c2d6ddb8d9854757a40a13bcd734e92, type: 3}
+  - {fileID: 21300026, guid: 7c2d6ddb8d9854757a40a13bcd734e92, type: 3}
+  - {fileID: 21300046, guid: 7c2d6ddb8d9854757a40a13bcd734e92, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

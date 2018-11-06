@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QJ14
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Actor.
+  Title: "\u0628\u0627\u0632\u06CC\u06AF\u0631"
+  Que: 
   Mode: 0
   type: 10
   structure: 1
-  correctAnswer: 3
-  options: []
-  picoptions: []
+  wordGameSize: 2
+  correctAnswer: 1
+  options:
+  - Actor
+  - Photographer
+  - Chef
+  - Plumber
   pics:
-  - {fileID: 21300022, guid: a683d7b7479614a4aa583b5cf927e3be, type: 3}
-  - {fileID: 21300012, guid: 1e491b1b65a874ba38ea66adca5f169a, type: 3}
-  - {fileID: 21300026, guid: 1e491b1b65a874ba38ea66adca5f169a, type: 3}
-  - {fileID: 21300024, guid: 1e491b1b65a874ba38ea66adca5f169a, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300004, guid: 8fb436317b6b041668dfa0b66b9ab6cb, type: 3}
+  - {fileID: 21300010, guid: 8fb436317b6b041668dfa0b66b9ab6cb, type: 3}
+  - {fileID: 21300006, guid: 8fb436317b6b041668dfa0b66b9ab6cb, type: 3}
+  - {fileID: 21300008, guid: 8fb436317b6b041668dfa0b66b9ab6cb, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

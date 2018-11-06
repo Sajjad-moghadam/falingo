@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QF43
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Cookie.
-  Mode: 2
+  Title: Shrimp
+  Que: 
+  Mode: 1
   type: 3
   structure: 1
-  correctAnswer: 3
-  options: []
-  picoptions: []
+  wordGameSize: 3
+  correctAnswer: 1
+  options:
+  - "\u0645\u06CC\u06AF\u0648"
+  - "\u0686\u06CC\u067E\u0633"
+  - "\u0633\u0627\u0644\u0627\u062F"
+  - "\u0622\u062C\u06CC\u0644"
   pics:
-  - {fileID: 21300006, guid: b566ece7198bc443fb55f952b45c7c0a, type: 3}
-  - {fileID: 21300016, guid: b566ece7198bc443fb55f952b45c7c0a, type: 3}
-  - {fileID: 21300034, guid: b566ece7198bc443fb55f952b45c7c0a, type: 3}
-  - {fileID: 21300038, guid: 6267737441bc842f48d8656a00f543ec, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300110, guid: 472c5c0f2fed64837b1f6139d8407440, type: 3}
+  - {fileID: 21300082, guid: 472c5c0f2fed64837b1f6139d8407440, type: 3}
+  - {fileID: 21300102, guid: 472c5c0f2fed64837b1f6139d8407440, type: 3}
+  - {fileID: 21300076, guid: 472c5c0f2fed64837b1f6139d8407440, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QA10
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Touch.
+  Title: "\u062A\u0645\u0627\u0634\u0627 \u06A9\u0631\u062F\u0646"
+  Que: 
   Mode: 0
   type: 1
   structure: 1
-  correctAnswer: 1
-  options: []
-  picoptions: []
+  wordGameSize: 2
+  correctAnswer: 2
+  options:
+  - Write
+  - Watch
+  - Close
+  - Eat
   pics:
-  - {fileID: 21300024, guid: e3f85b09478824c078e3e7783173dc82, type: 3}
-  - {fileID: 21300036, guid: e3f85b09478824c078e3e7783173dc82, type: 3}
-  - {fileID: 21300034, guid: e3f85b09478824c078e3e7783173dc82, type: 3}
-  - {fileID: 21300038, guid: e3f85b09478824c078e3e7783173dc82, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300018, guid: d10f1ec5755924d45aa73cc9433a0bd2, type: 3}
+  - {fileID: 21300010, guid: d10f1ec5755924d45aa73cc9433a0bd2, type: 3}
+  - {fileID: 21300022, guid: d10f1ec5755924d45aa73cc9433a0bd2, type: 3}
+  - {fileID: 21300026, guid: d10f1ec5755924d45aa73cc9433a0bd2, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

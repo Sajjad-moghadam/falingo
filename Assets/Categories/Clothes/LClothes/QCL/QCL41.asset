@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QCL41
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Mittens.
-  Mode: 2
+  Title: Tight
+  Que: 
+  Mode: 1
   type: 9
   structure: 1
+  wordGameSize: 3
   correctAnswer: 1
-  options: []
-  picoptions: []
+  options:
+  - "\u0644\u0628\u0627\u0633 \u062A\u0646\u06AF"
+  - "\u06AF\u0648\u0634\u0648\u0627\u0631\u0647"
+  - "\u0644\u0628\u0627\u0633 \u0634\u0646\u0627"
+  - "\u0627\u0646\u06AF\u0634\u062A\u0631"
   pics:
-  - {fileID: 21300020, guid: 79e333a9ea32c4570b318c588f531cc0, type: 3}
-  - {fileID: 21300032, guid: 79e333a9ea32c4570b318c588f531cc0, type: 3}
-  - {fileID: 21300032, guid: 79e333a9ea32c4570b318c588f531cc0, type: 3}
-  - {fileID: 21300058, guid: 79e333a9ea32c4570b318c588f531cc0, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300092, guid: 280a6bbdf06af4301b41e05700fbc896, type: 3}
+  - {fileID: 21300100, guid: 280a6bbdf06af4301b41e05700fbc896, type: 3}
+  - {fileID: 21300086, guid: 280a6bbdf06af4301b41e05700fbc896, type: 3}
+  - {fileID: 21300102, guid: 280a6bbdf06af4301b41e05700fbc896, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

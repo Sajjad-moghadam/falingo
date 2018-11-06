@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QC31
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Answer.
-  Que: Penguins are white and ______
+  Title: Cross
+  Que: 
   Mode: 1
   type: 2
-  structure: 0
-  correctAnswer: 4
+  structure: 1
+  wordGameSize: 2
+  correctAnswer: 2
   options:
-  - Pink
-  - Red
-  - Violet
-  - Black
-  picoptions: []
-  pics: []
-  UserGaveRightAnswer: 0
+  - "\u0641\u0644\u0634"
+  - "\u0635\u0644\u06CC\u0628"
+  - "\u0647\u0644\u0627\u0644"
+  - "\u0628\u06CC\u0636\u06CC"
+  pics:
+  - {fileID: 21300022, guid: 472c5c0f2fed64837b1f6139d8407440, type: 3}
+  - {fileID: 21300024, guid: 472c5c0f2fed64837b1f6139d8407440, type: 3}
+  - {fileID: 21300020, guid: 472c5c0f2fed64837b1f6139d8407440, type: 3}
+  - {fileID: 21300028, guid: 472c5c0f2fed64837b1f6139d8407440, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

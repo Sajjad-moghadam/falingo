@@ -12,17 +12,24 @@ MonoBehaviour:
   m_Name: QJ19
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Artist.
+  Title: "\u0647\u0646\u0631\u0645\u0646\u062F"
+  Que: 
   Mode: 0
   type: 10
-  structure: 1
-  correctAnswer: 1
-  options: []
-  picoptions: []
-  pics:
-  - {fileID: 21300036, guid: 1e491b1b65a874ba38ea66adca5f169a, type: 3}
-  - {fileID: 21300004, guid: a683d7b7479614a4aa583b5cf927e3be, type: 3}
-  - {fileID: 21300002, guid: a683d7b7479614a4aa583b5cf927e3be, type: 3}
-  - {fileID: 21300044, guid: 1e491b1b65a874ba38ea66adca5f169a, type: 3}
-  UserGaveRightAnswer: 0
+  structure: 0
+  wordGameSize: 2
+  correctAnswer: 3
+  options:
+  - Dancer
+  - Postal worker
+  - Artist
+  - Photographer
+  pics: []
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

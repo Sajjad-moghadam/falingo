@@ -12,17 +12,24 @@ MonoBehaviour:
   m_Name: QC41
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Fuchsia.
-  Mode: 2
+  Title: The sky and the jeans we wear are .....
+  Que: 
+  Mode: 1
   type: 2
-  structure: 1
+  structure: 0
+  wordGameSize: 2
   correctAnswer: 1
-  options: []
-  picoptions: []
-  pics:
-  - {fileID: 21300024, guid: 0619ab7de4dad42a5896f454e75995a1, type: 3}
-  - {fileID: 21300030, guid: 0619ab7de4dad42a5896f454e75995a1, type: 3}
-  - {fileID: 21300034, guid: 0619ab7de4dad42a5896f454e75995a1, type: 3}
-  - {fileID: 21300016, guid: 0619ab7de4dad42a5896f454e75995a1, type: 3}
-  UserGaveRightAnswer: 0
+  options:
+  - Blue
+  - White
+  - Green
+  - Grey
+  pics: []
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

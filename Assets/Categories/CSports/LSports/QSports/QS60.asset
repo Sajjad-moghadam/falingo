@@ -12,17 +12,24 @@ MonoBehaviour:
   m_Name: QS60
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Horse racing.
-  Mode: 1
+  Title: "\u0686\u0648\u0628 \u0647\u0627\u06A9\u06CC"
+  Que: 
+  Mode: 2
   type: 8
-  structure: 1
+  structure: 0
+  wordGameSize: 4
   correctAnswer: 2
-  options: []
-  picoptions: []
-  pics:
-  - {fileID: 21300006, guid: a69f3330ed5fc4a45918136d13a11756, type: 3}
-  - {fileID: 21300004, guid: a69f3330ed5fc4a45918136d13a11756, type: 3}
-  - {fileID: 21300024, guid: df90dcc7d5a4448daabc44629e95ed2f, type: 3}
-  - {fileID: 21300008, guid: 2e028348e758e402bb576a9305f5e413, type: 3}
-  UserGaveRightAnswer: 0
+  options:
+  - Snowboarding
+  - Hockey stick
+  - Knee and elbow pads
+  - Oars
+  pics: []
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QJ27
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Barber.
+  Title: "\u0645\u0647\u0646\u062F\u0633"
+  Que: 
   Mode: 1
   type: 10
   structure: 1
-  correctAnswer: 4
-  options: []
-  picoptions: []
+  wordGameSize: 3
+  correctAnswer: 2
+  options:
+  - Accountant
+  - Engineer
+  - Butcher
+  - Sailor
   pics:
-  - {fileID: 21300016, guid: a683d7b7479614a4aa583b5cf927e3be, type: 3}
-  - {fileID: 21300006, guid: a683d7b7479614a4aa583b5cf927e3be, type: 3}
-  - {fileID: 21300000, guid: a683d7b7479614a4aa583b5cf927e3be, type: 3}
-  - {fileID: 21300004, guid: a683d7b7479614a4aa583b5cf927e3be, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300026, guid: 8fb436317b6b041668dfa0b66b9ab6cb, type: 3}
+  - {fileID: 21300020, guid: 8fb436317b6b041668dfa0b66b9ab6cb, type: 3}
+  - {fileID: 21300022, guid: 8fb436317b6b041668dfa0b66b9ab6cb, type: 3}
+  - {fileID: 21300024, guid: 8fb436317b6b041668dfa0b66b9ab6cb, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

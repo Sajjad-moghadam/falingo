@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e816bc4f30ab4ea4b17f0d18a4f2cde, type: 3}
+  m_Name: QTR67
+  m_EditorClassIdentifier: 
+  QuestionNum: 0
+  Title: "\u0644\u06CC\u0645\u0648\u0632\u06CC\u0646 (\u0627\u062A\u0648\u0645\u0628\u06CC\u0644
+    \u0633\u0648\u0627\u0631\u06CC \u0628\u0632\u0631\u06AF \u0648 \u0645\u062C\u0644\u0644
+    \u0648\u06CC\u0698\u0647 \u06CC \u0639\u0631\u0648\u0633 \u0648 \u062F\u0627\u0645\u0627\u062F
+    \u06CC\u0627 \u062F\u0648\u0644\u062A \u0645\u0631\u062F\u0627\u0646 \u0648 \u063A\u06CC\u0631\u0647)"
+  Que: 
+  Mode: 2
+  type: 11
+  structure: 1
+  wordGameSize: 4
+  correctAnswer: 1
+  options:
+  - Limousine
+  - Moped
+  - Truck
+  - Coast guard
+  pics:
+  - {fileID: 21300072, guid: 18b2d13746e9943528ceb7b65d7c3a2d, type: 3}
+  - {fileID: 21300056, guid: 18b2d13746e9943528ceb7b65d7c3a2d, type: 3}
+  - {fileID: 21300018, guid: 18b2d13746e9943528ceb7b65d7c3a2d, type: 3}
+  - {fileID: 21300078, guid: 18b2d13746e9943528ceb7b65d7c3a2d, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

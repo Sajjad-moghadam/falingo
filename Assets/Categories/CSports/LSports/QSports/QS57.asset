@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QS57
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Wrestling.
-  Mode: 1
+  Title: "\u0635\u062E\u0631\u0647 \u0646\u0648\u0631\u062F\u06CC"
+  Que: 
+  Mode: 2
   type: 8
   structure: 1
-  correctAnswer: 1
-  options: []
-  picoptions: []
+  wordGameSize: 4
+  correctAnswer: 3
+  options:
+  - Snowboarding
+  - Hockey stick
+  - Rock climbing
+  - Ski jumping
   pics:
-  - {fileID: 21300046, guid: df90dcc7d5a4448daabc44629e95ed2f, type: 3}
-  - {fileID: 21300026, guid: df90dcc7d5a4448daabc44629e95ed2f, type: 3}
-  - {fileID: 21300024, guid: df90dcc7d5a4448daabc44629e95ed2f, type: 3}
-  - {fileID: 21300044, guid: df90dcc7d5a4448daabc44629e95ed2f, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300048, guid: d92e4f3037a0c4f86b94ebb8dac19a0e, type: 3}
+  - {fileID: 21300056, guid: d92e4f3037a0c4f86b94ebb8dac19a0e, type: 3}
+  - {fileID: 21300042, guid: d92e4f3037a0c4f86b94ebb8dac19a0e, type: 3}
+  - {fileID: 21300044, guid: d92e4f3037a0c4f86b94ebb8dac19a0e, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

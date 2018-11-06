@@ -12,17 +12,42 @@ MonoBehaviour:
   m_Name: QW50
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Land.
-  Mode: 2
+  Title: 
+  Que: 
+  Mode: 1
   type: 6
-  structure: 1
-  correctAnswer: 1
+  structure: 2
+  wordGameSize: 5
+  correctAnswer: 0
   options: []
-  picoptions: []
-  pics:
-  - {fileID: 21300008, guid: 4e15d2b80c36344d4953321f0bd84297, type: 3}
-  - {fileID: 21300012, guid: 4e15d2b80c36344d4953321f0bd84297, type: 3}
-  - {fileID: 21300022, guid: 4e15d2b80c36344d4953321f0bd84297, type: 3}
-  - {fileID: 21300008, guid: 630992e2729ea495eb5a7680dccdb0cb, type: 3}
-  UserGaveRightAnswer: 0
+  pics: []
+  words:
+  - riverbank
+  - beach
+  - ocean
+  words1Positions:
+  - {x: 2, y: 4}
+  - {x: 3, y: 4}
+  - {x: 3, y: 3}
+  - {x: 3, y: 2}
+  - {x: 2, y: 2}
+  - {x: 2, y: 3}
+  - {x: 1, y: 3}
+  - {x: 1, y: 4}
+  - {x: 0, y: 4}
+  words2Positions:
+  - {x: 3, y: 0}
+  - {x: 3, y: 1}
+  - {x: 2, y: 1}
+  - {x: 1, y: 1}
+  - {x: 0, y: 1}
+  words3Positions:
+  - {x: 4, y: 0}
+  - {x: 4, y: 1}
+  - {x: 4, y: 2}
+  - {x: 4, y: 3}
+  - {x: 4, y: 4}
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

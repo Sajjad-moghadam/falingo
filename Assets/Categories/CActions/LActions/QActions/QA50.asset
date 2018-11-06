@@ -12,17 +12,29 @@ MonoBehaviour:
   m_Name: QA50
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Ski.
-  Mode: 2
+  Title: 
+  Que: 
+  Mode: 1
   type: 1
-  structure: 1
-  correctAnswer: 1
+  structure: 2
+  wordGameSize: 3
+  correctAnswer: 0
   options: []
-  picoptions: []
-  pics:
-  - {fileID: 21300040, guid: b2d3e35c6d4e347708a61eb2811ab769, type: 3}
-  - {fileID: 21300038, guid: b2d3e35c6d4e347708a61eb2811ab769, type: 3}
-  - {fileID: 21300046, guid: b2d3e35c6d4e347708a61eb2811ab769, type: 3}
-  - {fileID: 21300032, guid: b2d3e35c6d4e347708a61eb2811ab769, type: 3}
-  UserGaveRightAnswer: 0
+  pics: []
+  words:
+  - exercise
+  words1Positions:
+  - {x: 0, y: 2}
+  - {x: 1, y: 2}
+  - {x: 2, y: 2}
+  - {x: 2, y: 1}
+  - {x: 1, y: 1}
+  - {x: 0, y: 1}
+  - {x: 2, y: 0}
+  - {x: 1, y: 0}
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

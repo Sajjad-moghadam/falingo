@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QO52
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Sofa.
+  Title: "\u0686\u0631\u0627\u063A \u0642\u0648\u0647"
+  Que: 
   Mode: 2
   type: 13
   structure: 1
+  wordGameSize: 4
   correctAnswer: 2
-  options: []
-  picoptions: []
+  options:
+  - Tissue
+  - Torch
+  - Screw
+  - Hammer
   pics:
-  - {fileID: 21300044, guid: 3af9d8268e65e42b0afaa569c5bc9605, type: 3}
-  - {fileID: 21300042, guid: 3af9d8268e65e42b0afaa569c5bc9605, type: 3}
-  - {fileID: 21300058, guid: 3af9d8268e65e42b0afaa569c5bc9605, type: 3}
-  - {fileID: 21300028, guid: 6b6c6fa6d5482468abc750d2548ca733, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300008, guid: 96e073f4f374b4a04a463ac441e40680, type: 3}
+  - {fileID: 21300102, guid: 18b2d13746e9943528ceb7b65d7c3a2d, type: 3}
+  - {fileID: 21300002, guid: 96e073f4f374b4a04a463ac441e40680, type: 3}
+  - {fileID: 21300006, guid: 96e073f4f374b4a04a463ac441e40680, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

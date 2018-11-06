@@ -4,14 +4,14 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
 using System;
-using Backtory.Core.Public;
+//using Backtory.Core.Public;
 using GameSparks.Api.Requests;
 using GameSparks.Api.Responses;
 using GameSparks.Core;
 using System.IO;
 
 public enum QuestionMode { Easy, Intermed, Diffy }
-public enum QuestionType { Animals, Actions, Colors, Food, Fruits, BodyParts, Weather, Toys, Sports, Clothes, Jobs, Transport, SchoolThings, Objects }
+public enum QuestionType { Animals, Actions,Grammer1, Colors, Food, Fruits, BodyParts,Grammer2, Weather, Toys, Sports, Clothes, Jobs,Grammer3, Transport, SchoolThings, Objects,Grammer4 }
 public enum QuestionStruct { Choice, Pic, WordGame }
 
 public delegate void OnScoreChange(QuestionType type);

@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QO56
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Wardrobe.
+  Title: "\u0686\u0631\u062E \u062F\u0633\u062A\u06CC \u062E\u0631\u06CC\u062F"
+  Que: 
   Mode: 2
   type: 13
   structure: 1
+  wordGameSize: 4
   correctAnswer: 2
-  options: []
-  picoptions: []
+  options:
+  - Sack
+  - Shopping trolley
+  - Cork
+  - Pin
   pics:
-  - {fileID: 21300050, guid: 6b6c6fa6d5482468abc750d2548ca733, type: 3}
-  - {fileID: 21300050, guid: 3af9d8268e65e42b0afaa569c5bc9605, type: 3}
-  - {fileID: 21300048, guid: 3af9d8268e65e42b0afaa569c5bc9605, type: 3}
-  - {fileID: 21300044, guid: 6b6c6fa6d5482468abc750d2548ca733, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300028, guid: 96e073f4f374b4a04a463ac441e40680, type: 3}
+  - {fileID: 21300010, guid: 96e073f4f374b4a04a463ac441e40680, type: 3}
+  - {fileID: 21300012, guid: 96e073f4f374b4a04a463ac441e40680, type: 3}
+  - {fileID: 21300016, guid: 96e073f4f374b4a04a463ac441e40680, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

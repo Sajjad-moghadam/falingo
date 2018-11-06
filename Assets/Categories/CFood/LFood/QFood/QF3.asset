@@ -12,17 +12,24 @@ MonoBehaviour:
   m_Name: QF3
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Chips.
+  Title: "\u064FThin slices of potatoes fried in deep fat"
+  Que: 
   Mode: 0
   type: 3
-  structure: 1
+  structure: 0
+  wordGameSize: 2
   correctAnswer: 3
-  options: []
-  picoptions: []
-  pics:
-  - {fileID: 21300010, guid: 6267737441bc842f48d8656a00f543ec, type: 3}
-  - {fileID: 21300002, guid: 6267737441bc842f48d8656a00f543ec, type: 3}
-  - {fileID: 21300004, guid: 6267737441bc842f48d8656a00f543ec, type: 3}
-  - {fileID: 21300014, guid: 6267737441bc842f48d8656a00f543ec, type: 3}
-  UserGaveRightAnswer: 0
+  options:
+  - Cake
+  - Chicken
+  - Chips
+  - Fish
+  pics: []
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

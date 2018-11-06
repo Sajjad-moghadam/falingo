@@ -12,17 +12,25 @@ MonoBehaviour:
   m_Name: QA25
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Turn around.
-  Mode: 1
+  Title: "\u0646\u0648\u0627\u062E\u062A\u0646"
+  Que: 
+  Mode: 0
   type: 1
-  structure: 1
-  correctAnswer: 4
+  structure: 2
+  wordGameSize: 2
+  correctAnswer: 0
   options: []
-  picoptions: []
-  pics:
-  - {fileID: 21300000, guid: e3f85b09478824c078e3e7783173dc82, type: 3}
-  - {fileID: 21300036, guid: e3f85b09478824c078e3e7783173dc82, type: 3}
-  - {fileID: 21300052, guid: e3f85b09478824c078e3e7783173dc82, type: 3}
-  - {fileID: 21300056, guid: e3f85b09478824c078e3e7783173dc82, type: 3}
-  UserGaveRightAnswer: 0
+  pics: []
+  words:
+  - play
+  words1Positions:
+  - {x: 0, y: 1}
+  - {x: 1, y: 0}
+  - {x: 1, y: 1}
+  - {x: 0, y: 0}
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

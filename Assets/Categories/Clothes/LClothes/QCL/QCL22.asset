@@ -12,17 +12,29 @@ MonoBehaviour:
   m_Name: QCL22
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Tie.
-  Mode: 1
+  Title: "\u0634\u0644\u0648\u0627\u0631"
+  Que: 
+  Mode: 0
   type: 9
-  structure: 1
-  correctAnswer: 2
+  structure: 2
+  wordGameSize: 3
+  correctAnswer: 0
   options: []
-  picoptions: []
-  pics:
-  - {fileID: 21300042, guid: 9bf05a1cc732e4803b61305721fb1c9e, type: 3}
-  - {fileID: 21300044, guid: 9bf05a1cc732e4803b61305721fb1c9e, type: 3}
-  - {fileID: 21300042, guid: 79e333a9ea32c4570b318c588f531cc0, type: 3}
-  - {fileID: 21300052, guid: 79e333a9ea32c4570b318c588f531cc0, type: 3}
-  UserGaveRightAnswer: 0
+  pics: []
+  words:
+  - trousers
+  words1Positions:
+  - {x: 1, y: 0}
+  - {x: 2, y: 0}
+  - {x: 2, y: 1}
+  - {x: 2, y: 2}
+  - {x: 1, y: 2}
+  - {x: 1, y: 1}
+  - {x: 0, y: 1}
+  - {x: 0, y: 2}
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

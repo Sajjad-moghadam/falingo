@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QS35
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Oars.
+  Title: "\u0644\u0628\u0627\u0633 \u0641\u0648\u062A\u0628\u0627\u0644"
+  Que: 
   Mode: 1
   type: 8
   structure: 1
-  correctAnswer: 3
-  options: []
-  picoptions: []
+  wordGameSize: 3
+  correctAnswer: 2
+  options:
+  - Jumping
+  - Football kit
+  - Racquet
+  - Do pushups
   pics:
-  - {fileID: 21300008, guid: 2e028348e758e402bb576a9305f5e413, type: 3}
-  - {fileID: 21300010, guid: df90dcc7d5a4448daabc44629e95ed2f, type: 3}
-  - {fileID: 21300012, guid: df90dcc7d5a4448daabc44629e95ed2f, type: 3}
-  - {fileID: 21300042, guid: df90dcc7d5a4448daabc44629e95ed2f, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300062, guid: d92e4f3037a0c4f86b94ebb8dac19a0e, type: 3}
+  - {fileID: 21300054, guid: d92e4f3037a0c4f86b94ebb8dac19a0e, type: 3}
+  - {fileID: 21300026, guid: d92e4f3037a0c4f86b94ebb8dac19a0e, type: 3}
+  - {fileID: 21300066, guid: d92e4f3037a0c4f86b94ebb8dac19a0e, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

@@ -44,7 +44,7 @@ public class QuestionButtonScript : MonoBehaviour {
         gameObject.SetActive(true);
         toggle.isOn = false;
         coverImage.gameObject.SetActive(false);
-        buttonText.text = text;
+        buttonText.text = text.faConvert();
         if(image != null)
         {
             if(buttonImage != null)

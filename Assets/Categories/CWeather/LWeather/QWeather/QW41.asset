@@ -12,17 +12,24 @@ MonoBehaviour:
   m_Name: QW41
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Ground.
-  Mode: 2
+  Title: "\u062C\u0646\u06AF\u0644"
+  Que: 
+  Mode: 1
   type: 6
-  structure: 1
-  correctAnswer: 1
-  options: []
-  picoptions: []
-  pics:
-  - {fileID: 21300028, guid: 630992e2729ea495eb5a7680dccdb0cb, type: 3}
-  - {fileID: 21300034, guid: 630992e2729ea495eb5a7680dccdb0cb, type: 3}
-  - {fileID: 21300036, guid: 630992e2729ea495eb5a7680dccdb0cb, type: 3}
-  - {fileID: 21300028, guid: 4e15d2b80c36344d4953321f0bd84297, type: 3}
-  UserGaveRightAnswer: 0
+  structure: 0
+  wordGameSize: 2
+  correctAnswer: 2
+  options:
+  - Raindrop
+  - Forest
+  - Riverbank
+  - Beach
+  pics: []
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

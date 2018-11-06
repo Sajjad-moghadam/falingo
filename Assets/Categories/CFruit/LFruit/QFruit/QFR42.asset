@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QFR42
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Papaya.
-  Mode: 2
+  Title: Spinach
+  Que: 
+  Mode: 1
   type: 4
   structure: 1
-  correctAnswer: 1
-  options: []
-  picoptions: []
+  wordGameSize: 5
+  correctAnswer: 2
+  options:
+  - "\u0646\u062E\u0648\u062F"
+  - "\u0627\u0633\u0641\u0646\u0627\u062C"
+  - "\u0634\u0644\u063A\u0645"
+  - "\u0622\u0648\u0648\u06A9\u0627\u062F\u0648"
   pics:
-  - {fileID: 21300082, guid: 2518ab7a2279c49e3b576d9a93b8e11a, type: 3}
-  - {fileID: 21300076, guid: 2518ab7a2279c49e3b576d9a93b8e11a, type: 3}
-  - {fileID: 21300086, guid: 2518ab7a2279c49e3b576d9a93b8e11a, type: 3}
-  - {fileID: 21300028, guid: 26dd472b7c3484d49be0bd9478d08b05, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300084, guid: 8693a8e03533c44dab5c24847071dd58, type: 3}
+  - {fileID: 21300106, guid: 8693a8e03533c44dab5c24847071dd58, type: 3}
+  - {fileID: 21300108, guid: 8693a8e03533c44dab5c24847071dd58, type: 3}
+  - {fileID: 21300076, guid: 8693a8e03533c44dab5c24847071dd58, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

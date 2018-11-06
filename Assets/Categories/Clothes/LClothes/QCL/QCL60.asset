@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QCL60
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Answer.
-  Que: Which of these clothes do we wear in cold weather?
+  Title: "\u062F\u0633\u062A\u06A9\u0634"
+  Que: 
   Mode: 2
   type: 9
-  structure: 0
+  structure: 1
+  wordGameSize: 4
   correctAnswer: 3
   options:
-  - '   a t-shirt and shorts'
-  - '   a swimming costume'
-  - '   a scarf and gloves'
-  - skirt and heels
-  picoptions: []
-  pics: []
-  UserGaveRightAnswer: 0
+  - Romper suit
+  - Track suit
+  - Mittens
+  - Jumper Pullovers
+  pics:
+  - {fileID: 21300080, guid: 280a6bbdf06af4301b41e05700fbc896, type: 3}
+  - {fileID: 21300064, guid: 280a6bbdf06af4301b41e05700fbc896, type: 3}
+  - {fileID: 21300074, guid: 280a6bbdf06af4301b41e05700fbc896, type: 3}
+  - {fileID: 21300078, guid: 280a6bbdf06af4301b41e05700fbc896, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

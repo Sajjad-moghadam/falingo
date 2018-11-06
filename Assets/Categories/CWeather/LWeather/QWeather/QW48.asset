@@ -12,17 +12,39 @@ MonoBehaviour:
   m_Name: QW48
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Forest.
-  Mode: 2
+  Title: 
+  Que: 
+  Mode: 1
   type: 6
-  structure: 1
-  correctAnswer: 4
+  structure: 2
+  wordGameSize: 4
+  correctAnswer: 0
   options: []
-  picoptions: []
-  pics:
-  - {fileID: 21300024, guid: 4e15d2b80c36344d4953321f0bd84297, type: 3}
-  - {fileID: 21300030, guid: 630992e2729ea495eb5a7680dccdb0cb, type: 3}
-  - {fileID: 21300018, guid: 4e15d2b80c36344d4953321f0bd84297, type: 3}
-  - {fileID: 21300004, guid: 4e15d2b80c36344d4953321f0bd84297, type: 3}
-  UserGaveRightAnswer: 0
+  pics: []
+  words:
+  - bridge
+  - canal
+  - foggy
+  words1Positions:
+  - {x: 1, y: 1}
+  - {x: 2, y: 1}
+  - {x: 3, y: 1}
+  - {x: 3, y: 2}
+  - {x: 2, y: 2}
+  - {x: 1, y: 2}
+  words2Positions:
+  - {x: 0, y: 2}
+  - {x: 0, y: 3}
+  - {x: 1, y: 3}
+  - {x: 2, y: 3}
+  - {x: 3, y: 3}
+  words3Positions:
+  - {x: 3, y: 0}
+  - {x: 2, y: 0}
+  - {x: 1, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 1}
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

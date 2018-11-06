@@ -12,17 +12,24 @@ MonoBehaviour:
   m_Name: QSC19
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: History.
+  Title: "\u0633\u0627\u0639\u062A"
+  Que: 
   Mode: 0
   type: 12
-  structure: 1
-  correctAnswer: 4
-  options: []
-  picoptions: []
-  pics:
-  - {fileID: 21300056, guid: 65ea0b24e5b024d94a344a35fff49310, type: 3}
-  - {fileID: 21300028, guid: 0bb50d0b397984890b27ecaff3ba1825, type: 3}
-  - {fileID: 21300034, guid: 0bb50d0b397984890b27ecaff3ba1825, type: 3}
-  - {fileID: 21300036, guid: 0bb50d0b397984890b27ecaff3ba1825, type: 3}
-  UserGaveRightAnswer: 0
+  structure: 0
+  wordGameSize: 2
+  correctAnswer: 2
+  options:
+  - English
+  - Clock
+  - Calender
+  - Ruler
+  pics: []
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

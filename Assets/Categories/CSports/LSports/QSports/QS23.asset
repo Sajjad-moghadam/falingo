@@ -12,17 +12,31 @@ MonoBehaviour:
   m_Name: QS23
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Canoeing.
-  Mode: 1
+  Title: "\u063A\u0627\u0631\u0646\u0648\u0631\u062F\u06CC - \u0628\u0648\u06A9\u0633"
+  Que: 
+  Mode: 0
   type: 8
-  structure: 1
-  correctAnswer: 3
+  structure: 2
+  wordGameSize: 3
+  correctAnswer: 0
   options: []
-  picoptions: []
-  pics:
-  - {fileID: 21300036, guid: df90dcc7d5a4448daabc44629e95ed2f, type: 3}
-  - {fileID: 21300046, guid: 2e028348e758e402bb576a9305f5e413, type: 3}
-  - {fileID: 21300044, guid: 2e028348e758e402bb576a9305f5e413, type: 3}
-  - {fileID: 21300038, guid: 2e028348e758e402bb576a9305f5e413, type: 3}
-  UserGaveRightAnswer: 0
+  pics: []
+  words:
+  - caving
+  - box
+  words1Positions:
+  - {x: 0, y: 0}
+  - {x: 1, y: 0}
+  - {x: 2, y: 0}
+  - {x: 2, y: 1}
+  - {x: 1, y: 1}
+  - {x: 0, y: 1}
+  words2Positions:
+  - {x: 0, y: 2}
+  - {x: 1, y: 2}
+  - {x: 2, y: 2}
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

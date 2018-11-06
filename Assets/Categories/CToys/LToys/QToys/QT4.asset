@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QT4
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Kite.
+  Title: "\u0628\u0627\u062F\u0628\u0627\u062F\u06A9"
+  Que: 
   Mode: 0
   type: 7
   structure: 1
+  wordGameSize: 2
   correctAnswer: 4
-  options: []
-  picoptions: []
+  options:
+  - Robot
+  - Bat
+  - Puzzle
+  - Kite
   pics:
-  - {fileID: 21300040, guid: 38cf9a24c06c441bc98798fd2257ff1c, type: 3}
-  - {fileID: 21300002, guid: 38cf9a24c06c441bc98798fd2257ff1c, type: 3}
-  - {fileID: 21300016, guid: 38cf9a24c06c441bc98798fd2257ff1c, type: 3}
-  - {fileID: 21300006, guid: 38cf9a24c06c441bc98798fd2257ff1c, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300090, guid: 16545ae5c964748df98bdb89213a095a, type: 3}
+  - {fileID: 21300094, guid: 16545ae5c964748df98bdb89213a095a, type: 3}
+  - {fileID: 21300102, guid: 16545ae5c964748df98bdb89213a095a, type: 3}
+  - {fileID: 21300088, guid: 16545ae5c964748df98bdb89213a095a, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

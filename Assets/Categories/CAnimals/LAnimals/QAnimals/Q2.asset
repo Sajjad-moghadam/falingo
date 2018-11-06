@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: Q2
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Eagle.
+  Title: "\u06AF\u0627\u0648"
+  Que: 
   Mode: 0
   type: 0
   structure: 1
+  wordGameSize: 2
   correctAnswer: 2
-  options: []
-  picoptions: []
+  options:
+  - Rooster
+  - Cow
+  - Chicken
+  - Horse
   pics:
-  - {fileID: 21300028, guid: cfdbc4d006574495f9a3a32e6690e0e6, type: 3}
-  - {fileID: 21300002, guid: cfdbc4d006574495f9a3a32e6690e0e6, type: 3}
-  - {fileID: 21300006, guid: cfdbc4d006574495f9a3a32e6690e0e6, type: 3}
-  - {fileID: 21300046, guid: cfdbc4d006574495f9a3a32e6690e0e6, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300016, guid: a917c6185f7084515966a0e55108ab5a, type: 3}
+  - {fileID: 21300010, guid: a917c6185f7084515966a0e55108ab5a, type: 3}
+  - {fileID: 21300012, guid: a917c6185f7084515966a0e55108ab5a, type: 3}
+  - {fileID: 21300014, guid: a917c6185f7084515966a0e55108ab5a, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

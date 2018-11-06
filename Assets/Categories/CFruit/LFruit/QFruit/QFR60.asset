@@ -12,17 +12,24 @@ MonoBehaviour:
   m_Name: QFR60
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Groud.
+  Title: A reddish-orange sweet fruit that is similar to a plum
+  Que: 
   Mode: 2
   type: 4
-  structure: 1
-  correctAnswer: 4
-  options: []
-  picoptions: []
-  pics:
-  - {fileID: 21300040, guid: 2518ab7a2279c49e3b576d9a93b8e11a, type: 3}
-  - {fileID: 21300044, guid: 2518ab7a2279c49e3b576d9a93b8e11a, type: 3}
-  - {fileID: 21300020, guid: 26dd472b7c3484d49be0bd9478d08b05, type: 3}
-  - {fileID: 21300028, guid: 26dd472b7c3484d49be0bd9478d08b05, type: 3}
-  UserGaveRightAnswer: 0
+  structure: 0
+  wordGameSize: 4
+  correctAnswer: 3
+  options:
+  - Eggplant
+  - Radish
+  - Persimmon
+  - Aubergine
+  pics: []
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

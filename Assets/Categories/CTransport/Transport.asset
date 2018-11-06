@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e32e9740164fe495db5b26912a4c0c36, type: 3}
   m_Name: Transport
   m_EditorClassIdentifier: 
-  questionType: 11
+  questionType: 14
   buttonSprite: {fileID: 21300050, guid: 02e84baf20b94de4dbffa8a2490b4e21, type: 3}
   lessons:
   - {fileID: 11400000, guid: f40a067b90450479eb334f34f6710285, type: 2}

@@ -12,17 +12,37 @@ MonoBehaviour:
   m_Name: QFR46
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Green onions.
-  Mode: 2
+  Title: 
+  Que: 
+  Mode: 1
   type: 4
-  structure: 1
-  correctAnswer: 4
+  structure: 2
+  wordGameSize: 4
+  correctAnswer: 0
   options: []
-  picoptions: []
-  pics:
-  - {fileID: 21300074, guid: 2518ab7a2279c49e3b576d9a93b8e11a, type: 3}
-  - {fileID: 21300062, guid: 2518ab7a2279c49e3b576d9a93b8e11a, type: 3}
-  - {fileID: 21300078, guid: 2518ab7a2279c49e3b576d9a93b8e11a, type: 3}
-  - {fileID: 21300000, guid: 26dd472b7c3484d49be0bd9478d08b05, type: 3}
-  UserGaveRightAnswer: 0
+  pics: []
+  words:
+  - cucumber
+  - lettuce
+  words1Positions:
+  - {x: 0, y: 0}
+  - {x: 1, y: 0}
+  - {x: 2, y: 0}
+  - {x: 3, y: 0}
+  - {x: 3, y: 1}
+  - {x: 2, y: 1}
+  - {x: 1, y: 1}
+  - {x: 0, y: 1}
+  words2Positions:
+  - {x: 2, y: 3}
+  - {x: 3, y: 3}
+  - {x: 3, y: 2}
+  - {x: 2, y: 2}
+  - {x: 1, y: 2}
+  - {x: 0, y: 2}
+  - {x: 0, y: 3}
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

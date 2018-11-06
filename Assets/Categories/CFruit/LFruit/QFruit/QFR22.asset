@@ -12,17 +12,29 @@ MonoBehaviour:
   m_Name: QFR22
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Mushrooms.
-  Mode: 1
+  Title: "\u06A9\u0644\u0645 \u0628\u0631\u0648\u06A9\u0644\u06CC"
+  Que: 
+  Mode: 0
   type: 4
-  structure: 1
-  correctAnswer: 4
+  structure: 2
+  wordGameSize: 3
+  correctAnswer: 0
   options: []
-  picoptions: []
-  pics:
-  - {fileID: 21300080, guid: 2518ab7a2279c49e3b576d9a93b8e11a, type: 3}
-  - {fileID: 21300062, guid: 2518ab7a2279c49e3b576d9a93b8e11a, type: 3}
-  - {fileID: 21300032, guid: 2518ab7a2279c49e3b576d9a93b8e11a, type: 3}
-  - {fileID: 21300042, guid: 2518ab7a2279c49e3b576d9a93b8e11a, type: 3}
-  UserGaveRightAnswer: 0
+  pics: []
+  words:
+  - broccoli
+  words1Positions:
+  - {x: 0, y: 0}
+  - {x: 0, y: 1}
+  - {x: 1, y: 1}
+  - {x: 1, y: 0}
+  - {x: 2, y: 0}
+  - {x: 2, y: 1}
+  - {x: 2, y: 2}
+  - {x: 1, y: 2}
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

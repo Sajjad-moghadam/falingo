@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QO51
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Bath.
+  Title: "\u0633\u0637\u0644 "
+  Que: 
   Mode: 2
   type: 13
   structure: 1
+  wordGameSize: 4
   correctAnswer: 1
-  options: []
-  picoptions: []
+  options:
+  - Bucket
+  - Torch
+  - Screw
+  - Hammer
   pics:
-  - {fileID: 21300040, guid: 3af9d8268e65e42b0afaa569c5bc9605, type: 3}
-  - {fileID: 21300030, guid: 3af9d8268e65e42b0afaa569c5bc9605, type: 3}
-  - {fileID: 21300052, guid: 3af9d8268e65e42b0afaa569c5bc9605, type: 3}
-  - {fileID: 21300026, guid: 6b6c6fa6d5482468abc750d2548ca733, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300098, guid: 18b2d13746e9943528ceb7b65d7c3a2d, type: 3}
+  - {fileID: 21300102, guid: 18b2d13746e9943528ceb7b65d7c3a2d, type: 3}
+  - {fileID: 21300002, guid: 96e073f4f374b4a04a463ac441e40680, type: 3}
+  - {fileID: 21300006, guid: 96e073f4f374b4a04a463ac441e40680, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

@@ -12,17 +12,37 @@ MonoBehaviour:
   m_Name: QCL48
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Dressing gown.
-  Mode: 2
+  Title: 
+  Que: 
+  Mode: 1
   type: 9
-  structure: 1
-  correctAnswer: 3
+  structure: 2
+  wordGameSize: 4
+  correctAnswer: 0
   options: []
-  picoptions: []
-  pics:
-  - {fileID: 21300038, guid: 79e333a9ea32c4570b318c588f531cc0, type: 3}
-  - {fileID: 21300032, guid: 79e333a9ea32c4570b318c588f531cc0, type: 3}
-  - {fileID: 21300034, guid: 79e333a9ea32c4570b318c588f531cc0, type: 3}
-  - {fileID: 21300036, guid: 79e333a9ea32c4570b318c588f531cc0, type: 3}
-  UserGaveRightAnswer: 0
+  pics: []
+  words:
+  - bracelet
+  - earings
+  words1Positions:
+  - {x: 0, y: 0}
+  - {x: 0, y: 1}
+  - {x: 0, y: 2}
+  - {x: 0, y: 3}
+  - {x: 1, y: 3}
+  - {x: 2, y: 3}
+  - {x: 3, y: 3}
+  - {x: 3, y: 2}
+  words2Positions:
+  - {x: 1, y: 0}
+  - {x: 2, y: 0}
+  - {x: 3, y: 0}
+  - {x: 3, y: 1}
+  - {x: 2, y: 1}
+  - {x: 1, y: 1}
+  - {x: 1, y: 2}
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

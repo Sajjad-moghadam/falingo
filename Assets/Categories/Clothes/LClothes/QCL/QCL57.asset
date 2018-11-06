@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QCL57
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Bowler hat.
+  Title: "\u067E\u0648\u0634\u0634 \u0628\u0631\u0627\u06CC \u0633\u0631"
+  Que: 
   Mode: 2
   type: 9
   structure: 1
+  wordGameSize: 4
   correctAnswer: 1
-  options: []
-  picoptions: []
+  options:
+  - Hat
+  - Rumper suit
+  - Jumper pullovers
+  - Nappy
   pics:
-  - {fileID: 21300056, guid: 79e333a9ea32c4570b318c588f531cc0, type: 3}
-  - {fileID: 21300036, guid: 79e333a9ea32c4570b318c588f531cc0, type: 3}
-  - {fileID: 21300040, guid: 79e333a9ea32c4570b318c588f531cc0, type: 3}
-  - {fileID: 21300054, guid: 79e333a9ea32c4570b318c588f531cc0, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300048, guid: 280a6bbdf06af4301b41e05700fbc896, type: 3}
+  - {fileID: 21300080, guid: 280a6bbdf06af4301b41e05700fbc896, type: 3}
+  - {fileID: 21300078, guid: 280a6bbdf06af4301b41e05700fbc896, type: 3}
+  - {fileID: 21300082, guid: 280a6bbdf06af4301b41e05700fbc896, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

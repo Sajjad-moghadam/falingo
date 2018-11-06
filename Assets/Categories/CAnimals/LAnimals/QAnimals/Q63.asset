@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e816bc4f30ab4ea4b17f0d18a4f2cde, type: 3}
+  m_Name: Q63
+  m_EditorClassIdentifier: 
+  QuestionNum: 0
+  Title: "\u062A\u0646\u0628\u0644"
+  Que: 
+  Mode: 2
+  type: 0
+  structure: 1
+  wordGameSize: 2
+  correctAnswer: 4
+  options:
+  - Cheetah
+  - Deer
+  - Tortoise
+  - Sloth
+  pics:
+  - {fileID: 21300108, guid: a917c6185f7084515966a0e55108ab5a, type: 3}
+  - {fileID: 21300106, guid: a917c6185f7084515966a0e55108ab5a, type: 3}
+  - {fileID: 21300050, guid: a917c6185f7084515966a0e55108ab5a, type: 3}
+  - {fileID: 21300098, guid: a917c6185f7084515966a0e55108ab5a, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

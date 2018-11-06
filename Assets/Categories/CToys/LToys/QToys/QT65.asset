@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e816bc4f30ab4ea4b17f0d18a4f2cde, type: 3}
+  m_Name: QT65
+  m_EditorClassIdentifier: 
+  QuestionNum: 0
+  Title: "\u0645\u0627\u0634\u06CC\u0646 \u067E\u06CC\u0646 \u0628\u0627\u0644 \u060C
+    \u0645\u0627\u0634\u06CC\u0646 \u0633\u0627\u0686\u0645\u0647 \u067E\u0631\u0627\u0646"
+  Que: 
+  Mode: 2
+  type: 7
+  structure: 1
+  wordGameSize: 4
+  correctAnswer: 4
+  options:
+  - Pinball machine
+  - Spinning top
+  - Xylophone
+  - Drumsticks
+  pics:
+  - {fileID: 21300074, guid: 7c2d6ddb8d9854757a40a13bcd734e92, type: 3}
+  - {fileID: 21300038, guid: 7c2d6ddb8d9854757a40a13bcd734e92, type: 3}
+  - {fileID: 21300058, guid: 7c2d6ddb8d9854757a40a13bcd734e92, type: 3}
+  - {fileID: 21300072, guid: 7c2d6ddb8d9854757a40a13bcd734e92, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

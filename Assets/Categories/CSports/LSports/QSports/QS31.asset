@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QS31
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Archery.
+  Title: "\u0686\u0648\u06AF\u0627\u0646 \u06AF\u0644\u0641 \u0628\u0627\u0632\u06CC"
+  Que: 
   Mode: 1
   type: 8
   structure: 1
-  correctAnswer: 3
-  options: []
-  picoptions: []
+  wordGameSize: 3
+  correctAnswer: 2
+  options:
+  - Bowling
+  - Golf club
+  - Rugby
+  - Surfing
   pics:
-  - {fileID: 21300014, guid: df90dcc7d5a4448daabc44629e95ed2f, type: 3}
-  - {fileID: 21300002, guid: df90dcc7d5a4448daabc44629e95ed2f, type: 3}
-  - {fileID: 21300004, guid: df90dcc7d5a4448daabc44629e95ed2f, type: 3}
-  - {fileID: 21300038, guid: df90dcc7d5a4448daabc44629e95ed2f, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300030, guid: d92e4f3037a0c4f86b94ebb8dac19a0e, type: 3}
+  - {fileID: 21300022, guid: d92e4f3037a0c4f86b94ebb8dac19a0e, type: 3}
+  - {fileID: 21300006, guid: d92e4f3037a0c4f86b94ebb8dac19a0e, type: 3}
+  - {fileID: 21300050, guid: d92e4f3037a0c4f86b94ebb8dac19a0e, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

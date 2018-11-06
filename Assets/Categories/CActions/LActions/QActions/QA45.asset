@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QA45
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Drive.
-  Mode: 2
+  Title: Scream
+  Que: 
+  Mode: 1
   type: 1
   structure: 1
-  correctAnswer: 1
-  options: []
-  picoptions: []
+  wordGameSize: 2
+  correctAnswer: 4
+  options:
+  - "\u062E\u0648\u0627\u0628 \u062F\u06CC\u062F\u0646"
+  - "\u0628\u0627\u0644\u0627 \u0648 \u067E\u0627\u06CC\u06CC\u0646 \u067E\u0631\u06CC\u062F\u0646"
+  - "\u06AF\u0631\u0641\u062A\u0646"
+  - "\u0641\u0631\u06CC\u0627\u062F \u0632\u062F\u0646"
   pics:
-  - {fileID: 21300030, guid: b2d3e35c6d4e347708a61eb2811ab769, type: 3}
-  - {fileID: 21300042, guid: b2d3e35c6d4e347708a61eb2811ab769, type: 3}
-  - {fileID: 21300048, guid: b2d3e35c6d4e347708a61eb2811ab769, type: 3}
-  - {fileID: 21300044, guid: b2d3e35c6d4e347708a61eb2811ab769, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300002, guid: d10f1ec5755924d45aa73cc9433a0bd2, type: 3}
+  - {fileID: 21300136, guid: a917c6185f7084515966a0e55108ab5a, type: 3}
+  - {fileID: 21300134, guid: a917c6185f7084515966a0e55108ab5a, type: 3}
+  - {fileID: 21300158, guid: a917c6185f7084515966a0e55108ab5a, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QW28
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Mountain.
+  Title: "\u0631\u0639\u062F \u0648 \u0628\u0631\u0642"
+  Que: 
   Mode: 1
   type: 6
   structure: 1
-  correctAnswer: 4
-  options: []
-  picoptions: []
+  wordGameSize: 2
+  correctAnswer: 3
+  options:
+  - Boiling
+  - Foggy
+  - Lightning
+  - Freezing
   pics:
-  - {fileID: 21300012, guid: 0d3aed582d0e140bab700918156c0ea5, type: 3}
-  - {fileID: 21300028, guid: 0d3aed582d0e140bab700918156c0ea5, type: 3}
-  - {fileID: 21300046, guid: 0d3aed582d0e140bab700918156c0ea5, type: 3}
-  - {fileID: 21300052, guid: 0d3aed582d0e140bab700918156c0ea5, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300116, guid: d21ee2e8d19184f6a9fcf4ce715b5ec7, type: 3}
+  - {fileID: 21300118, guid: d21ee2e8d19184f6a9fcf4ce715b5ec7, type: 3}
+  - {fileID: 21300110, guid: d21ee2e8d19184f6a9fcf4ce715b5ec7, type: 3}
+  - {fileID: 21300112, guid: d21ee2e8d19184f6a9fcf4ce715b5ec7, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

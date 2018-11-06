@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QB18
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Knee.
+  Title: Finger
+  Que: 
   Mode: 0
   type: 5
   structure: 1
-  correctAnswer: 1
-  options: []
-  picoptions: []
+  wordGameSize: 2
+  correctAnswer: 3
+  options:
+  - "\u0632\u0627\u0646\u0648"
+  - "\u06AF\u0631\u062F\u0646"
+  - "\u0627\u0646\u06AF\u0634\u062A"
+  - "\u0686\u0634\u0645"
   pics:
-  - {fileID: 21300034, guid: 8e22c2ac74dcb4ce8bb78d7e530deccf, type: 3}
-  - {fileID: 21300070, guid: 8e22c2ac74dcb4ce8bb78d7e530deccf, type: 3}
-  - {fileID: 21300010, guid: bb50805e8c8dd40c7a74db4224e6e9ae, type: 3}
-  - {fileID: 21300048, guid: 8e22c2ac74dcb4ce8bb78d7e530deccf, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300010, guid: d21ee2e8d19184f6a9fcf4ce715b5ec7, type: 3}
+  - {fileID: 21300142, guid: 8693a8e03533c44dab5c24847071dd58, type: 3}
+  - {fileID: 21300014, guid: d21ee2e8d19184f6a9fcf4ce715b5ec7, type: 3}
+  - {fileID: 21300134, guid: 8693a8e03533c44dab5c24847071dd58, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

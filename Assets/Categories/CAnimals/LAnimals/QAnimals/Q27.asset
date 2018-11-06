@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: Q27
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Turtle.
+  Title: Eagle
+  Que: 
   Mode: 1
   type: 0
   structure: 1
+  wordGameSize: 2
   correctAnswer: 2
-  options: []
-  picoptions: []
+  options:
+  - "\u0634\u06CC\u0631 "
+  - "\u0639\u0642\u0627\u0628"
+  - "\u0641\u0644\u0627\u0645\u06CC\u0646\u06AF\u0648"
+  - "\u0645\u0627\u0647\u06CC \u0642\u0631\u0645\u0632"
   pics:
-  - {fileID: 21300058, guid: cfdbc4d006574495f9a3a32e6690e0e6, type: 3}
-  - {fileID: 21300054, guid: cfdbc4d006574495f9a3a32e6690e0e6, type: 3}
-  - {fileID: 21300056, guid: cfdbc4d006574495f9a3a32e6690e0e6, type: 3}
-  - {fileID: 21300046, guid: cfdbc4d006574495f9a3a32e6690e0e6, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300024, guid: a917c6185f7084515966a0e55108ab5a, type: 3}
+  - {fileID: 21300002, guid: a917c6185f7084515966a0e55108ab5a, type: 3}
+  - {fileID: 21300006, guid: a917c6185f7084515966a0e55108ab5a, type: 3}
+  - {fileID: 21300022, guid: a917c6185f7084515966a0e55108ab5a, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

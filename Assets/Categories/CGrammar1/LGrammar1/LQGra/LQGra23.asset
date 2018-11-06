@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e816bc4f30ab4ea4b17f0d18a4f2cde, type: 3}
+  m_Name: LQGra23
+  m_EditorClassIdentifier: 
+  QuestionNum: 0
+  Title: "\u0622\u0646 \u0645\u0627\u0634\u06CC\u0646 \u06AF\u0631\u0627\u0646 \u0642\u06CC\u0645\u062A
+    \u0627\u0633\u062A"
+  Que: 
+  Mode: 1
+  type: 14
+  structure: 0
+  wordGameSize: 2
+  correctAnswer: 3
+  options:
+  - "\u0651\u0651It's a expensive car"
+  - "\u0651\u0651It's expensive car"
+  - "\u0651\u0651It's an expensive car"
+  - It's a car
+  pics: []
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

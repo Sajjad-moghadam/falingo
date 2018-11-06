@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QCL2
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Skirt.
+  Title: "\u062F\u0627\u0645\u0646"
+  Que: 
   Mode: 0
   type: 9
   structure: 1
+  wordGameSize: 2
   correctAnswer: 2
-  options: []
-  picoptions: []
+  options:
+  - "\u064FT-shirt"
+  - Skirt
+  - Shoes
+  - Socks
   pics:
-  - {fileID: 21300008, guid: 9bf05a1cc732e4803b61305721fb1c9e, type: 3}
-  - {fileID: 21300002, guid: 9bf05a1cc732e4803b61305721fb1c9e, type: 3}
-  - {fileID: 21300004, guid: 9bf05a1cc732e4803b61305721fb1c9e, type: 3}
-  - {fileID: 21300006, guid: 9bf05a1cc732e4803b61305721fb1c9e, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300002, guid: 280a6bbdf06af4301b41e05700fbc896, type: 3}
+  - {fileID: 21300116, guid: d92e4f3037a0c4f86b94ebb8dac19a0e, type: 3}
+  - {fileID: 21300118, guid: d92e4f3037a0c4f86b94ebb8dac19a0e, type: 3}
+  - {fileID: 21300000, guid: 280a6bbdf06af4301b41e05700fbc896, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

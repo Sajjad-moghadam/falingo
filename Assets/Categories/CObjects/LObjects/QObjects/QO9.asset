@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QO9
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Camera.
+  Title: "\u062C\u0639\u0628\u0647"
+  Que: 
   Mode: 0
   type: 13
   structure: 1
-  correctAnswer: 2
-  options: []
-  picoptions: []
+  wordGameSize: 2
+  correctAnswer: 1
+  options:
+  - Box
+  - Calender
+  - Lamp
+  - Mirror
   pics:
-  - {fileID: 21300020, guid: 6b6c6fa6d5482468abc750d2548ca733, type: 3}
-  - {fileID: 21300016, guid: 6b6c6fa6d5482468abc750d2548ca733, type: 3}
-  - {fileID: 21300044, guid: 6b6c6fa6d5482468abc750d2548ca733, type: 3}
-  - {fileID: 21300032, guid: 6b6c6fa6d5482468abc750d2548ca733, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300034, guid: 96e073f4f374b4a04a463ac441e40680, type: 3}
+  - {fileID: 21300036, guid: 96e073f4f374b4a04a463ac441e40680, type: 3}
+  - {fileID: 21300048, guid: 96e073f4f374b4a04a463ac441e40680, type: 3}
+  - {fileID: 21300050, guid: 96e073f4f374b4a04a463ac441e40680, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

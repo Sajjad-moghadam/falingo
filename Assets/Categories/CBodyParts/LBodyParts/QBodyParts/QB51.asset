@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QB51
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Palm.
+  Title: Eyelash
+  Que: 
   Mode: 2
   type: 5
   structure: 1
+  wordGameSize: 3
   correctAnswer: 1
-  options: []
-  picoptions: []
+  options:
+  - "\u0645\u0698\u0647"
+  - "\u0627\u0628\u0631\u0648"
+  - "\u067E\u0644\u06A9 "
+  - "\u0627\u0646\u06AF\u0634\u062A \u0627\u0634\u0627\u0631\u0647"
   pics:
-  - {fileID: 21300020, guid: bb50805e8c8dd40c7a74db4224e6e9ae, type: 3}
-  - {fileID: 21300022, guid: bb50805e8c8dd40c7a74db4224e6e9ae, type: 3}
-  - {fileID: 21300030, guid: bb50805e8c8dd40c7a74db4224e6e9ae, type: 3}
-  - {fileID: 21300034, guid: bb50805e8c8dd40c7a74db4224e6e9ae, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300056, guid: d21ee2e8d19184f6a9fcf4ce715b5ec7, type: 3}
+  - {fileID: 21300058, guid: d21ee2e8d19184f6a9fcf4ce715b5ec7, type: 3}
+  - {fileID: 21300060, guid: d21ee2e8d19184f6a9fcf4ce715b5ec7, type: 3}
+  - {fileID: 21300062, guid: d21ee2e8d19184f6a9fcf4ce715b5ec7, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

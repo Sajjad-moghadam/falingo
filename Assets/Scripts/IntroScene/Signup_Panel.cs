@@ -1,12 +1,12 @@
 ﻿using System;
-using Backtory.Core.Public;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Serialization;
+//using Backtory.Core.Public;
+//using Newtonsoft.Json;
+//using Newtonsoft.Json.Serialization;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
 using System.IO;
-using Backtory.InAppPurchase.Public;
+//using Backtory.InAppPurchase.Public;
 using System.Text.RegularExpressions;
 using System.Net.Mail;
 using UnityEngine.SceneManagement;
@@ -141,44 +141,46 @@ public class Signup_Panel : MonoBehaviour
                 if (PlayerPrefs.GetInt(alreadyRegistered) == 0)
                     PlayerPrefs.SetInt(alreadyRegistered,1) ;
 
+                Setting.authResponse = response;
                 SceneManager.LoadScene(Setting.mainScene);
 
             }
         }, 10000);
 
     }
-    // Function for save age and gender
-    public void saveAgegen()
-    {
+   
+    //// Function for save age and gender
+    //public void saveAgegen()
+    //{
 
-        try
-        {
-            BacktoryObject genderage = new BacktoryObject("GenderAge");
-            genderage["gender"] = sexDropDown.value;
-            genderage["age"] = ageDropDown.value;
-            genderage["userID"] = BacktoryUser.CurrentUser.UserId;
+    //    try
+    //    {
+    //        BacktoryObject genderage = new BacktoryObject("GenderAge");
+    //        genderage["gender"] = sexDropDown.value;
+    //        genderage["age"] = ageDropDown.value;
+    //        genderage["userID"] = BacktoryUser.CurrentUser.UserId;
 
 
-            genderage.SaveInBackground(response =>
-            {
-                if (response.Successful)
-                {
-                    PlayerPrefs.SetInt(alreadyRegistered, 1);
-                    // successful save. good place for Debug.Log function.
+    //        genderage.SaveInBackground(response =>
+    //        {
+    //            if (response.Successful)
+    //            {
+    //                PlayerPrefs.SetInt(alreadyRegistered, 1);
+    //                // successful save. good place for Debug.Log function.
 
-                }
-                else
-                {
-                    // see response.Message to know the cause of error
-                }
-            });
-        }
-        catch (Exception e)
-        {
-            Debug.LogError(e.Message);
-        }
+    //            }
+    //            else
+    //            {
+    //                // see response.Message to know the cause of error
+    //            }
+    //        });
+    //    }
+    //    catch (Exception e)
+    //    {
+    //        Debug.LogError(e.Message);
+    //    }
 
-    }
+    //}
     // functions for popup windows
 
     // Email address validation function
@@ -198,24 +200,25 @@ public class Signup_Panel : MonoBehaviour
             return false;
         }
     }
-    // Forgetting password function
-    public void onForgotpassClick()
-    {
-        string username = usernameInputlog.text;
+  
+    //// Forgetting password function
+    //public void onForgotpassClick()
+    //{
+    //    string username = usernameInputlog.text;
 
-        // Requesting forget password to backtory
-        BacktoryUser.ForgotPasswordInBackground(username, response =>
-        {
-            if (response.Successful)
-            {
-                Setting.MessegeBox.SetMessege("کلمه عبور جدید به ایمیلت ارسال شد.");
-                // Showforgotpass();
-                // Debug.Log("Go to your mail inbox and verify your request.");
-            }
-            else
-            {
-                Debug.Log("failed; " + response.Message);
-            }
-        });
-    }
+    //    // Requesting forget password to backtory
+    //    BacktoryUser.ForgotPasswordInBackground(username, response =>
+    //    {
+    //        if (response.Successful)
+    //        {
+    //            Setting.MessegeBox.SetMessege("کلمه عبور جدید به ایمیلت ارسال شد.");
+    //            // Showforgotpass();
+    //            // Debug.Log("Go to your mail inbox and verify your request.");
+    //        }
+    //        else
+    //        {
+    //            Debug.Log("failed; " + response.Message);
+    //        }
+    //    });
+    //}
 }

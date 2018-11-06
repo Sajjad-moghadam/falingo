@@ -12,17 +12,29 @@ MonoBehaviour:
   m_Name: QF36
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Walnuts.
+  Title: Milkshake
+  Que: 
   Mode: 1
   type: 3
   structure: 1
-  correctAnswer: 2
-  options: []
-  picoptions: []
+  wordGameSize: 3
+  correctAnswer: 3
+  options:
+  - "\u0686\u0627\u06CC"
+  - "\u0647\u0627\u062A \u062F\u0627\u06AF"
+  - "\u0645\u062E\u0644\u0648\u0637 \u0634\u06CC\u0631 \u0648 \u0634\u0631\u0628\u062A
+    \u0648 \u0628\u0633\u062A\u0646\u06CC"
+  - "\u0634\u06CC\u0631"
   pics:
-  - {fileID: 21300032, guid: b566ece7198bc443fb55f952b45c7c0a, type: 3}
-  - {fileID: 21300072, guid: 6267737441bc842f48d8656a00f543ec, type: 3}
-  - {fileID: 21300016, guid: b566ece7198bc443fb55f952b45c7c0a, type: 3}
-  - {fileID: 21300010, guid: 6267737441bc842f48d8656a00f543ec, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300098, guid: 472c5c0f2fed64837b1f6139d8407440, type: 3}
+  - {fileID: 21300100, guid: 472c5c0f2fed64837b1f6139d8407440, type: 3}
+  - {fileID: 21300096, guid: 472c5c0f2fed64837b1f6139d8407440, type: 3}
+  - {fileID: 21300094, guid: 472c5c0f2fed64837b1f6139d8407440, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

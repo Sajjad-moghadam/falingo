@@ -12,17 +12,25 @@ MonoBehaviour:
   m_Name: QC46
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Khaki.
-  Mode: 2
+  Title: 
+  Que: 
+  Mode: 1
   type: 2
-  structure: 1
-  correctAnswer: 3
+  structure: 2
+  wordGameSize: 2
+  correctAnswer: 0
   options: []
-  picoptions: []
-  pics:
-  - {fileID: 21300016, guid: 0619ab7de4dad42a5896f454e75995a1, type: 3}
-  - {fileID: 21300032, guid: 0619ab7de4dad42a5896f454e75995a1, type: 3}
-  - {fileID: 21300030, guid: 0619ab7de4dad42a5896f454e75995a1, type: 3}
-  - {fileID: 21300034, guid: 0619ab7de4dad42a5896f454e75995a1, type: 3}
-  UserGaveRightAnswer: 0
+  pics: []
+  words:
+  - cube
+  words1Positions:
+  - {x: 0, y: 0}
+  - {x: 0, y: 1}
+  - {x: 1, y: 0}
+  - {x: 1, y: 1}
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []

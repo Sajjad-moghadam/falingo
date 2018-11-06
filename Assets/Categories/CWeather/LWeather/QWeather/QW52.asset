@@ -12,17 +12,28 @@ MonoBehaviour:
   m_Name: QW52
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Match.
-  Que: Soil.
+  Title: "\u062A\u0646\u062F\u0628\u0627\u062F"
+  Que: 
   Mode: 2
   type: 6
   structure: 1
-  correctAnswer: 3
-  options: []
-  picoptions: []
+  wordGameSize: 2
+  correctAnswer: 2
+  options:
+  - Lighthouse
+  - Hurricane
+  - Tornado
+  - Dam
   pics:
-  - {fileID: 21300034, guid: 630992e2729ea495eb5a7680dccdb0cb, type: 3}
-  - {fileID: 21300010, guid: 4e15d2b80c36344d4953321f0bd84297, type: 3}
-  - {fileID: 21300012, guid: 4e15d2b80c36344d4953321f0bd84297, type: 3}
-  - {fileID: 21300000, guid: 630992e2729ea495eb5a7680dccdb0cb, type: 3}
-  UserGaveRightAnswer: 0
+  - {fileID: 21300030, guid: 16545ae5c964748df98bdb89213a095a, type: 3}
+  - {fileID: 21300126, guid: d21ee2e8d19184f6a9fcf4ce715b5ec7, type: 3}
+  - {fileID: 21300128, guid: d21ee2e8d19184f6a9fcf4ce715b5ec7, type: 3}
+  - {fileID: 21300028, guid: 16545ae5c964748df98bdb89213a095a, type: 3}
+  words: []
+  words1Positions: []
+  words2Positions: []
+  words3Positions: []
+  words4Positions: []
+  words5Positions: []
+  words6Positions: []
+  words7Positions: []
