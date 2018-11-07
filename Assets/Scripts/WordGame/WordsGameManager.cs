@@ -127,7 +127,17 @@ public class WordsGameManager : SingletonMahsa<WordsGameManager>
 
     public void SetQuestion()
     {
-        titleQuestionText.text = question.Title;
+        if(Fa.isFarsi(question.Title[0]))
+        {
+            titleQuestionText.lineSpacing = -1;
+            titleQuestionText.text = question.Title.faConvert();
+        }
+        else
+        {
+            titleQuestionText.lineSpacing = 1;
+            titleQuestionText.text = question.Title;
+
+        }
         selectedStringText.text = "";
         foreach (var item in lines)
         {
@@ -207,7 +217,7 @@ public class WordsGameManager : SingletonMahsa<WordsGameManager>
 
                 if(findedWords >= question.words.Length)
                 {
-                    StartCoroutine(questionPanel.VerifyAnswer(0, true));
+                    StartCoroutine(questionPanel.VerifyAnswer(0, true,3));
                 }
             }
             selectedString = "";

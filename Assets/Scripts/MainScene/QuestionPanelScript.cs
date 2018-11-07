@@ -505,7 +505,7 @@ public class QuestionPanelScript : MonoBehaviour
             Setting.notificationMessage.Show("گزینه ای انتخاب نشده".faConvert());
     }
 
-    public IEnumerator VerifyAnswer(int index, bool winWordgame = false)
+    public IEnumerator VerifyAnswer(int index, bool winWordgame = false,int waitSecound = 1)
     {
         //GetComponent<Button>().interactable = false;
         if (index == QuestionList[CurrentQuestionIndex].correctAnswer)
@@ -519,7 +519,7 @@ public class QuestionPanelScript : MonoBehaviour
         }
         UpdateProgress();
 
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(waitSecound);
 
         StartCoroutine(HideCurrentShowNextQuestion());
     }
