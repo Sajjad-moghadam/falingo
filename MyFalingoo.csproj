@@ -392,14 +392,13 @@
     <Compile Include="Assets\Scripts\ScriptableObject\Lesson.cs" />
     <Compile Include="Assets\Scripts\ScriptableObject\Question.cs" />
     <Compile Include="Assets\Scripts\SingletonMahsa.cs" />
-    <Compile Include="Assets\Scripts\test.cs" />
-    <Compile Include="Assets\Scripts\Toolbox.cs" />
     <Compile Include="Assets\Scripts\UPersian\Scripts\Components\RtlText.cs" />
     <Compile Include="Assets\Scripts\UPersian\Scripts\EGG.cs" />
     <Compile Include="Assets\Scripts\UPersian\Scripts\Utils\UPersianUtils.cs" />
     <Compile Include="Assets\Scripts\WordGame\CharacterButtonManager.cs" />
     <Compile Include="Assets\Scripts\WordGame\LineManager.cs" />
     <Compile Include="Assets\Scripts\WordGame\WordCharacterScript.cs" />
+    <Compile Include="Assets\Scripts\WordGame\WordGameTestScript.cs" />
     <Compile Include="Assets\Scripts\WordGame\WordLineManager.cs" />
     <Compile Include="Assets\Scripts\WordGame\WordsGameManager.cs" />
   </ItemGroup>

@@ -22,7 +22,7 @@ public class WordsGameManager : SingletonMahsa<WordsGameManager>
     const int maxWords = 7;
 
 
-    public Question question;
+    private Question question;
     int findedWords = 0;
     int questionLines;
 
@@ -127,17 +127,21 @@ public class WordsGameManager : SingletonMahsa<WordsGameManager>
 
     public void SetQuestion()
     {
-        if(Fa.isFarsi(question.Title[0]))
+        if(question.Title != string.Empty)
         {
-            titleQuestionText.lineSpacing = -1;
-            titleQuestionText.text = question.Title.faConvert();
-        }
-        else
-        {
-            titleQuestionText.lineSpacing = 1;
-            titleQuestionText.text = question.Title;
+            if (Fa.isFarsi(question.Title[0]))
+            {
+                titleQuestionText.lineSpacing = -1;
+                titleQuestionText.text = question.Title.faConvert();
+            }
+            else
+            {
+                titleQuestionText.lineSpacing = 1;
+                titleQuestionText.text = question.Title;
 
+            }
         }
+       
         selectedStringText.text = "";
         foreach (var item in lines)
         {
@@ -217,7 +221,10 @@ public class WordsGameManager : SingletonMahsa<WordsGameManager>
 
                 if(findedWords >= question.words.Length)
                 {
-                    StartCoroutine(questionPanel.VerifyAnswer(0, true,3));
+                    if (questionPanel != null)
+                        StartCoroutine(questionPanel.VerifyAnswer(0, true, 3));
+                    else
+                        Setting.MessegeBox.SetMessege("تست موفقیت آمیز بود", "اوکیه", "موفق");
                 }
             }
             selectedString = "";
