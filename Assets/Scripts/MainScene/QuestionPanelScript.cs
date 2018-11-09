@@ -485,13 +485,17 @@ public class QuestionPanelScript : MonoBehaviour
     int selectedAnswerIndex = 0;
     public void SelectedButtonChange(int index)
     {
-        selectedAnswerIndex = index;
-
-        string temp = QuestionList[CurrentQuestionIndex].options[index - 1];
-        if (temp != string.Empty && !Fa.isFarsi(temp[0]))
+        if(index != selectedAnswerIndex)
         {
-            Setting.Speak(temp);
+            selectedAnswerIndex = index;
+
+            string temp = QuestionList[CurrentQuestionIndex].options[index - 1];
+            if (temp != string.Empty && !Fa.isFarsi(temp[0]))
+            {
+                Setting.Speak(temp);
+            }
         }
+       
     }
 
     public void CheckAnswerClick()

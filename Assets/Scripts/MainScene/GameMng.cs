@@ -84,6 +84,29 @@ public class GameMng : SingletonMahsa<GameMng>
         //AddDiamond(1000); //***** remove
     }
 
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            if(!questionPanel.gameObject.activeInHierarchy)
+            {
+                if(LessonPanel.gameObject.activeInHierarchy)
+                {
+                    LessonPanel.Hide();
+                }
+                else
+                {
+                    Setting.MessegeBox.SetMessege("آیا از برنامه خارج میشوید؟");
+                    Setting.MessegeBox.OnOkButtonClickEvent += MessegeBox_OnOkButtonClickEvent;
+                }
+            }
+        }
+    }
+
+    private void MessegeBox_OnOkButtonClickEvent()
+    {
+        Application.Quit();
+    }
 
     public void ShowAchivmentBigPanel(string message, Sprite icon)
     {

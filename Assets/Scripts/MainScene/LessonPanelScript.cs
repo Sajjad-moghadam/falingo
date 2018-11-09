@@ -56,6 +56,11 @@ public class LessonPanelScript : MonoBehaviour {
         UpdatePanel();
     }
 
+    public void Hide()
+    {
+        myPanel.Hide();
+    }
+
     public void PrevLessonClick()
     {
         GameMng.selectedLessonIndex--;
