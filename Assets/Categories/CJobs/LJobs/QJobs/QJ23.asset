@@ -15,7 +15,7 @@ MonoBehaviour:
   Title: "\u0631\u0642\u0627\u0635 - \u062F\u0627\u0645\u067E\u0632\u0634\u06A9"
   Que: 
   Mode: 0
-  type: 10
+  type: 12
   structure: 2
   wordGameSize: 3
   correctAnswer: 0
@@ -27,10 +27,10 @@ MonoBehaviour:
   words1Positions:
   - {x: 2, y: 0}
   - {x: 2, y: 1}
-  - {x: 1, y: 1}
-  - {x: 2, y: 1}
   - {x: 2, y: 2}
   - {x: 1, y: 2}
+  - {x: 1, y: 1}
+  - {x: 1, y: 0}
   words2Positions:
   - {x: 0, y: 2}
   - {x: 0, y: 1}

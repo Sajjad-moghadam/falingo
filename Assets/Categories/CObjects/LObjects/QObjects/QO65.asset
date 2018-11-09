@@ -15,7 +15,7 @@ MonoBehaviour:
   Title: "\u0634\u0646 \u06A9\u0634 \u060C \u0686\u0646\u06AF\u06A9"
   Que: 
   Mode: 2
-  type: 13
+  type: 16
   structure: 1
   wordGameSize: 4
   correctAnswer: 3

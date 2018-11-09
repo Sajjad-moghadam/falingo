@@ -15,7 +15,7 @@ MonoBehaviour:
   Title: Jumper
   Que: 
   Mode: 2
-  type: 9
+  type: 11
   structure: 1
   wordGameSize: 4
   correctAnswer: 1

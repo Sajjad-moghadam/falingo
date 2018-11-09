@@ -15,15 +15,15 @@ MonoBehaviour:
   Title: What .....?
   Que: 
   Mode: 2
-  type: 14
+  type: 2
   structure: 0
   wordGameSize: 2
   correctAnswer: 3
   options:
-  - Does speak your sister languages
-  - Languages speaks your sister
-  - 'Languages does your sister speak '
-  - 'Languages do your sister speak '
+  - Does speak your sister languages.
+  - Languages speaks your sister.
+  - Languages does your sister speak.
+  - Languages do your sister speak.
   pics: []
   words: []
   words1Positions: []

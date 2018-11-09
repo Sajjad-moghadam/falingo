@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Name: QW75
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: 
+  Title: hurr-----, to---do
   Que: 
   Mode: 2
-  type: 6
+  type: 8
   structure: 2
   wordGameSize: 4
   correctAnswer: 0

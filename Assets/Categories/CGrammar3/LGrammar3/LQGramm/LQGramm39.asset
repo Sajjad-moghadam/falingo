@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Name: LQGramm39
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: "He\u2019s ..... late for class. He\u2019s always on time"
+  Title: "He\u2019s ..... late for class. He\u2019s always on time."
   Que: 
   Mode: 1
-  type: 16
+  type: 13
   structure: 0
   wordGameSize: 2
   correctAnswer: 3

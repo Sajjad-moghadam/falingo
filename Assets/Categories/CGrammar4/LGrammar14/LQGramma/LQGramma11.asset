@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: LQGramma11
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: "The bus didn\u2019t stop in Lyon. It only ..... in Paris"
+  Title: "The bus didn\u2019t stop in Lyon. It only ..... in Paris."
   Que: 
   Mode: 0
   type: 17

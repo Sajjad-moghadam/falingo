@@ -15,7 +15,7 @@ MonoBehaviour:
   Title: "\u0645\u0646 \u0627\u0645\u0631\u0648\u0632 \u0635\u0628\u062D \u062C\u06CC\u0645
     \u0648 \u062F\u06CC\u0648\u06CC\u062F \u0631\u0627 \u062F\u06CC\u062F\u0645 \u0648
     \u0634\u0645\u0627\u0631\u0647 \u0645\u0648\u0628\u0627\u06CC\u0644\u0645\u0648
-    \u062A\u0648\u0631\u0648 \u0628\u0647\u0634\u0648\u0646 \u062F\u0627\u062F\u0645"
+    \u062A\u0648\u0631\u0648 \u0628\u0647\u0634\u0648\u0646 \u062F\u0627\u062F\u0645."
   Que: 
   Mode: 1
   type: 15
@@ -23,10 +23,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 2
   options:
-  - I saw Jim and David this morning. I gave him your mobile number
-  - I saw Jim and David this morning. I gave them your mobile number
-  - I saw Jim and David this morning. I gave us your mobile number
-  - I saw Jim and David this morning. I gave they your mobile number
+  - I saw Jim and David this morning. I gave him your mobile number.
+  - I saw Jim and David this morning. I gave them your mobile number.
+  - I saw Jim and David this morning. I gave us your mobile number.
+  - I saw Jim and David this morning. I gave they your mobile number.
   pics: []
   words: []
   words1Positions: []

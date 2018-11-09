@@ -15,7 +15,7 @@ MonoBehaviour:
   Title: 
   Que: 
   Mode: 2
-  type: 3
+  type: 4
   structure: 2
   wordGameSize: 3
   correctAnswer: 0

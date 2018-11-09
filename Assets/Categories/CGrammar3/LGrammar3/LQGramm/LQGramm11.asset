@@ -13,18 +13,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   QuestionNum: 0
   Title: "\u0627\u0648 \u0627\u0647\u0644 \u0645\u06A9\u0632\u06CC\u06A9 \u0627\u0633\u062A.
-    \u0646\u0627\u0645\u0634 \u067E\u0627\u0628\u0644\u0648 \u0627\u0633\u062A"
+    \u0646\u0627\u0645\u0634 \u067E\u0627\u0628\u0644\u0648 \u0627\u0633\u062A."
   Que: 
   Mode: 0
   type: 16
   structure: 0
   wordGameSize: 2
-  correctAnswer: 4
+  correctAnswer: 1
   options:
-  - "He\u2019s from Mexico.  _____ name\u2019s Pablo.  "
-  - Does your mother Scottish
-  - Have your mother Scottish
-  - Is your mother Scottish
+  - "He\u2019s from Mexico. His name\u2019s Pablo.  "
+  - "He\u2019s from Mexico. Their name\u2019s Pablo.  "
+  - "He\u2019s from Mexico. Our name\u2019s Pablo.  "
+  - "He\u2019s from Mexico. My name\u2019s Pablo.  "
   pics: []
   words: []
   words1Positions: []

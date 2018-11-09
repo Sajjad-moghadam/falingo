@@ -15,7 +15,7 @@ MonoBehaviour:
   Title: Beach
   Que: 
   Mode: 1
-  type: 6
+  type: 8
   structure: 1
   wordGameSize: 2
   correctAnswer: 4

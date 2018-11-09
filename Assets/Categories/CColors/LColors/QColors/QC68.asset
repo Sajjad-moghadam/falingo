@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: QC68
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Penguins are white and .....
+  Title: Penguins are white and ..... .
   Que: 
   Mode: 2
   type: 2

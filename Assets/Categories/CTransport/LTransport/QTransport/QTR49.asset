@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Name: QTR49
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: 
+  Title: mo---bike, s--------, c--
   Que: 
   Mode: 1
-  type: 11
+  type: 14
   structure: 2
   wordGameSize: 5
   correctAnswer: 0

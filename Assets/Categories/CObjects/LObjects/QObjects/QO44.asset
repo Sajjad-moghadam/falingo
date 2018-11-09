@@ -15,7 +15,7 @@ MonoBehaviour:
   Title: Fridge
   Que: 
   Mode: 1
-  type: 13
+  type: 16
   structure: 1
   wordGameSize: 3
   correctAnswer: 3

@@ -13,18 +13,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   QuestionNum: 0
   Title: "\u0645\u0646 \u062F\u06CC\u0631\u0648\u0632 \u062A\u0644\u0648\u06CC\u0632\u06CC\u0648\u0646
-    \u062A\u0645\u0627\u0634\u0627 \u0646\u06A9\u0631\u062F\u0645"
+    \u062A\u0645\u0627\u0634\u0627 \u0646\u06A9\u0631\u062F\u0645."
   Que: 
   Mode: 0
-  type: 15
+  type: 7
   structure: 0
   wordGameSize: 2
   correctAnswer: 1
   options:
-  - I watched not TV yesterday
-  - I didn't watch TV yesterday
-  - I don't watch TV yesterday
-  - I didn't watched TV yesterday
+  - I watched not TV yesterday.
+  - I didn't watch TV yesterday.
+  - I don't watch TV yesterday.
+  - I didn't watched TV yesterday.
   pics: []
   words: []
   words1Positions: []

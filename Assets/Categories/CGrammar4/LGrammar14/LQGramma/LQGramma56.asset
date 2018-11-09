@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: LQGramma56
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: "I\u2019ve bought a new machine ..... makes fantastic coffee"
+  Title: "I\u2019ve bought a new machine ..... makes fantastic coffee."
   Que: 
   Mode: 2
   type: 17

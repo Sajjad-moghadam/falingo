@@ -15,7 +15,7 @@ MonoBehaviour:
   Title: "I\u2019m going ..... at a hotel near the beach.  "
   Que: 
   Mode: 2
-  type: 15
+  type: 7
   structure: 0
   wordGameSize: 2
   correctAnswer: 3

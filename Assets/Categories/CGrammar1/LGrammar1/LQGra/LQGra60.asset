@@ -15,7 +15,7 @@ MonoBehaviour:
   Title: '..... to Spain on holiday.  '
   Que: 
   Mode: 2
-  type: 14
+  type: 2
   structure: 0
   wordGameSize: 2
   correctAnswer: 3

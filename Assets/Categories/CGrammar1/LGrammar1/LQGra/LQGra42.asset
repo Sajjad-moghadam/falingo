@@ -12,18 +12,18 @@ MonoBehaviour:
   m_Name: LQGra42
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: "\u0627\u0648 \u062F\u0648 \u0641\u0631\u0632\u0646\u062F \u062F\u0627\u0631\u062F"
+  Title: "\u0627\u0648 \u062F\u0648 \u0641\u0631\u0632\u0646\u062F \u062F\u0627\u0631\u062F."
   Que: 
   Mode: 2
-  type: 14
+  type: 2
   structure: 0
   wordGameSize: 2
   correctAnswer: 3
   options:
-  - She haves two children
-  - She have two children
-  - She has two children
-  - She had two children
+  - She haves two children.
+  - She have two children.
+  - She has two children.
+  - She had two children.
   pics: []
   words: []
   words1Positions: []

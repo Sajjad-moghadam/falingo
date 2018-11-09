@@ -15,7 +15,7 @@ MonoBehaviour:
   Title: Chocolate
   Que: 
   Mode: 0
-  type: 3
+  type: 4
   structure: 1
   wordGameSize: 2
   correctAnswer: 1

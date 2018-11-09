@@ -15,7 +15,7 @@ MonoBehaviour:
   Title: Leaves of this plant used in salad, sandwiches.
   Que: 
   Mode: 1
-  type: 4
+  type: 5
   structure: 0
   wordGameSize: 5
   correctAnswer: 3

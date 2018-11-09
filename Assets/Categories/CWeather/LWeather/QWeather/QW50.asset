@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Name: QW50
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: 
+  Title: ri-----nk, bea--, o----
   Que: 
   Mode: 1
-  type: 6
+  type: 8
   structure: 2
   wordGameSize: 5
   correctAnswer: 0

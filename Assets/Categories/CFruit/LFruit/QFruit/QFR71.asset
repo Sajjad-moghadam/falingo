@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Name: QFR71
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: 
+  Title: '-----h'
   Que: 
   Mode: 2
-  type: 4
+  type: 5
   structure: 2
   wordGameSize: 3
   correctAnswer: 0

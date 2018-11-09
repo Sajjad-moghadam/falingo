@@ -12,18 +12,16 @@ MonoBehaviour:
   m_Name: QCL71
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: 
+  Title: '---g--'
   Que: 
   Mode: 2
-  type: 9
+  type: 11
   structure: 2
   wordGameSize: 5
   correctAnswer: 0
   options: []
   pics: []
   words:
-  - wellingtons
-  - slippers
   - hanger
   words1Positions:
   - {x: 0, y: 0}
@@ -32,27 +30,8 @@ MonoBehaviour:
   - {x: 0, y: 3}
   - {x: 0, y: 4}
   - {x: 1, y: 4}
-  - {x: 2, y: 4}
-  - {x: 3, y: 4}
-  - {x: 4, y: 4}
-  - {x: 4, y: 3}
-  - {x: 3, y: 3}
-  words2Positions:
-  - {x: 1, y: 0}
-  - {x: 2, y: 0}
-  - {x: 3, y: 0}
-  - {x: 4, y: 0}
-  - {x: 4, y: 1}
-  - {x: 3, y: 1}
-  - {x: 2, y: 1}
-  - {x: 1, y: 1}
-  words3Positions:
-  - {x: 1, y: 2}
-  - {x: 1, y: 3}
-  - {x: 2, y: 3}
-  - {x: 2, y: 2}
-  - {x: 3, y: 2}
-  - {x: 4, y: 2}
+  words2Positions: []
+  words3Positions: []
   words4Positions: []
   words5Positions: []
   words6Positions: []

@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Name: QJ18
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: A person who takes photographs
+  Title: A person who takes photographs.
   Que: 
   Mode: 0
-  type: 10
+  type: 12
   structure: 0
   wordGameSize: 2
   correctAnswer: 4

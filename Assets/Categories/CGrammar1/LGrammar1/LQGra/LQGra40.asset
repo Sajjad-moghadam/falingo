@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Name: LQGra40
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: We ..... to the radio in the morning
+  Title: We ..... to the radio in the morning.
   Que: 
   Mode: 1
-  type: 14
+  type: 2
   structure: 0
   wordGameSize: 2
   correctAnswer: 1

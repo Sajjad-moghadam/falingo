@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Name: LQGramm38
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: I have a shower. ..... I have breakfast
+  Title: I have a shower. ..... I have breakfast.
   Que: 
   Mode: 1
-  type: 16
+  type: 13
   structure: 0
   wordGameSize: 2
   correctAnswer: 4

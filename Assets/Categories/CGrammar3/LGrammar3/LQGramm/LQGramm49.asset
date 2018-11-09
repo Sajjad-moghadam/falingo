@@ -15,7 +15,7 @@ MonoBehaviour:
   Title: "The children are very quiet. I can\u2019t hear ....."
   Que: 
   Mode: 2
-  type: 16
+  type: 13
   structure: 0
   wordGameSize: 2
   correctAnswer: 4

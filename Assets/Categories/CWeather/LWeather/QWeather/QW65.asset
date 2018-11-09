@@ -15,7 +15,7 @@ MonoBehaviour:
   Title: Pebble
   Que: 
   Mode: 2
-  type: 6
+  type: 8
   structure: 1
   wordGameSize: 2
   correctAnswer: 3
@@ -27,7 +27,7 @@ MonoBehaviour:
   pics:
   - {fileID: 21300070, guid: 16545ae5c964748df98bdb89213a095a, type: 3}
   - {fileID: 21300068, guid: 16545ae5c964748df98bdb89213a095a, type: 3}
-  - {fileID: 21300070, guid: 16545ae5c964748df98bdb89213a095a, type: 3}
+  - {fileID: 21300074, guid: 16545ae5c964748df98bdb89213a095a, type: 3}
   - {fileID: 21300078, guid: 16545ae5c964748df98bdb89213a095a, type: 3}
   words: []
   words1Positions: []

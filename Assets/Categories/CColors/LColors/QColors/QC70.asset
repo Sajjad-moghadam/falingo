@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: QC70
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Eggplants are .....
+  Title: Eggplants are ..... .
   Que: 
   Mode: 2
   type: 2

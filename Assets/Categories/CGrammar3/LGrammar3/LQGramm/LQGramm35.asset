@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Name: LQGramm35
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: '..... eight o''clock'
+  Title: '..... eight o''clock.'
   Que: 
   Mode: 1
-  type: 16
+  type: 13
   structure: 0
   wordGameSize: 2
   correctAnswer: 2

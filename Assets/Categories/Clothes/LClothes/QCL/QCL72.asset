@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Name: QCL72
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: 
+  Title: h-----, bowler---
   Que: 
   Mode: 2
-  type: 9
+  type: 11
   structure: 2
   wordGameSize: 4
   correctAnswer: 0

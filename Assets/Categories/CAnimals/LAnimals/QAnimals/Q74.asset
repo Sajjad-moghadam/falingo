@@ -12,17 +12,17 @@ MonoBehaviour:
   m_Name: Q74
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: 
+  Title: a-------, ---i-, h---
   Que: 
   Mode: 2
   type: 0
   structure: 2
-  wordGameSize: 4
+  wordGameSize: 5
   correctAnswer: 0
   options: []
   pics: []
   words:
-  - aadvark
+  - aardvark
   - robin
   - hare
   words1Positions:
@@ -30,9 +30,10 @@ MonoBehaviour:
   - {x: 1, y: 0}
   - {x: 2, y: 0}
   - {x: 3, y: 0}
-  - {x: 3, y: 1}
-  - {x: 2, y: 1}
-  - {x: 1, y: 1}
+  - {x: 4, y: 0}
+  - {x: 4, y: 1}
+  - {x: 4, y: 2}
+  - {x: 4, y: 3}
   words2Positions:
   - {x: 0, y: 1}
   - {x: 0, y: 2}

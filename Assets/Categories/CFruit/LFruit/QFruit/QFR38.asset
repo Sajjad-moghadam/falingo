@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Name: QFR38
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: '..... , spinach, broccoli and onions are considered vegetables'
+  Title: '..... , spinach, broccoli and onions are considered vegetables.'
   Que: 
   Mode: 1
-  type: 4
+  type: 5
   structure: 0
   wordGameSize: 5
   correctAnswer: 1

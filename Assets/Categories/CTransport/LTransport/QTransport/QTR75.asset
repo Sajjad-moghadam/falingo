@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Name: QTR75
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: 
+  Title: snow------, l--------, ---ht
   Que: 
   Mode: 2
-  type: 11
+  type: 14
   structure: 2
   wordGameSize: 5
   correctAnswer: 0

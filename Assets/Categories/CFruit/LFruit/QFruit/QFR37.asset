@@ -15,7 +15,7 @@ MonoBehaviour:
   Title: Do you want fresh ground ..... on your salad?
   Que: 
   Mode: 1
-  type: 4
+  type: 5
   structure: 0
   wordGameSize: 5
   correctAnswer: 4

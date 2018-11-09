@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Name: QF39
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: We will have a ..... salad for dessert
+  Title: We will have a ..... salad for dessert.
   Que: 
   Mode: 1
-  type: 3
+  type: 4
   structure: 1
   wordGameSize: 3
   correctAnswer: 3

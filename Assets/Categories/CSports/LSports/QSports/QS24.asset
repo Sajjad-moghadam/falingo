@@ -15,15 +15,14 @@ MonoBehaviour:
   Title: "\u06A9\u0634\u062A\u06CC \u06AF\u06CC\u0631\u06CC"
   Que: 
   Mode: 0
-  type: 8
+  type: 10
   structure: 2
   wordGameSize: 3
   correctAnswer: 0
   options: []
   pics: []
   words:
-  - caving
-  - box
+  - wrestling
   words1Positions:
   - {x: 0, y: 0}
   - {x: 1, y: 0}

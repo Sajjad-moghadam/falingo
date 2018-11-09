@@ -14,16 +14,16 @@ MonoBehaviour:
   QuestionNum: 0
   Title: "\u067E\u0627\u0648\u0644 \u0648 \u0645\u0627\u0631\u06A9 \u062F\u0631  \u06A9\u0644\u0627\u0633
     \u0634\u0645\u0627\u0631\u0647 \u06F7 \u0647\u0633\u062A\u0646\u062F. \u0633\u0627\u0644\u06CC
-    \u0647\u0645 \u0645\u0639\u0644\u0645\u0634\u0627\u0646 \u0627\u0633\u062A"
+    \u0647\u0645 \u0645\u0639\u0644\u0645\u0634\u0627\u0646 \u0627\u0633\u062A."
   Que: 
   Mode: 0
-  type: 16
+  type: 13
   structure: 0
   wordGameSize: 2
   correctAnswer: 2
   options:
-  - 'Pavel and Mark are in Class 7. They''re teacher is Sally '
-  - Pavel and Mark are in Class 7. Their teacher is Sally
+  - Pavel and Mark are in Class 7. They're teacher is Sally.
+  - Pavel and Mark are in Class 7. Their teacher is Sally.
   - 'Pavel and Mark are in Class 7. Her teacher is Sally.  '
   - 'Pavel and Mark are in Class 7. His teacher is Sally.  '
   pics: []

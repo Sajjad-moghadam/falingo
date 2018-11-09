@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: LQGramma2
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: "\u0645\u0646 \u062F\u06CC\u0634\u0628 \u0622\u0634\u067E\u0632\u06CC \u0646\u06A9\u0631\u062F\u0645"
+  Title: "\u0645\u0646 \u062F\u06CC\u0634\u0628 \u0622\u0634\u067E\u0632\u06CC \u0646\u06A9\u0631\u062F\u0645."
   Que: 
   Mode: 0
   type: 17
@@ -20,10 +20,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 1
   options:
-  - I didn't cook yesterday
-  - I didn't cooked yesterday
-  - I not cook yesterday
-  - I not cooked yesterday
+  - I didn't cook yesterday.
+  - I didn't cooked yesterday.
+  - I not cook yesterday.
+  - I not cooked yesterday.
   pics: []
   words: []
   words1Positions: []

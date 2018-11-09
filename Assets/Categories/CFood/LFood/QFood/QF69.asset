@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Name: QF69
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: A liquid fat obtained from olives
+  Title: A liquid fat obtained from olives.
   Que: 
   Mode: 2
-  type: 3
+  type: 4
   structure: 0
   wordGameSize: 3
   correctAnswer: 1

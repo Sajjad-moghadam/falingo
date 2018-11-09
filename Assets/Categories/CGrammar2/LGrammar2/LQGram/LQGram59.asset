@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Name: LQGram59
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: "She\u2019s going ..... a marathon in June"
+  Title: "She\u2019s going ..... a marathon in June."
   Que: 
   Mode: 2
-  type: 15
+  type: 7
   structure: 0
   wordGameSize: 2
   correctAnswer: 1

@@ -15,7 +15,7 @@ MonoBehaviour:
   Title: "\u0631\u0639\u062F \u0648 \u0628\u0631\u0642"
   Que: 
   Mode: 1
-  type: 6
+  type: 8
   structure: 1
   wordGameSize: 2
   correctAnswer: 3

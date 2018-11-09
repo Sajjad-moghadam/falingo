@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: LQGramma15
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: There are ..... glasses in the cupboard
+  Title: There are ..... glasses in the cupboard.
   Que: 
   Mode: 0
   type: 17

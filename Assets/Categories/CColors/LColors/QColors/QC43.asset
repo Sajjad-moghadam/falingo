@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: QC43
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Bananas and lemons are .....
+  Title: Bananas and lemons are ..... .
   Que: 
   Mode: 1
   type: 2

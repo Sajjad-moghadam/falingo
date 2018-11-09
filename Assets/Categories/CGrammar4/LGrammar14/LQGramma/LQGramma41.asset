@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: LQGramma41
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: "She ..... going to come. She isn\u2019t well"
+  Title: "She ..... going to come. She isn\u2019t well."
   Que: 
   Mode: 2
   type: 17

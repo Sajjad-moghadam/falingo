@@ -16,15 +16,15 @@ MonoBehaviour:
     \u0627\u0633\u062A\u061F"
   Que: 
   Mode: 0
-  type: 16
+  type: 13
   structure: 0
   wordGameSize: 2
   correctAnswer: 4
   options:
   - 'Has your mother Scottish?  '
-  - Does your mother Scottish
-  - Have your mother Scottish
-  - Is your mother Scottish
+  - Does your mother Scottish?
+  - Have your mother Scottish?
+  - Is your mother Scottish?
   pics: []
   words: []
   words1Positions: []

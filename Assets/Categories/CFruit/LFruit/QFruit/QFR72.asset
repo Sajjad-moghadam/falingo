@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Name: QFR72
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: 
+  Title: '---p----'
   Que: 
   Mode: 2
-  type: 4
+  type: 5
   structure: 2
   wordGameSize: 4
   correctAnswer: 0
@@ -23,7 +23,6 @@ MonoBehaviour:
   pics: []
   words:
   - eggplant
-  - radish
   words1Positions:
   - {x: 0, y: 0}
   - {x: 1, y: 0}
@@ -33,14 +32,7 @@ MonoBehaviour:
   - {x: 3, y: 2}
   - {x: 3, y: 3}
   - {x: 2, y: 3}
-  words2Positions:
-  - {x: 0, y: 1}
-  - {x: 1, y: 1}
-  - {x: 2, y: 1}
-  - {x: 2, y: 2}
-  - {x: 1, y: 2}
-  - {x: 0, y: 2}
-  - {x: 0, y: 3}
+  words2Positions: []
   words3Positions: []
   words4Positions: []
   words5Positions: []

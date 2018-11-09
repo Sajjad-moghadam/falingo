@@ -15,7 +15,7 @@ MonoBehaviour:
   Title: "\u064FThin slices of potatoes fried in deep fat"
   Que: 
   Mode: 0
-  type: 3
+  type: 4
   structure: 0
   wordGameSize: 2
   correctAnswer: 3

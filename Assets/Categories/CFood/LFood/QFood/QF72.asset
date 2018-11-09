@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Name: QF72
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: 
+  Title: pan-----, lo-----, al----s, p--
   Que: 
   Mode: 2
-  type: 3
+  type: 4
   structure: 2
   wordGameSize: 5
   correctAnswer: 0

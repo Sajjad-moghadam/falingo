@@ -15,7 +15,7 @@ MonoBehaviour:
   Title: Onion
   Que: 
   Mode: 0
-  type: 4
+  type: 5
   structure: 1
   wordGameSize: 2
   correctAnswer: 2

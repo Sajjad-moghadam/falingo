@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Name: QW46
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: 
+  Title: li------g, f----
   Que: 
   Mode: 1
-  type: 6
+  type: 8
   structure: 2
   wordGameSize: 4
   correctAnswer: 0

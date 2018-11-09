@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Name: QF74
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: 
+  Title: sunflowe------
   Que: 
   Mode: 2
-  type: 3
+  type: 4
   structure: 2
   wordGameSize: 4
   correctAnswer: 0

@@ -15,7 +15,7 @@ MonoBehaviour:
   Title: Heels
   Que: 
   Mode: 1
-  type: 9
+  type: 11
   structure: 1
   wordGameSize: 3
   correctAnswer: 4
@@ -28,7 +28,7 @@ MonoBehaviour:
   - {fileID: 21300062, guid: 280a6bbdf06af4301b41e05700fbc896, type: 3}
   - {fileID: 21300088, guid: 280a6bbdf06af4301b41e05700fbc896, type: 3}
   - {fileID: 21300058, guid: 280a6bbdf06af4301b41e05700fbc896, type: 3}
-  - {fileID: 21300086, guid: 280a6bbdf06af4301b41e05700fbc896, type: 3}
+  - {fileID: 21300066, guid: 280a6bbdf06af4301b41e05700fbc896, type: 3}
   words: []
   words1Positions: []
   words2Positions: []

@@ -15,7 +15,7 @@ MonoBehaviour:
   Title: Habanero peppers
   Que: 
   Mode: 2
-  type: 4
+  type: 5
   structure: 1
   wordGameSize: 4
   correctAnswer: 4

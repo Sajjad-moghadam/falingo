@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Name: QF70
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: A white crystalline carbohydrate used as a sweetener and preservative
+  Title: A white crystalline carbohydrate used as a sweetener and preservative.
   Que: 
   Mode: 2
-  type: 3
+  type: 4
   structure: 0
   wordGameSize: 3
   correctAnswer: 3

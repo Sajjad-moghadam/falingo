@@ -13,18 +13,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   QuestionNum: 0
   Title: "\u0622\u0646 \u0645\u0627\u0634\u06CC\u0646 \u06AF\u0631\u0627\u0646 \u0642\u06CC\u0645\u062A
-    \u0627\u0633\u062A"
+    \u0627\u0633\u062A."
   Que: 
   Mode: 1
-  type: 14
+  type: 2
   structure: 0
   wordGameSize: 2
   correctAnswer: 3
   options:
-  - "\u0651\u0651It's a expensive car"
-  - "\u0651\u0651It's expensive car"
-  - "\u0651\u0651It's an expensive car"
-  - It's a car
+  - "\u0651\u0651It's a expensive car."
+  - "\u0651\u0651It's expensive car."
+  - "\u0651\u0651It's an expensive car."
+  - It's a car.
   pics: []
   words: []
   words1Positions: []

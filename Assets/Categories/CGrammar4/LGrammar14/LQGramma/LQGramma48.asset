@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: LQGramma48
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Be careful! You ..... a mistake
+  Title: Be careful! You ..... a mistake.
   Que: 
   Mode: 2
   type: 17

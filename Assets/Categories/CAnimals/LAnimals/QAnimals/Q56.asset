@@ -18,7 +18,7 @@ MonoBehaviour:
   type: 0
   structure: 1
   wordGameSize: 2
-  correctAnswer: 1
+  correctAnswer: 2
   options:
   - "\u0644\u0627\u06A9 \u067E\u0634\u062A"
   - "\u062E\u0631\u0686\u0646\u06AF"

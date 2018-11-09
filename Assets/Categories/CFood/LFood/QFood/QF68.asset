@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Name: QF68
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: The fruit of the sunflower
+  Title: The fruit of the sunflower.
   Que: 
   Mode: 2
-  type: 3
+  type: 4
   structure: 0
   wordGameSize: 3
   correctAnswer: 3

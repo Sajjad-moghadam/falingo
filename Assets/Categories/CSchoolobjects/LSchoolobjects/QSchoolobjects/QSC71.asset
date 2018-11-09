@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Name: QSC71
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: 
+  Title: cr----, s------
   Que: 
   Mode: 2
-  type: 12
+  type: 15
   structure: 2
   wordGameSize: 4
   correctAnswer: 0
@@ -38,7 +38,7 @@ MonoBehaviour:
   - {x: 3, y: 2}
   - {x: 2, y: 2}
   - {x: 1, y: 2}
-  - {x: 2, y: 2}
+  - {x: 0, y: 2}
   words3Positions: []
   words4Positions: []
   words5Positions: []

@@ -15,7 +15,7 @@ MonoBehaviour:
   Title: Swimming trunk
   Que: 
   Mode: 1
-  type: 9
+  type: 11
   structure: 1
   wordGameSize: 3
   correctAnswer: 2

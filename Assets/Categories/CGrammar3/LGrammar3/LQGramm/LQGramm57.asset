@@ -15,7 +15,7 @@ MonoBehaviour:
   Title: "We can\u2019t find our hotel. Can you help .....?"
   Que: 
   Mode: 2
-  type: 16
+  type: 13
   structure: 0
   wordGameSize: 2
   correctAnswer: 2

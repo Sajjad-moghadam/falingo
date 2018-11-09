@@ -15,7 +15,7 @@ MonoBehaviour:
   Title: "\u06AF\u0644\u0641"
   Que: 
   Mode: 0
-  type: 8
+  type: 10
   structure: 2
   wordGameSize: 2
   correctAnswer: 0

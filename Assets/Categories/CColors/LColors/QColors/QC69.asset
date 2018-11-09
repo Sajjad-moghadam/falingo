@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: QC69
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Apples, salad, and grass are all usually .....
+  Title: Apples, salad, and grass are all usually ..... .
   Que: 
   Mode: 2
   type: 2

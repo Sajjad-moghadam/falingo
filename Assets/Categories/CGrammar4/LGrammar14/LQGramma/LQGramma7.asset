@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: LQGramma7
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Washington ..... the first American president
+  Title: Washington ..... the first American president.
   Que: 
   Mode: 0
   type: 17

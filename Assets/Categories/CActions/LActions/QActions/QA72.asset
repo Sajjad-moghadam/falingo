@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: QA72
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: 0
+  Title: d-g, sa--, whi----
   Que: 
   Mode: 2
   type: 1
@@ -35,10 +35,13 @@ MonoBehaviour:
   - {x: 1, y: 2}
   - {x: 1, y: 1}
   words3Positions:
-  - {x: 1, y: 2}
+  - {x: 2, y: 1}
   - {x: 2, y: 2}
   - {x: 2, y: 3}
   - {x: 3, y: 3}
+  - {x: 3, y: 2}
+  - {x: 3, y: 1}
+  - {x: 3, y: 0}
   words4Positions:
   - {x: 1, y: 0}
   - {x: 2, y: 0}

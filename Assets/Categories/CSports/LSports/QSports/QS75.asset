@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Name: QS75
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: 
+  Title: -an----g
   Que: 
   Mode: 2
-  type: 8
+  type: 10
   structure: 2
   wordGameSize: 3
   correctAnswer: 0

@@ -13,18 +13,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   QuestionNum: 0
   Title: "\u0645\u0627\u062F\u0631\u0645 \u0633\u0647 \u062A\u0627 \u062E\u0648\u0627\u0647\u0631
-    \u062F\u0627\u0631\u062F"
+    \u062F\u0627\u0631\u062F."
   Que: 
   Mode: 0
-  type: 16
+  type: 13
   structure: 0
   wordGameSize: 2
   correctAnswer: 1
   options:
-  - My mother has three sisters
-  - My mother have three sisters
-  - My mother had three sisters
-  - My mother is three sisters
+  - My mother has three sisters.
+  - My mother have three sisters.
+  - My mother had three sisters.
+  - My mother is three sisters.
   pics: []
   words: []
   words1Positions: []

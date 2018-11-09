@@ -15,7 +15,7 @@ MonoBehaviour:
   Title: "We\u2019re new students. ..... names are Jan and Kasia."
   Que: 
   Mode: 0
-  type: 16
+  type: 13
   structure: 0
   wordGameSize: 2
   correctAnswer: 3

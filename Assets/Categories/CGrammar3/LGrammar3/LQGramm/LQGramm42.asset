@@ -13,18 +13,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   QuestionNum: 0
   Title: "\u0645\u0646 \u0634\u0646\u0628\u0647 \u0647\u0627 \u0639\u0635\u0631 \u062F\u0631
-    \u0645\u063A\u0627\u0632\u0647 \u06A9\u0627\u0631 \u0645\u06CC \u06A9\u0646\u0645"
+    \u0645\u063A\u0627\u0632\u0647 \u06A9\u0627\u0631 \u0645\u06CC \u06A9\u0646\u0645."
   Que: 
   Mode: 2
-  type: 16
+  type: 13
   structure: 0
   wordGameSize: 2
   correctAnswer: 2
   options:
-  - I work in a bar at Saturday evenings
-  - I work in a bar on Saturday evenings
-  - I work in a bar in Saturday evenings
-  - I work in a bar with Saturday evenings
+  - I work in a shop at Saturday evenings.
+  - I work in a shop on Saturday evenings.
+  - I work in a shop in Saturday evenings.
+  - I work in a shop with Saturday evenings.
   pics: []
   words: []
   words1Positions: []

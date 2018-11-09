@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Name: LQGram58
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: "It\u2019s going ..... next week "
+  Title: "It\u2019s going ..... next week."
   Que: 
   Mode: 2
-  type: 15
+  type: 7
   structure: 0
   wordGameSize: 2
   correctAnswer: 4

@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Name: QT71
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: 
+  Title: sco----, br---, pup---, j---s
   Que: 
   Mode: 2
-  type: 7
+  type: 9
   structure: 2
   wordGameSize: 5
   correctAnswer: 0

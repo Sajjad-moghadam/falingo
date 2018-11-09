@@ -15,7 +15,7 @@ MonoBehaviour:
   Title: '..... to study English at university.'
   Que: 
   Mode: 2
-  type: 15
+  type: 7
   structure: 0
   wordGameSize: 2
   correctAnswer: 2

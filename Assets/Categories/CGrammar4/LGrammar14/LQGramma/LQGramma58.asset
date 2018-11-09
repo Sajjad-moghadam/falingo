@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: LQGramma58
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: "They\u2019re the children ..... live next door to us"
+  Title: "They\u2019re the children ..... live next door to us."
   Que: 
   Mode: 2
   type: 17

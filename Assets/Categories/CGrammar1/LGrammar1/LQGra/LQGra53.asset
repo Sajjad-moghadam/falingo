@@ -15,7 +15,7 @@ MonoBehaviour:
   Title: "Your son ..... see the doctor at four o\u2019clock.  "
   Que: 
   Mode: 2
-  type: 14
+  type: 2
   structure: 0
   wordGameSize: 2
   correctAnswer: 4

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: QC50
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: 
+  Title: c-------
   Que: 
   Mode: 1
   type: 2
@@ -22,7 +22,7 @@ MonoBehaviour:
   options: []
   pics: []
   words:
-  - Crescent
+  - crescent
   words1Positions:
   - {x: 0, y: 0}
   - {x: 1, y: 0}

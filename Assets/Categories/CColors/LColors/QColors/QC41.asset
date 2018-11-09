@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: QC41
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: The sky and the jeans we wear are .....
+  Title: The sky and the jeans we wear are ..... .
   Que: 
   Mode: 1
   type: 2

@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Name: QCL47
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: 
+  Title: --ac----
   Que: 
   Mode: 1
-  type: 9
+  type: 11
   structure: 2
   wordGameSize: 4
   correctAnswer: 0
@@ -23,7 +23,6 @@ MonoBehaviour:
   pics: []
   words:
   - bracelet
-  - gloves
   words1Positions:
   - {x: 0, y: 0}
   - {x: 0, y: 1}
@@ -33,14 +32,7 @@ MonoBehaviour:
   - {x: 2, y: 3}
   - {x: 3, y: 3}
   - {x: 3, y: 2}
-  words2Positions:
-  - {x: 1, y: 0}
-  - {x: 2, y: 0}
-  - {x: 3, y: 0}
-  - {x: 3, y: 1}
-  - {x: 2, y: 1}
-  - {x: 1, y: 1}
-  - {x: 1, y: 2}
+  words2Positions: []
   words3Positions: []
   words4Positions: []
   words5Positions: []

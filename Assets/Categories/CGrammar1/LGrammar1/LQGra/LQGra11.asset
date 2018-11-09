@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Name: LQGra11
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Where is .....
+  Title: Where is .....?
   Que: 
   Mode: 0
-  type: 14
+  type: 2
   structure: 0
   wordGameSize: 2
   correctAnswer: 1

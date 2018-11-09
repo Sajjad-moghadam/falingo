@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Name: LQGramm19
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: "We ..... drive to work \u2013 we go by bike"
+  Title: "We ..... drive to work \u2013 we go by bike."
   Que: 
   Mode: 0
-  type: 16
+  type: 13
   structure: 0
   wordGameSize: 2
   correctAnswer: 3

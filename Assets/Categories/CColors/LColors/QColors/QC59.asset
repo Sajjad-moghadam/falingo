@@ -18,7 +18,7 @@ MonoBehaviour:
   type: 2
   structure: 1
   wordGameSize: 3
-  correctAnswer: 1
+  correctAnswer: 3
   options:
   - Wheat
   - Fuchsia

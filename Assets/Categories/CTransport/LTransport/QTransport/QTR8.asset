@@ -15,7 +15,7 @@ MonoBehaviour:
   Title: Ship
   Que: 
   Mode: 0
-  type: 11
+  type: 14
   structure: 1
   wordGameSize: 2
   correctAnswer: 4

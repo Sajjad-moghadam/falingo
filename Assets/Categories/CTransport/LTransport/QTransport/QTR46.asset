@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Name: QTR46
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: 
+  Title: t-----
   Que: 
   Mode: 1
-  type: 11
+  type: 14
   structure: 2
   wordGameSize: 3
   correctAnswer: 0

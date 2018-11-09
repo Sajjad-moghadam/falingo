@@ -15,7 +15,7 @@ MonoBehaviour:
   Title: Milkshake
   Que: 
   Mode: 1
-  type: 3
+  type: 4
   structure: 1
   wordGameSize: 3
   correctAnswer: 3

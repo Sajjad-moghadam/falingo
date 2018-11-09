@@ -15,7 +15,7 @@ MonoBehaviour:
   Title: 'Where are ..... pens?  '
   Que: 
   Mode: 0
-  type: 14
+  type: 2
   structure: 0
   wordGameSize: 2
   correctAnswer: 3

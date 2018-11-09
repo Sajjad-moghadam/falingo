@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Name: QTR71
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: 
+  Title: car----, su-------e
   Que: 
   Mode: 2
-  type: 11
+  type: 14
   structure: 2
-  wordGameSize: 4
+  wordGameSize: 5
   correctAnswer: 0
   options: []
   pics: []
@@ -42,6 +42,7 @@ MonoBehaviour:
   - {x: 3, y: 2}
   - {x: 3, y: 1}
   - {x: 3, y: 0}
+  - {x: 4, y: 0}
   words3Positions: []
   words4Positions: []
   words5Positions: []

@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Name: LQGramm59
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Joan of Arc ..... English.  She was French
+  Title: Joan of Arc ..... English.  She was French.
   Que: 
   Mode: 2
-  type: 16
+  type: 13
   structure: 0
   wordGameSize: 2
   correctAnswer: 3

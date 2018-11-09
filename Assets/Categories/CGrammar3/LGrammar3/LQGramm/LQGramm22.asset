@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Name: LQGramm22
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: The shops ..... at 9.30 a.m. and close at 6.00 p.m
+  Title: The shops ..... at 9.30 a.m. and close at 6.00 p.m.
   Que: 
   Mode: 1
-  type: 16
+  type: 13
   structure: 0
   wordGameSize: 2
   correctAnswer: 4

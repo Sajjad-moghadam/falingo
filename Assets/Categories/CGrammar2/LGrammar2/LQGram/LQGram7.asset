@@ -15,7 +15,7 @@ MonoBehaviour:
   Title: '..... your friends at the airport?'
   Que: 
   Mode: 0
-  type: 15
+  type: 7
   structure: 0
   wordGameSize: 2
   correctAnswer: 2

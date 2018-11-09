@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Name: QF48
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: 
+  Title: spagh----
   Que: 
   Mode: 1
-  type: 3
+  type: 4
   structure: 2
   wordGameSize: 3
   correctAnswer: 0

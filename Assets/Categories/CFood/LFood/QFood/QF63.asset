@@ -15,9 +15,9 @@ MonoBehaviour:
   Title: Pickles
   Que: 
   Mode: 2
-  type: 3
+  type: 4
   structure: 1
-  wordGameSize: 3
+  wordGameSize: 4
   correctAnswer: 4
   options:
   - "\u0686\u06CC\u0632\u0628\u0631\u06AF\u0631"

@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Name: QFR60
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: A reddish-orange sweet fruit that is similar to a plum
+  Title: A reddish-orange sweet fruit that is similar to a plum.
   Que: 
   Mode: 2
-  type: 4
+  type: 5
   structure: 0
   wordGameSize: 4
   correctAnswer: 3

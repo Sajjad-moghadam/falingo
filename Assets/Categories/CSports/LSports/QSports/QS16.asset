@@ -15,7 +15,7 @@ MonoBehaviour:
   Title: Jog
   Que: 
   Mode: 0
-  type: 8
+  type: 10
   structure: 1
   wordGameSize: 2
   correctAnswer: 1

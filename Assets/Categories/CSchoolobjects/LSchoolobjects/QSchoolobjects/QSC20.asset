@@ -15,7 +15,7 @@ MonoBehaviour:
   Title: Calender
   Que: 
   Mode: 0
-  type: 12
+  type: 15
   structure: 0
   wordGameSize: 2
   correctAnswer: 3

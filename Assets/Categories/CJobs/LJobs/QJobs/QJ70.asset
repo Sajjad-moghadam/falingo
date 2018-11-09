@@ -15,7 +15,7 @@ MonoBehaviour:
   Title: "\u0645\u062C\u0631\u06CC"
   Que: 
   Mode: 2
-  type: 10
+  type: 12
   structure: 1
   wordGameSize: 4
   correctAnswer: 3

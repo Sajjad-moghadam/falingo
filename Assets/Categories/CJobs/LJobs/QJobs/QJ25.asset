@@ -15,9 +15,9 @@ MonoBehaviour:
   Title: "\u0644\u0648\u0644\u0647 \u06A9\u0634 - \u06A9\u0634\u0627\u0648\u0631\u0632"
   Que: 
   Mode: 0
-  type: 10
+  type: 12
   structure: 2
-  wordGameSize: 3
+  wordGameSize: 4
   correctAnswer: 0
   options: []
   pics: []

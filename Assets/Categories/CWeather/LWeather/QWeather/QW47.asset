@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Name: QW47
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: 
+  Title: rai-----, j-----, b------
   Que: 
   Mode: 1
-  type: 6
+  type: 8
   structure: 2
-  wordGameSize: 4
+  wordGameSize: 5
   correctAnswer: 0
   options: []
   pics: []

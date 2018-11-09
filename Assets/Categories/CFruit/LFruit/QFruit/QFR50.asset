@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Name: QFR50
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: 
+  Title: ch------s, co--
   Que: 
   Mode: 1
-  type: 4
+  type: 5
   structure: 2
   wordGameSize: 4
   correctAnswer: 0

@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Name: QFR3
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: A round orange or yellow fruit
+  Title: A round orange or yellow fruit.
   Que: 
   Mode: 0
-  type: 4
+  type: 5
   structure: 0
   wordGameSize: 2
   correctAnswer: 3

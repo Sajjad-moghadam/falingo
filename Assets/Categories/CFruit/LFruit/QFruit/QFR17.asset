@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Name: QFR17
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: A kind of vegetable like a small onion
+  Title: A kind of vegetable like a small onion.
   Que: 
   Mode: 0
-  type: 4
+  type: 5
   structure: 0
   wordGameSize: 2
   correctAnswer: 3

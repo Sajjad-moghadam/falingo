@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Name: QCL37
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: "\u064FTanktop"
+  Title: Tanktop
   Que: 
   Mode: 1
-  type: 9
+  type: 11
   structure: 1
   wordGameSize: 3
   correctAnswer: 1

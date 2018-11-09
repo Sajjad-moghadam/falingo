@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Name: LQGramm46
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: Fiona hates ..... up early
+  Title: Fiona hates ..... up early.
   Que: 
   Mode: 2
-  type: 16
+  type: 13
   structure: 0
   wordGameSize: 2
   correctAnswer: 1

@@ -23,7 +23,7 @@ MonoBehaviour:
   - Hyena
   - Meerkat
   - Leopard
-  - Aadvark
+  - Aardvark
   pics:
   - {fileID: 21300110, guid: a917c6185f7084515966a0e55108ab5a, type: 3}
   - {fileID: 21300100, guid: a917c6185f7084515966a0e55108ab5a, type: 3}

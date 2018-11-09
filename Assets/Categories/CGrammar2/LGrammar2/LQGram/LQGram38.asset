@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Name: LQGram38
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: '..... vegetables in the kitchen'
+  Title: '..... vegetables in the kitchen.'
   Que: 
   Mode: 1
-  type: 15
+  type: 7
   structure: 0
   wordGameSize: 2
   correctAnswer: 1

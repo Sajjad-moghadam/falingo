@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Name: QW74
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: 
+  Title: gr---d, d---, cl-ff
   Que: 
   Mode: 2
-  type: 6
+  type: 8
   structure: 2
   wordGameSize: 5
   correctAnswer: 0

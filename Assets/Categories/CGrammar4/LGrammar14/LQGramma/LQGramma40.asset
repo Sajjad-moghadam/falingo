@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: LQGramma40
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: "I\u2019m sure they\u2019re going to ..... very happy"
+  Title: "I\u2019m sure they\u2019re going to ..... very happy."
   Que: 
   Mode: 1
   type: 17

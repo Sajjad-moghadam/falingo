@@ -15,7 +15,7 @@ MonoBehaviour:
   Title: Cheeseburger
   Que: 
   Mode: 2
-  type: 3
+  type: 4
   structure: 1
   wordGameSize: 3
   correctAnswer: 1

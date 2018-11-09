@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Name: LQGramm44
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: "..... help me? I\u2019m lost"
+  Title: "..... help me? I\u2019m lost."
   Que: 
   Mode: 2
-  type: 16
+  type: 13
   structure: 0
   wordGameSize: 2
   correctAnswer: 3

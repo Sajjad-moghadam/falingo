@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Name: QT50
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: 
+  Title: d-----, m----pho--
   Que: 
   Mode: 1
-  type: 7
+  type: 9
   structure: 2
   wordGameSize: 4
   correctAnswer: 0
