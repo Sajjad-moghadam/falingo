@@ -9,6 +9,7 @@ using GameSparks.Api.Requests;
 using GameSparks.Api.Responses;
 using GameSparks.Core;
 using System.IO;
+using UnityEngine.Networking;
 
 public enum QuestionMode { Easy, Intermed, Diffy }
 public enum QuestionType { Animals, Actions,Grammer1, Colors, Food, Fruits, BodyParts,Grammer2, Weather, Toys, Sports, Clothes, Jobs,Grammer3, Transport, SchoolThings, Objects,Grammer4 }
@@ -260,7 +261,7 @@ public class GameMng : SingletonMahsa<GameMng>
         return val;
     }
 
-    private static void SetDiamondNumber( int value)
+    public static void SetDiamondNumber( int value)
     {
         P2DSecurety.SecureLocalSave(diamondKey , value);
 
@@ -532,6 +533,55 @@ public class GameMng : SingletonMahsa<GameMng>
 
             // block to open the file and share it ------------END
 
+        }
+    }
+
+    public void SendLessonScore(string category,int lesson,int score)
+    {
+        ScoreHistory temp = new ScoreHistory();
+        temp.id = 999;
+        temp.category = category;
+        temp.lesson = lesson;
+        temp.score = score;
+        Setting.historyList.Add(temp);
+        string username = GetUsername();
+        string uri = string.Format("http://sajjadcv.ir/lingoland/addscore.php?user_id={0}&name={1}&category={2}&lesson={3}&score={4}", SystemInfo.deviceUniqueIdentifier, username, category, lesson, score);
+
+        StartCoroutine(SendData(uri));
+    }
+
+    private static string GetUsername()
+    {
+        string username = "none";
+        try
+        {
+            username = Setting.authResponse.DisplayName;
+        }
+        catch { }
+
+        return username;
+    }
+
+    public void SendAchivmentEarn(string achivmentName)
+    {
+
+        string uri = string.Format("http://sajjadcv.ir/lingoland/addachivment.php?user_id={0}&name={1}&achivment_name={2}", SystemInfo.deviceUniqueIdentifier, GetUsername(),achivmentName);
+
+        StartCoroutine(SendData(uri));
+    }
+
+    public IEnumerator SendData(string uri)
+    {
+        UnityWebRequest uwr = UnityWebRequest.Get(uri);
+        yield return uwr.SendWebRequest();
+
+        if (uwr.isNetworkError)
+        {
+            Debug.LogError("Error While Sending: " + uwr.error);
+        }
+        else
+        {
+            Debug.Log("Received: " + uwr.downloadHandler.text);
         }
     }
 }

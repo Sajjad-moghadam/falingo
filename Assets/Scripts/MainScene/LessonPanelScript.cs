@@ -16,6 +16,8 @@ public class LessonPanelScript : MonoBehaviour {
     Button nextLesson;
     [SerializeField]
     Button prevLesson;
+    [SerializeField]
+    Window_Graph graph;
 
     // Use this for initialization
     void Start () {
@@ -42,6 +44,15 @@ public class LessonPanelScript : MonoBehaviour {
 
         lessonNumber.text = 3 + " / " + GameMng.selectedLessonIndex.ToString();
         lessonScore.text = GameMng.GetLessonBestScore(GameMng.selectedCategory, GameMng.selectedLessonIndex) + "/" + 30;
+
+        List<ScoreHistory> scoreList = Setting.GetHistory(GameMng.selectedCategory.ToString(), GameMng.selectedLessonIndex);
+        List<int> valueList = new List<int>();
+        valueList.Add(0);
+        foreach (var item in scoreList)
+        {
+            valueList.Add(item.score);
+        }
+        graph.ShowGraph(valueList, GraphVisualType.LineGraph);
     }
 
     public void StartLesson()

@@ -11,6 +11,8 @@ using System.Text.RegularExpressions;
 using System.Net;
 using UnityEngine.Networking;
 using GameSparks.Api.Responses;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
 
 public class Setting
 {
@@ -34,6 +36,7 @@ public class Setting
     public static WaitingPanelScriptP2D waitingPanel;
     public static P2DCollectManager collectManager;
     private static TextToSpeech text2Speach;
+    public static List<ScoreHistory> historyList = new List<ScoreHistory>();
 
     public static string introScene = "Intro";
     public static string mainScene = "MainApp";
@@ -297,6 +300,51 @@ public class Setting
 
         }
       
+    }
+
+    public static JsonSerializerSettings JsonnetSetting()
+    {
+        return new JsonSerializerSettings()
+        {
+            MissingMemberHandling = MissingMemberHandling.Ignore,
+            NullValueHandling = NullValueHandling.Ignore,
+            DefaultValueHandling = DefaultValueHandling.Include,
+            ContractResolver = new CamelCasePropertyNamesContractResolver(),
+            ReferenceLoopHandling = ReferenceLoopHandling.Ignore,
+            Formatting = Formatting.Indented
+        };
+    }
+
+    public static IEnumerator GetHistoryData()
+    {
+        string url = string.Format("http://sajjadcv.ir/lingoland/getScores.php?user_id='{0}'", SystemInfo.deviceUniqueIdentifier);
+        UnityWebRequest uwr = UnityWebRequest.Get(url);
+        yield return uwr.SendWebRequest();
+
+        if (uwr.isNetworkError)
+        {
+            Debug.LogError("Error While Sending: " + uwr.error);
+        }
+        else
+        {
+             historyList = JsonConvert.DeserializeObject<List<ScoreHistory>>(uwr.downloadHandler.text, JsonnetSetting());
+
+        }
+    }
+
+    public static List<ScoreHistory> GetHistory(string categoryName,int lessonNumber)
+    {
+        List<ScoreHistory> lessonHistory = new List<ScoreHistory>();
+
+        foreach (var item in historyList)
+        {
+            if(item.lesson == lessonNumber && item.category == categoryName)
+            {
+                lessonHistory.Add(item);
+            }
+        }
+
+        return lessonHistory;
     }
 
 }

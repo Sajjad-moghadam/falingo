@@ -295,6 +295,9 @@
     <Reference Include="GameSparksRT">
       <HintPath>Assets\GameSparks\Plugins\GameSparksRT.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Assets\JsonDotNet\Assemblies\Standalone\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="DOTween">
       <HintPath>Assets\Scripts\DOTween\DOTween.dll</HintPath>
     </Reference>
@@ -321,6 +324,26 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\CodeMonkey\Assets.cs" />
+    <Compile Include="Assets\CodeMonkey\CMDebug.cs" />
+    <Compile Include="Assets\CodeMonkey\MonoBehaviours\CameraFollow.cs" />
+    <Compile Include="Assets\CodeMonkey\MonoBehaviours\CameraFollowSetup.cs" />
+    <Compile Include="Assets\CodeMonkey\MonoBehaviours\ComponentActions.cs" />
+    <Compile Include="Assets\CodeMonkey\MonoBehaviours\PositionRendererSorter.cs" />
+    <Compile Include="Assets\CodeMonkey\Utils\Button_Sprite.cs" />
+    <Compile Include="Assets\CodeMonkey\Utils\Button_UI.cs" />
+    <Compile Include="Assets\CodeMonkey\Utils\FunctionPeriodic.cs" />
+    <Compile Include="Assets\CodeMonkey\Utils\FunctionTimer.cs" />
+    <Compile Include="Assets\CodeMonkey\Utils\FunctionUpdater.cs" />
+    <Compile Include="Assets\CodeMonkey\Utils\UI_Bar.cs" />
+    <Compile Include="Assets\CodeMonkey\Utils\UI_BarMultiple.cs" />
+    <Compile Include="Assets\CodeMonkey\Utils\UI_Sprite.cs" />
+    <Compile Include="Assets\CodeMonkey\Utils\UI_TextComplex.cs" />
+    <Compile Include="Assets\CodeMonkey\Utils\UtilsClass.cs" />
+    <Compile Include="Assets\CodeMonkey\Utils\World_Bar.cs" />
+    <Compile Include="Assets\CodeMonkey\Utils\World_Mesh.cs" />
+    <Compile Include="Assets\CodeMonkey\Utils\World_Sprite.cs" />
+    <Compile Include="Assets\CodeMonkey_Graph\Scripts\Window_Graph.cs" />
     <Compile Include="Assets\GameSparks\GameSparksRTUnity.cs" />
     <Compile Include="Assets\GameSparks\GameSparksSettings.cs" />
     <Compile Include="Assets\GameSparks\GameSparksUnity.cs" />
@@ -391,6 +414,7 @@
     <Compile Include="Assets\Scripts\ScriptableObject\Category.cs" />
     <Compile Include="Assets\Scripts\ScriptableObject\Lesson.cs" />
     <Compile Include="Assets\Scripts\ScriptableObject\Question.cs" />
+    <Compile Include="Assets\Scripts\Serialization\ScoreHistory.cs" />
     <Compile Include="Assets\Scripts\SingletonMahsa.cs" />
     <Compile Include="Assets\Scripts\UPersian\Scripts\Components\RtlText.cs" />
     <Compile Include="Assets\Scripts\UPersian\Scripts\EGG.cs" />
@@ -403,6 +427,7 @@
     <Compile Include="Assets\Scripts\WordGame\WordsGameManager.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\CodeMonkey\README.txt" />
     <None Include="Assets\GameSparks\Plugins\GameSparks.Api.XML" />
     <None Include="Assets\GameSparks\Plugins\GameSparks.XML" />
     <None Include="Assets\GameSparks\Plugins\GameSparksRT.xml" />
@@ -412,6 +437,10 @@
     <None Include="Assets\GameSparks\Plugins\WP8\GameSparks.XML" />
     <None Include="Assets\GameSparks\README.txt" />
     <None Include="Assets\GameSparks\link.xml" />
+    <None Include="Assets\JsonDotNet\Assemblies\AOT\Newtonsoft.Json.XML" />
+    <None Include="Assets\JsonDotNet\Assemblies\Standalone\Newtonsoft.Json.XML" />
+    <None Include="Assets\JsonDotNet\Assemblies\Windows\Newtonsoft.Json.XML" />
+    <None Include="Assets\JsonDotNet\link.xml" />
     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
     <None Include="Assets\Scripts\DOTween\DOTween.XML" />
     <None Include="Assets\Scripts\DOTween\DOTween43.xml" />

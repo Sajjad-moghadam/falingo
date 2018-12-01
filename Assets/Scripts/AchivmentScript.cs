@@ -73,6 +73,7 @@ public class AchivmentScript : MonoBehaviour
 
         SetReady2Collect();
         Setting.popupNotification.Show("اچیومنت جدیدی باز شد", mySprite);
+        GameMng.Instance.SendAchivmentEarn(achivmentType.ToString() + "_" + requestedAmount);
     }
 
     const string Ready2CollectKey = "Ready2Collect";

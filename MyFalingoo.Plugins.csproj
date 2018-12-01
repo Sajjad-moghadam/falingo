@@ -295,6 +295,9 @@
     <Reference Include="GameSparksRT">
       <HintPath>Assets\GameSparks\Plugins\GameSparksRT.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Assets\JsonDotNet\Assemblies\Standalone\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="DOTween">
       <HintPath>Assets\Scripts\DOTween\DOTween.dll</HintPath>
     </Reference>
@@ -318,6 +321,7 @@
     <Compile Include="Assets\Plugins\Android\TextToSpeech.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\CodeMonkey\README.txt" />
     <None Include="Assets\GameSparks\Plugins\GameSparks.Api.XML" />
     <None Include="Assets\GameSparks\Plugins\GameSparks.XML" />
     <None Include="Assets\GameSparks\Plugins\GameSparksRT.xml" />
@@ -327,6 +331,10 @@
     <None Include="Assets\GameSparks\Plugins\WP8\GameSparks.XML" />
     <None Include="Assets\GameSparks\README.txt" />
     <None Include="Assets\GameSparks\link.xml" />
+    <None Include="Assets\JsonDotNet\Assemblies\AOT\Newtonsoft.Json.XML" />
+    <None Include="Assets\JsonDotNet\Assemblies\Standalone\Newtonsoft.Json.XML" />
+    <None Include="Assets\JsonDotNet\Assemblies\Windows\Newtonsoft.Json.XML" />
+    <None Include="Assets\JsonDotNet\link.xml" />
     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
     <None Include="Assets\Scripts\DOTween\DOTween.XML" />
     <None Include="Assets\Scripts\DOTween\DOTween43.xml" />

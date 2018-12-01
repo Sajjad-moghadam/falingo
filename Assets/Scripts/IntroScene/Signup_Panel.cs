@@ -37,6 +37,7 @@ public class Signup_Panel : MonoBehaviour
         //PlayerPrefs.DeleteAll();
         Setting.initSetting();
 
+        StartCoroutine(Setting.GetHistoryData());
 
         // load local
         if (PlayerPrefs.GetInt(alreadyRegistered) == 1)
@@ -96,7 +97,6 @@ public class Signup_Panel : MonoBehaviour
         {
             Setting.waitingPanel.Show("در حال ثبت نام");
 
-
             GSRequestData sd = new GSRequestData().AddNumber(Setting.sexKey, sexDropDown.value).AddNumber(Setting.ageKey, ageDropDown.value);
             new RegistrationRequest().SetUserName(SystemInfo.deviceUniqueIdentifier + testPre).SetPassword(SystemInfo.deviceUniqueIdentifier).SetDisplayName(usernameInputreg.text).SetScriptData(sd).Send((RegistrationResponse response) =>
             {
@@ -111,6 +111,7 @@ public class Signup_Panel : MonoBehaviour
                 else
                 {
                     PlayerPrefs.SetInt(alreadyRegistered, 1);
+                    GameMng.SetDiamondNumber(30);
                     LoginProcess();
                 }
             });
@@ -126,7 +127,6 @@ public class Signup_Panel : MonoBehaviour
     public void LoginProcess()
     {
         Setting.waitingPanel.Show("در حال ورود");
-
         new AuthenticationRequest().SetUserName(SystemInfo.deviceUniqueIdentifier + testPre).SetPassword(SystemInfo.deviceUniqueIdentifier).Send((AuthenticationResponse response) =>
         {
             Setting.waitingPanel.Hide();
@@ -144,8 +144,8 @@ public class Signup_Panel : MonoBehaviour
                 if (PlayerPrefs.GetInt(alreadyRegistered) == 0)
                     PlayerPrefs.SetInt(alreadyRegistered,1) ;
 
-                Setting.authResponse = response;
                 SceneManager.LoadScene(Setting.mainScene);
+                Setting.authResponse = response;
 
             }
         }, 10000);

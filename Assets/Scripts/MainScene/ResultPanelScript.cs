@@ -66,6 +66,11 @@ public class ResultPanelScript : MonoBehaviour {
         }
     }
 
+    public void Hide()
+    {
+        myPanel.Hide();
+    }
+
     IEnumerator ShowStamp()
     {
         yield return new WaitForSeconds(1);

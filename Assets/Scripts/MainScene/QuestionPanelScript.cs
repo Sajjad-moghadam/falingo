@@ -34,7 +34,7 @@ public class QuestionPanelScript : MonoBehaviour
     WordsGameManager wordGameManager;
 
     [SerializeField]
-    Button verifyButton, hintButton;
+    Button verifyButton, hintButton,skipButton;
 
     [SerializeField]
     CanvasGroup hintCloud;
@@ -113,6 +113,7 @@ public class QuestionPanelScript : MonoBehaviour
     private void MessegeBox_OnOkButtonClickEvent()
     {
         Hide();
+        ResultsPanel.Hide(); 
     }
 
     private List<Question> GetExamQuestion()
@@ -167,7 +168,7 @@ public class QuestionPanelScript : MonoBehaviour
 
         if (currentQType == QType.Exam)
         {
-            int timeSecound = (int)(QuestionList.Count * 0.2f);
+            int timeSecound = (int)(QuestionList.Count * 10f);
             timerPanel.SetTimer(0, 0, 0, timeSecound);
             timerPanel.OnTimerDoneEvent += TimerPanel_OnTimerDoneEvent;
         }
@@ -214,6 +215,7 @@ public class QuestionPanelScript : MonoBehaviour
         if (CurrentQuestionIndex < QuestionList.Count - 1)
         {
             verifyButton.interactable = true;
+            skipButton.interactable = true;
             CurrentQuestionIndex++;
             SelectQuestionPanel();
             selectedAnswerIndex = 0;
@@ -228,12 +230,18 @@ public class QuestionPanelScript : MonoBehaviour
     private void EndQuestions()
     {
         verifyButton.interactable = false;
+        skipButton.interactable = false;
         timerPanel.OnTimerDoneEvent -= TimerPanel_OnTimerDoneEvent;
         ResultType result = GetResultType();
         SaveScore();
 
         string curentScoreString = currentScore + "/" + maxScore.ToString();
         string bestScoreString = GameMng.GetLessonBestScore(GameMng.selectedCategory, GameMng.selectedLessonIndex) + "/" + maxScore.ToString();
+
+        if(currentQType == QType.Practice)
+            GameMng.Instance.SendLessonScore(GameMng.selectedCategory.ToString(), GameMng.selectedLessonIndex, currentScore);
+        else
+            GameMng.Instance.SendLessonScore("Exam", GameMng.selectedExam.examDegree, currentScore);
 
 
         if (result >= ResultType.NotBad && currentQType == QType.Practice)
@@ -503,6 +511,7 @@ public class QuestionPanelScript : MonoBehaviour
         if (selectedAnswerIndex != 0)
         {
             verifyButton.interactable = false;
+            skipButton.interactable = false;
             StartCoroutine(VerifyAnswer(selectedAnswerIndex));
         }
         else
