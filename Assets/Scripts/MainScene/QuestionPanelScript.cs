@@ -138,11 +138,34 @@ public class QuestionPanelScript : MonoBehaviour
 
     private List<Question> GetPracticeQuestion()
     {
-        List<Question> currentList;
+        List<Question> currentList = new List<Question>();
         Category currentCategory = GameMng.Instance.GetCategory(GameMng.selectedCategory);
         Lesson selectedLesson = currentCategory.lessons[GameMng.selectedLessonIndex - 1];
-        currentList = selectedLesson.questions.OrderBy(x => rnd.Next()).Take(10).ToList();
+
+        while (currentList.Count < 10)
+        {
+            int nextIndex = rnd.Next(selectedLesson.questions.Count);
+            if (!hasQuestionIndex(currentList, nextIndex))
+            {
+                Question temp = selectedLesson.questions[nextIndex];
+                temp.QuestionNum = nextIndex;
+                currentList.Add(temp);
+            }
+           
+        }
+
         return currentList;
+    }
+
+    private bool hasQuestionIndex(List<Question> list,int index)
+    {
+        for (int i = 0; i < list.Count; i++)
+        {
+            if (list[i].QuestionNum == index)
+                return true;
+        }
+
+        return false;
     }
 
     private IEnumerator ShowStart()
@@ -205,7 +228,6 @@ public class QuestionPanelScript : MonoBehaviour
         else
         {
             myPanel.Hide();
-
         }
     }
 
@@ -239,9 +261,9 @@ public class QuestionPanelScript : MonoBehaviour
         string bestScoreString = GameMng.GetLessonBestScore(GameMng.selectedCategory, GameMng.selectedLessonIndex) + "/" + maxScore.ToString();
 
         if(currentQType == QType.Practice)
-            GameMng.Instance.SendLessonScore(GameMng.selectedCategory.ToString(), GameMng.selectedLessonIndex, currentScore);
+            GameMng.Instance.SendLessonScore(GameMng.selectedCategory.ToString(), GameMng.selectedLessonIndex, currentScore,QuestionList);
         else
-            GameMng.Instance.SendLessonScore("Exam", GameMng.selectedExam.examDegree, currentScore);
+            GameMng.Instance.SendLessonScore("Exam", GameMng.selectedExam.examDegree, currentScore,null);
 
 
         if (result >= ResultType.NotBad && currentQType == QType.Practice)
@@ -521,14 +543,15 @@ public class QuestionPanelScript : MonoBehaviour
     public IEnumerator VerifyAnswer(int index, bool winWordgame = false,int waitSecound = 1)
     {
         //GetComponent<Button>().interactable = false;
-        if (index == QuestionList[CurrentQuestionIndex].correctAnswer)
+        if (index == QuestionList[CurrentQuestionIndex].correctAnswer || winWordgame)
         {
+            QuestionList[CurrentQuestionIndex].answerType = 1;
             AfterCorrectAnswer(index);
         }
         else
         {
+            QuestionList[CurrentQuestionIndex].answerType = -1;
             AfterWrongAnswer(index);
-
         }
         UpdateProgress();
 
@@ -584,6 +607,10 @@ public class QuestionPanelScript : MonoBehaviour
 
     public void SkipButtonClick()
     {
+        skipButton.interactable = false;
+        StartCoroutine(ReActiveSkipButton());
+        QuestionList[CurrentQuestionIndex].answerType = 0;
+
         StartCoroutine(HideCurrentShowNextQuestion());
     }
 
@@ -594,6 +621,15 @@ public class QuestionPanelScript : MonoBehaviour
         yield return new WaitForSeconds(1);
 
         ShowNextQuestion();
+    }
+
+    IEnumerator ReActiveSkipButton()
+    {
+        yield return new WaitForSeconds(2);
+        if (CurrentQuestionIndex < QuestionList.Count - 1)
+        {
+            skipButton.interactable = true;
+        }
     }
 
     private void HideCurrentQuestion()

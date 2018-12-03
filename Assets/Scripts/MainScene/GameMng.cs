@@ -536,7 +536,7 @@ public class GameMng : SingletonMahsa<GameMng>
         }
     }
 
-    public void SendLessonScore(string category,int lesson,int score)
+    public void SendLessonScore(string category,int lesson,int score,List<Question> questionList)
     {
         ScoreHistory temp = new ScoreHistory();
         temp.id = 999;
@@ -547,7 +547,33 @@ public class GameMng : SingletonMahsa<GameMng>
         string username = GetUsername();
         string uri = string.Format("http://sajjadcv.ir/lingoland/addscore.php?user_id={0}&name={1}&category={2}&lesson={3}&score={4}", SystemInfo.deviceUniqueIdentifier, username, category, lesson, score);
 
-        StartCoroutine(SendData(uri));
+        List<IMultipartFormSection> formData = new List<IMultipartFormSection>();
+        if(questionList != null)
+        {
+            for (int i = 0; i < questionList.Count; i++)
+            {
+                var item = questionList[i];
+                formData.Add(new MultipartFormDataSection(i.ToString(),string.Format("{0} {1} {2} {3}", item.QuestionNum, item.answerType, item.Mode, item.structure)));
+
+            }
+           
+        }
+       
+
+        StartCoroutine(SendData(uri,formData));
+    }
+
+    public void SendTempData()
+    {
+        string uri = string.Format("http://sajjadcv.ir/lingoland/addscore.php?user_id={0}&name={1}&category={2}&lesson={3}&score={4}", SystemInfo.deviceUniqueIdentifier, "سجی", "test", 1, 10);
+
+        List<IMultipartFormSection> formData = new List<IMultipartFormSection>();
+      
+        formData.Add(new MultipartFormDataSection("dat",string.Format("{0} {1} {2} {3}", 2, 1, "easy", "pic")));
+        formData.Add(new MultipartFormDataSection("dat2",string.Format("{0} {1} {2} {3}", 1, -1, "mid", "choice")));
+
+        StartCoroutine(SendData(uri,formData));
+
     }
 
     private static string GetUsername()
@@ -570,9 +596,12 @@ public class GameMng : SingletonMahsa<GameMng>
         StartCoroutine(SendData(uri));
     }
 
-    public IEnumerator SendData(string uri)
+    public IEnumerator SendData(string uri, List<IMultipartFormSection> formData = null)
     {
-        UnityWebRequest uwr = UnityWebRequest.Get(uri);
+      
+        UnityWebRequest uwr = UnityWebRequest.Post(uri, formData);
+        uwr.method = "POST";
+        uwr.chunkedTransfer = false;////ADD THIS LINE
         yield return uwr.SendWebRequest();
 
         if (uwr.isNetworkError)
@@ -584,4 +613,29 @@ public class GameMng : SingletonMahsa<GameMng>
             Debug.Log("Received: " + uwr.downloadHandler.text);
         }
     }
+
+
+    //IEnumerator SendData(string url)
+    //{
+    //    WWWForm parameters = new WWWForm();
+    //    parameters.AddField("myField", "myData");
+    //    parameters.AddField("Game Name", "Mario Kart");
+    //    byte[] rawData = null;
+    //    if (parameters != null)
+    //    {
+    //        rawData = parameters.data;
+    //    }
+    //    using (var request = new WWW(url, rawData))
+    //    {
+    //        yield return request;
+    //        if (string.IsNullOrEmpty(request.error))
+    //        {// ok
+    //        }
+    //        else
+    //        {// error
+    //        }
+    //        // kill request after work is done.
+    //        request.Dispose();
+    //    }
+    //}
 }
