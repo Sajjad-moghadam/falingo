@@ -22,6 +22,7 @@ public class WordCharacterScript : MonoBehaviour {
 	
     public void ShowEmpty()
     {
+        gameObject.SetActive(true);
         canvasGroup.alpha = 0.7f;
         charText.text = "";
     }

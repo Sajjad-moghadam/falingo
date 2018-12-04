@@ -13,6 +13,7 @@ using UnityEngine.SceneManagement;
 using GameSparks.Api.Requests;
 using GameSparks.Api.Responses;
 using GameSparks.Core;
+using UnityEngine.Networking;
 
 public class Signup_Panel : MonoBehaviour
 {
@@ -71,7 +72,7 @@ public class Signup_Panel : MonoBehaviour
         //    }
         //});
 
-       
+
 
     }
 
@@ -104,24 +105,55 @@ public class Signup_Panel : MonoBehaviour
 
                 if (response.HasErrors)
                 {
-                    Debug.LogError(response.Errors.BaseData["DETAILS"].ToString());
-                    Setting.MessegeBox.SetMessege("خطا در ایجاد پروفایل کاربری");
+                    try
+                    {
+                        if (response.Errors.BaseData["USERNAME"].ToString() == "TAKEN")
+                        {
+                            DoAfterRegister();
+                        }
+                        else
+                        {
+                            Setting.MessegeBox.SetMessege("خطا در ایجاد پروفایل کاربری");
+                            Debug.LogError(response.Errors.BaseData["DETAILS"].ToString());
+                        }
+                    }
+                    catch { }
+
 
                 }
                 else
                 {
-                    PlayerPrefs.SetInt(alreadyRegistered, 1);
-                    GameMng.SetDiamondNumber(30);
-                    LoginProcess();
+                    DoAfterRegister();
                 }
             });
-  
+
         }
         else if ((usernameInputreg.text == ""))
         {
 
             Setting.MessegeBox.SetMessege("لطفا نام کاربری خود را وارد کنید.");
         }
+    }
+
+    private void DoAfterRegister()
+    {
+        PlayerPrefs.SetInt(alreadyRegistered, 1);
+        GameMng.SetDiamondNumber(30);
+        sendUserInfo();
+    }
+
+    void CallBackUserInfo(UnityWebRequest response)
+    {
+        LoginProcess();
+
+    }
+
+    private void sendUserInfo()
+    {
+        string uri = string.Format("http://sajjadcv.ir/lingoland/adduserdata.php?user_id={0}&name={1}&age={2}&sex={3}", SystemInfo.deviceUniqueIdentifier, usernameInputreg.text, ageDropDown.value, sexDropDown.value);
+
+        StartCoroutine(Setting.SendData(uri, null,CallBackUserInfo));
+
     }
 
     public void LoginProcess()
@@ -133,7 +165,7 @@ public class Signup_Panel : MonoBehaviour
 
             if (response.HasErrors)
             {
-                if(response.Errors.BaseData["DETAILS"].ToString().Contains("UNRECOGNISED"))
+                if (response.Errors.BaseData["DETAILS"].ToString().Contains("UNRECOGNISED"))
                     Setting.MessegeBox.SetMessege("ابتدا باید ثبت نام کنید.");
                 else
                     Setting.MessegeBox.SetMessege("ارتباط با سرور برقرار نشد. اینترنت خود را چک کنید.");
@@ -142,7 +174,7 @@ public class Signup_Panel : MonoBehaviour
             else
             {
                 if (PlayerPrefs.GetInt(alreadyRegistered) == 0)
-                    PlayerPrefs.SetInt(alreadyRegistered,1) ;
+                    PlayerPrefs.SetInt(alreadyRegistered, 1);
 
                 SceneManager.LoadScene(Setting.mainScene);
                 Setting.authResponse = response;
@@ -151,7 +183,7 @@ public class Signup_Panel : MonoBehaviour
         }, 10000);
 
     }
-   
+
     //// Function for save age and gender
     //public void saveAgegen()
     //{
@@ -203,7 +235,7 @@ public class Signup_Panel : MonoBehaviour
             return false;
         }
     }
-  
+
     //// Forgetting password function
     //public void onForgotpassClick()
     //{

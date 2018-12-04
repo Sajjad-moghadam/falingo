@@ -347,4 +347,26 @@ public class Setting
         return lessonHistory;
     }
 
+    public static IEnumerator SendData(string uri, List<IMultipartFormSection> formData = null, Action<UnityWebRequest> callBack = null)
+    {
+
+        UnityWebRequest uwr = UnityWebRequest.Post(uri, formData);
+        uwr.method = "POST";
+        uwr.chunkedTransfer = false;////ADD THIS LINE
+        yield return uwr.SendWebRequest();
+
+        if (callBack != null)
+            callBack(uwr);
+
+        if (uwr.isNetworkError)
+        {
+            Debug.LogError("Error While Sending: " + uwr.error);
+        }
+        else
+        {
+            Debug.Log("Received: " + uwr.downloadHandler.text);
+        }
+
+    }
+
 }

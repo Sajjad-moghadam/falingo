@@ -553,14 +553,14 @@ public class GameMng : SingletonMahsa<GameMng>
             for (int i = 0; i < questionList.Count; i++)
             {
                 var item = questionList[i];
-                formData.Add(new MultipartFormDataSection(i.ToString(),string.Format("{0} {1} {2} {3}", item.QuestionNum, item.answerType, item.Mode, item.structure)));
+                formData.Add(new MultipartFormDataSection(i.ToString(),string.Format("{0} {1} {2} {3} {4} {5}", item.QuestionNum, item.answerType, item.selectedAnswer, item.correctAnswer, item.Mode, item.structure)));
 
             }
            
         }
        
 
-        StartCoroutine(SendData(uri,formData));
+        StartCoroutine(Setting.SendData(uri,formData));
     }
 
     public void SendTempData()
@@ -572,7 +572,7 @@ public class GameMng : SingletonMahsa<GameMng>
         formData.Add(new MultipartFormDataSection("dat",string.Format("{0} {1} {2} {3}", 2, 1, "easy", "pic")));
         formData.Add(new MultipartFormDataSection("dat2",string.Format("{0} {1} {2} {3}", 1, -1, "mid", "choice")));
 
-        StartCoroutine(SendData(uri,formData));
+        StartCoroutine(Setting.SendData(uri,formData));
 
     }
 
@@ -593,26 +593,10 @@ public class GameMng : SingletonMahsa<GameMng>
 
         string uri = string.Format("http://sajjadcv.ir/lingoland/addachivment.php?user_id={0}&name={1}&achivment_name={2}", SystemInfo.deviceUniqueIdentifier, GetUsername(),achivmentName);
 
-        StartCoroutine(SendData(uri));
+        StartCoroutine(Setting.SendData(uri));
     }
 
-    public IEnumerator SendData(string uri, List<IMultipartFormSection> formData = null)
-    {
-      
-        UnityWebRequest uwr = UnityWebRequest.Post(uri, formData);
-        uwr.method = "POST";
-        uwr.chunkedTransfer = false;////ADD THIS LINE
-        yield return uwr.SendWebRequest();
-
-        if (uwr.isNetworkError)
-        {
-            Debug.LogError("Error While Sending: " + uwr.error);
-        }
-        else
-        {
-            Debug.Log("Received: " + uwr.downloadHandler.text);
-        }
-    }
+   
 
 
     //IEnumerator SendData(string url)

@@ -222,7 +222,7 @@ public class WordsGameManager : SingletonMahsa<WordsGameManager>
                 if(findedWords >= question.words.Length)
                 {
                     if (questionPanel != null)
-                        StartCoroutine(questionPanel.VerifyAnswer(0, true, 3));
+                        StartCoroutine(questionPanel.VerifyAnswer(-1, true, 3));
                     else
                         Setting.MessegeBox.SetMessege("تست موفقیت آمیز بود", "اوکیه", "موفق");
                 }

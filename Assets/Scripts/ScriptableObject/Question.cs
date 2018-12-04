@@ -8,7 +8,7 @@ using UnityEngine;
 public class Question : ScriptableObject {
 
     [HideInInspector]
-    public int QuestionNum, answerType;
+    public int QuestionNum, answerType,selectedAnswer;
 
     public string Title;
     public string Que;

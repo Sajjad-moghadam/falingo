@@ -542,6 +542,7 @@ public class QuestionPanelScript : MonoBehaviour
 
     public IEnumerator VerifyAnswer(int index, bool winWordgame = false,int waitSecound = 1)
     {
+        QuestionList[CurrentQuestionIndex].selectedAnswer = index;
         //GetComponent<Button>().interactable = false;
         if (index == QuestionList[CurrentQuestionIndex].correctAnswer || winWordgame)
         {
