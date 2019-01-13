@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: QC69
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: Apples, salad, and grass are all usually ..... .
   Que: 
   Mode: 2
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 3
   correctAnswer: 3
   options:
-  - Blue
-  - Fuchsia
-  - Green
-  - Grey
+  - blue
+  - fuchsia
+  - green
+  - grey
   pics: []
   words: []
   words1Positions: []

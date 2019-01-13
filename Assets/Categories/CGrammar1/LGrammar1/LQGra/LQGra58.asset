@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGra58
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: What .....?
   Que: 
   Mode: 2
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 3
   options:
-  - Does speak your sister languages.
-  - Languages speaks your sister.
-  - Languages does your sister speak.
-  - Languages do your sister speak.
+  - does speak your sister languages.
+  - languages speaks your sister.
+  - languages does your sister speak.
+  - languages do your sister speak.
   pics: []
   words: []
   words1Positions: []

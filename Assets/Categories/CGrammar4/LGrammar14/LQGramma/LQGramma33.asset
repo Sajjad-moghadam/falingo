@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGramma33
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: I think ..... leave her husband.
   Que: 
   Mode: 1
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 3
   options:
-  - She's going
-  - She goes
-  - She's going to
-  - She going
+  - she's going
+  - she goes
+  - she's going to
+  - she going
   pics: []
   words: []
   words1Positions: []

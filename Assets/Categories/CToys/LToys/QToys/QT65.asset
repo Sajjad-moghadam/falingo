@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: QT65
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: "\u0645\u0627\u0634\u06CC\u0646 \u067E\u06CC\u0646 \u0628\u0627\u0644 \u060C
     \u0645\u0627\u0634\u06CC\u0646 \u0633\u0627\u0686\u0645\u0647 \u067E\u0631\u0627\u0646"
   Que: 
@@ -19,7 +21,7 @@ MonoBehaviour:
   type: 9
   structure: 1
   wordGameSize: 4
-  correctAnswer: 4
+  correctAnswer: 1
   options:
   - Pinball machine
   - Spinning top

@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Name: QF75
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: 
+  answerType: 0
+  selectedAnswer: 0
+  Title: app-----
   Que: 
   Mode: 2
   type: 4

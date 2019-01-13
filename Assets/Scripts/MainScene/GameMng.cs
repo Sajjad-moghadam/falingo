@@ -19,7 +19,7 @@ public delegate void OnScoreChange(QuestionType type);
 
 public class GameMng : SingletonMahsa<GameMng>
 {
-    public const int lastCategoryIndex = 13;
+    public const int lastCategoryIndex = 17;
     public static QuestionType selectedCategory;
     public static int selectedLessonIndex;
     public static ExamButtonScript selectedExam;
@@ -152,7 +152,7 @@ public class GameMng : SingletonMahsa<GameMng>
         foreach (var item in exams)
         {
             maxScore += (item.examQuestions * 3);
-            currentScore += GetExamBestScore(item.name);
+            currentScore += GetExamBestScore(item.examTitle);
         }
 
         xpShower.SetMaxAmount(maxScore);

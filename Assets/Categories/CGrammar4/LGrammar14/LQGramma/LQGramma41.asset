@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGramma41
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: "She ..... going to come. She isn\u2019t well."
   Que: 
   Mode: 2
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 1
   options:
-  - Isn't
-  - Not
-  - Be
-  - Are not
+  - isn't
+  - not
+  - be
+  - are not
   pics: []
   words: []
   words1Positions: []

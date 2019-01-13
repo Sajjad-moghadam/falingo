@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: QTR71
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: car----, su-------e
   Que: 
   Mode: 2
@@ -23,7 +25,7 @@ MonoBehaviour:
   pics: []
   words:
   - caravan
-  - subbmarine
+  - submarine
   words1Positions:
   - {x: 0, y: 0}
   - {x: 1, y: 0}
@@ -42,7 +44,6 @@ MonoBehaviour:
   - {x: 3, y: 2}
   - {x: 3, y: 1}
   - {x: 3, y: 0}
-  - {x: 4, y: 0}
   words3Positions: []
   words4Positions: []
   words5Positions: []

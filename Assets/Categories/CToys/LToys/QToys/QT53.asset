@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Name: QT53
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: "\u0622\u062C\u0631\u0647 \u0647\u0627\u06CC \u0628\u0627\u0632\u06CC"
+  answerType: 0
+  selectedAnswer: 0
+  Title: "\u0622\u062C\u0631\u0647\u0627\u06CC \u0628\u0627\u0632\u06CC"
   Que: 
   Mode: 2
   type: 9
@@ -28,7 +30,7 @@ MonoBehaviour:
   - {fileID: 21300106, guid: 16545ae5c964748df98bdb89213a095a, type: 3}
   - {fileID: 21300000, guid: 7c2d6ddb8d9854757a40a13bcd734e92, type: 3}
   - {fileID: 21300100, guid: 16545ae5c964748df98bdb89213a095a, type: 3}
-  - {fileID: 21300100, guid: 16545ae5c964748df98bdb89213a095a, type: 3}
+  - {fileID: 21300104, guid: 16545ae5c964748df98bdb89213a095a, type: 3}
   words: []
   words1Positions: []
   words2Positions: []

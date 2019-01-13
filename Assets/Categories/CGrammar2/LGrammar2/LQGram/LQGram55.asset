@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGram55
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: 'What are ..... do?  '
   Que: 
   Mode: 2
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 3
   options:
-  - They go to
-  - Going to
-  - They going to
-  - They went to
+  - they go to
+  - going to
+  - they going to
+  - they went to
   pics: []
   words: []
   words1Positions: []

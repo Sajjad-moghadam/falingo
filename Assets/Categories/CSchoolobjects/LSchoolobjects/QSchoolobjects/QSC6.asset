@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: QSC6
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: "\u06A9\u06CC\u0641 \u0645\u062F\u0631\u0633\u0647"
   Que: 
   Mode: 0
@@ -25,10 +27,10 @@ MonoBehaviour:
   - White board
   - "\u0654Notebook"
   pics:
-  - {fileID: 21300108, guid: 8fb436317b6b041668dfa0b66b9ab6cb, type: 3}
+  - {fileID: 21300004, guid: b7939f77e315842068a6c709a4a705a9, type: 3}
   - {fileID: 21300110, guid: 8fb436317b6b041668dfa0b66b9ab6cb, type: 3}
   - {fileID: 21300112, guid: 8fb436317b6b041668dfa0b66b9ab6cb, type: 3}
-  - {fileID: 21300106, guid: 8fb436317b6b041668dfa0b66b9ab6cb, type: 3}
+  - {fileID: 21300002, guid: b7939f77e315842068a6c709a4a705a9, type: 3}
   words: []
   words1Positions: []
   words2Positions: []

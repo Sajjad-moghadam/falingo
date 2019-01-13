@@ -12,26 +12,31 @@ MonoBehaviour:
   m_Name: LSc3
   m_EditorClassIdentifier: 
   questions:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: db19d9929b2834a8e9f78a0710a0ec1a, type: 2}
+  - {fileID: 11400000, guid: 746fb1ad12c5045a181e90b33657479b, type: 2}
+  - {fileID: 11400000, guid: ed987bd7175504a00b8dfcd1644e4fdd, type: 2}
+  - {fileID: 11400000, guid: 71fc45a910acb42318add800ef5efcf5, type: 2}
+  - {fileID: 11400000, guid: bf4b5c81900994e69a92b6b593b5b795, type: 2}
+  - {fileID: 11400000, guid: fab94a637d1644b81beff1cecac9c90a, type: 2}
+  - {fileID: 11400000, guid: 45574a1cabb9443ffbd88f0caa106506, type: 2}
+  - {fileID: 11400000, guid: 2474ed8f8617d4b188d59bd0fc262e99, type: 2}
+  - {fileID: 11400000, guid: 725b59abb2e1944e5b8609266a66f94e, type: 2}
+  - {fileID: 11400000, guid: af6ff16517d514f82b2c3595cd310659, type: 2}
+  - {fileID: 11400000, guid: ca890689dfb76433cb519d62a9cd2bba, type: 2}
+  - {fileID: 11400000, guid: 3de90baed411b4ef6a7f759b9a43561e, type: 2}
+  - {fileID: 11400000, guid: 980d64929a3c642e085e54333a25a850, type: 2}
+  - {fileID: 11400000, guid: da12f6ac5a63948dba48e1fc7afdfcbd, type: 2}
+  - {fileID: 11400000, guid: a746cc4b77aea40dba4144bc0dcadea4, type: 2}
+  - {fileID: 11400000, guid: fbd4876ed681847baafbef779daf8456, type: 2}
+  - {fileID: 11400000, guid: 7cf6ebecc46684eb4bbf40095274d966, type: 2}
+  - {fileID: 11400000, guid: aa7de98518a1041fc98dfb2f001b0f5b, type: 2}
+  - {fileID: 11400000, guid: a2851b943eec24ebfa021d0a8f547efe, type: 2}
+  - {fileID: 11400000, guid: 8b0256802383e452b9f1180fdb9506b0, type: 2}
+  - {fileID: 11400000, guid: 19df961cd7a5d47c1944c2f4e9891f55, type: 2}
+  - {fileID: 11400000, guid: e77fd1954091f4458a8224ad2b96e71d, type: 2}
+  - {fileID: 11400000, guid: cc598de980a98417eb4c72e4469ea1af, type: 2}
+  - {fileID: 11400000, guid: 6a08730fbe8dd49b7a4fbcba45602fd1, type: 2}
+  - {fileID: 11400000, guid: bee1b7a991845454984928bf77d97d17, type: 2}
   Lmode: 2
   Ltype: 15
   title: Level3

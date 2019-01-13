@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGramm58
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: Chopin and Mozart ..... famous composers.
   Que: 
   Mode: 2
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 3
   options:
-  - Is
-  - Was
-  - Were
-  - Wasn't
+  - is
+  - was
+  - were
+  - wasn't
   pics: []
   words: []
   words1Positions: []

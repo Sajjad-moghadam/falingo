@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGram45
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: "I\u2019m going ..... at a hotel near the beach.  "
   Que: 
   Mode: 2
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 3
   options:
-  - Staying
-  - Stayed
-  - To stay
-  - Stay
+  - staying
+  - stayed
+  - to stay
+  - stay
   pics: []
   words: []
   words1Positions: []

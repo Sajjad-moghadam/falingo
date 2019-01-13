@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: QCL11
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: Tom likes wearing white socks with his .....
   Que: 
   Mode: 0
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 3
   options:
-  - Blouse
-  - Jacket
-  - Sandals
-  - Boots
+  - blouse
+  - jacket
+  - sandals
+  - boots
   pics:
   - {fileID: 21300030, guid: 280a6bbdf06af4301b41e05700fbc896, type: 3}
   - {fileID: 21300014, guid: 280a6bbdf06af4301b41e05700fbc896, type: 3}

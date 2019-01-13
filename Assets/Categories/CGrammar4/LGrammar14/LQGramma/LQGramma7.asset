@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGramma7
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: Washington ..... the first American president.
   Que: 
   Mode: 0
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 2
   options:
-  - Were
-  - Was
-  - Is
-  - Are
+  - were
+  - was
+  - is
+  - are
   pics: []
   words: []
   words1Positions: []

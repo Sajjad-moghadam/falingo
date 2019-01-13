@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGram3
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: 'Do ..... to the radio?  '
   Que: 
   Mode: 0
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 1
   options:
-  - You sometimes listen
-  - Sometimes you listen
-  - Sometimes listen you
-  - You listen sometimes
+  - you sometimes listen
+  - sometimes you listen
+  - sometimes listen you
+  - you listen sometimes
   pics: []
   words: []
   words1Positions: []

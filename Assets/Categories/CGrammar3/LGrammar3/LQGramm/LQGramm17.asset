@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGramm17
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: This is .....
   Que: 
   Mode: 0
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 1
   options:
-  - The end of the exercise
-  - The exercise's end
-  - The end's exercise
-  - The end exercise
+  - the end of the exercise
+  - the exercise's end
+  - the end's exercise
+  - the end exercise
   pics: []
   words: []
   words1Positions: []

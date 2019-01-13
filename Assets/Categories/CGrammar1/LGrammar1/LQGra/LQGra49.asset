@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGra49
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: 'What ..... do you get up?  '
   Que: 
   Mode: 2
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 1
   options:
-  - Time
-  - Is the time
-  - Is time
-  - Does the time
+  - time
+  - is the time
+  - is time
+  - does the time
   pics: []
   words: []
   words1Positions: []

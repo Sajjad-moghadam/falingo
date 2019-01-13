@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGramma50
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: How often ..... your grandparents?
   Que: 
   Mode: 2
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 1
   options:
-  - Do you see
-  - You see
-  - Are you seeing
-  - You do see
+  - do you see
+  - you see
+  - are you seeing
+  - you do see
   pics: []
   words: []
   words1Positions: []

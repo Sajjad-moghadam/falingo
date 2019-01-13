@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGram10
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: 'What ..... Rosa and John want?  '
   Que: 
   Mode: 0
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 1
   options:
-  - Did
-  - Have
-  - Were
-  - Was
+  - did
+  - have
+  - were
+  - was
   pics: []
   words: []
   words1Positions: []

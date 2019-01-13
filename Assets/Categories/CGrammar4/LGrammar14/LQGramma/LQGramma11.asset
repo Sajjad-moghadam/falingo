@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGramma11
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: "The bus didn\u2019t stop in Lyon. It only ..... in Paris."
   Que: 
   Mode: 0
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 2
   options:
-  - Stoped
-  - Stopped
-  - Did stop
-  - Didn't stop
+  - stoped
+  - stopped
+  - did stop
+  - didn't stop
   pics: []
   words: []
   words1Positions: []

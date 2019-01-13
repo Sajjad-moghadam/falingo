@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGramm35
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: '..... eight o''clock.'
   Que: 
   Mode: 1
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 2
   options:
-  - In
-  - At
-  - On
-  - With
+  - in
+  - at
+  - on
+  - with
   pics: []
   words: []
   words1Positions: []

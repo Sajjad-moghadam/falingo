@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGramm22
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: The shops ..... at 9.30 a.m. and close at 6.00 p.m.
   Que: 
   Mode: 1
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 4
   options:
-  - Is open
-  - Opens
-  - Are open
-  - Open
+  - is open
+  - opens
+  - are open
+  - open
   pics: []
   words: []
   words1Positions: []

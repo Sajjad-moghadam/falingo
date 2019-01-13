@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGra5
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: 'Jack ..... Scotland.  '
   Que: 
   Mode: 0
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 4
   options:
-  - From
-  - 'Is '
-  - Are
-  - Is from
+  - from
+  - 'is '
+  - are
+  - is from
   pics: []
   words: []
   words1Positions: []

@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGramma56
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: "I\u2019ve bought a new machine ..... makes fantastic coffee."
   Que: 
   Mode: 2
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 4
   options:
-  - Who
-  - Whom
-  - Where
-  - Which
+  - who
+  - whom
+  - where
+  - which
   pics: []
   words: []
   words1Positions: []

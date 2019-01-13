@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: QT40
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: "\u062A\u062E\u062A\u0647 \u0627\u0633\u06A9\u06CC\u062A"
   Que: 
   Mode: 1
@@ -23,7 +25,7 @@ MonoBehaviour:
   - Yo-Yo
   - Dice
   - Skateboard
-  - Cards
+  - Dominoes
   pics:
   - {fileID: 21300026, guid: 7c2d6ddb8d9854757a40a13bcd734e92, type: 3}
   - {fileID: 21300066, guid: 7c2d6ddb8d9854757a40a13bcd734e92, type: 3}

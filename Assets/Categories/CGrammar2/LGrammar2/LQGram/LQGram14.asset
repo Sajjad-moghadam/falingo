@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGram14
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: 'Was ..... in a meeting?  '
   Que: 
   Mode: 0
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 3
   options:
-  - You
-  - We
-  - She
-  - They
+  - you
+  - we
+  - she
+  - they
   pics: []
   words: []
   words1Positions: []

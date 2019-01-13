@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Name: QO36
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: "\u0632\u0628\u0627\u0644\u0647"
+  answerType: 0
+  selectedAnswer: 0
+  Title: "\u0632\u0628\u0627\u0644\u0647 \u062F\u0627\u0646 "
   Que: 
   Mode: 1
   type: 16
@@ -25,7 +27,7 @@ MonoBehaviour:
   - Rubbish
   - Oven
   pics:
-  - {fileID: 21300032, guid: 96e073f4f374b4a04a463ac441e40680, type: 3}
+  - {fileID: 21300084, guid: 96e073f4f374b4a04a463ac441e40680, type: 3}
   - {fileID: 21300026, guid: 96e073f4f374b4a04a463ac441e40680, type: 3}
   - {fileID: 21300032, guid: 96e073f4f374b4a04a463ac441e40680, type: 3}
   - {fileID: 21300090, guid: 96e073f4f374b4a04a463ac441e40680, type: 3}

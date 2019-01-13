@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGramm19
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: "We ..... drive to work \u2013 we go by bike."
   Que: 
   Mode: 0
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 3
   options:
-  - Do
-  - Does
-  - Don't
-  - Doesn't
+  - do
+  - does
+  - don't
+  - doesn't
   pics: []
   words: []
   words1Positions: []

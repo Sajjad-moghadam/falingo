@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGramm52
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: "Martha and Dick live in London, but I don\u2019t know ..... address."
   Que: 
   Mode: 2
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 4
   options:
-  - Them
-  - They
-  - Your
-  - Their
+  - them
+  - they
+  - your
+  - their
   pics: []
   words: []
   words1Positions: []

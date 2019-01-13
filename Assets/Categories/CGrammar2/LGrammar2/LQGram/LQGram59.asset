@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGram59
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: "She\u2019s going ..... a marathon in June."
   Que: 
   Mode: 2
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 1
   options:
-  - To run
-  - Running
-  - 'Run '
-  - To be run
+  - to run
+  - running
+  - 'run '
+  - to be run
   pics: []
   words: []
   words1Positions: []

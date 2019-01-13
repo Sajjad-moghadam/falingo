@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGramma32
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: What ..... to do next summer?
   Que: 
   Mode: 1
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 3
   options:
-  - You are going
-  - Do you go
-  - Are you going
-  - You go
+  - you are going
+  - do you go
+  - are you going
+  - you go
   pics: []
   words: []
   words1Positions: []

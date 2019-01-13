@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Name: QF40
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: a large, flat cut of meat
   Que: 
   Mode: 1
   type: 4
-  structure: 1
+  structure: 0
   wordGameSize: 3
   correctAnswer: 2
   options:

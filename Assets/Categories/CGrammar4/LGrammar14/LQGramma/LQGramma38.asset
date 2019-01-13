@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGramma38
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: Is your brother going ..... go to university?
   Que: 
   Mode: 1
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 1
   options:
-  - To
-  - At
-  - For
-  - With
+  - to
+  - at
+  - for
+  - with
   pics: []
   words: []
   words1Positions: []

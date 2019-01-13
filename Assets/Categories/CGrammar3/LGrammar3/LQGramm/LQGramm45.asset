@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGramm45
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: 'She ..... drive. She walks to work.  '
   Que: 
   Mode: 2
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 3
   options:
-  - Doesn't can
-  - Can't to
-  - Can't
-  - Does can
+  - doesn't can
+  - can't to
+  - can't
+  - does can
   pics: []
   words: []
   words1Positions: []

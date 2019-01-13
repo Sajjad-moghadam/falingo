@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGra45
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: 'What do ..... do?  '
   Que: 
   Mode: 2
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 4
   options:
-  - He
-  - She
-  - It
-  - They
+  - he
+  - she
+  - it
+  - they
   pics: []
   words: []
   words1Positions: []

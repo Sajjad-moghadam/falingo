@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGramma55
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: "My computer ..... . It\u2019s broken."
   Que: 
   Mode: 2
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 4
   options:
-  - Didn't working
-  - Doesn't working
-  - Isn't work
-  - Isn't working
+  - didn't working
+  - doesn't working
+  - isn't work
+  - isn't working
   pics: []
   words: []
   words1Positions: []

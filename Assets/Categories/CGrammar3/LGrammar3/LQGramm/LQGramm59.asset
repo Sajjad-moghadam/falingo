@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGramm59
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: Joan of Arc ..... English.  She was French.
   Que: 
   Mode: 2
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 3
   options:
-  - Doesn't
-  - Weren't
-  - Wasn't
-  - Was
+  - doesn't
+  - weren't
+  - wasn't
+  - was
   pics: []
   words: []
   words1Positions: []

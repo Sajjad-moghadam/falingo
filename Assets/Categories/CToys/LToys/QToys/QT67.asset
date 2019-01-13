@@ -12,13 +12,15 @@ MonoBehaviour:
   m_Name: QT67
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: "\u0635\u0646\u062F\u0648\u0642 \u0627\u0633\u0628\u0627\u0628 \u0628\u0627\u0632\u06CC"
   Que: 
   Mode: 2
   type: 9
   structure: 1
   wordGameSize: 4
-  correctAnswer: 1
+  correctAnswer: 3
   options:
   - Trampoline
   - Rubber duck

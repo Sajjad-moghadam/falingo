@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGra1
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: "What\u2019s ..... name?"
   Que: 
   Mode: 0
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 2
   options:
-  - You're
-  - Your
-  - You
-  - She
+  - you're
+  - your
+  - you
+  - she
   pics: []
   words: []
   words1Positions: []

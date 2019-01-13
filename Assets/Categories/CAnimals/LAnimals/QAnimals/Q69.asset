@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: Q69
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: Hyena
   Que: 
   Mode: 2
@@ -23,7 +25,7 @@ MonoBehaviour:
   - "\u067E\u0631\u0646\u062F\u0647 \u0633\u06CC\u0646\u0647 \u0633\u0631\u062E"
   - "\u0628\u0632 \u06A9\u0648\u0647\u06CC"
   - "\u06CC\u0648\u0632\u067E\u0644\u0646\u06AF"
-  - "\u06A9\u0641\u062A\u0631"
+  - "\u06A9\u0641\u062A\u0627\u0631"
   pics:
   - {fileID: 21300040, guid: a917c6185f7084515966a0e55108ab5a, type: 3}
   - {fileID: 21300046, guid: a917c6185f7084515966a0e55108ab5a, type: 3}

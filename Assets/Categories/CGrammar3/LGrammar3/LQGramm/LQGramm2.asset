@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGramm2
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: "They ..... from Milan, they\u2019re from Rome.  "
   Que: 
   Mode: 0
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 2
   options:
-  - Isn't
-  - 'Aren''t '
-  - Not are
-  - Not is
+  - isn't
+  - 'aren''t '
+  - not are
+  - not is
   pics: []
   words: []
   words1Positions: []

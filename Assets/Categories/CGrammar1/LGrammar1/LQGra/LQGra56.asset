@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGra56
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: 'Does John ..... to the beach in the summer?  '
   Que: 
   Mode: 2
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 1
   options:
-  - 'Go '
-  - Goes
-  - Can go
-  - Went
+  - 'go '
+  - goes
+  - can go
+  - went
   pics: []
   words: []
   words1Positions: []

@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: QT68
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: "\u0639\u0631\u0648\u0633\u06A9 \u0647\u0627\u06CC \u062A\u0648 \u062F\u0631
     \u062A\u0648"
   Que: 
@@ -19,7 +21,7 @@ MonoBehaviour:
   type: 9
   structure: 1
   wordGameSize: 4
-  correctAnswer: 1
+  correctAnswer: 3
   options:
   - Trampoline
   - Rubber duck
@@ -28,7 +30,7 @@ MonoBehaviour:
   pics:
   - {fileID: 21300084, guid: 7c2d6ddb8d9854757a40a13bcd734e92, type: 3}
   - {fileID: 21300028, guid: 7c2d6ddb8d9854757a40a13bcd734e92, type: 3}
-  - {fileID: 21300102, guid: 7c2d6ddb8d9854757a40a13bcd734e92, type: 3}
+  - {fileID: 21300098, guid: 7c2d6ddb8d9854757a40a13bcd734e92, type: 3}
   - {fileID: 21300000, guid: 7c2d6ddb8d9854757a40a13bcd734e92, type: 3}
   words: []
   words1Positions: []

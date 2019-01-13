@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGram37
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: 'Where did .....?  '
   Que: 
   Mode: 1
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 4
   options:
-  - He meets she
-  - Meet her him
-  - Meet him her
-  - She meet him
+  - he meets she
+  - meet her him
+  - meet him her
+  - she meet him
   pics: []
   words: []
   words1Positions: []

@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGramma4
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: Did you ..... a good time?
   Que: 
   Mode: 0
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 3
   options:
-  - Had
-  - Has
-  - Have
-  - Hadn't
+  - had
+  - has
+  - have
+  - hadn't
   pics: []
   words: []
   words1Positions: []

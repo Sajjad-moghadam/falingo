@@ -12,13 +12,15 @@ MonoBehaviour:
   m_Name: QJ70
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: "\u0645\u062C\u0631\u06CC"
   Que: 
   Mode: 2
   type: 12
   structure: 1
   wordGameSize: 4
-  correctAnswer: 3
+  correctAnswer: 4
   options:
   - Sale representative
   - Technician

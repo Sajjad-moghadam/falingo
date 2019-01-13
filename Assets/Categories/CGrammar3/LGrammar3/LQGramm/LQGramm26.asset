@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGramm26
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: This is a .....
   Que: 
   Mode: 1
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 2
   options:
-  - Very house nice
-  - Very nice house
-  - House very nice
-  - Nice very house
+  - very house nice
+  - very nice house
+  - house very nice
+  - nice very house
   pics: []
   words: []
   words1Positions: []

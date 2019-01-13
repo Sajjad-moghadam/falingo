@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGramma29
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: "I don\u2019t want ..... coffee, thanks."
   Que: 
   Mode: 1
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 2
   options:
-  - Many
-  - Any
-  - Some
-  - An
+  - many
+  - any
+  - some
+  - an
   pics: []
   words: []
   words1Positions: []

@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGramm48
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: "I don\u2019t like ..... . I think she\u2019s a terrible actress."
   Que: 
   Mode: 2
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 1
   options:
-  - Her
-  - Him
-  - His
-  - Them
+  - her
+  - him
+  - his
+  - them
   pics: []
   words: []
   words1Positions: []

@@ -12,18 +12,20 @@ MonoBehaviour:
   m_Name: LQGra54
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: What music .....?
   Que: 
   Mode: 2
   type: 2
   structure: 0
   wordGameSize: 2
-  correctAnswer: 3
+  correctAnswer: 2
   options:
-  - You listen to
-  - Do you listen to
-  - You do listen to
-  - You listen
+  - you listen to
+  - do you listen to
+  - you do listen to
+  - you listen
   pics: []
   words: []
   words1Positions: []

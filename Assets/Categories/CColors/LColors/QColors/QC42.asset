@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: QC42
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: When you mix black and white, you get  ..... .
   Que: 
   Mode: 1
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 4
   options:
-  - Pink
-  - White
-  - Green
-  - Grey
+  - pink
+  - white
+  - green
+  - grey
   pics: []
   words: []
   words1Positions: []

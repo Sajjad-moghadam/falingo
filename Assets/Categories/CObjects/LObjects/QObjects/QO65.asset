@@ -12,13 +12,15 @@ MonoBehaviour:
   m_Name: QO65
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: "\u0634\u0646 \u06A9\u0634 \u060C \u0686\u0646\u06AF\u06A9"
   Que: 
   Mode: 2
   type: 16
   structure: 1
   wordGameSize: 4
-  correctAnswer: 3
+  correctAnswer: 2
   options:
   - Cupboard
   - "\u064BRake"

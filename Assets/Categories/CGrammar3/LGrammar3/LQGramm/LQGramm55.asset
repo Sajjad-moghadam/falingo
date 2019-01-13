@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGramm55
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: My mother hates ..... football on TV.
   Que: 
   Mode: 2
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 3
   options:
-  - Watch
-  - Watched
-  - Watching
-  - See
+  - watch
+  - watched
+  - watching
+  - see
   pics: []
   words: []
   words1Positions: []

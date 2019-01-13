@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: QFR38
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: '..... , spinach, broccoli and onions are considered vegetables.'
   Que: 
   Mode: 1
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 5
   correctAnswer: 1
   options:
-  - Cucumber
-  - Coconut
-  - Melon
-  - Pineapple
+  - cucumber
+  - coconut
+  - melon
+  - pineapple
   pics: []
   words: []
   words1Positions: []

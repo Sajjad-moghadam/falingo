@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: QT51
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: "\u0686\u0631\u062E \u067E\u0627\u06CC\u06CC"
   Que: 
   Mode: 2
@@ -28,7 +30,7 @@ MonoBehaviour:
   - {fileID: 21300096, guid: 16545ae5c964748df98bdb89213a095a, type: 3}
   - {fileID: 21300098, guid: 16545ae5c964748df98bdb89213a095a, type: 3}
   - {fileID: 21300100, guid: 16545ae5c964748df98bdb89213a095a, type: 3}
-  - {fileID: 21300100, guid: 16545ae5c964748df98bdb89213a095a, type: 3}
+  - {fileID: 21300104, guid: 16545ae5c964748df98bdb89213a095a, type: 3}
   words: []
   words1Positions: []
   words2Positions: []

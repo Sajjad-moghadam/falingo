@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: QW64
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: "\u0642\u0627\u0631\u0686"
   Que: 
   Mode: 2
@@ -25,7 +27,7 @@ MonoBehaviour:
   - Sea shell
   - Pond
   pics:
-  - {fileID: 21300070, guid: 16545ae5c964748df98bdb89213a095a, type: 3}
+  - {fileID: 21300046, guid: 16545ae5c964748df98bdb89213a095a, type: 3}
   - {fileID: 21300068, guid: 16545ae5c964748df98bdb89213a095a, type: 3}
   - {fileID: 21300066, guid: 16545ae5c964748df98bdb89213a095a, type: 3}
   - {fileID: 21300078, guid: 16545ae5c964748df98bdb89213a095a, type: 3}

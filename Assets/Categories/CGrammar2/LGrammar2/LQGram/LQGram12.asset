@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGram12
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: Paula ..... up early today.
   Que: 
   Mode: 0
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 2
   options:
-  - Didn't got
-  - Didn't get
-  - Doesn't got
-  - Don't get
+  - didn't got
+  - didn't get
+  - doesn't got
+  - don't get
   pics: []
   words: []
   words1Positions: []

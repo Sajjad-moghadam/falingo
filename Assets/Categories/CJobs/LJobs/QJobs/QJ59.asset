@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: QJ59
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: "\u0634\u0631\u06A9\u062A \u062A\u0635\u0645\u06CC\u0645 \u06AF\u0631\u0641\u062A\u0647
     \u0627\u0633\u062A \u062F\u0648 \u062A\u0627 ..... \u0627\u0633\u062A\u062E\u062F\u0627\u0645
     \u06A9\u0646\u062F."
@@ -22,10 +24,10 @@ MonoBehaviour:
   wordGameSize: 4
   correctAnswer: 4
   options:
-  - Surgeon
-  - Tailor
-  - Scientist
-  - Secretary
+  - surgeon
+  - tailor
+  - scientist
+  - secretary
   pics:
   - {fileID: 21300076, guid: 8fb436317b6b041668dfa0b66b9ab6cb, type: 3}
   - {fileID: 21300078, guid: 8fb436317b6b041668dfa0b66b9ab6cb, type: 3}

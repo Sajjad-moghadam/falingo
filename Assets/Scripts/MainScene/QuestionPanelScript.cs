@@ -78,6 +78,7 @@ public class QuestionPanelScript : MonoBehaviour
     public void Restart()
     {
         verifyButton.interactable = true;
+        hintButton.gameObject.SetActive(false);
         List<Question> currentList = new List<Question>();
         if (currentQType == QType.Practice)
         {
@@ -191,7 +192,7 @@ public class QuestionPanelScript : MonoBehaviour
 
         if (currentQType == QType.Exam)
         {
-            int timeSecound = (int)(QuestionList.Count * 10f);
+            int timeSecound = (int)(QuestionList.Count * 15f);
             timerPanel.SetTimer(0, 0, 0, timeSecound);
             timerPanel.OnTimerDoneEvent += TimerPanel_OnTimerDoneEvent;
         }
@@ -240,7 +241,8 @@ public class QuestionPanelScript : MonoBehaviour
             skipButton.interactable = true;
             CurrentQuestionIndex++;
             SelectQuestionPanel();
-            selectedAnswerIndex = 0;
+            if(QuestionList[CurrentQuestionIndex].structure != QuestionStruct.WordGame)
+                selectedAnswerIndex = 0;
         }
         else
         {
@@ -253,6 +255,7 @@ public class QuestionPanelScript : MonoBehaviour
     {
         verifyButton.interactable = false;
         skipButton.interactable = false;
+        hintButton.gameObject.SetActive(false);
         timerPanel.OnTimerDoneEvent -= TimerPanel_OnTimerDoneEvent;
         ResultType result = GetResultType();
         SaveScore();
@@ -525,7 +528,6 @@ public class QuestionPanelScript : MonoBehaviour
                 Setting.Speak(temp);
             }
         }
-       
     }
 
     public void CheckAnswerClick()

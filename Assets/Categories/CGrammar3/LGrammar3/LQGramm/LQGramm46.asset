@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGramm46
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: Fiona hates ..... up early.
   Que: 
   Mode: 2
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 1
   options:
-  - Getting
-  - Get
-  - Gettings
-  - Got
+  - getting
+  - get
+  - gettings
+  - got
   pics: []
   words: []
   words1Positions: []

@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGra27
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: Are they your .....?
   Que: 
   Mode: 1
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 1
   options:
-  - Watches
-  - Watch
-  - Watchs
-  - Watch's
+  - watches
+  - watch
+  - watchs
+  - watch's
   pics: []
   words: []
   words1Positions: []

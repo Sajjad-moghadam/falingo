@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGramma54
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: Why are you ..... a jacket?
   Que: 
   Mode: 2
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 3
   options:
-  - Wear
-  - To wear
-  - Wearing
-  - Wear to
+  - wear
+  - to wear
+  - wearing
+  - wear to
   pics: []
   words: []
   words1Positions: []

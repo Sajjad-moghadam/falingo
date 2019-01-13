@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGram58
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: "It\u2019s going ..... next week."
   Que: 
   Mode: 2
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 4
   options:
-  - Being cold
-  - To hot
-  - Be cold
-  - To snow
+  - being cold
+  - to hot
+  - be cold
+  - to snow
   pics: []
   words: []
   words1Positions: []

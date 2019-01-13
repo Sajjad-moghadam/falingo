@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGramma58
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: "They\u2019re the children ..... live next door to us."
   Que: 
   Mode: 2
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 3
   options:
-  - Where
-  - Whom
-  - Who
-  - Which
+  - where
+  - whom
+  - who
+  - which
   pics: []
   words: []
   words1Positions: []

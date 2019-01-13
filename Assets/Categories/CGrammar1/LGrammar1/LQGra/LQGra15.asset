@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGra15
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: 'Where are ..... pens?  '
   Que: 
   Mode: 0
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 3
   options:
-  - We
-  - Ours
-  - Our
-  - We are
+  - we
+  - ours
+  - our
+  - we are
   pics: []
   words: []
   words1Positions: []

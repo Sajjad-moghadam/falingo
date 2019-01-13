@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Name: QFR45
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: A vegetable with long, green stems that can be eaten raw or cooked.
   Que: 
   Mode: 1
   type: 5
-  structure: 1
+  structure: 0
   wordGameSize: 5
   correctAnswer: 1
   options:

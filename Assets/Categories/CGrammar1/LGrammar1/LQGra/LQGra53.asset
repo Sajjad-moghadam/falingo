@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGra53
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: "Your son ..... see the doctor at four o\u2019clock.  "
   Que: 
   Mode: 2
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 4
   options:
-  - Can
-  - Not
-  - Cans
-  - Can
+  - are
+  - not
+  - cans
+  - can
   pics: []
   words: []
   words1Positions: []

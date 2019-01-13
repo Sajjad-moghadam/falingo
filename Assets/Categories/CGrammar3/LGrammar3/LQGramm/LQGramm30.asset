@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Name: LQGramm30
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: '..... to bed late'
+  answerType: 0
+  selectedAnswer: 0
+  Title: '..... to bed late.'
   Que: 
   Mode: 1
   type: 13

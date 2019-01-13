@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGramma48
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: Be careful! You ..... a mistake.
   Que: 
   Mode: 2
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 1
   options:
-  - Are making
-  - Are makeing
-  - Making
-  - Made
+  - are making
+  - are makeing
+  - making
+  - made
   pics: []
   words: []
   words1Positions: []

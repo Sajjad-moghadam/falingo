@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: QT39
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: "\u062A\u06CC\u0631"
   Que: 
   Mode: 1
@@ -23,7 +25,7 @@ MonoBehaviour:
   - Teddy
   - Dice
   - Darts
-  - Cards
+  - Dominoes
   pics:
   - {fileID: 21300092, guid: 16545ae5c964748df98bdb89213a095a, type: 3}
   - {fileID: 21300066, guid: 7c2d6ddb8d9854757a40a13bcd734e92, type: 3}

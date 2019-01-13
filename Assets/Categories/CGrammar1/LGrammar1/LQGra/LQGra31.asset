@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGra31
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: It's a .....
   Que: 
   Mode: 1
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 2
   options:
-  - Good's book
-  - Good book
-  - Book's good
-  - Book good
+  - good's book
+  - good book
+  - book's good
+  - book good
   pics: []
   words: []
   words1Positions: []

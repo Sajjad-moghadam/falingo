@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGram39
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: 'Did .....?  '
   Que: 
   Mode: 1
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 2
   options:
-  - Them find he
-  - He find them
-  - Them find him
-  - They find he
+  - them find he
+  - he find them
+  - them find him
+  - they find he
   pics: []
   words: []
   words1Positions: []

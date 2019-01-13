@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: QW70
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: Tom's house was destroyed by a .....
   Que: 
   Mode: 2
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 3
   options:
-  - Hail
-  - Lighthouse
-  - Tornado
-  - Dam
+  - hail
+  - lighthouse
+  - tornado
+  - dam
   pics:
   - {fileID: 21300120, guid: d21ee2e8d19184f6a9fcf4ce715b5ec7, type: 3}
   - {fileID: 21300030, guid: 16545ae5c964748df98bdb89213a095a, type: 3}

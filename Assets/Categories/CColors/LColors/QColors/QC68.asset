@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: QC68
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: Penguins are white and ..... .
   Que: 
   Mode: 2
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 3
   correctAnswer: 1
   options:
-  - Black
-  - Fuchsia
-  - Dark
-  - Grey
+  - black
+  - fuchsia
+  - dark
+  - grey
   pics: []
   words: []
   words1Positions: []

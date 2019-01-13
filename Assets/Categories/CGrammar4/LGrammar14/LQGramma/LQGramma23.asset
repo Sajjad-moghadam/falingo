@@ -12,18 +12,20 @@ MonoBehaviour:
   m_Name: LQGramma23
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: "There aren\u2019t ..... chairs."
   Que: 
   Mode: 1
   type: 17
   structure: 0
   wordGameSize: 2
-  correctAnswer: 3
+  correctAnswer: 4
   options:
-  - A
-  - One
-  - Some
-  - Any
+  - a
+  - one
+  - much
+  - any
   pics: []
   words: []
   words1Positions: []

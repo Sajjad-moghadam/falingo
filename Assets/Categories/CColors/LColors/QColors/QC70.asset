@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: QC70
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: Eggplants are ..... .
   Que: 
   Mode: 2
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 2
   options:
-  - Blue
-  - Purple
-  - Green
-  - Wheat
+  - blue
+  - purple
+  - green
+  - wheat
   pics: []
   words: []
   words1Positions: []

@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: QF12
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: Pie
   Que: 
   Mode: 0
@@ -28,7 +30,7 @@ MonoBehaviour:
   - {fileID: 21300060, guid: 472c5c0f2fed64837b1f6139d8407440, type: 3}
   - {fileID: 21300062, guid: 472c5c0f2fed64837b1f6139d8407440, type: 3}
   - {fileID: 21300064, guid: 472c5c0f2fed64837b1f6139d8407440, type: 3}
-  - {fileID: 21300056, guid: 472c5c0f2fed64837b1f6139d8407440, type: 3}
+  - {fileID: 21300058, guid: 472c5c0f2fed64837b1f6139d8407440, type: 3}
   words: []
   words1Positions: []
   words2Positions: []

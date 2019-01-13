@@ -12,18 +12,20 @@ MonoBehaviour:
   m_Name: LQGramma3
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: 'What ..... on Friday night?  '
+  answerType: 0
+  selectedAnswer: 0
+  Title: 'What ..... last night?  '
   Que: 
   Mode: 0
   type: 17
   structure: 0
   wordGameSize: 2
-  correctAnswer: 1
+  correctAnswer: 2
   options:
-  - Did you
-  - Did you do
-  - You did
-  - Do you
+  - did you
+  - did you do
+  - you did
+  - do you
   pics: []
   words: []
   words1Positions: []

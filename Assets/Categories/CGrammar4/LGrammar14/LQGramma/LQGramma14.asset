@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGramma14
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: How many bedrooms ...... in your flat?
   Que: 
   Mode: 0
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 3
   options:
-  - Is there
-  - There are
-  - Are there
-  - There is
+  - is there
+  - there are
+  - are there
+  - there is
   pics: []
   words: []
   words1Positions: []

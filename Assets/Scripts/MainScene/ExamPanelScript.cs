@@ -31,7 +31,7 @@ public class ExamPanelScript : MonoBehaviour {
     {
         myPanel.Show();
 
-        int bestScore = GameMng.GetExamBestScore(GameMng.selectedExam.name);
+        int bestScore = GameMng.GetExamBestScore(GameMng.selectedExam.examTitle);
         int maxScore = GameMng.selectedExam.examQuestions * 3;
 
         bestScoreText.text = bestScore + "/" + maxScore;

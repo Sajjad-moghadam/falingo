@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: QO29
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: "\u0686\u062A\u0631"
   Que: 
   Mode: 1
@@ -21,7 +23,7 @@ MonoBehaviour:
   correctAnswer: 1
   options:
   - "\u064EUmbrella"
-  - Rope
+  - Tin
   - World map
   - Shopping bag
   pics:

@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGramma46
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: She ..... men who talk a lot.
   Que: 
   Mode: 2
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 1
   options:
-  - Don't like
-  - Not likes
-  - Doesn't like
-  - Never like
+  - don't like
+  - not likes
+  - doesn't like
+  - never like
   pics: []
   words: []
   words1Positions: []

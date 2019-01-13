@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGra25
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: "She\u2019s ..... sister."
   Que: 
   Mode: 1
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 3
   options:
-  - Paula
-  - Paulas
-  - Paula's
-  - Paulas'
+  - paula
+  - paulas
+  - paula's
+  - paulas'
   pics: []
   words: []
   words1Positions: []

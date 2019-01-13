@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Name: LQGram2
   m_EditorClassIdentifier: 
   QuestionNum: 0
-  Title: "\u067E\u06AF\u06CC \u0633\u0627\u0639\u062A \u06F6 \u0627\u0632 \u062E\u0648\u0627\u0628
-    \u0628\u06CC\u062F\u0627\u0631 \u0645\u06CC \u0634\u0648\u062F."
+  answerType: 0
+  selectedAnswer: 0
+  Title: "\u067E\u06AF\u06CC \u0647\u0645\u06CC\u0634\u0647 \u0633\u0627\u0639\u062A
+    \u06F6 \u0627\u0632 \u062E\u0648\u0627\u0628 \u0628\u06CC\u062F\u0627\u0631 \u0645\u06CC
+    \u0634\u0648\u062F."
   Que: 
   Mode: 0
   type: 7

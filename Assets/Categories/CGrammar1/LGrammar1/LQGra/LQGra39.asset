@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGra39
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: 'Do ..... like her haircut?  '
   Que: 
   Mode: 1
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 4
   options:
-  - He
-  - Her
-  - She
-  - You
+  - he
+  - her
+  - she
+  - you
   pics: []
   words: []
   words1Positions: []

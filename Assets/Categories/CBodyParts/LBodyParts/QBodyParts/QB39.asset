@@ -11,7 +11,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e816bc4f30ab4ea4b17f0d18a4f2cde, type: 3}
   m_Name: QB39
   m_EditorClassIdentifier: 
-  QuestionNum: 0
+  QuestionNum: 13
+  answerType: 0
+  selectedAnswer: 0
   Title: Lips
   Que: 
   Mode: 1

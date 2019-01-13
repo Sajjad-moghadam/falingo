@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGramm12
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: "We\u2019re new students. ..... names are Jan and Kasia."
   Que: 
   Mode: 0
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 3
   options:
-  - Ours
-  - We
-  - Our
-  - Her
+  - ours
+  - we
+  - our
+  - her
   pics: []
   words: []
   words1Positions: []

@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGramma15
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: There are ..... glasses in the cupboard.
   Que: 
   Mode: 0
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 2
   options:
-  - A
-  - Some
-  - Any
-  - An
+  - a
+  - some
+  - any
+  - an
   pics: []
   words: []
   words1Positions: []

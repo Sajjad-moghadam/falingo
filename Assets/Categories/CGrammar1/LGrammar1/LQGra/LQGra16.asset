@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGra16
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: "They\u2019re our ....."
   Que: 
   Mode: 0
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 2
   options:
-  - Mobile phone
-  - Mobile phones
-  - Mobiles phones
-  - Mobiles phone
+  - mobile phone
+  - mobile phones
+  - mobiles phones
+  - mobiles phone
   pics: []
   words: []
   words1Positions: []

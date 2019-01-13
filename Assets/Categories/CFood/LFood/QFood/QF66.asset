@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: QF66
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: Almonds
   Que: 
   Mode: 2
@@ -23,7 +25,7 @@ MonoBehaviour:
   - "\u0631\u0648\u063A\u0646 \u0632\u06CC\u062A\u0648\u0646"
   - "\u0628\u0627\u062F\u0627\u0645 "
   - "\u062A\u062E\u0645\u0647 \u0622\u0641\u062A\u0627\u0628\u06AF\u0631\u062F\u0627\u0646"
-  - " \u0646\u0627\u0646 \u0634\u06CC\u0631\u06CC\u0646\u06CC \u06AF\u0631\u062F"
+  - "\u0646\u0627\u0646 \u0634\u06CC\u0631\u06CC\u0646\u06CC \u06AF\u0631\u062F"
   pics:
   - {fileID: 21300002, guid: 8693a8e03533c44dab5c24847071dd58, type: 3}
   - {fileID: 21300146, guid: 472c5c0f2fed64837b1f6139d8407440, type: 3}

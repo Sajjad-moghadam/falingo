@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: QFR37
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: Do you want fresh ground ..... on your salad?
   Que: 
   Mode: 1
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 5
   correctAnswer: 4
   options:
-  - Cucumber
-  - Coconut
-  - Melon
-  - Pepper
+  - cucumber
+  - coconut
+  - melon
+  - pepper
   pics: []
   words: []
   words1Positions: []

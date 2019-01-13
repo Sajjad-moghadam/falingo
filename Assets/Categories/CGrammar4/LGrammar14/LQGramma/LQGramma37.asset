@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGramma37
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: "I don\u2019t drink ..... coffee \u2013 only two cups a day."
   Que: 
   Mode: 1
@@ -20,9 +22,9 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 1
   options:
-  - Much
-  - Many
-  - Lot
+  - much
+  - many
+  - lot
   - a
   pics: []
   words: []

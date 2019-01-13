@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGram47
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: 'Where ..... to live?  '
   Que: 
   Mode: 2
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 1
   options:
-  - Are you going
-  - You going
-  - You are going
-  - You went
+  - are you going
+  - you going
+  - you are going
+  - you went
   pics: []
   words: []
   words1Positions: []

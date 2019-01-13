@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGramm16
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: Is that .....?
   Que: 
   Mode: 0
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 3
   options:
-  - The car of your parent's
-  - Your parent's car
-  - Your parents' car
-  - The car of your parents'
+  - the car of your parent's
+  - your parent's car
+  - your parents' car
+  - the car of your parents'
   pics: []
   words: []
   words1Positions: []

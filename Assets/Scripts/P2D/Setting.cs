@@ -291,8 +291,8 @@ public class Setting
             text2Speach.SetSpeed(speed);
             text2Speach.Speak(text, (string msg) =>
             {
-                if (showToast)
-                    text2Speach.ShowToast(msg);
+                //if (showToast)
+                //    text2Speach.ShowToast(msg);
             });
         }
         catch (Exception e)

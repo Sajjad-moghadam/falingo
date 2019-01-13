@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGram4
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: 'Can ..... with you?  '
   Que: 
   Mode: 0
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 3
   options:
-  - Come my friend
-  - My friend to come
-  - 'My friend come '
-  - My friend comes
+  - come my friend
+  - my friend to come
+  - 'my friend come '
+  - my friend comes
   pics: []
   words: []
   words1Positions: []

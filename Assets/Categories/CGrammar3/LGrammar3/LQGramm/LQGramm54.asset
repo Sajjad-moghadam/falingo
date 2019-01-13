@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: LQGramm54
   m_EditorClassIdentifier: 
   QuestionNum: 0
+  answerType: 0
+  selectedAnswer: 0
   Title: "You ..... park here. It\u2019s \u2018No Parking\u2019."
   Que: 
   Mode: 2
@@ -20,10 +22,10 @@ MonoBehaviour:
   wordGameSize: 2
   correctAnswer: 1
   options:
-  - Can't
-  - Can to
-  - Can
-  - Can't to
+  - can't
+  - can to
+  - can
+  - can't to
   pics: []
   words: []
   words1Positions: []
