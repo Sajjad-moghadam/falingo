@@ -241,8 +241,8 @@ public class QuestionPanelScript : MonoBehaviour
             skipButton.interactable = true;
             CurrentQuestionIndex++;
             SelectQuestionPanel();
-            if(QuestionList[CurrentQuestionIndex].structure != QuestionStruct.WordGame)
-                selectedAnswerIndex = 0;
+            //if(QuestionList[CurrentQuestionIndex].structure != QuestionStruct.WordGame)
+            selectedAnswerIndex = 0;
         }
         else
         {
