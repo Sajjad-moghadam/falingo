@@ -109,9 +109,9 @@ public class GameMng : SingletonMahsa<GameMng>
         Application.Quit();
     }
 
-    public void ShowAchivmentBigPanel(string message, Sprite icon)
+    public void ShowAchivmentBigPanel(string message, Sprite icon, string shareName)
     {
-        achivmentBigPanel.Show(message, icon);
+        achivmentBigPanel.Show(message, icon, shareName);
     }
 
     private void FillAchivmentList()
@@ -501,8 +501,13 @@ public class GameMng : SingletonMahsa<GameMng>
 
     }
 
-    public static void ShareImage(Texture2D shareTexture)
+    public static void ShareImage(Texture2D shareTexture,string shareName)
     {
+        try
+        {
+            GameMng.Instance.SendShareInfo(shareName);
+        }
+        catch { }
         byte[] dataToSave = shareTexture.EncodeToJPG();
 
         string destination = Path.Combine(Application.persistentDataPath, System.DateTime.Now.ToString("yyyy-MM-dd-HHmmss") + ".png");
@@ -563,18 +568,18 @@ public class GameMng : SingletonMahsa<GameMng>
         StartCoroutine(Setting.SendData(uri,formData));
     }
 
-    public void SendTempData()
-    {
-        string uri = string.Format("http://sajjadcv.ir/lingoland/addscore.php?user_id={0}&name={1}&category={2}&lesson={3}&score={4}", SystemInfo.deviceUniqueIdentifier, "سجی", "test", 1, 10);
+    //public void SendTempData()
+    //{
+    //    string uri = string.Format("http://sajjadcv.ir/lingoland/addscore.php?user_id={0}&name={1}&category={2}&lesson={3}&score={4}", SystemInfo.deviceUniqueIdentifier, "سجی", "test", 1, 10);
 
-        List<IMultipartFormSection> formData = new List<IMultipartFormSection>();
+    //    List<IMultipartFormSection> formData = new List<IMultipartFormSection>();
       
-        formData.Add(new MultipartFormDataSection("dat",string.Format("{0} {1} {2} {3}", 2, 1, "easy", "pic")));
-        formData.Add(new MultipartFormDataSection("dat2",string.Format("{0} {1} {2} {3}", 1, -1, "mid", "choice")));
+    //    formData.Add(new MultipartFormDataSection("dat",string.Format("{0} {1} {2} {3}", 2, 1, "easy", "pic")));
+    //    formData.Add(new MultipartFormDataSection("dat2",string.Format("{0} {1} {2} {3}", 1, -1, "mid", "choice")));
 
-        StartCoroutine(Setting.SendData(uri,formData));
+    //    StartCoroutine(Setting.SendData(uri,formData));
 
-    }
+    //}
 
     private static string GetUsername()
     {
@@ -596,7 +601,15 @@ public class GameMng : SingletonMahsa<GameMng>
         StartCoroutine(Setting.SendData(uri));
     }
 
-   
+    public void SendShareInfo(string shareName)
+    {
+
+        string uri = string.Format("http://sajjadcv.ir/lingoland/addshareinfo.php?user_id={0}&name={1}&share_name={2}", SystemInfo.deviceUniqueIdentifier, GetUsername(), shareName);
+
+        StartCoroutine(Setting.SendData(uri));
+    }
+
+
 
 
     //IEnumerator SendData(string url)

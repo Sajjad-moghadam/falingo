@@ -26,11 +26,12 @@ public class AchivmentPanelScript : MonoBehaviour {
     {
 		
 	}
-	
 
-    public void Show(string message,Sprite icon)
+    string shareName;
+    public void Show(string message,Sprite icon,string shName)
     {
         myPanel.Show();
+        shareName = shName;
 
         text.text = message;
         image.sprite = icon;
@@ -60,6 +61,6 @@ public class AchivmentPanelScript : MonoBehaviour {
 
         //image.sprite = Sprite.Create(texturePic, new Rect(0,0,texturePic.width, texturePic.height),Vector2.zero);
 
-        GameMng.ShareImage(texturePic);
+        GameMng.ShareImage(texturePic,shareName);
     }
 }

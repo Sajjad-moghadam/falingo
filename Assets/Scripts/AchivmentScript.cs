@@ -114,7 +114,7 @@ public class AchivmentScript : MonoBehaviour
         else
         {
             Sprite sprite = transform.Find("column3").Find("Image").GetComponent<Image>().sprite;
-            GameMng.Instance.ShowAchivmentBigPanel(myMessage, sprite);
+            GameMng.Instance.ShowAchivmentBigPanel(myMessage, sprite, achivmentType.ToString() + "_" + requestedAmount);
         }
       
     }

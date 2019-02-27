@@ -28,10 +28,12 @@ public class CertificatePanel : MonoBehaviour {
     void Start () {
        myPanel = GetComponent<P2DPanel>();
 	}
-	
+
+    string shareName;
 	public void Show(string result,string name,string course,int degree)
     {
         myPanel.Show();
+        shareName = course;
         Setting.AudioPlayer.PlayOneShot(TadaClip);
         backImage.sprite = sprites[degree%sprites.Count];
         resultText.text = result;
@@ -63,6 +65,6 @@ public class CertificatePanel : MonoBehaviour {
 
         //image.sprite = Sprite.Create(texturePic, new Rect(0,0,texturePic.width, texturePic.height),Vector2.zero);
 
-        GameMng.ShareImage(texturePic);
+        GameMng.ShareImage(texturePic,shareName);
     }
 }
