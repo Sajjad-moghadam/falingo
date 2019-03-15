@@ -169,6 +169,7 @@ public class QuestionPanelScript : MonoBehaviour
         return false;
     }
 
+    int examTime = 100;
     private IEnumerator ShowStart()
     {
         string s1, s2;
@@ -192,8 +193,8 @@ public class QuestionPanelScript : MonoBehaviour
 
         if (currentQType == QType.Exam)
         {
-            int timeSecound = (int)(QuestionList.Count * 15f);
-            timerPanel.SetTimer(0, 0, 0, timeSecound);
+            examTime = (int)(QuestionList.Count * 15f);
+            timerPanel.SetTimer(0, 0, 0, examTime);
             timerPanel.OnTimerDoneEvent += TimerPanel_OnTimerDoneEvent;
         }
 
@@ -273,7 +274,13 @@ public class QuestionPanelScript : MonoBehaviour
         {
             CheckOpenNextLesson();
             CheckOpenNextCategory();
+            GameMng.Instance.CheckAchivmentLessonDone();
         }
+        else if(result >= ResultType.NotBad && currentQType == QType.Exam)
+        {
+            GameMng.Instance.CheckAchivment(timerPanel.GetElepsedTime());
+        }
+
         bool canRestart = true;
         if (currentQType == QType.Exam)
             canRestart = false;

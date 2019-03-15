@@ -61,6 +61,7 @@ public class GameMng : SingletonMahsa<GameMng>
 
     private void Awake()
     {
+
 #if UNITY_EDITOR
         //PlayerPrefs.DeleteAll(); //danger*****
 #endif
@@ -70,6 +71,8 @@ public class GameMng : SingletonMahsa<GameMng>
             SetLastOpenLesson(0, 1);
         }
     }
+
+   
 
     void Start()
     {
@@ -83,6 +86,7 @@ public class GameMng : SingletonMahsa<GameMng>
         diamondShower.SetAmount(GetDiamondNumber());
 
         //AddDiamond(1000); //***** remove
+
     }
 
     private void Update()
@@ -132,7 +136,7 @@ public class GameMng : SingletonMahsa<GameMng>
     private void UpdateXpShower()
     {
         int currentScore = 0;
-        int maxScore = (lastCategoryIndex + 1) * 300;
+        int maxScore = (lastCategoryIndex + 1) * 100;
         int excelentLessons = 0;
         int excelentCategory = 0;
 
@@ -151,7 +155,7 @@ public class GameMng : SingletonMahsa<GameMng>
 
         foreach (var item in exams)
         {
-            maxScore += (item.examQuestions * 3);
+            maxScore += (item.examQuestions);
             currentScore += GetExamBestScore(item.examTitle);
         }
 
@@ -183,7 +187,7 @@ public class GameMng : SingletonMahsa<GameMng>
         }
     }
 
-    private void CheckAchivment(TimeSpan examSucessTime)
+    public void CheckAchivment(TimeSpan examSucessTime)
     {
         foreach (var item in achivmentList)
         {
@@ -195,6 +199,27 @@ public class GameMng : SingletonMahsa<GameMng>
                 }
             }
 
+        }
+    }
+
+    public void CheckAchivmentLessonDone()
+    {
+        int openedLesson = 0;
+        for (int i = 0; i <= lastCategoryIndex; i++)
+        {
+            openedLesson += GetLastOpenLesson((QuestionType)i);
+        }
+
+        Debug.Log("Opened Lesson:" + openedLesson.ToString());
+        foreach (var item in achivmentList)
+        {
+            if (item.achivmentType == AchivmentType.PassLesson)
+            {
+                if (!item.IsCollected() && !item.IsReady2Collect() && item.requestedAmount <= openedLesson)
+                {
+                    item.Open2Collect();
+                }
+            }
         }
     }
 

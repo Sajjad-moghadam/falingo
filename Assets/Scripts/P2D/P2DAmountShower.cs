@@ -20,6 +20,8 @@ public class P2DAmountShower: MonoBehaviour {
         }
     }
 
+    public int currentEnd;
+
 
     [SerializeField]
     Text showText;
@@ -32,6 +34,7 @@ public class P2DAmountShower: MonoBehaviour {
 
     public void SetAmount(int val,float time = 1,float delayTime = 0.5f)
     {
+        currentEnd = val;
         DOTween.To(() => CurrentAmount, x => CurrentAmount = x, val, time).SetEase(Ease.OutCubic).SetDelay(delayTime);
         if(showMaxAmount && fillImage != null)
             DOTween.To(() => fillImage.fillAmount, x => fillImage.fillAmount = x, ((float)val)/maxAmount, time).SetEase(Ease.OutCubic).SetDelay(delayTime);
